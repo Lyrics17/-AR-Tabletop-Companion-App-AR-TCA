@@ -5,21 +5,85 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637849539300309333
-    m_Hash: 1394975962
+      ticks: 637850051933772883
+    m_Hash: 3074209755
   m_LockFileStatus:
     m_FilePath: C:/Users/Lukas/Documents/GitHub/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637849539301002582
-    m_Hash: 2310300928
+      ticks: 637850052080734166
+    m_Hash: 886051671
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.ptc.vuforia.engine@file:C:\Users\Lukas\Documents\GitHub\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Packages\com.ptc.vuforia.engine-10.6.3.tgz
+      testable: 0
+      isDirectDependency: 1
+      version: 10.6.3
+      source: 6
+      resolvedPath: C:\Users\Lukas\Documents\GitHub\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.ptc.vuforia.engine@b4ae8a0ac015-1648627255000
+      assetPath: Packages/com.ptc.vuforia.engine
+      name: com.ptc.vuforia.engine
+      displayName: Vuforia Engine AR
+      author:
+        name: PTC Inc.
+        email: 
+        url: https://developer.vuforia.com/
+      category: 
+      type: 
+      description: Vuforia Engine is the most widely used platform for AR development,
+        with support for leading phones, tablets, and eyewear. Developers can easily
+        add advanced computer vision functionality to Android, iOS, and UWP apps,
+        to create AR experiences that realistically interact with objects and the
+        environment.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - vuforia
+      - engine
+      - ar
+      - xr
+      - augmented
+      - reality
+      - sdk
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
     - packageId: com.unity.collab-proxy@1.15.13
       testable: 0
       isDirectDependency: 1
@@ -3730,6 +3794,20 @@ m_PackageAssets:
         revision: 72584ba5248fbe79e560e795ad819f876954fceb
         path: 
   m_LocalPackages:
-    m_LocalFileStatus: []
+    m_LocalFileStatus:
+    - m_FilePath: C:\Users\Lukas\Documents\GitHub\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Packages\com.ptc.vuforia.engine-10.6.3.tgz/package.json
+      m_PathExists: 0
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 0
+      m_Hash: 0
+    - m_FilePath: C:\Users\Lukas\Documents\GitHub\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Packages\com.ptc.vuforia.engine-10.6.3.tgz
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637842240550000000
+      m_Hash: 1601347051
 m_ProjectPath: C:/Users/Lukas/Documents/GitHub/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Packages
 m_EditorVersion: 2020.3.31f1 (6b54b7616050)
