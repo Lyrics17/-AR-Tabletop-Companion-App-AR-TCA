@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.19)  7 APR 2022 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.19)  12 APR 2022 14:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -830,38 +830,37 @@ LaTeX Info: Redefining \nameref on input line 115.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 117.
- (C:\Users\Lukas\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 117.
- (C:\Users\Lukas\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 117.
- (C:\Users\Lukas\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 117.
- (C:\Users\Lukas\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 117.
- (C:\Users\Lukas\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-) [1{C:/Users/Lukas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-]
 1: section
 [1
 
 
-]
+
+{C:/Users/Lukas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 --------------------
  Eidesstattliche Erkl\"arung
 --------------------
 1: section
-[1
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 186.
+(C:\Users\Lukas\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 186.
+ (C:\Users\Lukas\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 186.
+ (C:\Users\Lukas\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 186.
+ (C:\Users\Lukas\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 186.
+ (C:\Users\Lukas\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+) [1
 
 ] (main.toc)
 \tf@toc=\write5
@@ -887,6 +886,10 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 1: section
 [4
+
+]
+1: section
+[5
 
 ]
 1: section
@@ -962,23 +965,23 @@ Kapitel 6.
 
 ] (main.aux (Chapters/Kapitel1_Einleitung.aux) (Chapters/Kapitel2_Grundlagen.aux) (Chapters/Kapitel3_Entwurf.aux) (Chapters/Kapitel4_Implementierung.aux) (Chapters/Kapitel5_Zusammenfassung.aux) (Chapters/Kapitel6_Fazit.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 89117183657E3A48FD44AA39E09159D0;3762.
+(rerunfilecheck)             Checksum: E0178492D826B1CA050E14C50BF727C0;4107.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30166 strings out of 478584
- 655744 string characters out of 2844401
- 1343077 words of memory out of 3000000
- 47886 multiletter control sequences out of 15000+600000
+ 30165 strings out of 478584
+ 655335 string characters out of 2844401
+ 1345109 words of memory out of 3000000
+ 47879 multiletter control sequences out of 15000+600000
  501570 words of font info for 75 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  96i,21n,93p,1889b,2455s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (12 pages, 94570 bytes).
+Output written on main.pdf (12 pages, 99217 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 249 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 
