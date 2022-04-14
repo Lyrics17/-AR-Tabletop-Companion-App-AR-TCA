@@ -1196,6 +1196,8 @@ INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplb8
 INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8r.tfm
 INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplb8t.vf
 INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8r.tfm
+INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplro8t.vf
+INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8r.tfm
 INPUT .\Chapters\Kapitel2_Grundlagen.tex
 INPUT .\Chapters\Kapitel2_Grundlagen.tex
 INPUT .\Chapters\Kapitel2_Grundlagen.tex
@@ -1272,6 +1274,8 @@ OUTPUT main.run.xml
 INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplb8a.pfb
 INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplb8a.pfb
+INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplr8a.pfb
+INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplr8a.pfb
 INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplr8a.pfb
 INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplr8a.pfb
 INPUT C:\Users\Lukas\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplri8a.pfb

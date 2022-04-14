@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.19)  12 APR 2022 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.19)  14 APR 2022 20:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -897,20 +897,69 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 (Chapters/Kapitel1_Einleitung.tex
 Kapitel 1.
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
 1: section
 [1
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
+
+ []
+
+) [2]
 \openout2 = `Chapters/Kapitel2_Grundlagen.aux'.
 
  (Chapters/Kapitel2_Grundlagen.tex
 Kapitel 2.
 )
 1: section
-[2
+[3
 
 
 
@@ -922,7 +971,7 @@ Kapitel 2.
 Kapitel 3.
 )
 1: section
-[3
+[4
 
 
 
@@ -934,7 +983,7 @@ Kapitel 3.
 Kapitel 4.
 )
 1: section
-[4
+[5
 
 
 
@@ -946,7 +995,7 @@ Kapitel 4.
 Kapitel 5.
 )
 1: section
-[5
+[6
 
 
 
@@ -958,30 +1007,30 @@ Kapitel 5.
 Kapitel 6.
 )
 1: section
-[6
+[7
 
 
 
 
 ] (main.aux (Chapters/Kapitel1_Einleitung.aux) (Chapters/Kapitel2_Grundlagen.aux) (Chapters/Kapitel3_Entwurf.aux) (Chapters/Kapitel4_Implementierung.aux) (Chapters/Kapitel5_Zusammenfassung.aux) (Chapters/Kapitel6_Fazit.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E0178492D826B1CA050E14C50BF727C0;4107.
+(rerunfilecheck)             Checksum: A73937D15E15D6C1028FF4A9ADD61E0E;4151.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30165 strings out of 478584
- 655335 string characters out of 2844401
+ 30183 strings out of 478584
+ 655942 string characters out of 2844401
  1345109 words of memory out of 3000000
- 47879 multiletter control sequences out of 15000+600000
- 501570 words of font info for 75 fonts, out of 8000000 for 9000
+ 47894 multiletter control sequences out of 15000+600000
+ 502283 words of font info for 76 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  96i,21n,93p,1889b,2455s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (12 pages, 99217 bytes).
+{C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Lukas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (13 pages, 116981 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 289 words of extra memory for PDF output out of 10000 (max. 10000000)
 
