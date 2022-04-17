@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637850051933772883
-    m_Hash: 3074209755
+      ticks: 637856365119531574
+    m_Hash: 2100008275
   m_LockFileStatus:
     m_FilePath: C:/Users/Lukas/Documents/GitHub/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637850052080734166
-    m_Hash: 886051671
+      ticks: 637856365119541581
+    m_Hash: 2028344640
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 10.6.3
       source: 6
-      resolvedPath: C:\Users\Lukas\Documents\GitHub\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.ptc.vuforia.engine@b4ae8a0ac015-1648627255000
+      resolvedPath: C:\Users\Lukas\Documents\GitHub\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.ptc.vuforia.engine@b4ae8a0ac015-1650039711921
       assetPath: Packages/com.ptc.vuforia.engine
       name: com.ptc.vuforia.engine
       displayName: Vuforia Engine AR
@@ -43,8 +43,20 @@ m_PackageAssets:
       status: 4
       errors: []
       versions:
-        all: []
-        compatible: []
+        all:
+        - 8.0.101
+        - 8.1.9
+        - 8.1.12
+        - 8.3.9
+        - 8.5.8
+        - 8.5.9
+        compatible:
+        - 8.0.101
+        - 8.1.9
+        - 8.1.12
+        - 8.3.9
+        - 8.5.8
+        - 8.5.9
         verified: 
       dependencies:
       - name: com.unity.ugui
@@ -3807,7 +3819,7 @@ m_PackageAssets:
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637842240550000000
+        ticks: 637856365119211560
       m_Hash: 1601347051
 m_ProjectPath: C:/Users/Lukas/Documents/GitHub/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Packages
 m_EditorVersion: 2020.3.31f1 (6b54b7616050)
