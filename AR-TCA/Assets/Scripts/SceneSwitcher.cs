@@ -25,4 +25,9 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenuScene");
     }
+    
+    public void goToNewUnit()
+    {
+        SceneManager.LoadScene("NewUnitScene");
+    }
 }
