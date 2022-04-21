@@ -25,6 +25,4 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenuScene");
     }
-
-    //TODO: write function which leads everytime back to the main menu --> save buildIndex of main menu in var
 }
