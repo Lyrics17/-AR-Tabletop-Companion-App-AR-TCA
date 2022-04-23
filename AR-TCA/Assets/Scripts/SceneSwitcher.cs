@@ -11,12 +11,10 @@ public class SceneSwitcher : MonoBehaviour
         //Dadurch wird die nächste Scene aufgerufen
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
     public void back()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
-
     public void backToFirst()
     {
         SceneManager.LoadScene("LoginScene");
@@ -25,9 +23,12 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenuScene");
     }
-    
     public void goToNewUnit()
     {
         SceneManager.LoadScene("NewUnitScene");
+    }
+    public void goToChoseTerrain()
+    {
+        SceneManager.LoadScene("TerrainScene");
     }
 }
