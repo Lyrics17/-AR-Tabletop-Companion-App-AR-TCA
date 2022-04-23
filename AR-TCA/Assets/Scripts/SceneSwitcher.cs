@@ -30,5 +30,10 @@ public class SceneSwitcher : MonoBehaviour
     public void goToChoseTerrain()
     {
         SceneManager.LoadScene("TerrainScene");
+    }    
+    
+    public void goToStartMatch()
+    {
+        SceneManager.LoadScene("ARScene");
     }
 }

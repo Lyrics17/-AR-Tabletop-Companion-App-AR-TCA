@@ -1,0 +1,8 @@
+See Figma prototype for comments on frontend 
+
+Idea how to get armylist data:
+    after a faction is selected in the dropdown, a query is triggered with selects all units in this faction with the userID FK (add to unit table in ER dia!)
+    this data fills the textfields. Same logic for the detachment dropdown. the selected faction option needs to be passed to the next scene 
+
+    next Scene:
+    

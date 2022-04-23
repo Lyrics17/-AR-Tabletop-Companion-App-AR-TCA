@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TerrainScene.unity
     guid: af0efcd249b607d43a4cd7dedfb3cf15
+  - enabled: 1
+    path: Assets/Scenes/ARScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2fd2f6450a499ab4eb76f184492907bb, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3e0f226e7a667f3459b96f313934020e, type: 2}

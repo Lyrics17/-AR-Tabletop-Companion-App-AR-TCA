@@ -1358,35 +1358,35 @@ struct Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A  : public RuntimeObjec
 {
 public:
 	// System.Int32 System.Globalization.Calendar::m_currentEraValue
-	int32_t ___m_currentEraValue_0;
+	int32_t ___m_currentEraValue_38;
 	// System.Boolean System.Globalization.Calendar::m_isReadOnly
-	bool ___m_isReadOnly_1;
+	bool ___m_isReadOnly_39;
 	// System.Int32 System.Globalization.Calendar::twoDigitYearMax
-	int32_t ___twoDigitYearMax_2;
+	int32_t ___twoDigitYearMax_41;
 
 public:
-	inline static int32_t get_offset_of_m_currentEraValue_0() { return static_cast<int32_t>(offsetof(Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A, ___m_currentEraValue_0)); }
-	inline int32_t get_m_currentEraValue_0() const { return ___m_currentEraValue_0; }
-	inline int32_t* get_address_of_m_currentEraValue_0() { return &___m_currentEraValue_0; }
-	inline void set_m_currentEraValue_0(int32_t value)
+	inline static int32_t get_offset_of_m_currentEraValue_38() { return static_cast<int32_t>(offsetof(Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A, ___m_currentEraValue_38)); }
+	inline int32_t get_m_currentEraValue_38() const { return ___m_currentEraValue_38; }
+	inline int32_t* get_address_of_m_currentEraValue_38() { return &___m_currentEraValue_38; }
+	inline void set_m_currentEraValue_38(int32_t value)
 	{
-		___m_currentEraValue_0 = value;
+		___m_currentEraValue_38 = value;
 	}
 
-	inline static int32_t get_offset_of_m_isReadOnly_1() { return static_cast<int32_t>(offsetof(Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A, ___m_isReadOnly_1)); }
-	inline bool get_m_isReadOnly_1() const { return ___m_isReadOnly_1; }
-	inline bool* get_address_of_m_isReadOnly_1() { return &___m_isReadOnly_1; }
-	inline void set_m_isReadOnly_1(bool value)
+	inline static int32_t get_offset_of_m_isReadOnly_39() { return static_cast<int32_t>(offsetof(Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A, ___m_isReadOnly_39)); }
+	inline bool get_m_isReadOnly_39() const { return ___m_isReadOnly_39; }
+	inline bool* get_address_of_m_isReadOnly_39() { return &___m_isReadOnly_39; }
+	inline void set_m_isReadOnly_39(bool value)
 	{
-		___m_isReadOnly_1 = value;
+		___m_isReadOnly_39 = value;
 	}
 
-	inline static int32_t get_offset_of_twoDigitYearMax_2() { return static_cast<int32_t>(offsetof(Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A, ___twoDigitYearMax_2)); }
-	inline int32_t get_twoDigitYearMax_2() const { return ___twoDigitYearMax_2; }
-	inline int32_t* get_address_of_twoDigitYearMax_2() { return &___twoDigitYearMax_2; }
-	inline void set_twoDigitYearMax_2(int32_t value)
+	inline static int32_t get_offset_of_twoDigitYearMax_41() { return static_cast<int32_t>(offsetof(Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A, ___twoDigitYearMax_41)); }
+	inline int32_t get_twoDigitYearMax_41() const { return ___twoDigitYearMax_41; }
+	inline int32_t* get_address_of_twoDigitYearMax_41() { return &___twoDigitYearMax_41; }
+	inline void set_twoDigitYearMax_41(int32_t value)
 	{
-		___twoDigitYearMax_2 = value;
+		___twoDigitYearMax_41 = value;
 	}
 };
 
@@ -10669,15 +10669,15 @@ struct TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203
 {
 public:
 	// System.Int64 System.TimeSpan::_ticks
-	int64_t ____ticks_3;
+	int64_t ____ticks_22;
 
 public:
-	inline static int32_t get_offset_of__ticks_3() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203, ____ticks_3)); }
-	inline int64_t get__ticks_3() const { return ____ticks_3; }
-	inline int64_t* get_address_of__ticks_3() { return &____ticks_3; }
-	inline void set__ticks_3(int64_t value)
+	inline static int32_t get_offset_of__ticks_22() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203, ____ticks_22)); }
+	inline int64_t get__ticks_22() const { return ____ticks_22; }
+	inline int64_t* get_address_of__ticks_22() { return &____ticks_22; }
+	inline void set__ticks_22(int64_t value)
 	{
-		____ticks_3 = value;
+		____ticks_22 = value;
 	}
 };
 
@@ -10685,55 +10685,55 @@ struct TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields
 {
 public:
 	// System.TimeSpan System.TimeSpan::Zero
-	TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  ___Zero_0;
+	TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  ___Zero_19;
 	// System.TimeSpan System.TimeSpan::MaxValue
-	TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  ___MaxValue_1;
+	TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  ___MaxValue_20;
 	// System.TimeSpan System.TimeSpan::MinValue
-	TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  ___MinValue_2;
+	TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  ___MinValue_21;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.TimeSpan::_legacyConfigChecked
-	bool ____legacyConfigChecked_4;
+	bool ____legacyConfigChecked_23;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.TimeSpan::_legacyMode
-	bool ____legacyMode_5;
+	bool ____legacyMode_24;
 
 public:
-	inline static int32_t get_offset_of_Zero_0() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields, ___Zero_0)); }
-	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  get_Zero_0() const { return ___Zero_0; }
-	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203 * get_address_of_Zero_0() { return &___Zero_0; }
-	inline void set_Zero_0(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  value)
+	inline static int32_t get_offset_of_Zero_19() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields, ___Zero_19)); }
+	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  get_Zero_19() const { return ___Zero_19; }
+	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203 * get_address_of_Zero_19() { return &___Zero_19; }
+	inline void set_Zero_19(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  value)
 	{
-		___Zero_0 = value;
+		___Zero_19 = value;
 	}
 
-	inline static int32_t get_offset_of_MaxValue_1() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields, ___MaxValue_1)); }
-	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  get_MaxValue_1() const { return ___MaxValue_1; }
-	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203 * get_address_of_MaxValue_1() { return &___MaxValue_1; }
-	inline void set_MaxValue_1(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  value)
+	inline static int32_t get_offset_of_MaxValue_20() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields, ___MaxValue_20)); }
+	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  get_MaxValue_20() const { return ___MaxValue_20; }
+	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203 * get_address_of_MaxValue_20() { return &___MaxValue_20; }
+	inline void set_MaxValue_20(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  value)
 	{
-		___MaxValue_1 = value;
+		___MaxValue_20 = value;
 	}
 
-	inline static int32_t get_offset_of_MinValue_2() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields, ___MinValue_2)); }
-	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  get_MinValue_2() const { return ___MinValue_2; }
-	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203 * get_address_of_MinValue_2() { return &___MinValue_2; }
-	inline void set_MinValue_2(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  value)
+	inline static int32_t get_offset_of_MinValue_21() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields, ___MinValue_21)); }
+	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  get_MinValue_21() const { return ___MinValue_21; }
+	inline TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203 * get_address_of_MinValue_21() { return &___MinValue_21; }
+	inline void set_MinValue_21(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203  value)
 	{
-		___MinValue_2 = value;
+		___MinValue_21 = value;
 	}
 
-	inline static int32_t get_offset_of__legacyConfigChecked_4() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields, ____legacyConfigChecked_4)); }
-	inline bool get__legacyConfigChecked_4() const { return ____legacyConfigChecked_4; }
-	inline bool* get_address_of__legacyConfigChecked_4() { return &____legacyConfigChecked_4; }
-	inline void set__legacyConfigChecked_4(bool value)
+	inline static int32_t get_offset_of__legacyConfigChecked_23() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields, ____legacyConfigChecked_23)); }
+	inline bool get__legacyConfigChecked_23() const { return ____legacyConfigChecked_23; }
+	inline bool* get_address_of__legacyConfigChecked_23() { return &____legacyConfigChecked_23; }
+	inline void set__legacyConfigChecked_23(bool value)
 	{
-		____legacyConfigChecked_4 = value;
+		____legacyConfigChecked_23 = value;
 	}
 
-	inline static int32_t get_offset_of__legacyMode_5() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields, ____legacyMode_5)); }
-	inline bool get__legacyMode_5() const { return ____legacyMode_5; }
-	inline bool* get_address_of__legacyMode_5() { return &____legacyMode_5; }
-	inline void set__legacyMode_5(bool value)
+	inline static int32_t get_offset_of__legacyMode_24() { return static_cast<int32_t>(offsetof(TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203_StaticFields, ____legacyMode_24)); }
+	inline bool get__legacyMode_24() const { return ____legacyMode_24; }
+	inline bool* get_address_of__legacyMode_24() { return &____legacyMode_24; }
+	inline void set__legacyMode_24(bool value)
 	{
-		____legacyMode_5 = value;
+		____legacyMode_24 = value;
 	}
 };
 
@@ -10768,36 +10768,36 @@ struct UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields
 {
 public:
 	// System.Globalization.UmAlQuraCalendar/DateMapping[] System.Globalization.UmAlQuraCalendar::HijriYearInfo
-	DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* ___HijriYearInfo_3;
+	DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* ___HijriYearInfo_42;
 	// System.DateTime System.Globalization.UmAlQuraCalendar::minDate
-	DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  ___minDate_4;
+	DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  ___minDate_43;
 	// System.DateTime System.Globalization.UmAlQuraCalendar::maxDate
-	DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  ___maxDate_5;
+	DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  ___maxDate_44;
 
 public:
-	inline static int32_t get_offset_of_HijriYearInfo_3() { return static_cast<int32_t>(offsetof(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields, ___HijriYearInfo_3)); }
-	inline DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* get_HijriYearInfo_3() const { return ___HijriYearInfo_3; }
-	inline DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597** get_address_of_HijriYearInfo_3() { return &___HijriYearInfo_3; }
-	inline void set_HijriYearInfo_3(DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* value)
+	inline static int32_t get_offset_of_HijriYearInfo_42() { return static_cast<int32_t>(offsetof(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields, ___HijriYearInfo_42)); }
+	inline DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* get_HijriYearInfo_42() const { return ___HijriYearInfo_42; }
+	inline DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597** get_address_of_HijriYearInfo_42() { return &___HijriYearInfo_42; }
+	inline void set_HijriYearInfo_42(DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* value)
 	{
-		___HijriYearInfo_3 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___HijriYearInfo_3), (void*)value);
+		___HijriYearInfo_42 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___HijriYearInfo_42), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_minDate_4() { return static_cast<int32_t>(offsetof(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields, ___minDate_4)); }
-	inline DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  get_minDate_4() const { return ___minDate_4; }
-	inline DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 * get_address_of_minDate_4() { return &___minDate_4; }
-	inline void set_minDate_4(DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  value)
+	inline static int32_t get_offset_of_minDate_43() { return static_cast<int32_t>(offsetof(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields, ___minDate_43)); }
+	inline DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  get_minDate_43() const { return ___minDate_43; }
+	inline DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 * get_address_of_minDate_43() { return &___minDate_43; }
+	inline void set_minDate_43(DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  value)
 	{
-		___minDate_4 = value;
+		___minDate_43 = value;
 	}
 
-	inline static int32_t get_offset_of_maxDate_5() { return static_cast<int32_t>(offsetof(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields, ___maxDate_5)); }
-	inline DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  get_maxDate_5() const { return ___maxDate_5; }
-	inline DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 * get_address_of_maxDate_5() { return &___maxDate_5; }
-	inline void set_maxDate_5(DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  value)
+	inline static int32_t get_offset_of_maxDate_44() { return static_cast<int32_t>(offsetof(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields, ___maxDate_44)); }
+	inline DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  get_maxDate_44() const { return ___maxDate_44; }
+	inline DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 * get_address_of_maxDate_44() { return &___maxDate_44; }
+	inline void set_maxDate_44(DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  value)
 	{
-		___maxDate_5 = value;
+		___maxDate_44 = value;
 	}
 };
 
@@ -16145,7 +16145,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_tEAF2CD16E071DF5441F40822E4CFE880E52
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
-		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_0 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_minDate_4();
+		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_0 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_minDate_43();
 		return L_0;
 	}
 }
@@ -16160,7 +16160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_tEAF2CD16E071DF5441F40822E4CFE880E52
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
-		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_0 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_maxDate_5();
+		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_0 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_maxDate_44();
 		return L_0;
 	}
 }
@@ -16207,12 +16207,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UmAlQuraCalendar_ConvertHijriToGregorian
 		int32_t L_1 = ___HijriYear0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_1, (int32_t)((int32_t)1318)));
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
-		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_2 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_3();
+		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_2 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_42();
 		int32_t L_3 = V_0;
 		NullCheck(L_2);
 		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_4 = ((L_2)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3)))->get_GregorianDate_1();
 		V_3 = L_4;
-		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_5 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_3();
+		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_5 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_42();
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		int32_t L_7 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)))->get_HijriMonthsLengthFlags_0();
@@ -16305,7 +16305,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UmAlQuraCalendar_CheckTicksRange_mF5B461
 		int64_t L_0 = ___ticks0;
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
 		int64_t L_1;
-		L_1 = DateTime_get_Ticks_m175EDB41A50DB06872CC48CAB603FEBD1DFF46A9((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_address_of_minDate_4()), /*hidden argument*/NULL);
+		L_1 = DateTime_get_Ticks_m175EDB41A50DB06872CC48CAB603FEBD1DFF46A9((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_address_of_minDate_43()), /*hidden argument*/NULL);
 		if ((((int64_t)L_0) < ((int64_t)L_1)))
 		{
 			goto IL_001a;
@@ -16315,7 +16315,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UmAlQuraCalendar_CheckTicksRange_mF5B461
 		int64_t L_2 = ___ticks0;
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
 		int64_t L_3;
-		L_3 = DateTime_get_Ticks_m175EDB41A50DB06872CC48CAB603FEBD1DFF46A9((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_address_of_maxDate_5()), /*hidden argument*/NULL);
+		L_3 = DateTime_get_Ticks_m175EDB41A50DB06872CC48CAB603FEBD1DFF46A9((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_address_of_maxDate_44()), /*hidden argument*/NULL);
 		if ((((int64_t)L_2) <= ((int64_t)L_3)))
 		{
 			goto IL_004d;
@@ -16330,10 +16330,10 @@ IL_001a:
 		String_t* L_5;
 		L_5 = Environment_GetResourceString_m8DFF827596B5FD533D3FE56900FA095F7D674617(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralAABA6F39B93C5C2BCA72B3F4962E6929214F5CC7)), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var)));
-		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_6 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))))->get_minDate_4();
+		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_6 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))))->get_minDate_43();
 		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_7 = L_6;
 		RuntimeObject * L_8 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405_il2cpp_TypeInfo_var)), &L_7);
-		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_9 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))))->get_maxDate_5();
+		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_9 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))))->get_maxDate_44();
 		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_10 = L_9;
 		RuntimeObject * L_11 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405_il2cpp_TypeInfo_var)), &L_10);
 		String_t* L_12;
@@ -16496,14 +16496,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UmAlQuraCalendar_ConvertGregorianToHijri
 		L_0 = DateTime_get_Ticks_m175EDB41A50DB06872CC48CAB603FEBD1DFF46A9((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(&___time0), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
 		int64_t L_1;
-		L_1 = DateTime_get_Ticks_m175EDB41A50DB06872CC48CAB603FEBD1DFF46A9((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_address_of_minDate_4()), /*hidden argument*/NULL);
+		L_1 = DateTime_get_Ticks_m175EDB41A50DB06872CC48CAB603FEBD1DFF46A9((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_address_of_minDate_43()), /*hidden argument*/NULL);
 		V_0 = ((int32_t)((int32_t)((int32_t)((int32_t)((int64_t)((int64_t)((int64_t)il2cpp_codegen_subtract((int64_t)L_0, (int64_t)L_1))/(int64_t)((int64_t)864000000000LL)))))/(int32_t)((int32_t)355)));
 	}
 
 IL_002d:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
-		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_2 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_3();
+		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_2 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_42();
 		int32_t L_3 = V_0;
 		int32_t L_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_3, (int32_t)1));
 		V_0 = L_4;
@@ -16518,7 +16518,7 @@ IL_002d:
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
-		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_7 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_3();
+		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_7 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_42();
 		int32_t L_8 = V_0;
 		NullCheck(L_7);
 		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_9 = ((L_7)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_8)))->get_GregorianDate_1();
@@ -16537,7 +16537,7 @@ IL_002d:
 IL_0068:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
-		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_12 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_3();
+		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_12 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_42();
 		int32_t L_13 = V_0;
 		NullCheck(L_12);
 		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_14 = ((L_12)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_13)))->get_GregorianDate_1();
@@ -16551,7 +16551,7 @@ IL_0068:
 		double L_17;
 		L_17 = TimeSpan_get_TotalDays_m5FEDF95BC1223D6F96BF1500453B993926A1FA51((TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203 *)(&V_4), /*hidden argument*/NULL);
 		V_3 = L_17;
-		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_18 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_3();
+		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_18 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_42();
 		int32_t L_19 = V_0;
 		NullCheck(L_18);
 		int32_t L_20 = ((L_18)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_19)))->get_HijriMonthsLengthFlags_0();
@@ -16722,7 +16722,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UmAlQuraCalendar_GetDaysInMonth_m61E9
 		int32_t L_2 = ___era2;
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
 		UmAlQuraCalendar_CheckYearMonthRange_mBB465D6D8A909BCC95359C2ADE3333C5CB9EC9C6(L_0, L_1, L_2, /*hidden argument*/NULL);
-		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_3 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_3();
+		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_3 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_42();
 		int32_t L_4 = ___year0;
 		NullCheck(L_3);
 		int32_t L_5 = ((L_3)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract((int32_t)L_4, (int32_t)((int32_t)1318))))))->get_HijriMonthsLengthFlags_0();
@@ -16756,7 +16756,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UmAlQuraCalendar_RealGetDaysInYear_m7
 	{
 		V_0 = 0;
 		IL2CPP_RUNTIME_CLASS_INIT(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var);
-		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_0 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_3();
+		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_0 = ((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->get_HijriYearInfo_42();
 		int32_t L_1 = ___year0;
 		NullCheck(L_0);
 		int32_t L_2 = ((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract((int32_t)L_1, (int32_t)((int32_t)1318))))))->get_HijriMonthsLengthFlags_0();
@@ -17030,7 +17030,7 @@ IL_007f:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UmAlQuraCalendar_get_TwoDigitYearMax_mF05251660935DCCDBF662D347CB3DA8040547F48 (UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7 * __this, const RuntimeMethod* method)
 {
 	{
-		int32_t L_0 = ((Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A *)__this)->get_twoDigitYearMax_2();
+		int32_t L_0 = ((Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A *)__this)->get_twoDigitYearMax_41();
 		if ((!(((uint32_t)L_0) == ((uint32_t)(-1)))))
 		{
 			goto IL_001f;
@@ -17041,12 +17041,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UmAlQuraCalendar_get_TwoDigitYearMax_
 		L_1 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 System.Globalization.Calendar::get_ID() */, __this);
 		int32_t L_2;
 		L_2 = Calendar_GetSystemTwoDigitYearSetting_mF12E6A472DAC24009E72B4B95CF451F80CCB1CD8(L_1, ((int32_t)1451), /*hidden argument*/NULL);
-		((Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A *)__this)->set_twoDigitYearMax_2(L_2);
+		((Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A *)__this)->set_twoDigitYearMax_41(L_2);
 	}
 
 IL_001f:
 	{
-		int32_t L_3 = ((Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A *)__this)->get_twoDigitYearMax_2();
+		int32_t L_3 = ((Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A *)__this)->get_twoDigitYearMax_41();
 		return L_3;
 	}
 }
@@ -17137,11 +17137,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UmAlQuraCalendar__cctor_mBC603136DF7888D
 	{
 		DateMappingU5BU5D_t5F4D4DDBBE8C4DF729B8EF52F77FC57DBEDFD597* L_0;
 		L_0 = UmAlQuraCalendar_InitDateMapping_mFC9C0B9DD439672DFC578EA938850CAD1C94385E(/*hidden argument*/NULL);
-		((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->set_HijriYearInfo_3(L_0);
+		((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->set_HijriYearInfo_42(L_0);
 		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_1;
 		memset((&L_1), 0, sizeof(L_1));
 		DateTime__ctor_m1AD9E79A671864DFB1AABDB75D207C688B868D88((&L_1), ((int32_t)1900), 4, ((int32_t)30), /*hidden argument*/NULL);
-		((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->set_minDate_4(L_1);
+		((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->set_minDate_43(L_1);
 		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_2;
 		memset((&L_2), 0, sizeof(L_2));
 		DateTime__ctor_m0FFFFEA32E380156E1FB4224D50CD0B16707E61C((&L_2), ((int32_t)2077), ((int32_t)11), ((int32_t)16), ((int32_t)23), ((int32_t)59), ((int32_t)59), ((int32_t)999), /*hidden argument*/NULL);
@@ -17151,7 +17151,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UmAlQuraCalendar__cctor_mBC603136DF7888D
 		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_4;
 		memset((&L_4), 0, sizeof(L_4));
 		DateTime__ctor_m14D7C60472AE477F824F8BEE8830C5F5D4FCA16A((&L_4), ((int64_t)il2cpp_codegen_add((int64_t)L_3, (int64_t)((int64_t)((int64_t)((int32_t)9999))))), /*hidden argument*/NULL);
-		((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->set_maxDate_5(L_4);
+		((UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_StaticFields*)il2cpp_codegen_static_fields_for(UmAlQuraCalendar_tF25D8C93E931B821C7E23DED2F8BE4EDF8F209C7_il2cpp_TypeInfo_var))->set_maxDate_44(L_4);
 		return;
 	}
 }
