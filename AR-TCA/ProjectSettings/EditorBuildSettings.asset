@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/AvailableArmiesScene.unity
+    guid: 08b75e57e420a4649b686312be9b6bbf
+  - enabled: 1
+    path: Assets/Scenes/CreateArmylist.unity
+    guid: 80759b0d05194134e8b2f654bb58681e
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2fd2f6450a499ab4eb76f184492907bb, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3e0f226e7a667f3459b96f313934020e, type: 2}

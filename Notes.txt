@@ -5,4 +5,6 @@ Idea how to get armylist data:
     this data fills the textfields. Same logic for the detachment dropdown. the selected faction option needs to be passed to the next scene 
 
     next Scene:
-    
+    Battlesize dropdown, selected units, pointscost, powerlevel should be filled with the data form the db if the user already created a armylist for the chosen faction. Else just leave them empty / "Bitte auswählen" for the dropdown 
+
+    When the "Kontingent hinzufügen" Button is clicked the dropdown is reseted and the previous chosen detachment isnt more available as a option

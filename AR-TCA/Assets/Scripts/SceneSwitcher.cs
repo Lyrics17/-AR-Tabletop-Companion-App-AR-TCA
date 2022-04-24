@@ -31,9 +31,16 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("TerrainScene");
     }    
-    
     public void goToStartMatch()
     {
         SceneManager.LoadScene("ARScene");
+    }
+    public void goToArmylists()
+    {
+        SceneManager.LoadScene("AvailableArmiesScene");
+    }    
+    public void goToCreateArmylist()
+    {
+        SceneManager.LoadScene("CreateArmylist");
     }
 }

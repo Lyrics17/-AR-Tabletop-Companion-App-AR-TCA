@@ -136,9 +136,11 @@ struct CullStateChangedEvent_t9B69755DEBEF041C3CC15C3604610BDD72856BD4;
 
 IL2CPP_EXTERN_C RuntimeClass* SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral028FACF80E052870874038642F78B9BF75689F99;
+IL2CPP_EXTERN_C String_t* _stringLiteral268E7BE559F69DBE2AB291452E03D94AA379A0E7;
 IL2CPP_EXTERN_C String_t* _stringLiteral5C5E2DE9382FEC0DD5854B824B2E2C61BB91FA1E;
 IL2CPP_EXTERN_C String_t* _stringLiteral631CB151C08E6727A6009F81F2ED6808146362CC;
 IL2CPP_EXTERN_C String_t* _stringLiteralA652CCD744C10403F4344F8E27424AF5DEC04405;
+IL2CPP_EXTERN_C String_t* _stringLiteralC9D10AB6071BE534E2F705112D26815CA10DFB62;
 IL2CPP_EXTERN_C String_t* _stringLiteralEDB797EF8B965AF34512EA32AA330D480F264BAD;
 
 
@@ -7490,6 +7492,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneSwitcher_goToStartMatch_m6535853FE7
 		// SceneManager.LoadScene("ARScene");
 		IL2CPP_RUNTIME_CLASS_INIT(SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
 		SceneManager_LoadScene_m7DAF30213E99396ECBDB1BD40CC34CCF36902092(_stringLiteral631CB151C08E6727A6009F81F2ED6808146362CC, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void SceneSwitcher::goToArmylists()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneSwitcher_goToArmylists_mA2BB421851DB38CDEC54914A8DB3F0A5C6DF27E3 (SceneSwitcher_t0D5299E748616A52E7E6B47BC61FEB51CE91192F * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC9D10AB6071BE534E2F705112D26815CA10DFB62);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SceneManager.LoadScene("AvailableArmiesScene");
+		IL2CPP_RUNTIME_CLASS_INIT(SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_m7DAF30213E99396ECBDB1BD40CC34CCF36902092(_stringLiteralC9D10AB6071BE534E2F705112D26815CA10DFB62, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void SceneSwitcher::goToCreateArmylist()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneSwitcher_goToCreateArmylist_m29203556074449486BF11CBA0B537E8454ABB0AB (SceneSwitcher_t0D5299E748616A52E7E6B47BC61FEB51CE91192F * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral268E7BE559F69DBE2AB291452E03D94AA379A0E7);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SceneManager.LoadScene("CreateArmylist");
+		IL2CPP_RUNTIME_CLASS_INIT(SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_m7DAF30213E99396ECBDB1BD40CC34CCF36902092(_stringLiteral268E7BE559F69DBE2AB291452E03D94AA379A0E7, /*hidden argument*/NULL);
 		// }
 		return;
 	}
