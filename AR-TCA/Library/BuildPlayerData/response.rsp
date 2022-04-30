@@ -1,5 +1,6 @@
 -a="D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PlayerScriptAssemblies\Assembly-CSharp.dll"
 -a="D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PlayerScriptAssemblies\UnityEngine.TestRunner.dll"
+-a="D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PlayerScriptAssemblies\Unity.Timeline.dll"
 -a="D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PlayerScriptAssemblies\Unity.TextMeshPro.dll"
 -a="D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PlayerScriptAssemblies\Unity.Subsystem.Registration.dll"
 -a="D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PlayerScriptAssemblies\UnityEngine.UI.dll"
