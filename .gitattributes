@@ -2,6 +2,7 @@
 AR-TCA/Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
 AR-TCA/Library/PackageCache/com.ptc.vuforia.engine@b4ae8a0ac015-1648627255000/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine filter=lfs diff=lfs merge=lfs -text
 AR-TCA/Library/PackageCache/com.ptc.vuforia.engine@d9a554df1f20-1651043472169/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine filter=lfs diff=lfs merge=lfs -text
+AR-TCA/Library/PackageCache/com.ptc.vuforia.engine@d9a554df1f20-1651829129982/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine filter=lfs diff=lfs merge=lfs -text
 
 *.so filter=lfs diff=lfs merge=lfs -text
 
