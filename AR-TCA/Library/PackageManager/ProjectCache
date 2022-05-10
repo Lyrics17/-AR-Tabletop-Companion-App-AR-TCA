@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637866402721925615
+      ticks: 637874259300610002
     m_Hash: 154101750
   m_LockFileStatus:
     m_FilePath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637866402722155668
+      ticks: 637874259300859851
     m_Hash: 1997062439
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 10.6.3
       source: 6
-      resolvedPath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.ptc.vuforia.engine@d9a554df1f20-1651043472169
+      resolvedPath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.ptc.vuforia.engine@d9a554df1f20-1651829129982
       assetPath: Packages/com.ptc.vuforia.engine
       name: com.ptc.vuforia.engine
       displayName: Vuforia Engine AR
@@ -3879,7 +3879,7 @@ m_PackageAssets:
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637866402721685612
+        ticks: 637874259299816312
       m_Hash: 1601347051
 m_ProjectPath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Packages
 m_EditorVersion: 2020.3.31f1 (6b54b7616050)
