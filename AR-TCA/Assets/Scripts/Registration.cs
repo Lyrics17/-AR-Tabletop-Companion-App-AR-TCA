@@ -26,7 +26,7 @@ public class Registration : MonoBehaviour
         form.AddField("userUsername", nameField.text);
         form.AddField("userPassword", passwordField.text);
 
-        WWW www = new WWW("http://localhost/AR-TCA/users/register.php", form);
+        WWW www = new WWW("http://localhost/AR-TCA/Users/register.php", form);
         //wait till www has a return value and than proceeds with the code
         yield return www;
 
@@ -43,6 +43,6 @@ public class Registration : MonoBehaviour
 
     public void verfifyInputs()
     {
-        submitButton.interactable = (nameField.text.Length >= 1 && passwordField.text.Length >= 1);
+        submitButton.interactable = (nameField.text.Length >= 2 & passwordField.text.Length >= 2);
     }
 }

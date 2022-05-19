@@ -582,7 +582,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 175045128}
+        m_TargetAssemblyTypeName: Login, Assembly-CSharp
+        m_MethodName: verfifyInputs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -809,7 +821,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 175045128}
+        m_TargetAssemblyTypeName: Login, Assembly-CSharp
+        m_MethodName: verfifyInputs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -879,6 +903,7 @@ GameObject:
   - component: {fileID: 175045124}
   - component: {fileID: 175045123}
   - component: {fileID: 175045127}
+  - component: {fileID: 175045128}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -989,6 +1014,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9058af2789506e24f99eec387b823ec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &175045128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175045122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78a663619925850498073bea9e4095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userUsername: {fileID: 896801698}
+  userPassword: {fileID: 534229188}
+  submitButton: {fileID: 1212300735}
 --- !u!1 &205589766
 GameObject:
   m_ObjectHideFlags: 0
@@ -3089,14 +3129,14 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1212300736}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 175045127}
-        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
-        m_MethodName: goToMain
+      - m_Target: {fileID: 175045128}
+        m_TargetAssemblyTypeName: Login, Assembly-CSharp
+        m_MethodName: callLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
