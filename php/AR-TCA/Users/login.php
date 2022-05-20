@@ -61,3 +61,4 @@ if ($encryptedPassword !== $encryptedInput)
 }
 
 echo "Success 0: Successfully logged in!";
+$conn = null;

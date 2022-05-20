@@ -6,6 +6,7 @@ public static class DBManager
 {
     public static string username;
     public static bool registered = false;
+    public static bool passwordReset = false;
 
     //returns null if username = null --> no user is logged in
     public static bool loggedIn
@@ -21,5 +22,9 @@ public static class DBManager
     public static bool isRegistered()
     {
         return registered = true;
+    }
+    public static bool passwordResetWasSuccessful()
+    {
+        return passwordReset = true;
     }
 }
