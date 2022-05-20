@@ -43,7 +43,8 @@ public class Registration : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
-                    // SceneManager.LoadScene("LoginScene");
+                    DBManager.isRegistered();
+                    SceneManager.LoadScene("LoginScene");
                 }
             }
         }
