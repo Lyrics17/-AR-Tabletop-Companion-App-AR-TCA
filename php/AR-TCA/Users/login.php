@@ -1,67 +1,32 @@
 <?php
 // Create connection
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "ar-tca";
-
-try {
-  // Create connection
-  $conn = new PDO("mysql:host=localhost;dbname=ar-tca;charset=utf8", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
-}
-
-
-// // Check connection
-// if ($conn->connect_error) {
-//   die("Connection failed: " . $conn->connect_error);
-// }
+//to reduce code duplication
+include "../db.php";
 
 //Needs to be = as in form in C#
-$userUsername = ($_POST["userUsername"]);
-// $userUsername = $userUsernameTemp;
-
-if (true) {
-
-  // die($userUsername . "Error 4: Multiple Users exists");
-}
-// $userUsername = strval($userUsername);
-// $userUsername = "test";
+$userUsername = $_POST['userUsername'];
 $userPassword = $_POST['userPassword'];
 
-// $stmt = $conn->prepare("SELECT * FROM user WHERE userUsername =?");
-// $stmt->bind_param("s", $userUsername);
-// $stmt->execute();
-// $result = $stmt->get_result();
-// $userData = $result->fetch_assoc();
 
-//Check if User is already registered
-// $getUserQuery = "SELECT * FROM user WHERE userUsername ='" . $userUsername . "';";
+//Get user password for authentication
+$stmt = $conn->prepare("SELECT userPassword FROM user WHERE userUsername =?");
+//bind $userUsername to ? placeholder
+$stmt->bindParam(1, $userUsername);
+//execute query
+$stmt->execute();
+ 
+//FETCH_ASSOC: returns each row as an array indexed by column
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-// $sql = "SELECT * FROM user WHERE userUsername =?"; // SQL with parameters
-// // $sql = "SELECT * FROM `user`"; // SQL with parameters
-// $stmt = $conn->prepare($sql);
-// $stmt->bind_param("s", $userUsername);
-// $stmt->execute();
-// $result = $stmt->get_result(); // get the mysqli result
-// $userData = $result->fetch_assoc(); // fetch data  
-
-$getUserQuery = $conn->query("SELECT `userUsername`, `userPassword` FROM `user` WHERE `userUsername`='$userUsername'");
-$userData = $getUserQuery->fetch(PDO::FETCH_ASSOC);
-
-//Check if result of is empty
-// if (!$userData) {
-
-//   die($userUsername . "Error 4: Multiple Users exists");
-// }
+if (empty($row['userPassword']))
+{
+  echo "Error 1: getUserQuery failed!";
+  exit();
+} 
 
 //Login
-// $userData = mysqli_fetch_assoc($result);
-$encryptedPassword = $userData['userPassword'];
-$temp = $userData['userUsername'];
+$encryptedPassword = $row['userPassword'];
 
 //encrypt entered password
 $simple_string = $userPassword;
@@ -89,10 +54,10 @@ $encryptedInput = openssl_encrypt(
 );
 
 //check if entered password equals db (encrypted) password
-if ($encryptedPassword !== $encryptedInput) {
-  echo "TEMP:" . $temp . "
-   Error 5: Incorrect Password! input: " . $encryptedInput . ";dbPW: " . $encryptedPassword;
+if ($encryptedPassword !== $encryptedInput)
+{
+  echo "Error 2: Incorrect Password! input!";
   exit();
 }
 
-echo "0 Data:" . $temp . " " . $encryptedInput . " " . $encryptedPassword;//process succeeded
+echo "Success 0: Successfully logged in!";

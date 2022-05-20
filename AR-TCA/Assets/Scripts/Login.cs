@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.Networking;
 
 public class Login : MonoBehaviour
 {
     public TextMeshProUGUI userUsername;
     public TextMeshProUGUI userPassword;
+    public TextMeshProUGUI displayMessage;
     public Button submitButton;
 
     //Middleman method to keep the game running during the register process
@@ -19,24 +20,42 @@ public class Login : MonoBehaviour
     }
     IEnumerator LoginUser()
     {
+        string url = "http://localhost/AR-TCA/Users/login.php";
+
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname
         form.AddField("userUsername", userUsername.text);
         form.AddField("userPassword", userPassword.text);
 
-        WWW www = new WWW("http://localhost/AR-TCA/Users/login.php", form);
-        //wait till www has a return value and than proceeds with the code
-        yield return www;
+        using (UnityWebRequest www = UnityWebRequest.Post(url, form))
+        {
+            //wait till www has a return value and than proceeds with the code
+            yield return www.SendWebRequest();
 
-        if (www.text[0] == '0')
-        {
-            Debug.Log(www.text);
-            DBManager.username = userUsername.text;
-            SceneManager.LoadScene("MainMenuScene");
-        }
-        else
-        {
-            Debug.Log("Login failed! Error #" + www.text);
+            //only checks for "real" errors! exist(); in php dont count
+            if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("0"))
+                {
+                    DBManager.username = userUsername.text;
+                    SceneManager.LoadScene("MainMenuScene");
+                }
+
+                if (www.downloadHandler.text.Contains("1"))
+                {
+                    displayMessage.text = "Der eingegebene Benutzername ist nicht korrekt!";
+                }
+
+                if (www.downloadHandler.text.Contains("2"))
+                {
+                    displayMessage.text = "Das eingegebene Passwort ist nicht korrekt!";
+                }
+            }
         }
     }
 

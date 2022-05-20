@@ -4,12 +4,15 @@ $username = "root";
 $password = "";
 $database = "ar-tca";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $database);
-
-// Check connection
-if ($conn->connect_error)
+try
 {
-  echo "Connection failed: " . $conn->connect_error;
-  exit();
+  // Create connection
+  $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+// Check connection
+catch (PDOException $e)
+{
+  error_log($e->getMessage());
+  exit("Connection error");
 }

@@ -5,7 +5,6 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 
-
 public class Registration : MonoBehaviour
 {
     public TextMeshProUGUI nameField;
