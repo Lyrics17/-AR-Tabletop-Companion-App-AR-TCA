@@ -1,28 +1,37 @@
 <?php
-// Create connection
-$conn = new mysqli('localhost', 'root', '', 'ar-tca');
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+//to reduce code duplication
+include "../db.php";
 
 //Needs to be = as in form in C#
 $userUsername = $_POST['userUsername'];
 $userPassword = $_POST['userPassword'];
 
 //Check if User is already registered
-$getUserQuery = "SELECT userUsername FROM user WHERE userUsername = '" . $userUsername . "' AND userPassword= '" . $userPassword  . "';";
-$result = mysqli_query($conn, $getUserQuery) or die("Error 1: getUserQuery failed!");
+$getUserQuery = "SELECT userUsername FROM user WHERE userUsername = '$userUsername';";
 
-//Check if result of is empty
-if (mysqli_num_rows($result) > 0) {
-  echo "Error 2: User already exists";
+if (mysqli_query($conn, $getUserQuery))
+{
+  $result = mysqli_query($conn, $getUserQuery);
+}
+else
+{
+  echo "Error 1: getUserQuery failed! " . $conn->connect_error;
   exit();
 }
 
+//Check if result of is empty
+if (mysqli_num_rows($result) > 0)
+{
+  echo "Error 2: User already exists " . $conn->connect_error;
+  exit();
+}
+
+$int = mysqli_num_rows($result);
+
 //Add user to table
-// variable with string which needs to be Encrypted
+//variable with string which needs to be Encrypted
+//source: https://www.geeksforgeeks.org/how-to-encrypt-and-decrypt-a-php-string/#:~:text=In%20PHP%2C%20Encryption%20and%20Decryption,used%20to%20encrypt%20the%20data.&text=Parameters%3A,which%20need%20to%20be%20encrypted.
 $simple_string = $userPassword;
 
 // Store the cipher method
@@ -50,7 +59,17 @@ $encryption = openssl_encrypt(
 //store encyrpted data into variable for query
 $encryptedPassword = $encryption;
 
-$insertUserQuery = "INSERT INTO user (userUsername, userPassword) VALUES ('" . $userUsername . "', '" . $encryptedPassword . "');";
-mysqli_query($conn, $insertUserQuery) or die("Error 3: insertUserQuery failed!");
+$insertUserQuery = "INSERT INTO user (userUsername, userPassword) VALUES ('$userUsername','$encryptedPassword');";
 
-echo ("0"); //-> see Registration.cs
+if (mysqli_query($conn, $insertUserQuery))
+{
+  echo ("0: Successfully created new user"); //-> see Registration.cs
+}
+else
+{
+  echo "Error 3: insertUserQuery failed! " . $conn->connect_error;
+  exit();
+}
+
+$conn->close();
+?>
