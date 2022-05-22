@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public static class DBManager
 {
@@ -26,5 +23,10 @@ public static class DBManager
     public static bool passwordResetWasSuccessful()
     {
         return passwordReset = true;
+    }
+
+    public static void setAllVariablesFalse() {
+        registered = false; 
+        passwordReset = false;
     }
 }

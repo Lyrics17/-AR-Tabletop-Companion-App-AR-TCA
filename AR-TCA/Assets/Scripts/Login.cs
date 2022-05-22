@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -43,6 +42,9 @@ public class Login : MonoBehaviour
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     DBManager.username = userUsername.text;
+                    //clean up scene before leaving
+                    displayMessage.text = "";
+                    DBManager.setAllVariablesFalse();
                     SceneManager.LoadScene("MainMenuScene");
                 }
 

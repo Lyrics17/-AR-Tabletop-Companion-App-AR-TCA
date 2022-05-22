@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 
 public class ResetPassword : MonoBehaviour
@@ -12,6 +11,12 @@ public class ResetPassword : MonoBehaviour
     public TextMeshProUGUI displayMessage;
     public Button submitButton;
     public GameObject popUp;
+
+    private void Start()
+    {
+        displayMessage.text = "";
+        DBManager.setAllVariablesFalse();
+    }
     //Middleman method to keep the game running during the register process
     public void callReset()
     {
