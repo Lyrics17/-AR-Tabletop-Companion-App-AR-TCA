@@ -8,8 +8,8 @@ using UnityEngine.Networking;
 
 public class Login : MonoBehaviour
 {
-    public TextMeshProUGUI userUsername;
-    public TextMeshProUGUI userPassword;
+    public TMP_InputField userUsername;
+    public TMP_InputField userPassword;
     public TextMeshProUGUI displayMessage;
     public Button submitButton;
 

@@ -551,8 +551,8 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -1030,8 +1030,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a663619925850498073bea9e4095b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userUsername: {fileID: 896801698}
-  userPassword: {fileID: 534229188}
+  userUsername: {fileID: 173393460}
+  userPassword: {fileID: 148127984}
   displayMessage: {fileID: 1647581540}
   submitButton: {fileID: 1212300735}
 --- !u!114 &175045129
@@ -1059,8 +1059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007a4633465e20c48aa62c7e3b3b71af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameField: {fileID: 884334076}
-  passwordField: {fileID: 1782389327}
+  nameField: {fileID: 878560062}
+  passwordField: {fileID: 1510869207}
   displayMessage: {fileID: 342437047}
   submitButton: {fileID: 1330497851}
   popUp: {fileID: 1880503687}
@@ -3855,8 +3855,8 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0

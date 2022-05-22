@@ -7,8 +7,8 @@ using UnityEngine.Networking;
 
 public class ResetPassword : MonoBehaviour
 {
-    public TextMeshProUGUI nameField;
-    public TextMeshProUGUI passwordField;
+    public TMP_InputField nameField;
+    public TMP_InputField passwordField;
     public TextMeshProUGUI displayMessage;
     public Button submitButton;
     public GameObject popUp;

@@ -285,8 +285,8 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -706,8 +706,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae57de8533ea3b44abb53d17d6da86e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameField: {fileID: 896801698}
-  passwordField: {fileID: 534229188}
+  nameField: {fileID: 173393460}
+  passwordField: {fileID: 148127984}
   submitButton: {fileID: 1009556360}
 --- !u!1 &353611863
 GameObject:

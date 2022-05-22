@@ -7,8 +7,8 @@ using UnityEngine.Networking;
 
 public class Registration : MonoBehaviour
 {
-    public TextMeshProUGUI nameField;
-    public TextMeshProUGUI passwordField;
+    public TMP_InputField nameField;
+    public TMP_InputField passwordField;
     public Button submitButton;
 
     //Middleman method to keep the game running during the register process
