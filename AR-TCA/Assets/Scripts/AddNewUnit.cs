@@ -19,7 +19,12 @@ public class AddNewUnit : MonoBehaviour
     public TMP_InputField leadershipField;
     public TMP_InputField saveField;
     public TMP_InputField codexField;
+    public TMP_Dropdown factionField;
+    public TMP_Dropdown battlefieldRoleField;
     public Button submitButton;
+    public TextMeshProUGUI displayMessage; 
+    public GameObject popUp;
+
 
     public void callAddUnit()
     {
@@ -29,6 +34,7 @@ public class AddNewUnit : MonoBehaviour
     IEnumerator addNewUnit()
     {
         string url = "http://localhost/AR-TCA/Units/addUnit.php";
+        string username = DBManager.username;
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname
@@ -46,6 +52,10 @@ public class AddNewUnit : MonoBehaviour
         form.AddField("unitSave", saveField.text);
         form.AddField("codexField", pointsField.text);
 
+        form.AddField("factionName", factionField.captionText.text);
+        form.AddField("battlefieldRoleName", battlefieldRoleField.captionText.text);
+        form.AddField("userUsername", username);
+
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {
             //wait till www has a return value and than proceeds with the code
@@ -56,36 +66,40 @@ public class AddNewUnit : MonoBehaviour
             {
                 Debug.Log(www.error);
             }
-            else //TODO: Add success & error cases
+            else
             {
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
-
+                    displayMessage.text = "";
+                    popUp.SetActive(true);
+                    //TODO:Generate QR Code
                 }
 
                 if (www.downloadHandler.text.Contains("1"))
                 {
-
-                }
+                    displayMessage.text = "Einheit wurde bereits der Datenbank hinzugefuegt!";
+                }                
             }
         }
     }
 
     public void verfifyInputs()
     {
-        submitButton.interactable = (nameField.text.Length >= 2 &
-                                        powerField.text.Length >= 2 &
-                                        pointsField.text.Length >= 2 &
-                                        movementField.text.Length >= 2 &
-                                        weaponSkillField.text.Length >= 2 &
-                                        ballisticSkilltField.text.Length >= 2 &
-                                        strenghtField.text.Length >= 2 &
-                                        toughnessField.text.Length >= 2 &
-                                        woundsField.text.Length >= 2 &
-                                        attacksField.text.Length >= 2 &
-                                        leadershipField.text.Length >= 2 &
-                                        saveField.text.Length >= 2 &
-                                        pointsField.text.Length >= 2);
+        submitButton.interactable = (nameField.text.Length >= 1 &
+                                        powerField.text.Length >= 1 &
+                                        pointsField.text.Length >= 1 &
+                                        movementField.text.Length >= 1 &
+                                        weaponSkillField.text.Length >= 1 &
+                                        ballisticSkilltField.text.Length >= 1 &
+                                        strenghtField.text.Length >= 1 &
+                                        toughnessField.text.Length >= 1 &
+                                        woundsField.text.Length >= 1 &
+                                        attacksField.text.Length >= 1 &
+                                        leadershipField.text.Length >= 1 &
+                                        saveField.text.Length >= 1 &
+                                        codexField.text.Length >= 1 &
+                                        !(factionField.captionText.text.Equals("Bitte auswaehlen")) &
+                                        !(battlefieldRoleField.captionText.text.Equals("Bitte auswaehlen")));
     }
 }
