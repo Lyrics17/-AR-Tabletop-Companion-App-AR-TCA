@@ -123,5 +123,20 @@ if (!$stmt->execute())
     exit();
 }
 
-echo "Success 0: Successfully inserte new Unit!";
+//Get newest idUnit for QRCode creation
+$stmt = $conn->prepare("SELECT MAX(idUnit) FROM unit");
+//execute query & check if successfull
+if ($stmt->execute())
+{
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+}
+else
+{
+    echo "Error 6: getUnitQuery failed!";
+    exit();
+}
+//safe result in new var
+$newestUnitID = $row['MAX(idUnit)'];
+
+echo "Success 0: Successfully inserted new Unit! ID_" . $newestUnitID;
 $conn = null;

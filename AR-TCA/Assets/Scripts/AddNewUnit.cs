@@ -23,8 +23,10 @@ public class AddNewUnit : MonoBehaviour
     public TMP_Dropdown battlefieldRoleField;
     public Button submitButton;
     public TextMeshProUGUI displayMessage;
+    public TextMeshProUGUI displayMessagePopUp;
     public GameObject popUp;
     public QRCodeGenerator generator; //reference of GameObject in the Scene with the QRCodeGenerator script as component
+    public SaveQRCode saver;
 
     public void callAddUnit()
     {
@@ -109,5 +111,11 @@ public class AddNewUnit : MonoBehaviour
                                         codexField.text.Length >= 1 &
                                         !(factionField.captionText.text.Equals("Bitte auswaehlen")) &
                                         !(battlefieldRoleField.captionText.text.Equals("Bitte auswaehlen")));
+    }
+
+    public void onClickSave()
+    {
+        saver.GetComponent<SaveQRCode>().saveQRCodeOnDevice(generator.GetComponent<QRCodeGenerator>().getTexture(), nameField.text);
+        displayMessagePopUp.text = "QR Code wurde gespeichert";
     }
 }

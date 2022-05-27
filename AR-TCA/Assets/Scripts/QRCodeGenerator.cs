@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using ZXing;
@@ -41,7 +40,11 @@ public class QRCodeGenerator : MonoBehaviour
         storeEncodedTexture.Apply();
 
         qrCodeField.texture = storeEncodedTexture;
+    }
 
-        // byte[] bytes = storeEncodedTexture.EncodeToPNG();
+    public Texture2D getTexture()
+    {
+        //to save the qr on the device 
+        return storeEncodedTexture;
     }
 }
