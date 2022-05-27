@@ -22,9 +22,9 @@ public class AddNewUnit : MonoBehaviour
     public TMP_Dropdown factionField;
     public TMP_Dropdown battlefieldRoleField;
     public Button submitButton;
-    public TextMeshProUGUI displayMessage; 
+    public TextMeshProUGUI displayMessage;
     public GameObject popUp;
-
+    public QRCodeGenerator generator; //reference of GameObject in the Scene with the QRCodeGenerator script as component
 
     public void callAddUnit()
     {
@@ -54,7 +54,9 @@ public class AddNewUnit : MonoBehaviour
 
         form.AddField("factionName", factionField.captionText.text);
         form.AddField("battlefieldRoleName", battlefieldRoleField.captionText.text);
-        form.AddField("userUsername", username);
+        // form.AddField("userUsername", username);
+        // TODO:change again to line 57
+        form.AddField("userUsername", "admin");
 
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {
@@ -72,14 +74,20 @@ public class AddNewUnit : MonoBehaviour
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     displayMessage.text = "";
+                    //get index of unitID of php echo 
+                    int indexOfID = www.downloadHandler.text.IndexOf("_");
+                    //index of _ char +1 = unitID string
+                    string unitID = www.downloadHandler.text.Substring(indexOfID + 1);
+
+                    //get Component(script) of referenced gameObject and fire function
+                    generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode(unitID);
                     popUp.SetActive(true);
-                    //TODO:Generate QR Code
                 }
 
-                if (www.downloadHandler.text.Contains("1"))
+                if (www.downloadHandler.text.Contains("Unit already exists"))
                 {
                     displayMessage.text = "Einheit wurde bereits der Datenbank hinzugefuegt!";
-                }                
+                }
             }
         }
     }
