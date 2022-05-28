@@ -41047,7 +41047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VuMarkInstanceIdImpl__ctor_mD3AC746A5CF2
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_11 = ___buffer0;
 		NullCheck(L_10);
 		String_t* L_12;
-		L_12 = VirtFuncInvoker1< String_t*, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* >::Invoke(32 /* System.String System.Text.Encoding::GetString(System.Byte[]) */, L_10, L_11);
+		L_12 = VirtFuncInvoker1< String_t*, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* >::Invoke(33 /* System.String System.Text.Encoding::GetString(System.Byte[]) */, L_10, L_11);
 		__this->set_U3CStringValueU3Ek__BackingField_2(L_12);
 	}
 

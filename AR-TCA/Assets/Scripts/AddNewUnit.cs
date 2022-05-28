@@ -35,6 +35,13 @@ public class AddNewUnit : MonoBehaviour
 
     IEnumerator addNewUnit()
     {
+        //just for testing purpose on mobile
+        if (nameField.text == "testMobile")
+        {
+            generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode("1");
+            popUp.SetActive(true);
+            yield break;
+        }
         string url = "http://localhost/AR-TCA/Units/addUnit.php";
         string username = DBManager.username;
 
@@ -57,7 +64,8 @@ public class AddNewUnit : MonoBehaviour
         form.AddField("factionName", factionField.captionText.text);
         form.AddField("battlefieldRoleName", battlefieldRoleField.captionText.text);
         // form.AddField("userUsername", username);
-        // TODO:change again to line 57
+
+        //TODO:uncomment after testing
         form.AddField("userUsername", "admin");
 
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
@@ -96,21 +104,28 @@ public class AddNewUnit : MonoBehaviour
 
     public void verfifyInputs()
     {
-        submitButton.interactable = (nameField.text.Length >= 1 &
-                                        powerField.text.Length >= 1 &
-                                        pointsField.text.Length >= 1 &
-                                        movementField.text.Length >= 1 &
-                                        weaponSkillField.text.Length >= 1 &
-                                        ballisticSkilltField.text.Length >= 1 &
-                                        strenghtField.text.Length >= 1 &
-                                        toughnessField.text.Length >= 1 &
-                                        woundsField.text.Length >= 1 &
-                                        attacksField.text.Length >= 1 &
-                                        leadershipField.text.Length >= 1 &
-                                        saveField.text.Length >= 1 &
-                                        codexField.text.Length >= 1 &
-                                        !(factionField.captionText.text.Equals("Bitte auswaehlen")) &
-                                        !(battlefieldRoleField.captionText.text.Equals("Bitte auswaehlen")));
+        //just for testing purpose on moblie
+        if (nameField.text == "testMobile")
+        {
+            submitButton.interactable = true;
+        }
+
+        //TODO:uncomment after build on mobile
+        // submitButton.interactable = (nameField.text.Length >= 1 &
+        //                                 powerField.text.Length >= 1 &
+        //                                 pointsField.text.Length >= 1 &
+        //                                 movementField.text.Length >= 1 &
+        //                                 weaponSkillField.text.Length >= 1 &
+        //                                 ballisticSkilltField.text.Length >= 1 &
+        //                                 strenghtField.text.Length >= 1 &
+        //                                 toughnessField.text.Length >= 1 &
+        //                                 woundsField.text.Length >= 1 &
+        //                                 attacksField.text.Length >= 1 &
+        //                                 leadershipField.text.Length >= 1 &
+        //                                 saveField.text.Length >= 1 &
+        //                                 codexField.text.Length >= 1 &
+        //                                 !(factionField.captionText.text.Equals("Bitte auswaehlen")) &
+        //                                 !(battlefieldRoleField.captionText.text.Equals("Bitte auswaehlen")));
     }
 
     public void onClickSave()

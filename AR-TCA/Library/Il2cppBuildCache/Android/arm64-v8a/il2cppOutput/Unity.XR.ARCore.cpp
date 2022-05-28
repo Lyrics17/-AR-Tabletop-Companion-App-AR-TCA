@@ -17941,7 +17941,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t3C2855C5B238E8C6739D4C17833F24
 		String_t* L_1 = ___s0;
 		NullCheck(L_0);
 		int32_t L_2;
-		L_2 = VirtFuncInvoker1< int32_t, String_t* >::Invoke(10 /* System.Int32 System.Text.Encoding::GetByteCount(System.String) */, L_0, L_1);
+		L_2 = VirtFuncInvoker1< int32_t, String_t* >::Invoke(11 /* System.Int32 System.Text.Encoding::GetByteCount(System.String) */, L_0, L_1);
 		V_0 = L_2;
 		// var utf8Bytes = new NativeArray<byte>(byteCount + 1, Allocator.Persistent);
 		int32_t L_3 = V_0;
@@ -17985,7 +17985,7 @@ IL_0029:
 		int32_t L_15 = V_0;
 		NullCheck(L_9);
 		int32_t L_16;
-		L_16 = VirtFuncInvoker4< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t >::Invoke(19 /* System.Int32 System.Text.Encoding::GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32) */, L_9, (Il2CppChar*)(Il2CppChar*)L_10, L_12, (uint8_t*)(uint8_t*)L_14, L_15);
+		L_16 = VirtFuncInvoker4< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t >::Invoke(20 /* System.Int32 System.Text.Encoding::GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32) */, L_9, (Il2CppChar*)(Il2CppChar*)L_10, L_12, (uint8_t*)(uint8_t*)L_14, L_15);
 		// }
 		goto IL_004e;
 	} // end try (depth: 1)

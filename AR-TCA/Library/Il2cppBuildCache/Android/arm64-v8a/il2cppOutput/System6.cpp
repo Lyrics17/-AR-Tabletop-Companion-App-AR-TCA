@@ -44258,7 +44258,7 @@ IL_025c:
 			L_125 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_124);
 			NullCheck(L_123);
 			ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_126;
-			L_126 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(16 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_123, L_125);
+			L_126 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_123, L_125);
 			V_6 = L_126;
 			Stream_t5DC87DD578C2C5298D98E7802E92DEABB66E2ECB * L_127 = __this->get_stream_3();
 			ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_128 = V_6;
@@ -47074,7 +47074,7 @@ IL_0030:
 			String_t* L_14 = V_2;
 			NullCheck(L_13);
 			ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_15;
-			L_15 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(16 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_13, L_14);
+			L_15 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_13, L_14);
 			V_3 = L_15;
 			int32_t L_16 = __this->get_size_4();
 			ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_17 = V_3;
@@ -49024,7 +49024,7 @@ IL_0028:
 			L_9 = Encoding_get_ASCII_mD3E8370997347A3F6822BDA50BC0A1DBC0059173(/*hidden argument*/NULL);
 			NullCheck(L_9);
 			ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_10;
-			L_10 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(16 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_9, _stringLiteralDD3801545A8B81C67750760498AFF9CFC986D3E0);
+			L_10 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_9, _stringLiteralDD3801545A8B81C67750760498AFF9CFC986D3E0);
 			V_2 = L_10;
 			WebRequestStream_t9F0251C03B8D0975476759A9C3791E6849E43887 * L_11 = V_1;
 			NullCheck(L_11);
