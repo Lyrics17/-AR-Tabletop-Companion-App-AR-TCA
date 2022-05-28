@@ -20,10 +20,10 @@ public class Login : MonoBehaviour
     IEnumerator LoginUser()
     {
         //just for testing purpose on mobile
-        if (userUsername.text == "adminMobile")
-        {
-            SceneManager.LoadScene("MainMenuScene");
-        }
+        // if (userUsername.text == "adminMobile")
+        // {
+        //     SceneManager.LoadScene("MainMenuScene");
+        // }
         string url = "http://localhost/AR-TCA/Users/login.php";
 
         WWWForm form = new WWWForm();
