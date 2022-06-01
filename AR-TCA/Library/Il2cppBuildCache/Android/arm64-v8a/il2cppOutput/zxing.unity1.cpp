@@ -881,8 +881,6 @@ struct Collection_1_tD31F8BF10012E0FFE1FB9EFF4DEF2EF8442E3B3B  : public RuntimeO
 public:
 	// System.Collections.Generic.IList`1<T> System.Collections.ObjectModel.Collection`1::items
 	RuntimeObject* ___items_0;
-	// System.Object System.Collections.ObjectModel.Collection`1::_syncRoot
-	RuntimeObject * ____syncRoot_1;
 
 public:
 	inline static int32_t get_offset_of_items_0() { return static_cast<int32_t>(offsetof(Collection_1_tD31F8BF10012E0FFE1FB9EFF4DEF2EF8442E3B3B, ___items_0)); }
@@ -892,15 +890,6 @@ public:
 	{
 		___items_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___items_0), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__syncRoot_1() { return static_cast<int32_t>(offsetof(Collection_1_tD31F8BF10012E0FFE1FB9EFF4DEF2EF8442E3B3B, ____syncRoot_1)); }
-	inline RuntimeObject * get__syncRoot_1() const { return ____syncRoot_1; }
-	inline RuntimeObject ** get_address_of__syncRoot_1() { return &____syncRoot_1; }
-	inline void set__syncRoot_1(RuntimeObject * value)
-	{
-		____syncRoot_1 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____syncRoot_1), (void*)value);
 	}
 };
 
@@ -11084,7 +11073,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EncodingOptions_get_Height_mAF8D44C1F
 		L_0 = EncodingOptions_get_Hints_mE747B092414FF11D28FAF53DB379D20CDC77F3AE_inline(__this, /*hidden argument*/NULL);
 		NullCheck(L_0);
 		bool L_1;
-		L_1 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_0, 1);
+		L_1 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_0, 1);
 		if (!L_1)
 		{
 			goto IL_0023;
@@ -11140,7 +11129,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EncodingOptions_get_Width_m74886F49B0
 		L_0 = EncodingOptions_get_Hints_mE747B092414FF11D28FAF53DB379D20CDC77F3AE_inline(__this, /*hidden argument*/NULL);
 		NullCheck(L_0);
 		bool L_1;
-		L_1 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_0, 0);
+		L_1 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_0, 0);
 		if (!L_1)
 		{
 			goto IL_0023;
@@ -21425,7 +21414,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BitMatrix_t897FF32285A0ED98A9E37ED1239AF244CE
 		int32_t L_1 = ___format1;
 		NullCheck(L_0);
 		bool L_2;
-		L_2 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.BarcodeFormat,System.Func`1<ZXing.Writer>>::ContainsKey(!0) */, IDictionary_2_t3F81DB25F82D03285191550EA09ABEC0D0E66DE0_il2cpp_TypeInfo_var, L_0, L_1);
+		L_2 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.BarcodeFormat,System.Func`1<ZXing.Writer>>::ContainsKey(!0) */, IDictionary_2_t3F81DB25F82D03285191550EA09ABEC0D0E66DE0_il2cpp_TypeInfo_var, L_0, L_1);
 		if (L_2)
 		{
 			goto IL_0026;
@@ -21800,7 +21789,7 @@ IL_005b:
 		RuntimeObject* L_22 = ___hints4;
 		NullCheck(L_22);
 		bool L_23;
-		L_23 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_22, 5);
+		L_23 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_22, 5);
 		if (!L_23)
 		{
 			goto IL_008d;
@@ -25602,7 +25591,7 @@ IL_0021:
 		RuntimeObject* L_8 = ___hints4;
 		NullCheck(L_8);
 		bool L_9;
-		L_9 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_8, 6);
+		L_9 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_8, 6);
 		if (!L_9)
 		{
 			goto IL_0053;
@@ -25623,7 +25612,7 @@ IL_0053:
 		RuntimeObject* L_13 = ___hints4;
 		NullCheck(L_13);
 		bool L_14;
-		L_14 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_13, 7);
+		L_14 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_13, 7);
 		if (!L_14)
 		{
 			goto IL_0073;
@@ -25644,7 +25633,7 @@ IL_0073:
 		RuntimeObject* L_18 = ___hints4;
 		NullCheck(L_18);
 		bool L_19;
-		L_19 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_18, 8);
+		L_19 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_18, 8);
 		if (!L_19)
 		{
 			goto IL_00ac;
@@ -25682,7 +25671,7 @@ IL_00ac:
 		RuntimeObject* L_31 = ___hints4;
 		NullCheck(L_31);
 		bool L_32;
-		L_32 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_31, 5);
+		L_32 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_31, 5);
 		if (!L_32)
 		{
 			goto IL_00c7;
@@ -25701,7 +25690,7 @@ IL_00c7:
 		RuntimeObject* L_35 = ___hints4;
 		NullCheck(L_35);
 		bool L_36;
-		L_36 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_35, 3);
+		L_36 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_35, 3);
 		if (!L_36)
 		{
 			goto IL_00fe;
@@ -25738,7 +25727,7 @@ IL_00fe:
 		RuntimeObject* L_42 = ___hints4;
 		NullCheck(L_42);
 		bool L_43;
-		L_43 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_42, 4);
+		L_43 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_42, 4);
 		if (!L_43)
 		{
 			goto IL_0129;
@@ -25768,7 +25757,7 @@ IL_0129:
 		RuntimeObject* L_49 = ___hints4;
 		NullCheck(L_49);
 		bool L_50;
-		L_50 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_49, ((int32_t)9));
+		L_50 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_49, ((int32_t)9));
 		if (!L_50)
 		{
 			goto IL_014b;
@@ -27163,7 +27152,7 @@ IL_007c:
 		RuntimeObject* L_28 = ___hints4;
 		NullCheck(L_28);
 		bool L_29;
-		L_29 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_28, 3);
+		L_29 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_28, 3);
 		if (!L_29)
 		{
 			goto IL_00aa;
@@ -27202,7 +27191,7 @@ IL_00b4:
 		RuntimeObject* L_34 = ___hints4;
 		NullCheck(L_34);
 		bool L_35;
-		L_35 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_34, 5);
+		L_35 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<ZXing.EncodeHintType,System.Object>::ContainsKey(!0) */, IDictionary_2_t6CBC8433E6BB5FA2D6046F2D2D2A9EB5B13AAE52_il2cpp_TypeInfo_var, L_34, 5);
 		if (!L_35)
 		{
 			goto IL_00d8;

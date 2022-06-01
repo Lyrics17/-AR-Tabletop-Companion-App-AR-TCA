@@ -21,11 +21,6 @@ struct String_t;
 // System.Void
 struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
 
-struct unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 ;
-struct unitytls_key_ref_t7EFBA70561D0E9FD8517038EBC0CC9FCF9AE6B61 ;
-struct unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA ;
-struct unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D ;
-struct unitytls_x509name_tC19C2F27FF70AD438A79A5F66E4C5FFA2613EDA6 ;
 
 
 IL2CPP_EXTERN_C_BEGIN
@@ -450,24 +445,6 @@ public:
 };
 
 
-// Mono.Unity.UnityTls/unitytls_x509list_ref
-struct unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D 
-{
-public:
-	// System.UInt64 Mono.Unity.UnityTls/unitytls_x509list_ref::handle
-	uint64_t ___handle_0;
-
-public:
-	inline static int32_t get_offset_of_handle_0() { return static_cast<int32_t>(offsetof(unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D, ___handle_0)); }
-	inline uint64_t get_handle_0() const { return ___handle_0; }
-	inline uint64_t* get_address_of_handle_0() { return &___handle_0; }
-	inline void set_handle_0(uint64_t value)
-	{
-		___handle_0 = value;
-	}
-};
-
-
 // UnityEngine.XR.ARCore.ArCameraConfigFilter
 struct ArCameraConfigFilter_t221B7F0FF74822E577F6C1577DCD66F0F1123F18 
 {
@@ -534,42 +511,6 @@ public:
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-
-// Vuforia.VuCloudImageTargetQueryError
-struct VuCloudImageTargetQueryError_t6CE6DD4866A263F93CEC82518C43C7E7E98352A3 
-{
-public:
-	// System.Int32 Vuforia.VuCloudImageTargetQueryError::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(VuCloudImageTargetQueryError_t6CE6DD4866A263F93CEC82518C43C7E7E98352A3, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-
-// Mono.Unity.UnityTls/unitytls_x509verify_result
-struct unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84 
-{
-public:
-	// System.UInt32 Mono.Unity.UnityTls/unitytls_x509verify_result::value__
-	uint32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84, ___value___2)); }
-	inline uint32_t get_value___2() const { return ___value___2; }
-	inline uint32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(uint32_t value)
 	{
 		___value___2 = value;
 	}
@@ -699,19 +640,8 @@ public:
 #pragma clang diagnostic pop
 #endif
 
-extern "C" char* DEFAULT_CALL ReversePInvokeWrapper_ARFoundationAnchorManager_OnCreateAnchor_mA86FF07174FB7CF5175246018160AFF0818D933B(intptr_t ___posePtr0);
-extern "C" int32_t DEFAULT_CALL ReversePInvokeWrapper_ARFoundationAnchorManager_OnRemoveAnchor_m9CC3D96B1F7D01A438F366B5EF88012A1979709F(intptr_t ___uuidPtr0);
-extern "C" int32_t CDECL ReversePInvokeWrapper_DeflateStreamNative_UnmanagedRead_m1B817101FEA9D3C28DF3C9192F70557465BDFB25(intptr_t ___buffer0, int32_t ___length1, intptr_t ___data2);
-extern "C" int32_t CDECL ReversePInvokeWrapper_DeflateStreamNative_UnmanagedWrite_m531442C0133AA29BF262DFD21F81CCBE5EA7E086(intptr_t ___buffer0, int32_t ___length1, intptr_t ___data2);
-extern "C" void CDECL ReversePInvokeWrapper_NativeUnityDriver_GetDriverConfig_m784BE9BEA756A410E7EF85E649BF2A132F910044(intptr_t ___buffer0);
-extern "C" void CDECL ReversePInvokeWrapper_NativeUnityDriver_OnDriverCreated_mC4E0F7668D4FD7D11B648F8FE8DA4C3D3BD68B74(intptr_t ___driverPtr0);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ARCameraBackground_BeforeBackgroundRenderHandler_m1A225B853F7A95788FB799D22868A946C99C2975(int32_t ___eventId0);
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_m0045E44F7E960D6B4A864D5206D4116249C09BB0(intptr_t ___arg0);
-extern "C" void CDECL ReversePInvokeWrapper_UnityTlsContext_CertificateCallback_m793CC2EDD82935F29A3DEBD1F208DC56EA822E9C(void* ___userData0, unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA * ___ctx1, uint8_t* ___cn2, intptr_t ___cnLen3, unitytls_x509name_tC19C2F27FF70AD438A79A5F66E4C5FFA2613EDA6 * ___caList4, intptr_t ___caListLen5, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D * ___chain6, unitytls_key_ref_t7EFBA70561D0E9FD8517038EBC0CC9FCF9AE6B61 * ___key7, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * ___errorState8);
-extern "C" intptr_t CDECL ReversePInvokeWrapper_UnityTlsContext_ReadCallback_mA0BF382397D912B79B6064B58B6C7C5D97853245(void* ___userData0, uint8_t* ___buffer1, intptr_t ___bufferLen2, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * ___errorState3);
-extern "C" uint32_t CDECL ReversePInvokeWrapper_UnityTlsContext_VerifyCallback_m8C61EF3A0037483AD56A083CA47D8E4C0404961E(void* ___userData0, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D  ___chain1, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * ___errorState2);
-extern "C" intptr_t CDECL ReversePInvokeWrapper_UnityTlsContext_WriteCallback_m466D11090AF989AD1F14E6FE049320297C12A86C(void* ___userData0, uint8_t* ___data1, intptr_t ___bufferLen2, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * ___errorState3);
-extern "C" void CDECL ReversePInvokeWrapper_VuCloudImageTargetObserver_HandleObservations_mDCBD54EF87711B91176FA8E571884DE3C8E28D1E(intptr_t ___observationsHandle0, intptr_t ___clientData1);
-extern "C" void CDECL ReversePInvokeWrapper_VuCloudImageTargetObserver_HandleQueryError_m21D14BDCB96C7EFA0545CEB9CDA2E2EB550CF389(int32_t ___error0, intptr_t ___clientData1);
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_XRCpuImage_OnAsyncConversionComplete_m60DC813F1A2B8A59F993D245683847D933D292A9(int32_t ___status0, ConversionParams_t3DDB9752BA823641A302D0783C14048D9B09B74A  ___conversionParams1, intptr_t ___dataPtr2, int32_t ___dataLength3, intptr_t ___context4);
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ARCoreProvider_OnBeforeGetCameraConfiguration_m38BB627D1EB76A533FC804BB76815EFF9F8F52A4(intptr_t ___providerHandle0, ArSession_tC5D0D839684E5D0A103AC9B421B51BE4E661668E  ___session1, ArCameraConfigFilter_t221B7F0FF74822E577F6C1577DCD66F0F1123F18  ___filter2);
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ARCoreProvider_CameraPermissionRequestProvider_m0E9468644682F3042A5368601E230B46C7315C59(Il2CppMethodPointer ___callback0, intptr_t ___context1);
@@ -722,21 +652,10 @@ extern "C" Guid_t  DEFAULT_CALL ReversePInvokeWrapper_ARCoreProvider_GenerateGui
 
 
 IL2CPP_EXTERN_C const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[];
-const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[20] = 
+const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[9] = 
 {
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARFoundationAnchorManager_OnCreateAnchor_mA86FF07174FB7CF5175246018160AFF0818D933B),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARFoundationAnchorManager_OnRemoveAnchor_m9CC3D96B1F7D01A438F366B5EF88012A1979709F),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_DeflateStreamNative_UnmanagedRead_m1B817101FEA9D3C28DF3C9192F70557465BDFB25),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_DeflateStreamNative_UnmanagedWrite_m531442C0133AA29BF262DFD21F81CCBE5EA7E086),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_NativeUnityDriver_GetDriverConfig_m784BE9BEA756A410E7EF85E649BF2A132F910044),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_NativeUnityDriver_OnDriverCreated_mC4E0F7668D4FD7D11B648F8FE8DA4C3D3BD68B74),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCameraBackground_BeforeBackgroundRenderHandler_m1A225B853F7A95788FB799D22868A946C99C2975),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_m0045E44F7E960D6B4A864D5206D4116249C09BB0),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_CertificateCallback_m793CC2EDD82935F29A3DEBD1F208DC56EA822E9C),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_ReadCallback_mA0BF382397D912B79B6064B58B6C7C5D97853245),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_VerifyCallback_m8C61EF3A0037483AD56A083CA47D8E4C0404961E),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_WriteCallback_m466D11090AF989AD1F14E6FE049320297C12A86C),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_VuCloudImageTargetObserver_HandleObservations_mDCBD54EF87711B91176FA8E571884DE3C8E28D1E),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_VuCloudImageTargetObserver_HandleQueryError_m21D14BDCB96C7EFA0545CEB9CDA2E2EB550CF389),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_XRCpuImage_OnAsyncConversionComplete_m60DC813F1A2B8A59F993D245683847D933D292A9),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCoreProvider_OnBeforeGetCameraConfiguration_m38BB627D1EB76A533FC804BB76815EFF9F8F52A4),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ARCoreProvider_CameraPermissionRequestProvider_m0E9468644682F3042A5368601E230B46C7315C59),
