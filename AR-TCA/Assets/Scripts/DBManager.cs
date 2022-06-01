@@ -25,8 +25,9 @@ public static class DBManager
         return passwordReset = true;
     }
 
-    public static void setAllVariablesFalse() {
-        registered = false; 
+    public static void setAllVariablesFalse()
+    {
+        registered = false;
         passwordReset = false;
     }
 }

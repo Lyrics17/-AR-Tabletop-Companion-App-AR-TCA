@@ -26,7 +26,8 @@ public class AddNewUnit : MonoBehaviour
     public TextMeshProUGUI displayMessagePopUp;
     public GameObject popUp;
     public QRCodeGenerator generator; //reference of GameObject in the Scene with the QRCodeGenerator script as component
-    public SaveQRCode saver;
+    public SaveQRCode saver; //reference of GameObject in the Scene with the SaveQRCode script as component
+    public QRCodeUploader uploader; //reference of GameObject in the Scene with the QRCodeUploader script as component
 
     public void callAddUnit()
     {
@@ -63,10 +64,10 @@ public class AddNewUnit : MonoBehaviour
 
         form.AddField("factionName", factionField.captionText.text);
         form.AddField("battlefieldRoleName", battlefieldRoleField.captionText.text);
-        form.AddField("userUsername", username);
+        // form.AddField("userUsername", username);
 
         //TODO:comment after testing
-        // form.AddField("userUsername", "admin");
+        form.AddField("userUsername", "admin");
 
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {
@@ -91,6 +92,7 @@ public class AddNewUnit : MonoBehaviour
 
                     //get Component(script) of referenced gameObject and fire function
                     generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode(unitID);
+                    uploadQRCode();
                     popUp.SetActive(true);
                 }
 
@@ -131,5 +133,10 @@ public class AddNewUnit : MonoBehaviour
     {
         saver.GetComponent<SaveQRCode>().saveQRCodeOnDevice(generator.GetComponent<QRCodeGenerator>().getTexture(), nameField.text);
         displayMessagePopUp.text = "QR Code wurde gespeichert";
+    }
+
+    public void uploadQRCode()//fires uploadQRCodetoServer corotine in QRCodeUploader script
+    {
+        uploader.GetComponent<QRCodeUploader>().uploadQRCodetoServer(nameField.text, generator.GetComponent<QRCodeGenerator>().getTexture());
     }
 }

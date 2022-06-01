@@ -1916,6 +1916,7 @@ RectTransform:
   - {fileID: 95266954}
   - {fileID: 531781462}
   - {fileID: 1748657228}
+  - {fileID: 960921274}
   - {fileID: 1280263627}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1970,6 +1971,7 @@ MonoBehaviour:
   popUp: {fileID: 1280263626}
   generator: {fileID: 531781461}
   saver: {fileID: 1748657229}
+  uploader: {fileID: 960921273}
 --- !u!1 &201798651
 GameObject:
   m_ObjectHideFlags: 0
@@ -5094,6 +5096,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &960921272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 960921274}
+  - component: {fileID: 960921273}
+  m_Layer: 0
+  m_Name: QRCodeUploader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &960921273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960921272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10e64d47c77942489f14947163cb553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &960921274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960921272}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -160.83174, y: -294.8272, z: -422.93854}
+  m_LocalScale: {x: 3.2046223, y: 3.2046223, z: 3.2046223}
+  m_Children: []
+  m_Father: {fileID: 175045126}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &967453850
 GameObject:
   m_ObjectHideFlags: 0
@@ -7399,7 +7444,7 @@ RectTransform:
   m_Children:
   - {fileID: 1055664946}
   m_Father: {fileID: 175045126}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
