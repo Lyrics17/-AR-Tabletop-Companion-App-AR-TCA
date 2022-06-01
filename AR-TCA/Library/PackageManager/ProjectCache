@@ -5,97 +5,21 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637895880212177887
-    m_Hash: 154101750
+      ticks: 637896861356109532
+    m_Hash: 1253819572
   m_LockFileStatus:
     m_FilePath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637895880219688236
-    m_Hash: 1997062439
+      ticks: 637896861356829534
+    m_Hash: 1638633630
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
-    - packageId: com.ptc.vuforia.engine@file:D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Packages\com.ptc.vuforia.engine-10.6.3.tgz
-      testable: 0
-      isDirectDependency: 1
-      version: 10.6.3
-      source: 6
-      resolvedPath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.ptc.vuforia.engine@d9a554df1f20-1653991220866
-      assetPath: Packages/com.ptc.vuforia.engine
-      name: com.ptc.vuforia.engine
-      displayName: Vuforia Engine AR
-      author:
-        name: PTC Inc.
-        email: 
-        url: https://developer.vuforia.com/
-      category: 
-      type: 
-      description: Vuforia Engine is the most widely used platform for AR development,
-        with support for leading phones, tablets, and eyewear. Developers can easily
-        add advanced computer vision functionality to Android, iOS, and UWP apps,
-        to create AR experiences that realistically interact with objects and the
-        environment.
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 8.0.101
-        - 8.1.9
-        - 8.1.12
-        - 8.3.9
-        - 8.5.8
-        - 8.5.9
-        compatible:
-        - 8.0.101
-        - 8.1.9
-        - 8.1.12
-        - 8.3.9
-        - 8.5.8
-        - 8.5.9
-        verified: 
-      dependencies:
-      - name: com.unity.ugui
-        version: 1.0.0
-      resolvedDependencies:
-      - name: com.unity.ugui
-        version: 1.0.0
-      - name: com.unity.modules.ui
-        version: 1.0.0
-      - name: com.unity.modules.imgui
-        version: 1.0.0
-      keywords:
-      - vuforia
-      - engine
-      - ar
-      - xr
-      - augmented
-      - reality
-      - sdk
-      registry:
-        id: 
-        name: 
-        url: 
-        scopes: []
-        isDefault: 0
-        capabilities: 0
-      hasRegistry: 0
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 0
-      documentationUrl: 
-      hasRepository: 0
-      repository:
-        type: 
-        url: 
-        revision: 
-        path: 
     - packageId: com.unity.2d.sprite@1.0.0
       testable: 0
       isDirectDependency: 1
@@ -1063,12 +987,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.xr.arcore@4.1.9
+    - packageId: com.unity.xr.arcore@4.1.10
       testable: 0
       isDirectDependency: 1
-      version: 4.1.9
+      version: 4.1.10
       source: 1
-      resolvedPath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.unity.xr.arcore@4.1.9
+      resolvedPath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.unity.xr.arcore@4.1.10
       assetPath: Packages/com.unity.xr.arcore
       name: com.unity.xr.arcore
       displayName: ARCore XR Plugin
@@ -1258,7 +1182,7 @@ m_PackageAssets:
         verified: 4.1.10
       dependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.1.9
+        version: 4.1.10
       - name: com.unity.xr.management
         version: 4.0.1
       - name: com.unity.modules.androidjni
@@ -1267,7 +1191,7 @@ m_PackageAssets:
         version: 1.0.0
       resolvedDependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.1.9
+        version: 4.1.10
       - name: com.unity.subsystemregistration
         version: 1.1.0
       - name: com.unity.modules.subsystems
@@ -1307,20 +1231,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637781298860000000
+      datePublishedTicks: 637871118440000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: 2094ce3ed076044be0e3a742424fd720dfd838ce
+        revision: 68e960c87558b909d246af7c03a5c51777e937e0
         path: 
-    - packageId: com.unity.xr.arfoundation@4.1.9
+    - packageId: com.unity.xr.arfoundation@4.1.10
       testable: 0
       isDirectDependency: 1
-      version: 4.1.9
+      version: 4.1.10
       source: 1
-      resolvedPath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.unity.xr.arfoundation@4.1.9
+      resolvedPath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.unity.xr.arfoundation@4.1.10
       assetPath: Packages/com.unity.xr.arfoundation
       name: com.unity.xr.arfoundation
       displayName: AR Foundation
@@ -1511,14 +1435,14 @@ m_PackageAssets:
         verified: 4.1.10
       dependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.1.9
+        version: 4.1.10
       - name: com.unity.xr.management
         version: 4.0.1
       - name: com.unity.modules.particlesystem
         version: 1.0.0
       resolvedDependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.1.9
+        version: 4.1.10
       - name: com.unity.subsystemregistration
         version: 1.1.0
       - name: com.unity.modules.subsystems
@@ -1558,13 +1482,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637781299050000000
+      datePublishedTicks: 637871118640000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: 2094ce3ed076044be0e3a742424fd720dfd838ce
+        revision: 68e960c87558b909d246af7c03a5c51777e937e0
         path: 
     - packageId: com.unity.modules.ai@1.0.0
       testable: 0
@@ -3308,12 +3232,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.xr.arsubsystems@4.1.9
+    - packageId: com.unity.xr.arsubsystems@4.1.10
       testable: 0
       isDirectDependency: 0
-      version: 4.1.9
+      version: 4.1.10
       source: 1
-      resolvedPath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.unity.xr.arsubsystems@4.1.9
+      resolvedPath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Library\PackageCache\com.unity.xr.arsubsystems@4.1.10
       assetPath: Packages/com.unity.xr.arsubsystems
       name: com.unity.xr.arsubsystems
       displayName: AR Subsystems
@@ -3445,13 +3369,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637781298810000000
+      datePublishedTicks: 637871118390000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: 2094ce3ed076044be0e3a742424fd720dfd838ce
+        revision: 68e960c87558b909d246af7c03a5c51777e937e0
         path: 
     - packageId: com.unity.xr.management@4.0.1
       testable: 0
@@ -3891,20 +3815,6 @@ m_PackageAssets:
         revision: 72584ba5248fbe79e560e795ad819f876954fceb
         path: 
   m_LocalPackages:
-    m_LocalFileStatus:
-    - m_FilePath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Packages\com.ptc.vuforia.engine-10.6.3.tgz/package.json
-      m_PathExists: 0
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 0
-      m_Hash: 0
-    - m_FilePath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Packages\com.ptc.vuforia.engine-10.6.3.tgz
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637895880208655150
-      m_Hash: 1601347051
+    m_LocalFileStatus: []
 m_ProjectPath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Packages
 m_EditorVersion: 2020.3.31f1 (6b54b7616050)
