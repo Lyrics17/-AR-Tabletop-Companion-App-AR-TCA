@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637896877300248213
-    m_Hash: 3111700437
+      ticks: 637906334976544860
+    m_Hash: 2848998800
   m_LockFileStatus:
     m_FilePath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637896877301238055
-    m_Hash: 3143893713
+      ticks: 637906334976554834
+    m_Hash: 2326699938
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

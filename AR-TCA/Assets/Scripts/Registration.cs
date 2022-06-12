@@ -10,6 +10,7 @@ public class Registration : MonoBehaviour
     public TMP_InputField nameField;
     public TMP_InputField passwordField;
     public Button submitButton;
+    public TMPro.TextMeshProUGUI infoText;
 
     //Middleman method to keep the game running during the register process
     public void callRegister()
@@ -44,6 +45,10 @@ public class Registration : MonoBehaviour
                 {
                     DBManager.isRegistered();
                     SceneManager.LoadScene("LoginScene");
+                }
+                else if (www.downloadHandler.text.Contains("2"))
+                {
+                    infoText.text = "Username existiert bereits";
                 }
             }
         }

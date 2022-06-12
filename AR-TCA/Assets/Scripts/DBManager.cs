@@ -22,7 +22,7 @@ public static class DBManager
     }
     public static bool passwordResetWasSuccessful()
     {
-        return passwordReset = true;
+        return passwordReset = true; //variable is used in ShowMessage.cs to display a message
     }
 
     public static void setAllVariablesFalse()

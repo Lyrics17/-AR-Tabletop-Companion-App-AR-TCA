@@ -709,6 +709,7 @@ MonoBehaviour:
   nameField: {fileID: 173393460}
   passwordField: {fileID: 148127984}
   submitButton: {fileID: 1009556360}
+  infoText: {fileID: 2054609452}
 --- !u!1 &353611863
 GameObject:
   m_ObjectHideFlags: 0
