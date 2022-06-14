@@ -44,7 +44,6 @@ public class AddNewUnit : MonoBehaviour
             yield break;
         }
         string url = "http://localhost/AR-TCA/Units/addUnit.php";
-        string username = DBManager.username;
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname
@@ -64,10 +63,6 @@ public class AddNewUnit : MonoBehaviour
 
         form.AddField("factionName", factionField.captionText.text);
         form.AddField("battlefieldRoleName", battlefieldRoleField.captionText.text);
-        // form.AddField("userUsername", username);
-
-        //TODO:comment after testing
-        form.AddField("userUsername", "admin");
 
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {

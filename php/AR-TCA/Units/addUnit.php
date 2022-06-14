@@ -21,8 +21,6 @@ $codexField = $_POST['codexField'];
 //FK fields
 $factionName = $_POST['factionName'];
 $battlefieldRoleName = $_POST['battlefieldRoleName'];
-$userUsername = $_POST['userUsername'];
-
 
 //Get unitName 
 $stmt = $conn->prepare("SELECT unitName FROM unit WHERE unitName =?");
@@ -77,27 +75,9 @@ else
 $battlefieldRole_idBattlefieldRole = $row['idBattlefieldRole'];
 
 
-//Get idUser   
-$stmt = $conn->prepare("SELECT idUser FROM user WHERE userUsername =?");
-//bind $userUsername to ? placeholder
-$stmt->bindParam(1, $userUsername);
-//execute query & check if successfull
-if ($stmt->execute())
-{
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);
-}
-else
-{
-    echo "Error 4: getUserQuery failed!";
-    exit();
-}
-//safe result in new var
-$user_idUser  = $row['idUser'];
-
-
 //insertQuery
-$stmt = $conn->prepare("INSERT INTO `unit` (`unitName`, `unitPointCost`, `unitPowerCost`, `unitMove`, `unitWeaponSkill`, `unitBallisticSkill`, `unitStrength`, `unitToughness`, `unitWounds`, `unitAttacks`, `unitLeadership`, `unitSave`, `unitPageInCodx`, `faction_idFaction`, `battlefieldRole_idBattlefieldRole`, `detachment_idDetachment`, `user_idUser`) 
-    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+$stmt = $conn->prepare("INSERT INTO `unit` (`unitName`, `unitPointCost`, `unitPowerCost`, `unitMove`, `unitWeaponSkill`, `unitBallisticSkill`, `unitStrength`, `unitToughness`, `unitWounds`, `unitAttacks`, `unitLeadership`, `unitSave`, `unitPageInCodx`, `faction_idFaction`, `battlefieldRole_idBattlefieldRole`, `detachment_idDetachment`) 
+    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 $stmt->bindValue(1, $unitName);
 $stmt->bindValue(2, $unitPointCost);
 $stmt->bindValue(3, $unitPowerCost);
@@ -114,7 +94,6 @@ $stmt->bindValue(13, $codexField);
 $stmt->bindValue(14, $faction_idFaction);
 $stmt->bindValue(15, $battlefieldRole_idBattlefieldRole);
 $stmt->bindValue(16, NULL);
-$stmt->bindValue(17, $user_idUser);
 
 //Check if statement failed
 if (!$stmt->execute())
