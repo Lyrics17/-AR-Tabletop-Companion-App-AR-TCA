@@ -14,5 +14,3 @@ Idea how to get armylist data:
 TODO: CreateArmylist Scene: When Dropdown for unit is changed to something else than "Bitte auswaehlen" make QRCode Button interactable, get the unitId of the chosen unit and generate the qr code //v2: put the QRCode Button between the points and power counter to make if more obvious what function the button has
 
 TODO: DBManager -> also get the id of the logged in user for arscene image recovery (get qrCode of every unit where userFK = userID)
-
-TODO: rethink db structure -> make relation of user and faction n:n 

@@ -14,6 +14,7 @@ public class TerrainAttributesContent : MonoBehaviour
 
     private void Update()
     {
+        //Checks at runtime if the content is longer than the character wrap limit. If so, it will set the layout element to be bigger than the content.
         int contentLength = contentField.text.Length;
 
         layoutElement.enabled = (contentLength > characterWrapLimit) ? false : true;
