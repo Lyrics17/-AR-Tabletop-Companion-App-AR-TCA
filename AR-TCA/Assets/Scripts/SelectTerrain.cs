@@ -40,7 +40,12 @@ public class SelectTerrain : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
-                    //TODO: Split echo response into separate variables and insert them into the UI
+                    int indexOfString = www.downloadHandler.text.IndexOf("!"); //finds the first "!" in the string
+                    string response = www.downloadHandler.text.Substring(indexOfString + 2); //cuts the string from the first "! + 2" to the end
+
+                    string[] responseArray = response.Split('_'); //splits the string at the "_" character
+                    terrainCategory.text = responseArray[1];
+                    terrainAttributes.text = responseArray[3];  
                 }
             }
         }

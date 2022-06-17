@@ -6,7 +6,7 @@ include "../db.php";
 $terrainPiece = $_POST['terrainPiece'];
 
 //Get terrain data 
-$stmt = $conn->prepare("SELECT idTerrain, terrainCategory, terrainAttributes FROM terrain WHERE terrainName =?");
+$stmt = $conn->prepare("SELECT terrainCategory, terrainAttributes FROM terrain WHERE terrainName =?");
 //bind $terrainName to ? placeholder
 $stmt->bindParam(1, $terrainPiece);
 //execute query
@@ -15,15 +15,14 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 //check if tarrain piece exists
-if (empty($row['idTerrain']))
+if (empty($row['terrainCategory']))
 {
     echo "Error 1: getTerrainQuery failed!";
     exit();
 }
 //safe result in new vars
-$idTerrain = $row['idTerrain'];
 $terrainCategory = $row['terrainCategory'];
 $terrainAttributes = $row['terrainAttributes'];
 
-// TODO:check if this makes sense --> split function in c#
-echo "Success 0: Successfully fetched terrain data! ID_" . $idTerrain . " Category_" . $terrainCategory . " Attributes_" . $terrainAttributes;
+echo "Success 0: Successfully fetched terrain data! Category_" . $terrainCategory . " _Attributes_" . $terrainAttributes;
+$conn = null;
