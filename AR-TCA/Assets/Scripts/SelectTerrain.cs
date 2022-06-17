@@ -10,6 +10,7 @@ public class SelectTerrain : MonoBehaviour
     public TMP_Dropdown terrainPiece;
     public TextMeshProUGUI terrainCategory;
     public TextMeshProUGUI terrainAttributes;
+    public TextMeshProUGUI popUpHeader;
     public TextMeshProUGUI displayMessage;
     public Button generateTerrainQRCodeButton;
     public GameObject popUp;
@@ -45,7 +46,10 @@ public class SelectTerrain : MonoBehaviour
 
                     string[] responseArray = response.Split('_'); //splits the string at the "_" character
                     terrainCategory.text = responseArray[1];
-                    terrainAttributes.text = responseArray[3];  
+                    terrainAttributes.text = responseArray[3];
+
+                    generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode(terrainPiece.captionText.text);
+                    popUpHeader.text = "Gelaendestueck QR-Code";
                 }
             }
         }
@@ -53,7 +57,7 @@ public class SelectTerrain : MonoBehaviour
 
     public void resetFields()
     {
-        if (terrainPiece.captionText.text == "Bitte auswaehlen")
+        if (terrainPiece.captionText.text == "Bitte auswaehlen") //if the dropdown is set to "Bitte auswaehlen" reset UI
         {
             terrainCategory.text = "";
             terrainAttributes.text = "";
@@ -62,7 +66,7 @@ public class SelectTerrain : MonoBehaviour
 
     public void makeButtonsInteractable()
     {
-        if (terrainPiece.captionText.text != "Bitte auswaehlen")
+        if (terrainPiece.captionText.text != "Bitte auswaehlen") //set Button to interactable if the dropdown is not set to "Bitte auswaehlen"
         {
             generateTerrainQRCodeButton.interactable = true;
         }
@@ -72,5 +76,34 @@ public class SelectTerrain : MonoBehaviour
         }
     }
 
-    // TODO: add qrCode save function
+    public void generateMarkerQRCode()
+    {
+        generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode("Marker");
+        popUpHeader.text = "Missionszielmarker QR-Code";
+    }
+
+    public void saveQRCode()
+    {
+        string filename;
+        
+        if (popUpHeader.text == "Gelaendestueck QR-Code")//popUpHeader is used to indicate which QRCode is being saved/displayed 
+        {
+            filename = terrainPiece.captionText.text;
+        }
+        else
+        {
+            filename = "Marker";
+        }
+
+        saver.GetComponent<SaveQRCode>().saveQRCodeOnDevice(generator.GetComponent<QRCodeGenerator>().getTexture(), filename);
+
+        if (filename == "Marker")
+        {
+            displayMessage.text = "Missionszielmarker wurde gespeichert!";
+        }
+        else
+        {
+            displayMessage.text = "Gelaendestueck wurde gespeichert!";
+        }
+    }
 }
