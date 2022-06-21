@@ -16,6 +16,7 @@ public class SelectTerrain : MonoBehaviour
     public GameObject popUp;
     public QRCodeGenerator generator;
     public SaveQRCode saver;
+    
     public void callGetTerrain()
     {
         StartCoroutine(getTerrain());
