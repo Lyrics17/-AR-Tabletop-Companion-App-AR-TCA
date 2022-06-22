@@ -24,7 +24,7 @@ public class Login : MonoBehaviour
         {
             SceneManager.LoadScene("MainMenuScene");
         }
-        string url = "http://localhost/AR-TCA/Users/login.php";
+        string url = "https://ar-tca.000webhostapp.com/AR-TCA/Users/login.php";
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname

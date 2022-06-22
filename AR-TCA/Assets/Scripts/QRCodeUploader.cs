@@ -12,7 +12,7 @@ public class QRCodeUploader : MonoBehaviour
 
     IEnumerator uploadQRCode(string unitName, Texture2D qrCode)
     {
-        string url = "http://localhost/AR-TCA/Units/uploadQRCode.php";
+        string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/uploadQRCode.php";
 
         byte[] bytes = qrCode.EncodeToPNG();
         string qrCodeString = System.Convert.ToBase64String(bytes);

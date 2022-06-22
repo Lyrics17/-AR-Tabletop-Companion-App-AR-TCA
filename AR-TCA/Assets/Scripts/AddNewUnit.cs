@@ -43,7 +43,7 @@ public class AddNewUnit : MonoBehaviour
             popUp.SetActive(true);
             yield break;
         }
-        string url = "http://localhost/AR-TCA/Units/addUnit.php";
+        string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/addUnit.php";
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname

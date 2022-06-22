@@ -24,7 +24,7 @@ public class SelectTerrain : MonoBehaviour
 
     IEnumerator getTerrain()
     {
-        string url = "http://localhost/AR-TCA/Terrain/getTerrain.php";
+        string url = "https://ar-tca.000webhostapp.com/AR-TCA/Terrain/getTerrain.php";
         WWWForm form = new WWWForm();
 
         form.AddField("terrainPiece", terrainPiece.captionText.text);
