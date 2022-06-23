@@ -2925,7 +2925,11 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Barrikaden und Rohrleitungen
       m_Image: {fileID: 0}
+    - m_Text: Waelder
+      m_Image: {fileID: 0}
     - m_Text: Schlachtfeldueberreste
+      m_Image: {fileID: 0}
+    - m_Text: Industriebauwerke
       m_Image: {fileID: 0}
     - m_Text: Imperiale Statuen
       m_Image: {fileID: 0}
