@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$database = "ar-tca";
+$username = "id19151500_ar_tca_admin";
+$password = "]91@XXcwt(s]B3w[";
+$database = "id19151500_ar_tca";
 
 try
 {
