@@ -932,6 +932,8 @@ struct PinchGestureRecognizer_tF42368BF81ECB456F8F01682CAB7FD674B802698;
 struct PointerEventData_tC6C1BEE9D4C8755A31DA7FC0C9A1F28A36456954;
 // QRCodeGenerator
 struct QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D;
+// QRCodeUploader
+struct QRCodeUploader_t1F6F59D7A07477CCF002E60A6C2BBB84B5136C28;
 // UnityEngine.InputSystem.Controls.QuaternionControl
 struct QuaternionControl_tDB0B05D0B1B73296BA48A0F8BE9E21C86B1811AF;
 // System.Security.Cryptography.RandomNumberGenerator
@@ -966,6 +968,8 @@ struct Scrollbar_tECAC7FD315210FC856A3EC60AE1847A66AAF6C28;
 struct SelectEnterEvent_t147569BD69EAD584499BE2FC174458E3150C5918;
 // UnityEngine.XR.Interaction.Toolkit.SelectExitEvent
 struct SelectExitEvent_t8A19A5E960E731FDA7BC2509D96527199FDA57F8;
+// SelectTerrain
+struct SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7;
 // UnityEngine.UI.Selectable
 struct Selectable_t34088A3677CC9D344F81B0D91999D8C5963D7DBD;
 // UnityEngine.Shader
@@ -7272,21 +7276,21 @@ public:
 };
 
 
-// AddNewUnit/<addNewUnit>d__22
-struct U3CaddNewUnitU3Ed__22_t7E07EC3080EA5A060B96027DF243CBEFA34341DF  : public RuntimeObject
+// AddNewUnit/<addNewUnit>d__23
+struct U3CaddNewUnitU3Ed__23_tB1025048AFE8623435466379026A33D0EBE8D76E  : public RuntimeObject
 {
 public:
-	// System.Int32 AddNewUnit/<addNewUnit>d__22::<>1__state
+	// System.Int32 AddNewUnit/<addNewUnit>d__23::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AddNewUnit/<addNewUnit>d__22::<>2__current
+	// System.Object AddNewUnit/<addNewUnit>d__23::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// AddNewUnit AddNewUnit/<addNewUnit>d__22::<>4__this
+	// AddNewUnit AddNewUnit/<addNewUnit>d__23::<>4__this
 	AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest AddNewUnit/<addNewUnit>d__22::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest AddNewUnit/<addNewUnit>d__23::<www>5__2
 	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CaddNewUnitU3Ed__22_t7E07EC3080EA5A060B96027DF243CBEFA34341DF, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CaddNewUnitU3Ed__23_tB1025048AFE8623435466379026A33D0EBE8D76E, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -7294,7 +7298,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CaddNewUnitU3Ed__22_t7E07EC3080EA5A060B96027DF243CBEFA34341DF, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CaddNewUnitU3Ed__23_tB1025048AFE8623435466379026A33D0EBE8D76E, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -7303,7 +7307,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CaddNewUnitU3Ed__22_t7E07EC3080EA5A060B96027DF243CBEFA34341DF, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CaddNewUnitU3Ed__23_tB1025048AFE8623435466379026A33D0EBE8D76E, ___U3CU3E4__this_2)); }
 	inline AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC * value)
@@ -7312,7 +7316,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CaddNewUnitU3Ed__22_t7E07EC3080EA5A060B96027DF243CBEFA34341DF, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CaddNewUnitU3Ed__23_tB1025048AFE8623435466379026A33D0EBE8D76E, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -7641,21 +7645,23 @@ public:
 };
 
 
-// Registration/<Register>d__4
-struct U3CRegisterU3Ed__4_tD50062E309DE49D75C30B8D2665CE6EF972B9EE2  : public RuntimeObject
+// QRCodeUploader/<uploadQRCode>d__1
+struct U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF  : public RuntimeObject
 {
 public:
-	// System.Int32 Registration/<Register>d__4::<>1__state
+	// System.Int32 QRCodeUploader/<uploadQRCode>d__1::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object Registration/<Register>d__4::<>2__current
+	// System.Object QRCodeUploader/<uploadQRCode>d__1::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// Registration Registration/<Register>d__4::<>4__this
-	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest Registration/<Register>d__4::<www>5__2
-	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
+	// UnityEngine.Texture2D QRCodeUploader/<uploadQRCode>d__1::qrCode
+	Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * ___qrCode_2;
+	// System.String QRCodeUploader/<uploadQRCode>d__1::unitName
+	String_t* ___unitName_3;
+	// UnityEngine.Networking.UnityWebRequest QRCodeUploader/<uploadQRCode>d__1::<www>5__2
+	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_4;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_tD50062E309DE49D75C30B8D2665CE6EF972B9EE2, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -7663,7 +7669,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_tD50062E309DE49D75C30B8D2665CE6EF972B9EE2, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -7672,7 +7678,67 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_tD50062E309DE49D75C30B8D2665CE6EF972B9EE2, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_qrCode_2() { return static_cast<int32_t>(offsetof(U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF, ___qrCode_2)); }
+	inline Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * get_qrCode_2() const { return ___qrCode_2; }
+	inline Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF ** get_address_of_qrCode_2() { return &___qrCode_2; }
+	inline void set_qrCode_2(Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * value)
+	{
+		___qrCode_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___qrCode_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_unitName_3() { return static_cast<int32_t>(offsetof(U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF, ___unitName_3)); }
+	inline String_t* get_unitName_3() const { return ___unitName_3; }
+	inline String_t** get_address_of_unitName_3() { return &___unitName_3; }
+	inline void set_unitName_3(String_t* value)
+	{
+		___unitName_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___unitName_3), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_4() { return static_cast<int32_t>(offsetof(U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF, ___U3CwwwU3E5__2_4)); }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_4() const { return ___U3CwwwU3E5__2_4; }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_4() { return &___U3CwwwU3E5__2_4; }
+	inline void set_U3CwwwU3E5__2_4(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
+	{
+		___U3CwwwU3E5__2_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CwwwU3E5__2_4), (void*)value);
+	}
+};
+
+
+// Registration/<Register>d__5
+struct U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3  : public RuntimeObject
+{
+public:
+	// System.Int32 Registration/<Register>d__5::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object Registration/<Register>d__5::<>2__current
+	RuntimeObject * ___U3CU3E2__current_1;
+	// Registration Registration/<Register>d__5::<>4__this
+	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C * ___U3CU3E4__this_2;
+	// UnityEngine.Networking.UnityWebRequest Registration/<Register>d__5::<www>5__2
+	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
+
+public:
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3, ___U3CU3E1__state_0)); }
+	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
+	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
+	inline void set_U3CU3E1__state_0(int32_t value)
+	{
+		___U3CU3E1__state_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3, ___U3CU3E2__current_1)); }
+	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
+	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
+	inline void set_U3CU3E2__current_1(RuntimeObject * value)
+	{
+		___U3CU3E2__current_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3, ___U3CU3E4__this_2)); }
 	inline Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C * value)
@@ -7681,7 +7747,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_tD50062E309DE49D75C30B8D2665CE6EF972B9EE2, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -7733,6 +7799,57 @@ public:
 	}
 
 	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713, ___U3CwwwU3E5__2_3)); }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
+	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
+	{
+		___U3CwwwU3E5__2_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CwwwU3E5__2_3), (void*)value);
+	}
+};
+
+
+// SelectTerrain/<getTerrain>d__10
+struct U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65  : public RuntimeObject
+{
+public:
+	// System.Int32 SelectTerrain/<getTerrain>d__10::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object SelectTerrain/<getTerrain>d__10::<>2__current
+	RuntimeObject * ___U3CU3E2__current_1;
+	// SelectTerrain SelectTerrain/<getTerrain>d__10::<>4__this
+	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7 * ___U3CU3E4__this_2;
+	// UnityEngine.Networking.UnityWebRequest SelectTerrain/<getTerrain>d__10::<www>5__2
+	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
+
+public:
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65, ___U3CU3E1__state_0)); }
+	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
+	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
+	inline void set_U3CU3E1__state_0(int32_t value)
+	{
+		___U3CU3E1__state_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65, ___U3CU3E2__current_1)); }
+	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
+	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
+	inline void set_U3CU3E2__current_1(RuntimeObject * value)
+	{
+		___U3CU3E2__current_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65, ___U3CU3E4__this_2)); }
+	inline SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7 * value)
+	{
+		___U3CU3E4__this_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -41883,6 +42000,8 @@ public:
 	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * ___generator_23;
 	// SaveQRCode AddNewUnit::saver
 	SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * ___saver_24;
+	// QRCodeUploader AddNewUnit::uploader
+	QRCodeUploader_t1F6F59D7A07477CCF002E60A6C2BBB84B5136C28 * ___uploader_25;
 
 public:
 	inline static int32_t get_offset_of_nameField_4() { return static_cast<int32_t>(offsetof(AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC, ___nameField_4)); }
@@ -42072,6 +42191,15 @@ public:
 	{
 		___saver_24 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___saver_24), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_uploader_25() { return static_cast<int32_t>(offsetof(AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC, ___uploader_25)); }
+	inline QRCodeUploader_t1F6F59D7A07477CCF002E60A6C2BBB84B5136C28 * get_uploader_25() const { return ___uploader_25; }
+	inline QRCodeUploader_t1F6F59D7A07477CCF002E60A6C2BBB84B5136C28 ** get_address_of_uploader_25() { return &___uploader_25; }
+	inline void set_uploader_25(QRCodeUploader_t1F6F59D7A07477CCF002E60A6C2BBB84B5136C28 * value)
+	{
+		___uploader_25 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___uploader_25), (void*)value);
 	}
 };
 
@@ -42424,6 +42552,15 @@ public:
 };
 
 
+// QRCodeUploader
+struct QRCodeUploader_t1F6F59D7A07477CCF002E60A6C2BBB84B5136C28  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+
+public:
+};
+
+
 // Registration
 struct Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
 {
@@ -42434,6 +42571,8 @@ public:
 	TMP_InputField_tD50B4F3E6822EAC2720FAED56B86E98183F61D59 * ___passwordField_5;
 	// UnityEngine.UI.Button Registration::submitButton
 	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___submitButton_6;
+	// TMPro.TextMeshProUGUI Registration::infoText
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___infoText_7;
 
 public:
 	inline static int32_t get_offset_of_nameField_4() { return static_cast<int32_t>(offsetof(Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C, ___nameField_4)); }
@@ -42461,6 +42600,15 @@ public:
 	{
 		___submitButton_6 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___submitButton_6), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_infoText_7() { return static_cast<int32_t>(offsetof(Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C, ___infoText_7)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_infoText_7() const { return ___infoText_7; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_infoText_7() { return &___infoText_7; }
+	inline void set_infoText_7(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	{
+		___infoText_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___infoText_7), (void*)value);
 	}
 };
 
@@ -42543,6 +42691,113 @@ struct SceneSwitcher_t0D5299E748616A52E7E6B47BC61FEB51CE91192F  : public MonoBeh
 public:
 
 public:
+};
+
+
+// SelectTerrain
+struct SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+	// TMPro.TMP_Dropdown SelectTerrain::terrainPiece
+	TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * ___terrainPiece_4;
+	// TMPro.TextMeshProUGUI SelectTerrain::terrainCategory
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___terrainCategory_5;
+	// TMPro.TextMeshProUGUI SelectTerrain::terrainAttributes
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___terrainAttributes_6;
+	// TMPro.TextMeshProUGUI SelectTerrain::popUpHeader
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___popUpHeader_7;
+	// TMPro.TextMeshProUGUI SelectTerrain::displayMessage
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___displayMessage_8;
+	// UnityEngine.UI.Button SelectTerrain::generateTerrainQRCodeButton
+	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___generateTerrainQRCodeButton_9;
+	// UnityEngine.GameObject SelectTerrain::popUp
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___popUp_10;
+	// QRCodeGenerator SelectTerrain::generator
+	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * ___generator_11;
+	// SaveQRCode SelectTerrain::saver
+	SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * ___saver_12;
+
+public:
+	inline static int32_t get_offset_of_terrainPiece_4() { return static_cast<int32_t>(offsetof(SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7, ___terrainPiece_4)); }
+	inline TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * get_terrainPiece_4() const { return ___terrainPiece_4; }
+	inline TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 ** get_address_of_terrainPiece_4() { return &___terrainPiece_4; }
+	inline void set_terrainPiece_4(TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * value)
+	{
+		___terrainPiece_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___terrainPiece_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_terrainCategory_5() { return static_cast<int32_t>(offsetof(SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7, ___terrainCategory_5)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_terrainCategory_5() const { return ___terrainCategory_5; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_terrainCategory_5() { return &___terrainCategory_5; }
+	inline void set_terrainCategory_5(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	{
+		___terrainCategory_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___terrainCategory_5), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_terrainAttributes_6() { return static_cast<int32_t>(offsetof(SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7, ___terrainAttributes_6)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_terrainAttributes_6() const { return ___terrainAttributes_6; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_terrainAttributes_6() { return &___terrainAttributes_6; }
+	inline void set_terrainAttributes_6(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	{
+		___terrainAttributes_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___terrainAttributes_6), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_popUpHeader_7() { return static_cast<int32_t>(offsetof(SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7, ___popUpHeader_7)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_popUpHeader_7() const { return ___popUpHeader_7; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_popUpHeader_7() { return &___popUpHeader_7; }
+	inline void set_popUpHeader_7(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	{
+		___popUpHeader_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___popUpHeader_7), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_displayMessage_8() { return static_cast<int32_t>(offsetof(SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7, ___displayMessage_8)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_displayMessage_8() const { return ___displayMessage_8; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_displayMessage_8() { return &___displayMessage_8; }
+	inline void set_displayMessage_8(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	{
+		___displayMessage_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___displayMessage_8), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_generateTerrainQRCodeButton_9() { return static_cast<int32_t>(offsetof(SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7, ___generateTerrainQRCodeButton_9)); }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * get_generateTerrainQRCodeButton_9() const { return ___generateTerrainQRCodeButton_9; }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D ** get_address_of_generateTerrainQRCodeButton_9() { return &___generateTerrainQRCodeButton_9; }
+	inline void set_generateTerrainQRCodeButton_9(Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * value)
+	{
+		___generateTerrainQRCodeButton_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___generateTerrainQRCodeButton_9), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_popUp_10() { return static_cast<int32_t>(offsetof(SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7, ___popUp_10)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_popUp_10() const { return ___popUp_10; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_popUp_10() { return &___popUp_10; }
+	inline void set_popUp_10(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	{
+		___popUp_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___popUp_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_generator_11() { return static_cast<int32_t>(offsetof(SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7, ___generator_11)); }
+	inline QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * get_generator_11() const { return ___generator_11; }
+	inline QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D ** get_address_of_generator_11() { return &___generator_11; }
+	inline void set_generator_11(QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * value)
+	{
+		___generator_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___generator_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_saver_12() { return static_cast<int32_t>(offsetof(SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7, ___saver_12)); }
+	inline SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * get_saver_12() const { return ___saver_12; }
+	inline SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 ** get_address_of_saver_12() { return &___saver_12; }
+	inline void set_saver_12(SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * value)
+	{
+		___saver_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___saver_12), (void*)value);
+	}
 };
 
 
@@ -64372,12 +64627,12 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3999[1] =
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4001[4] = 
 {
-	U3CaddNewUnitU3Ed__22_t7E07EC3080EA5A060B96027DF243CBEFA34341DF::get_offset_of_U3CU3E1__state_0(),
-	U3CaddNewUnitU3Ed__22_t7E07EC3080EA5A060B96027DF243CBEFA34341DF::get_offset_of_U3CU3E2__current_1(),
-	U3CaddNewUnitU3Ed__22_t7E07EC3080EA5A060B96027DF243CBEFA34341DF::get_offset_of_U3CU3E4__this_2(),
-	U3CaddNewUnitU3Ed__22_t7E07EC3080EA5A060B96027DF243CBEFA34341DF::get_offset_of_U3CwwwU3E5__2_3(),
+	U3CaddNewUnitU3Ed__23_tB1025048AFE8623435466379026A33D0EBE8D76E::get_offset_of_U3CU3E1__state_0(),
+	U3CaddNewUnitU3Ed__23_tB1025048AFE8623435466379026A33D0EBE8D76E::get_offset_of_U3CU3E2__current_1(),
+	U3CaddNewUnitU3Ed__23_tB1025048AFE8623435466379026A33D0EBE8D76E::get_offset_of_U3CU3E4__this_2(),
+	U3CaddNewUnitU3Ed__23_tB1025048AFE8623435466379026A33D0EBE8D76E::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4002[21] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4002[22] = 
 {
 	AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC::get_offset_of_nameField_4(),
 	AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC::get_offset_of_powerField_5(),
@@ -64400,6 +64655,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4002[21] =
 	AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC::get_offset_of_popUp_22(),
 	AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC::get_offset_of_generator_23(),
 	AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC::get_offset_of_saver_24(),
+	AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC::get_offset_of_uploader_25(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4003[3] = 
 {
@@ -64426,27 +64682,36 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4006[2] =
 	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D::get_offset_of_qrCodeField_4(),
 	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D::get_offset_of_storeEncodedTexture_5(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4007[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4007[5] = 
 {
-	U3CRegisterU3Ed__4_tD50062E309DE49D75C30B8D2665CE6EF972B9EE2::get_offset_of_U3CU3E1__state_0(),
-	U3CRegisterU3Ed__4_tD50062E309DE49D75C30B8D2665CE6EF972B9EE2::get_offset_of_U3CU3E2__current_1(),
-	U3CRegisterU3Ed__4_tD50062E309DE49D75C30B8D2665CE6EF972B9EE2::get_offset_of_U3CU3E4__this_2(),
-	U3CRegisterU3Ed__4_tD50062E309DE49D75C30B8D2665CE6EF972B9EE2::get_offset_of_U3CwwwU3E5__2_3(),
+	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_U3CU3E1__state_0(),
+	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_U3CU3E2__current_1(),
+	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_qrCode_2(),
+	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_unitName_3(),
+	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_U3CwwwU3E5__2_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4008[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4009[4] = 
+{
+	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CU3E1__state_0(),
+	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CU3E2__current_1(),
+	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CU3E4__this_2(),
+	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CwwwU3E5__2_3(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4010[4] = 
 {
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_nameField_4(),
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_passwordField_5(),
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_submitButton_6(),
+	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_infoText_7(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4009[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4011[4] = 
 {
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CU3E1__state_0(),
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CU3E2__current_1(),
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CU3E4__this_2(),
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4010[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4012[5] = 
 {
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_nameField_4(),
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_passwordField_5(),
@@ -64454,15 +64719,34 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4010[5] =
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_submitButton_7(),
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_popUp_8(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4013[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4015[4] = 
+{
+	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CU3E1__state_0(),
+	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CU3E2__current_1(),
+	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CU3E4__this_2(),
+	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CwwwU3E5__2_3(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4016[9] = 
+{
+	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_terrainPiece_4(),
+	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_terrainCategory_5(),
+	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_terrainAttributes_6(),
+	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_popUpHeader_7(),
+	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_displayMessage_8(),
+	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_generateTerrainQRCodeButton_9(),
+	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_popUp_10(),
+	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_generator_11(),
+	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_saver_12(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4017[1] = 
 {
 	ShowMessage_t8BB58514BD077B88A7E28C92E234A9E7CD9B7CD5::get_offset_of_messageDisplay_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4014[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4018[1] = 
 {
 	ShowUsername_tEDC2E862484D790E8DBB217A01856470CB0CB275::get_offset_of_usernameDisplay_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4015[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4019[3] = 
 {
 	TerrainAttributesContent_t75B54326D81FB764DC7C25F95C0B24BD0DD445EF::get_offset_of_contentField_4(),
 	TerrainAttributesContent_t75B54326D81FB764DC7C25F95C0B24BD0DD445EF::get_offset_of_layoutElement_5(),
