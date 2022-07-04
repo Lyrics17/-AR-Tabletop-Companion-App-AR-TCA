@@ -36,13 +36,6 @@ public class AddNewUnit : MonoBehaviour
 
     IEnumerator addNewUnit()
     {
-        //just for testing purpose on mobile
-        if (nameField.text == "testMobile")
-        {
-            generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode("1");
-            popUp.SetActive(true);
-            yield break;
-        }
         string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/addUnit.php";
 
         WWWForm form = new WWWForm();
@@ -101,12 +94,6 @@ public class AddNewUnit : MonoBehaviour
 
     public void verfifyInputs()
     {
-        //just for testing purpose on moblie
-        // if (nameField.text == "testMobile")
-        // {
-        //     submitButton.interactable = true;
-        // }
-
         submitButton.interactable = (nameField.text.Length >= 1 &
                                         powerField.text.Length >= 1 &
                                         pointsField.text.Length >= 1 &

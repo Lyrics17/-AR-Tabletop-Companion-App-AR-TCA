@@ -19,11 +19,6 @@ public class Login : MonoBehaviour
     }
     IEnumerator LoginUser()
     {
-        //just for testing purpose on mobile TODO:remove this at release
-        if (userUsername.text == "adminMobile")
-        {
-            SceneManager.LoadScene("MainMenuScene");
-        }
         string url = "https://ar-tca.000webhostapp.com/AR-TCA/Users/login.php";
 
         WWWForm form = new WWWForm();
