@@ -36,7 +36,10 @@ public class AddNewUnit : MonoBehaviour
 
     IEnumerator addNewUnit()
     {
-        string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/addUnit.php";
+        //Webhost connection
+        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/addUnit.php";
+        //Localhost connection
+        string url = "http://localhost/AR-TCA/Units/addUnit.php";
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname

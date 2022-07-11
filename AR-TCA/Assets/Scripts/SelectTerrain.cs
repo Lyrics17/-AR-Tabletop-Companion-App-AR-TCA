@@ -16,7 +16,7 @@ public class SelectTerrain : MonoBehaviour
     public GameObject popUp;
     public QRCodeGenerator generator;
     public SaveQRCode saver;
-    
+
     public void callGetTerrain()
     {
         StartCoroutine(getTerrain());
@@ -24,7 +24,12 @@ public class SelectTerrain : MonoBehaviour
 
     IEnumerator getTerrain()
     {
-        string url = "https://ar-tca.000webhostapp.com/AR-TCA/Terrain/getTerrain.php";
+        //Webhost connection
+        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Terrain/getTerrain.php";
+        //Localhost connection
+        string url = "http://localhost/AR-TCA/Terrain/getTerrain.php";
+
+
         WWWForm form = new WWWForm();
 
         form.AddField("terrainPiece", terrainPiece.captionText.text);
@@ -86,7 +91,7 @@ public class SelectTerrain : MonoBehaviour
     public void saveQRCode()
     {
         string filename;
-        
+
         if (popUpHeader.text == "Gelaendestueck QR-Code")//popUpHeader is used to indicate which QRCode is being saved/displayed 
         {
             filename = terrainPiece.captionText.text;

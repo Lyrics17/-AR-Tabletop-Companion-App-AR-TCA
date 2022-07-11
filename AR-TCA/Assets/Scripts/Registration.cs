@@ -21,7 +21,10 @@ public class Registration : MonoBehaviour
     //Connection method to the specific .php file
     IEnumerator Register()
     {
-        string url = "https://ar-tca.000webhostapp.com/AR-TCA/Users/register.php";
+        //Webhost connection
+        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Users/register.php";
+        //Localhost connection
+        string url = "http://localhost/AR-TCA/Users/register.php";
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname

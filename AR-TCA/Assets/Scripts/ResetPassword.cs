@@ -25,7 +25,11 @@ public class ResetPassword : MonoBehaviour
 
     IEnumerator resetPassword()
     {
-        string url = "https://ar-tca.000webhostapp.com/AR-TCA/Users/resetPassword.php";
+        //Webhost connection
+        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Users/resetPassword.php";
+        //Localhost connection
+        string url = "http://localhost/AR-TCA/Users/resetPassword.php";
+
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname

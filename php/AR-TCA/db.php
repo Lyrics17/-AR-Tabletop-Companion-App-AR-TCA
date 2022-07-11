@@ -1,8 +1,15 @@
 <?php
+//Webhost configs
+// $servername = "localhost";
+// $username = "id19151500_ar_tca_admin";
+// $password = "]91@XXcwt(s]B3w[";
+// $database = "id19151500_ar_tca";
+
+//Localhost configs
 $servername = "localhost";
-$username = "id19151500_ar_tca_admin";
-$password = "]91@XXcwt(s]B3w[";
-$database = "id19151500_ar_tca";
+$username = "root";
+$password = "";
+$database = "ar-tca";
 
 try
 {
