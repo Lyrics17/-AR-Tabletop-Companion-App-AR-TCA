@@ -18,5 +18,3 @@ TODO: DBManager -> also get the id of the logged in user for arscene image recov
 TODO: Save QR-Codes of Marker and every Terrain for image targeting -> in DB or on device 
 
 TODO: TEST!! ARscene, db is down so no testing at current moment
-
-TODO: Added again login / qrCode / unit logic for mobile
