@@ -39,45 +39,9 @@ if (!empty($row['unitName']))
 }
 
 
-//Get idFaction  
-$stmt = $conn->prepare("SELECT idFaction FROM faction WHERE factionName =?");
-//bind $factionName to ? placeholder
-$stmt->bindParam(1, $factionName);
-//execute query & check if successfull
-if ($stmt->execute())
-{
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);
-}
-else
-{
-    echo "Error 2: getFactionQuery failed!";
-    exit();
-}
-//safe result in new var
-$faction_idFaction = $row['idFaction'];
-
-
-//Get idBattlefieldRole   
-$stmt = $conn->prepare("SELECT idBattlefieldRole FROM battlefieldrole WHERE battlefieldRoleName =?");
-//bind $battlefieldRoleName to ? placeholder
-$stmt->bindParam(1, $battlefieldRoleName);
-//execute query & check if successfull
-if ($stmt->execute())
-{
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);
-}
-else
-{
-    echo "Error 3: getBattlefieldRoleQuery failed!";
-    exit();
-}
-//safe result in new var
-$battlefieldRole_idBattlefieldRole = $row['idBattlefieldRole'];
-
-
 //insertQuery
-$stmt = $conn->prepare("INSERT INTO `unit` (`unitName`, `unitPointCost`, `unitPowerCost`, `unitMove`, `unitWeaponSkill`, `unitBallisticSkill`, `unitStrength`, `unitToughness`, `unitWounds`, `unitAttacks`, `unitLeadership`, `unitSave`, `unitPageInCodx`, `faction_idFaction`, `battlefieldRole_idBattlefieldRole`, `detachment_idDetachment`) 
-    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+$stmt = $conn->prepare("INSERT INTO `unit` (`unitName`, `unitPointCost`, `unitPowerCost`, `unitMove`, `unitWeaponSkill`, `unitBallisticSkill`, `unitStrength`, `unitToughness`, `unitWounds`, `unitAttacks`, `unitLeadership`, `unitSave`, `unitPageInCodex`) 
+    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
 $stmt->bindValue(1, $unitName);
 $stmt->bindValue(2, $unitPointCost);
 $stmt->bindValue(3, $unitPowerCost);
@@ -91,14 +55,11 @@ $stmt->bindValue(10, $unitAttacks);
 $stmt->bindValue(11, $unitLeadership);
 $stmt->bindValue(12, $unitSave);
 $stmt->bindValue(13, $codexField);
-$stmt->bindValue(14, $faction_idFaction);
-$stmt->bindValue(15, $battlefieldRole_idBattlefieldRole);
-$stmt->bindValue(16, NULL);
 
 //Check if statement failed
 if (!$stmt->execute())
 {
-    echo "Error 5: insertUserQuery failed!";
+    echo "Error 2: insertUserQuery failed!";
     exit();
 }
 
@@ -111,11 +72,37 @@ if ($stmt->execute())
 }
 else
 {
-    echo "Error 6: getUnitQuery failed!";
+    echo "Error 3: getUnitQuery failed!";
     exit();
 }
 //safe result in new var
 $newestUnitID = $row['MAX(idUnit)'];
+
+//insert idUnit in faction and battlefieldRole
+
+//faction
+$stmt = $conn->prepare("INSERT INTO `faction` (`factionName`, `unit_idUnit`) VALUES (?,?)");
+$stmt->bindValue(1, $factionName);
+$stmt->bindValue(2, $newestUnitID);
+
+//Check if statement failed
+if (!$stmt->execute())
+{
+    echo "Error 4: insertFactionQuery failed!";
+    exit();
+}
+
+//battlefieldRole
+$stmt = $conn->prepare("INSERT INTO `battlefieldRole` (`battlefieldRoleName`, `unit_idUnit`) VALUES (?,?)");
+$stmt->bindValue(1, $battlefieldRoleName);
+$stmt->bindValue(2, $newestUnitID);
+
+//Check if statement failed
+if (!$stmt->execute())
+{
+    echo "Error 5: insertBattlefieldRoleQuery failed!";
+    exit();
+}
 
 echo "Success 0: Successfully inserted new Unit! ID_" . $newestUnitID;
 $conn = null;

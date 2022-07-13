@@ -1,33 +1,63 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
+[RequireComponent(typeof(ARTrackedImageManager))]
 public class ImageRecognition : MonoBehaviour
 {
+    //Reference to the ARTrackedImageManager
+    private ARTrackedImageManager trackedImageManager;
 
-    private ARTrackedImageManager arTrackedImageManager;
+    public GameObject marker;
+
+    GameObject spawnedMarker;
 
     private void Awake()
     {
-        arTrackedImageManager = FindObjectOfType<ARTrackedImageManager>(); //finds the ARTrackedImageManager in the scene when the scene is loaded
+        //Get the ARTrackedImageManager component at the start of the game
+        trackedImageManager = GetComponent<ARTrackedImageManager>();
     }
 
     private void OnEnable()
     {
-        arTrackedImageManager.trackedImagesChanged += OnImageChanged; //adds a listener to the trackedImagesChanged event
+        //Attach event handler when tracked image changes
+        trackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
     }
 
     private void OnDisable()
     {
-        arTrackedImageManager.trackedImagesChanged -= OnImageChanged; //removes the listener from the trackedImagesChanged event
+        //Remove event handler 
+        trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
-    public void OnImageChanged(ARTrackedImagesChangedEventArgs args)
+    private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
-        foreach (var trackedImage in args.added)
+        //For each tracked image which is tracked for the first time
+        foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
-            Debug.Log(trackedImage.referenceImage.name);
+            //TODO: Add code to handle object transformation according to movement value of unit 
+            //instantiate the marker at the tracked image position
+            var newMarker  = Instantiate(marker, trackedImage.transform);
+            
+            //Save the spawned marker
+            spawnedMarker = newMarker;
+        }
+
+        //For each tracked image which is no longer tracked but just for a moment 
+        foreach (var trackedImage in eventArgs.updated)
+        {
+            //Set the spawned marker to active if it is tracked or not
+            spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
+        }
+
+        //For each tracked image which is no longer tracked
+        foreach (var trackedImage in eventArgs.removed)
+        {
+            //Destroy the spawned marker
+            Destroy(spawnedMarker);
         }
     }
 }
