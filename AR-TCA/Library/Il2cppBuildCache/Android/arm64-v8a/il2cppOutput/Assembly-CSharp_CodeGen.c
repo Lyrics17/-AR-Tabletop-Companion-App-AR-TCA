@@ -50,16 +50,16 @@ extern void DBManager_passwordResetWasSuccessful_mD699202CE1B0C8A3ACB48601D66214
 extern void DBManager_setAllVariablesFalse_m7F1630C4BD3333048ED81902667021CBB2891E73 (void);
 // 0x00000013 System.Void DBManager::.cctor()
 extern void DBManager__cctor_m324B8BCF8088503047B6BD437365CA7B8B52607A (void);
-// 0x00000014 System.Void ImageRecognition::Awake()
-extern void ImageRecognition_Awake_mE172637B23DD1B72F4CE31B40B7BF0CE56E642DB (void);
-// 0x00000015 System.Void ImageRecognition::OnEnable()
-extern void ImageRecognition_OnEnable_mB261FCAE7E314E1B9D537C60D8F075EA76FFC47C (void);
-// 0x00000016 System.Void ImageRecognition::OnDisable()
-extern void ImageRecognition_OnDisable_m2B722701BC3F3627F4A9ECBA138B31368CFCC0A9 (void);
-// 0x00000017 System.Void ImageRecognition::OnTrackedImagesChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
-extern void ImageRecognition_OnTrackedImagesChanged_m41DF039BC3ED7258D04679DDD03BF24EAB2A2C25 (void);
-// 0x00000018 System.Void ImageRecognition::.ctor()
-extern void ImageRecognition__ctor_mDDF9CAFE6A1FA239354591A0A6AED16DF84E5591 (void);
+// 0x00000014 System.Void ImageRecognitionUnits::Awake()
+extern void ImageRecognitionUnits_Awake_m22FD6471CCAB67483B910A86C85A6B64F5D5D4E7 (void);
+// 0x00000015 System.Void ImageRecognitionUnits::OnEnable()
+extern void ImageRecognitionUnits_OnEnable_m22D1CA637F159F8739E5F143B67D80E9FBA2607D (void);
+// 0x00000016 System.Void ImageRecognitionUnits::OnDisable()
+extern void ImageRecognitionUnits_OnDisable_m36B545BD42B01A0C0ECB3F15D08589BF899564F0 (void);
+// 0x00000017 System.Void ImageRecognitionUnits::OnTrackedImagesChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
+extern void ImageRecognitionUnits_OnTrackedImagesChanged_m53F800819C1AD5035CFDAA06A4E851065E06B2AC (void);
+// 0x00000018 System.Void ImageRecognitionUnits::.ctor()
+extern void ImageRecognitionUnits__ctor_m02CDAEC0597467D82BB75CD066D16CC9393867A4 (void);
 // 0x00000019 System.Void Login::callLogin()
 extern void Login_callLogin_m262465F674971FB8624E5362D775D9F5F6A87AFA (void);
 // 0x0000001A System.Collections.IEnumerator Login::LoginUser()
@@ -245,11 +245,11 @@ static Il2CppMethodPointer s_methodPointers[106] =
 	DBManager_passwordResetWasSuccessful_mD699202CE1B0C8A3ACB48601D66214034493B236,
 	DBManager_setAllVariablesFalse_m7F1630C4BD3333048ED81902667021CBB2891E73,
 	DBManager__cctor_m324B8BCF8088503047B6BD437365CA7B8B52607A,
-	ImageRecognition_Awake_mE172637B23DD1B72F4CE31B40B7BF0CE56E642DB,
-	ImageRecognition_OnEnable_mB261FCAE7E314E1B9D537C60D8F075EA76FFC47C,
-	ImageRecognition_OnDisable_m2B722701BC3F3627F4A9ECBA138B31368CFCC0A9,
-	ImageRecognition_OnTrackedImagesChanged_m41DF039BC3ED7258D04679DDD03BF24EAB2A2C25,
-	ImageRecognition__ctor_mDDF9CAFE6A1FA239354591A0A6AED16DF84E5591,
+	ImageRecognitionUnits_Awake_m22FD6471CCAB67483B910A86C85A6B64F5D5D4E7,
+	ImageRecognitionUnits_OnEnable_m22D1CA637F159F8739E5F143B67D80E9FBA2607D,
+	ImageRecognitionUnits_OnDisable_m36B545BD42B01A0C0ECB3F15D08589BF899564F0,
+	ImageRecognitionUnits_OnTrackedImagesChanged_m53F800819C1AD5035CFDAA06A4E851065E06B2AC,
+	ImageRecognitionUnits__ctor_m02CDAEC0597467D82BB75CD066D16CC9393867A4,
 	Login_callLogin_m262465F674971FB8624E5362D775D9F5F6A87AFA,
 	Login_LoginUser_m18B127C459CE84CC75DBBDC4F8BDB4BDFA1CED83,
 	Login_verfifyInputs_m5A0A3263E0148CFBD40BE101E7C71C0C03A61E7D,
