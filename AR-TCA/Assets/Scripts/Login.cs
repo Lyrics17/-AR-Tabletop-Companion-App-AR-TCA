@@ -33,7 +33,9 @@ public class Login : MonoBehaviour
         //Webhost connection
         // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Users/login.php";
         //Localhost connection
-        string url = "http://localhost/AR-TCA/Users/login.php";
+        // string url = "http://localhost/AR-TCA/Users/login.php";
+        //Local connection with fixed ip
+        string url = "192.168.178.33/AR-TCA/Users/login.php";
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname
@@ -49,6 +51,7 @@ public class Login : MonoBehaviour
             if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
             {
                 Debug.Log(www.error);
+                displayMessage.text = www.error;
             }
             else
             {

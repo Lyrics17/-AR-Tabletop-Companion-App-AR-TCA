@@ -39,7 +39,9 @@ public class AddNewUnit : MonoBehaviour
         //Webhost connection
         // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/addUnit.php";
         //Localhost connection
-        string url = "http://localhost/AR-TCA/Units/addUnit.php";
+        // string url = "http://localhost/AR-TCA/Units/addUnit.php";
+        //Local connection with fixed ip
+        string url = "192.168.178.33/AR-TCA/Units/addUnit.php";
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname

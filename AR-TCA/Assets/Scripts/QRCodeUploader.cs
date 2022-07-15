@@ -15,7 +15,9 @@ public class QRCodeUploader : MonoBehaviour
         //Webhost connection
         // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/uploadQRCode.php";
         //Localhost connection
-        string url = "http://localhost/AR-TCA/Units/uploadQRCode.php";
+        // string url = "http://localhost/AR-TCA/Units/uploadQRCode.php";
+        //Local connection with fixed ip
+        string url = "192.168.178.33/AR-TCA/Units/uploadQRCode.php";
 
         byte[] bytes = qrCode.EncodeToPNG();
         string qrCodeString = System.Convert.ToBase64String(bytes);

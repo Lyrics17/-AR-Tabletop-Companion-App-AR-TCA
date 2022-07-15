@@ -28,7 +28,9 @@ public class ResetPassword : MonoBehaviour
         //Webhost connection
         // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Users/resetPassword.php";
         //Localhost connection
-        string url = "http://localhost/AR-TCA/Users/resetPassword.php";
+        // string url = "http://localhost/AR-TCA/Users/resetPassword.php";
+        //Local connection with fixed ip
+        string url = "192.168.178.33/AR-TCA/Users/resetPassword.php";
 
 
         WWWForm form = new WWWForm();

@@ -27,8 +27,9 @@ public class SelectTerrain : MonoBehaviour
         //Webhost connection
         // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Terrain/getTerrain.php";
         //Localhost connection
-        string url = "http://localhost/AR-TCA/Terrain/getTerrain.php";
-
+        // string url = "http://localhost/AR-TCA/Terrain/getTerrain.php";
+        //Local connection with fixed ip
+        string url = "192.168.178.33/AR-TCA/Terrain/getTerrain.php";
 
         WWWForm form = new WWWForm();
 

@@ -24,7 +24,9 @@ public class Registration : MonoBehaviour
         //Webhost connection
         // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Users/register.php";
         //Localhost connection
-        string url = "http://localhost/AR-TCA/Users/register.php";
+        // string url = "http://localhost/AR-TCA/Users/register.php";
+        //Local connection with fixed ip
+        string url = "192.168.178.33/AR-TCA/Users/register.php";
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname
