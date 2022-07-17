@@ -24,5 +24,5 @@ if (empty($row['terrainCategory']))
 $terrainCategory = $row['terrainCategory'];
 $terrainAttributes = $row['terrainAttributes'];
 
-echo "Success 0: Successfully fetched terrain data! Category_" . $terrainCategory . " _Attributes_" . $terrainAttributes;
+echo "Success 0: Successfully fetched Terrain data! Category_" . $terrainCategory . " _Attributes_" . $terrainAttributes;
 $conn = null;
