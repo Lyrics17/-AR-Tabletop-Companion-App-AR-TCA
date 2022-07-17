@@ -13,7 +13,7 @@ public class ImageRecognitionUnits : MonoBehaviour
 
     public GameObject marker;
 
-    GameObject spawnedMarker;
+    private GameObject spawnedMarker;
 
     private void Awake()
     {
@@ -44,6 +44,13 @@ public class ImageRecognitionUnits : MonoBehaviour
             
             //Save the spawned marker
             spawnedMarker = newMarker;
+
+            //Change scale of marker to movement value of unit
+            //Scale x = 0.4 equals a radius of 6"
+            //use rule of three to calculate the scale of the marker
+            //TODO: implement calculation of movement value to x scale -> 
+            spawnedMarker.transform.localScale = new Vector3(0.4f, 0.4f, 0.1f);
+            // spawnedMarker.transform.localScale = new Vector3(0.533f, 0.533f, 0.1f); -> 8"
         }
 
         //For each tracked image which is no longer tracked but just for a moment 
@@ -54,6 +61,8 @@ public class ImageRecognitionUnits : MonoBehaviour
         }
 
         //For each tracked image which is no longer tracked
+        //Test what happens if you delete this code -> needs to be here else marker gets "stuck"
+        //this isn't the cause for the bug where the scene doesn't show the marker after a scene switch
         foreach (var trackedImage in eventArgs.removed)
         {
             //Destroy the spawned marker

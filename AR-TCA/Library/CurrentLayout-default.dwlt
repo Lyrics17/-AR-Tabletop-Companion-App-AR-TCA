@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1366
     height: 725
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -34,7 +34,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -43,15 +43,15 @@ MonoBehaviour:
     y: 0
     width: 348
     height: 675
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 2
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -101,10 +101,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 675
-  m_MinSize: {x: 781, y: 221}
-  m_MaxSize: {x: 16006, y: 4021}
+  m_MinSize: {x: 910, y: 271}
+  m_MaxSize: {x: 22005, y: 10021}
   vertical: 0
-  controlID: 111
+  controlID: 135
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,8 +124,8 @@ MonoBehaviour:
     y: 0
     width: 307
     height: 675
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -179,7 +179,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 725
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -269,22 +269,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 72480000
-    m_LastClickedID: 18546
-    m_ExpandedIDs: 000000005848000000ca9a3b
+    m_SelectedIDs: 20480000
+    m_LastClickedID: 18464
+    m_ExpandedIDs: 00000000d647000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -312,7 +312,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000058480000
+    m_ExpandedIDs: 00000000d6470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 70e8ffff90e8ffff08eaffff20eaffff24eaffff3ceaffff94eaffffaceaffffc4eaffffeaeaffff96f2ffffb6f2ffff2ef4ffff46f4ffff4af4ffff62f4ffffbaf4ffffd2f4ffffeaf4ffff10f5ffff6cf9ffff9ef9ffffc6f9ffffeaf9ffff40faffff5afbffff36640000
+      m_ExpandedIDs: dad3fffffad3ffff72d5ffff8ad5ffff8ed5ffffa6d5fffffed5ffff16d6ffff2ed6ffff54d6ffff86d7ffffa6d7ffff1ed9ffff36d9ffff3ad9ffff52d9ffffaad9ffffc2d9ffffdad9ffff00dafffffcdaffff1cdbffff94dcffffacdcffffb0dcffffc8dcffff20ddffff38ddffff50ddffff76ddffff9adeffffbcdeffff42e0ffff68e0ffff7ae0ffffa0e0ffff06e1ffff2ce1ffff52e1ffff86e1ffff94e6ffffb4e6ffff2ce8ffff44e8ffff48e8ffff60e8ffffb8e8ffffd0e8ffffe8e8ffff0ee9ffff6aefffff44f0ffff64f0ffffdcf1fffff4f1ffff08f2ffff24f2ffff6af2ffff82f2ffff9af2ffffbcf2ffff6cfaffff6afbffff1e620000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -568,7 +568,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

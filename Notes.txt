@@ -19,3 +19,9 @@ TODO: DBManager -> also get the id of the logged in user for arscene image recov
 TODO: Save QR-Codes of Marker and every Terrain for image targeting -> in DB or on device 
 
 TODO: AR: GameObjects die die Werte von units anzeigen adden, webrequest logik in imageRec hinzufügen -> für werte und movement, movement logik für marker hinzufügen
+
+ARScene: Marker scale von 0.4f ergeben einen 6" großen radius
+
+TODO: Doku: Gib die Masse für den idealen QR Code an! -> mach ne bedinungsanleitung
+
+TODO: Fix bug where marker doesnt spawn after the user leaves the ar scene 
