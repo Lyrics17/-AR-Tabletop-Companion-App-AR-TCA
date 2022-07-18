@@ -21,12 +21,13 @@ public class ImageRecognitionUnits : MonoBehaviour
     //TODO: Test
     // private bool waitingForDB = true;
 
-    private string unitMove;
+    private double unitMove;
     
     //Array for Data Containers
     public GameObject[] dataContainers;
 
     public TextMeshProUGUI[] dataText;
+    public TextMeshProUGUI debugLog;
 
     private void Awake()
     {
@@ -46,16 +47,29 @@ public class ImageRecognitionUnits : MonoBehaviour
         trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
+    // private object test() {
+    //     return StartCoroutine(instObject());;
+    // }
+
+    // private IEnumerator instObject() {
+    //     yield return new WaitForSeconds(1);
+    //     spawnedMarker = Instantiate(marker, new Vector3(0, 0, 0), Quaternion.identity);
+    //     spawnedMarker.transform.parent = transform;
+    //     yield return spawnedMarker;
+    // }
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
         //For each tracked image which is tracked for the first time
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
-            //instantiate the marker at the tracked image position
-            var newMarker = Instantiate(marker, trackedImage.transform); 
             callGetUnitData(trackedImage.referenceImage.name);
+        
+            // System.Threading.Thread.Sleep(1500); //sleeps 3sek
             
-            
+            //instantiate the marker at the tracked image position
+            var newMarker = Instantiate(marker, trackedImage.transform);
+
+
             // TODO:Check if this needs a await statement -> YES it needs it
             // while (waitingForDB)
             // {
@@ -67,10 +81,15 @@ public class ImageRecognitionUnits : MonoBehaviour
             //Change scale of marker to movement value of unit
             //Scale x = 0.4 equals a radius of 6"
             //use rule of three to calculate the scale of the marker
-            float newScale = (0.4f * (float)System.Convert.ToDouble(unitMove)/6);
+            float newScale = (0.4f * (float)unitMove/6);
+
+            // debugLog.text = "unitMove " + unitMove;
+            // debugLog.text += "\n";
+            // debugLog.text += "New Scale: " + newScale;
 
             spawnedMarker.transform.localScale = new Vector3(newScale, newScale, 0.1f);
             // spawnedMarker.transform.localScale = new Vector3(0.533f, 0.533f, 0.1f); -> 8"
+            enableDataContainers();
         }
 
         //For each tracked image which is no longer tracked but just for a moment 
@@ -95,6 +114,7 @@ public class ImageRecognitionUnits : MonoBehaviour
     public void callGetUnitData(string unitName)
     {
         StartCoroutine(GetUnitData(unitName));
+        // return true;
     }
 
     IEnumerator GetUnitData(string unitName)
@@ -120,6 +140,7 @@ public class ImageRecognitionUnits : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
+                // debugLog.text = www.downloadHandler.text;
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     int indexOfString = www.downloadHandler.text.IndexOf("!"); //finds the first "!" in the string
@@ -127,11 +148,21 @@ public class ImageRecognitionUnits : MonoBehaviour
 
                     string[] responseArray = response.Split('_');
 
+                    unitMove = System.Convert.ToDouble(responseArray[1]);
+
+                    // debugLog.text += "\n Move from DB";
+                    // debugLog.text += unitMove.ToString();
+
+                    //easisiest way to safe responseArray data into the dataContainers array at the right index 
+                    int index = 0;
+
                     //Save Unit Data into Array for frontend display
                     //Starts with index 3 because the first 3 values are Movement_, unitMove and _WeaponSkill_
                     for (int i = 3; i < responseArray.Length; i += 2)
                     {
-                        dataText[i].text = responseArray[i];
+                        //dataText index needs to start at 0!
+                        dataText[index].text = responseArray[i];
+                        index++;
                     }
 
                     // waitingForDB = false;

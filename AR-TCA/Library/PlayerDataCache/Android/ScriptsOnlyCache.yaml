@@ -40,8 +40,6 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARFoundation.ARSession
     - UnityEngine.XR.ARFoundation.ARSessionOrigin
     - UnityEngine.XR.ARFoundation.ARTrackedImageManager
-    Unity.XR.ARSubsystems.Editor.dll:
-    - UnityEditor.XR.ARSubsystems.XRReferenceImageLibraryEditor
     Unity.XR.ARSubsystems.dll:
     - UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
     Unity.XR.Interaction.Toolkit.Editor.dll:
@@ -363,7 +361,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6152}
     - Class: 114
-      Script: {instanceID: 19036}
+      Script: {instanceID: 19158}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -751,7 +749,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: c45b79465710ae541b9eec5a23ed9d61
+      Hash: 29d3db83019ec0d0f9ed27752c24f77e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ImageRecognitionUnits
@@ -1875,4 +1873,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/ARScene.unity
   - Assets/Scenes/AvailableArmiesScene.unity
   - Assets/Scenes/CreateArmylist.unity
-  playerPath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Builds/Build_17.07_ARundDB.apk
+  playerPath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Builds/Build_18.07_ARundDB.apk
