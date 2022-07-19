@@ -19,17 +19,16 @@ public class ImageRecognitionUnits : MonoBehaviour
     private GameObject spawnedMarker;
 
     private double unitMove;
-    private int counter = 0;
+    private string unitName;
 
-    private string nameOfTrackedImage;
-
-    private string nameOfLastTrackedImage;
+    private string nowTrackedImage;
 
     //Array for Data Containers
     public GameObject[] dataContainers;
 
     public TextMeshProUGUI[] dataText;
     public TextMeshProUGUI debugLog;
+    private bool temp = true;
 
     private int debugLogIndex = 1;
 
@@ -64,107 +63,140 @@ public class ImageRecognitionUnits : MonoBehaviour
 
     //TODO: 5 Aktueller Stand: FML UPDATE wird "permanent getracked" wahrscheinlich wird es jeden frame einmal abgefragt was gerade getrackt wird. 
 
+    //TODO: 6 Aktueller Stand: da eventArgs.updated ein array / liste ist werde ich jetzt ein array / liste machen mit allen geaddeden tracked images. sobald dann ein tracked image getrackt wird,wird die liste / array iteriert und dann bestimmt was es machen soll.
+
+    //TODO: 7 Aktueller Stand:
+    /*
+    A: Prüfe ob was im bild ist ==trackingstate.tracking
+    B2: WENN Ja -> prüfe mittels ref.name um was es sich handelt -> contains Unit etc
+    C1: WENN Unit/Terrain bearbeite namen das es für die db passt und starte damit die coroutine. Vlt muss du eine neue coroutine schreiben damit du in dieser auf die getUnitDAta coroutine warten kannst. zum schluss SetActive
+    C2: WENN Marker -> setActive
+    B2: WENN Nein -> spawne marker setActive false
+    */
+
+    // TODO: 8 Aktueller Stand:
+    /*
+    ODER:
+    kick update und destroy einfach den spawnd marker bevor ein neues instatiiert wird.
+    */
+
+    
+    // TODO: 9 Aktueller Stand:
+    /*
+    Heraufinden warum coroutine nicht im update getriggert wird richtig
+    */
+
 
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
         //For each tracked image which is tracked for the first time for once for each image
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
+            if (debugLogIndex == 3)
+            {
+                debugLog.text = "";
+            }
+
             //TODO: implement switch logic for marker, unit and terrain images 
             if (trackedImage.referenceImage.name == "Marker")
             {
-                nameOfLastTrackedImage = trackedImage.referenceImage.name;
+                if (spawnedMarker != null)
+                {
+                    spawnedMarker.SetActive(false);
+                    Destroy(spawnedMarker);
+                }
+
                 spawnedMarker = Instantiate(marker, trackedImage.transform);
 
                 spawnedMarker.transform.localScale = new Vector3(0.2f, 0.2f, 0.1f);
 
-                debugLog.text += debugLogIndex.ToString() + ": " + trackedImage.referenceImage.name;
+                debugLog.text += "\n" + debugLogIndex.ToString() + ": " + trackedImage.referenceImage.name;
                 debugLogIndex++;
             }
-            else
+            else if (trackedImage.referenceImage.name.Contains("Unit_"))
             {
-                nameOfLastTrackedImage = trackedImage.referenceImage.name;
-                coroutineInstatiateMarker = StartCoroutine(instantiateMarker(trackedImage.referenceImage.name, trackedImage));
-                debugLog.text += debugLogIndex.ToString() + ": " + trackedImage.referenceImage.name;
+                unitName = trackedImage.referenceImage.name.Substring(5);
+
+                if (spawnedMarker != null)
+                {
+                    spawnedMarker.SetActive(false);
+                    Destroy(spawnedMarker);
+                }
+
+                coroutineInstatiateMarker = StartCoroutine(instantiateMarker(unitName, trackedImage));
+                debugLog.text += "\n" + debugLogIndex.ToString() + ": " + unitName;
                 debugLogIndex++;
             }
-
-            // unitName = trackedImage.referenceImage.name;
         }
 
-        //TODO: Idee namen des zuletzt getrackten/visible images speichern, erst corotine laufen lassen wenn neues imgae sichtbar ist
+        //The right now tracked image. Is called / updated every frame! Also called when a image is for the first time added and then tracked / updated
+        // foreach (ARTrackedImage trackedImage in eventArgs.updated) //-> ist ein array aus alle bis dahin geaddedten images 
+        // {
+        //     bool isTracked = trackedImage.trackingState == TrackingState.Tracking;
+        //    // bool isTracked = trackedImage.trackingState == TrackingState.Tracking; kann man abspeichern und abfragen -> das wird jeden frame gemacht auch wenn nichts im bild ist (update) wird. akt sich aber mit dem adden. Aber isTracked gibt nur was zurück wenn was grad im bild ist -> das stimmt ABER nur für das erste bild was geadded worden ist wtf?!
 
-        //The right now tracked image. Is called / updated every frame!
-        foreach (var trackedImage in eventArgs.updated)
-        {
+        //     //ES wird nur das erste geadded image hier getrack kp warum das so ist!!
+        //    if (isTracked)
+        //    {
+        //     debugLog.text = trackedImage.referenceImage.name;
+        //    }else
+        //    {
+        //     debugLog.text = trackedImage.referenceImage.name;
+        //    }
 
-            spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
-            nameOfTrackedImage = trackedImage.referenceImage.name;
-            
-            if (nameOfTrackedImage != nameOfLastTrackedImage)
-            {
-                coroutineGetUnitData = StartCoroutine(GetUnitData(trackedImage.referenceImage.name));
-                debugLog.text += "\n Es wird jetzt " + trackedImage.referenceImage.name + " getrackt";
-            }
-            // TODO: Add code to again call getUnitData() and set the popUps again active
-            //Set the spawned marker to active if it is tracked or not
+        //     debugLog.text += " " + isTracked;
 
-            // if (trackedImage.trackingState == TrackingState.Tracking)
-            // {
-            //     // spawnedMarker.SetActive(true);
-            //     // coroutineGetUnitData = StartCoroutine(GetUnitData(trackedImage.referenceImage.name));
-            //     // enableDataContainers();
-            // }else
-            // {
-            //     Destroy(spawnedMarker);
-            //     disableDataContainers();
-            //     resetDataText();
-            // }
+        //     // if (nowTrackedImage != lastTrackedImage) //!= trackedImage.referenceImage.name wird immer wieder ausgelöst. weils alle in der liste abfragt und das dann immer true ergibt
+        //     // //geht rein wenn lasttracked image bsp guard(added) ist und cap(updated) ist 
+        //     // //geht aber auch rein wenn cap(updated) und marker(added ) ungleich ist 
+        //     // {
+        //     //     if (trackedImage.referenceImage.name.Contains("Unit_"))
+        //     //     {
+        //     //         spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
 
-            // spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
-            // coroutineGetUnitData = StartCoroutine(GetUnitData(spawnedMarker.name));
+        //     //         unitName = trackedImage.referenceImage.name.Substring(5);//diese referenz ist langsam
+        //     //         nowTrackedImage = trackedImage.referenceImage.name; //weil sonst das if immer true ist 
+        //     //         temp = true;
+        //     //         coroutineGetUnitData = StartCoroutine(GetUnitData(unitName));
+        //     //     }
+        //     //     else if (trackedImage.referenceImage.name.Contains("Terrain_"))
+        //     //     {
+        //     //         spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
 
-            //This causes that the first tracked image marker is not deactivated 
-            // if (trackedImage.trackingState == TrackingState.Tracking)
-            // {
-            //     spawnedMarker.SetActive(true);
-            //     // coroutineGetUnitData = StartCoroutine(GetUnitData(spawnedMarker.name));
-            // }
-            // else
-            // {
-            //     spawnedMarker.SetActive(false);
-            // }
+        //     //         unitName = trackedImage.referenceImage.name.Substring(8);
+        //     //         temp = true;
+        //     //         nowTrackedImage = trackedImage.referenceImage.name;
+        //     //     }
+        //     //     else //case if the image is the marker 
+        //     //     {
+        //     //         spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
 
-            // TODO: IDEE: morgen debug log machen und schauen wann trackingState == TrackingState.Tracking true und wann false ist und welches bild getracked wird
-            //TODO: IDEE: update rausschmeißen nur added wenn spawnedMarker =! null instatiate Marker sonst destroy 
+        //     //         nowTrackedImage = "Marker";
+        //     //         temp = true;
+        //     //     }
 
-        // TODO: morgen noch mal lesen was es bedeutet wenn ein image in der liste updated ist 
-
-            //this causes to show the marker which is tracked in this frame 
-            // spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
-
-            //gets called immediately after image is tracked
-            // resetDataText();
-        }
+        //     //     while (temp)
+        //     //     {
+        //     //         debugLog.text += "\nEs wird jetzt " + nowTrackedImage + " getrackt";
+        //     //         temp = false;
+        //     //     }
+        //     // }
+        // }
 
         //For each tracked image which is no longer tracked
         //Test what happens if you delete this code -> needs to be here else marker gets "stuck"
         //this isn't the cause for the bug where the scene doesn't show the marker after a scene switch
-        // foreach (var trackedImage in eventArgs.removed)
-        // {
-        //     //Destroy the spawned marker -> duno when this happens
-        //     Destroy(spawnedMarker);
-        // }
+        foreach (var trackedImage in eventArgs.removed)
+        {
+            //Destroy the spawned marker -> duno when this happens
+            Destroy(spawnedMarker);
+            debugLog.text = "spawnedMarker destroyed!!!!!!!!!";
+        }
     }
 
     IEnumerator instantiateMarker(string unitName, ARTrackedImage trackedImage)
     {
         yield return StartCoroutine(GetUnitData(unitName));
-
-        // if (spawnedMarker != null)
-        // {
-        //     Destroy(spawnedMarker);
-        // }
 
         spawnedMarker = Instantiate(marker, trackedImage.transform);
 
@@ -173,15 +205,9 @@ public class ImageRecognitionUnits : MonoBehaviour
         //use rule of three to calculate the scale of the marker
         float newScale = (0.4f * (float)unitMove / 6);
 
-        // debugLog.text = "unitMove " + unitMove;
-        // debugLog.text += "\n";
-        // debugLog.text += "New Scale: " + newScale;
-
         spawnedMarker.transform.localScale = new Vector3(newScale, newScale, 0.1f);
         // spawnedMarker.transform.localScale = new Vector3(0.533f, 0.533f, 0.1f); -> 8"
         enableDataContainers();
-
-        // yield return spawnedMarker;
     }
 
     IEnumerator GetUnitData(string unitName)
@@ -207,7 +233,6 @@ public class ImageRecognitionUnits : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
-                // debugLog.text = www.downloadHandler.text;
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     int indexOfString = www.downloadHandler.text.IndexOf("!"); //finds the first "!" in the string
@@ -216,9 +241,6 @@ public class ImageRecognitionUnits : MonoBehaviour
                     string[] responseArray = response.Split('_');
 
                     unitMove = System.Convert.ToDouble(responseArray[1]);
-
-                    // debugLog.text += "\n Move from DB";
-                    // debugLog.text += unitMove.ToString();
 
                     //easisiest way to safe responseArray data into the dataContainers array at the right index 
                     int index = 0;
