@@ -19,6 +19,11 @@ public class ImageRecognitionUnits : MonoBehaviour
     private GameObject spawnedMarker;
 
     private double unitMove;
+    private int counter = 0;
+
+    private string nameOfTrackedImage;
+
+    private string nameOfLastTrackedImage;
 
     //Array for Data Containers
     public GameObject[] dataContainers;
@@ -26,7 +31,11 @@ public class ImageRecognitionUnits : MonoBehaviour
     public TextMeshProUGUI[] dataText;
     public TextMeshProUGUI debugLog;
 
+    private int debugLogIndex = 1;
+
     private Coroutine coroutineInstatiateMarker;
+
+    private Coroutine coroutineGetUnitData;
 
     private void Awake()
     {
@@ -46,36 +55,116 @@ public class ImageRecognitionUnits : MonoBehaviour
         trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
+    // TODO: 1 Aktueller stand: Marker & werte werden richtig gespawned und angezeigt. Problem ist aber das die gespawend marker immer active, die werte nicht swichen und ermanchmal assault interccessor als biker ansieht (kann aber am digitalen bildschirm liegen)?!
+
+    // TODO: 2 Aktueller Stand: Missionmarker funktioniert, hide stats funktioniert. Das Cam verwechselt manchmal assault intercessor und biker, guess liegt am display weil captain erkennt es. ES werden NICHT die Werte gewechselt und auch nciht die marker despawned.
+
+    //TODO: 3 Aktueller Stand: Bug mit biker und intercessor liegt am bild/display
+    //TODO: 4 Aktueller Stand: Man braucht ein update da sonst einmal getrackte imgs nicht noch mal getracket werden -> eins zu destory hilft nicht 
+
+    //TODO: 5 Aktueller Stand: FML UPDATE wird "permanent getracked" wahrscheinlich wird es jeden frame einmal abgefragt was gerade getrackt wird. 
+
+
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
-        //For each tracked image which is tracked for the first time
+        //For each tracked image which is tracked for the first time for once for each image
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
-            coroutineInstatiateMarker = StartCoroutine(instantiateMarker(trackedImage.referenceImage.name ,trackedImage));
+            //TODO: implement switch logic for marker, unit and terrain images 
+            if (trackedImage.referenceImage.name == "Marker")
+            {
+                nameOfLastTrackedImage = trackedImage.referenceImage.name;
+                spawnedMarker = Instantiate(marker, trackedImage.transform);
+
+                spawnedMarker.transform.localScale = new Vector3(0.2f, 0.2f, 0.1f);
+
+                debugLog.text += debugLogIndex.ToString() + ": " + trackedImage.referenceImage.name;
+                debugLogIndex++;
+            }
+            else
+            {
+                nameOfLastTrackedImage = trackedImage.referenceImage.name;
+                coroutineInstatiateMarker = StartCoroutine(instantiateMarker(trackedImage.referenceImage.name, trackedImage));
+                debugLog.text += debugLogIndex.ToString() + ": " + trackedImage.referenceImage.name;
+                debugLogIndex++;
+            }
+
+            // unitName = trackedImage.referenceImage.name;
         }
 
-        //For each tracked image which is no longer tracked but just for a moment 
+        //TODO: Idee namen des zuletzt getrackten/visible images speichern, erst corotine laufen lassen wenn neues imgae sichtbar ist
+
+        //The right now tracked image. Is called / updated every frame!
         foreach (var trackedImage in eventArgs.updated)
         {
+
+            spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
+            nameOfTrackedImage = trackedImage.referenceImage.name;
+            
+            if (nameOfTrackedImage != nameOfLastTrackedImage)
+            {
+                coroutineGetUnitData = StartCoroutine(GetUnitData(trackedImage.referenceImage.name));
+                debugLog.text += "\n Es wird jetzt " + trackedImage.referenceImage.name + " getrackt";
+            }
             // TODO: Add code to again call getUnitData() and set the popUps again active
             //Set the spawned marker to active if it is tracked or not
-            spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
+
+            // if (trackedImage.trackingState == TrackingState.Tracking)
+            // {
+            //     // spawnedMarker.SetActive(true);
+            //     // coroutineGetUnitData = StartCoroutine(GetUnitData(trackedImage.referenceImage.name));
+            //     // enableDataContainers();
+            // }else
+            // {
+            //     Destroy(spawnedMarker);
+            //     disableDataContainers();
+            //     resetDataText();
+            // }
+
+            // spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
+            // coroutineGetUnitData = StartCoroutine(GetUnitData(spawnedMarker.name));
+
+            //This causes that the first tracked image marker is not deactivated 
+            // if (trackedImage.trackingState == TrackingState.Tracking)
+            // {
+            //     spawnedMarker.SetActive(true);
+            //     // coroutineGetUnitData = StartCoroutine(GetUnitData(spawnedMarker.name));
+            // }
+            // else
+            // {
+            //     spawnedMarker.SetActive(false);
+            // }
+
+            // TODO: IDEE: morgen debug log machen und schauen wann trackingState == TrackingState.Tracking true und wann false ist und welches bild getracked wird
+            //TODO: IDEE: update rausschmeißen nur added wenn spawnedMarker =! null instatiate Marker sonst destroy 
+
+        // TODO: morgen noch mal lesen was es bedeutet wenn ein image in der liste updated ist 
+
+            //this causes to show the marker which is tracked in this frame 
+            // spawnedMarker.SetActive(trackedImage.trackingState == TrackingState.Tracking);
+
+            //gets called immediately after image is tracked
+            // resetDataText();
         }
 
         //For each tracked image which is no longer tracked
         //Test what happens if you delete this code -> needs to be here else marker gets "stuck"
         //this isn't the cause for the bug where the scene doesn't show the marker after a scene switch
-        foreach (var trackedImage in eventArgs.removed)
-        {
-            // TODO: Add code to empty popUps after marker is removed 
-            //Destroy the spawned marker
-            Destroy(spawnedMarker);
-        }
+        // foreach (var trackedImage in eventArgs.removed)
+        // {
+        //     //Destroy the spawned marker -> duno when this happens
+        //     Destroy(spawnedMarker);
+        // }
     }
 
     IEnumerator instantiateMarker(string unitName, ARTrackedImage trackedImage)
     {
         yield return StartCoroutine(GetUnitData(unitName));
+
+        // if (spawnedMarker != null)
+        // {
+        //     Destroy(spawnedMarker);
+        // }
 
         spawnedMarker = Instantiate(marker, trackedImage.transform);
 
@@ -92,7 +181,7 @@ public class ImageRecognitionUnits : MonoBehaviour
         // spawnedMarker.transform.localScale = new Vector3(0.533f, 0.533f, 0.1f); -> 8"
         enableDataContainers();
 
-        yield return spawnedMarker;
+        // yield return spawnedMarker;
     }
 
     IEnumerator GetUnitData(string unitName)
@@ -156,12 +245,13 @@ public class ImageRecognitionUnits : MonoBehaviour
         }
     }
 
-    private void disableDataContainers()
+    public void disableDataContainers()
     {
         foreach (GameObject dataContainer in dataContainers)
         {
             dataContainer.SetActive(false);
         }
+        resetDataText();
     }
 
     private void resetDataText()

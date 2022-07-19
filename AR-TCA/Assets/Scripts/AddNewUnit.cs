@@ -118,7 +118,7 @@ public class AddNewUnit : MonoBehaviour
 
     public void onClickSave()
     {
-        saver.GetComponent<SaveQRCode>().saveQRCodeOnDevice(generator.GetComponent<QRCodeGenerator>().getTexture(), nameField.text);
+        saver.GetComponent<SaveQRCode>().saveQRCodeOnDevice(generator.GetComponent<QRCodeGenerator>().getTexture(), "Unit_" + nameField.text);
         displayMessagePopUp.text = "QR Code wurde gespeichert";
     }
 

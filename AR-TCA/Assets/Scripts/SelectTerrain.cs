@@ -95,7 +95,7 @@ public class SelectTerrain : MonoBehaviour
 
         if (popUpHeader.text == "Gelaendestueck QR-Code")//popUpHeader is used to indicate which QRCode is being saved/displayed 
         {
-            filename = terrainPiece.captionText.text;
+            filename = "Gelaendestueck_" + terrainPiece.captionText.text;
         }
         else
         {

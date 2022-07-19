@@ -35,3 +35,23 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: Primaris Captain
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4766233232636742108
+      m_GuidHigh: 636726316131319703
+    m_SerializedTextureGuid:
+      m_GuidLow: 16088020694107734273
+      m_GuidHigh: 5187980542522676170
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Outrider Squad
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4938953097806374601
+      m_GuidHigh: 4812353910805577405
+    m_SerializedTextureGuid:
+      m_GuidLow: 18393921621430765909
+      m_GuidHigh: 4285052340220630025
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Marker
+    m_Texture: {fileID: 0}
