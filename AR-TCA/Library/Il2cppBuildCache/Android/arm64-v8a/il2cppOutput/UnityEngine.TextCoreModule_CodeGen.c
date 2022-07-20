@@ -560,12 +560,12 @@ static const Il2CppTokenRangePair s_rgctxIndices[2] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[6] = 
 {
-	{ (Il2CppRGCTXDataType)3, 12061 },
-	{ (Il2CppRGCTXDataType)2, 4409 },
-	{ (Il2CppRGCTXDataType)3, 22808 },
-	{ (Il2CppRGCTXDataType)3, 12062 },
-	{ (Il2CppRGCTXDataType)2, 4410 },
-	{ (Il2CppRGCTXDataType)3, 22809 },
+	{ (Il2CppRGCTXDataType)3, 12071 },
+	{ (Il2CppRGCTXDataType)2, 4411 },
+	{ (Il2CppRGCTXDataType)3, 22818 },
+	{ (Il2CppRGCTXDataType)3, 12072 },
+	{ (Il2CppRGCTXDataType)2, 4412 },
+	{ (Il2CppRGCTXDataType)3, 22819 },
 };
 extern const CustomAttributesCacheGenerator g_UnityEngine_TextCoreModule_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_TextCoreModule_CodeGenModule;

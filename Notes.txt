@@ -16,3 +16,5 @@ TODO: CreateArmylist Scene: When Dropdown for unit is changed to something else 
 TODO: Save QR-Codes of Marker and every Terrain for image targeting -> device 
 
 TODO: Doku: Gib die Masse für den idealen QR Code an! -> mach ne bedinungsanleitung
+
+TODO: Neue QRCodes für biker und oder intercessor machen -> sehen sich zu ähnlich

@@ -361,7 +361,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6154}
     - Class: 114
-      Script: {instanceID: 19264}
+      Script: {instanceID: 18980}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1873,4 +1873,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/ARScene.unity
   - Assets/Scenes/AvailableArmiesScene.unity
   - Assets/Scenes/CreateArmylist.unity
-  playerPath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Builds/Build_19.07_ValueSwitchBug.apk
+  playerPath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Builds/Build_20.07_MarkerAndValueWorkButNoSwitch.apk
