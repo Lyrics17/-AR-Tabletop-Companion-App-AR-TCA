@@ -20,6 +20,7 @@ public class ImageRecognitionUnits : MonoBehaviour
     //In this dictionary the instantiated markers and the image.name they are associated with are stored
     private readonly Dictionary<string, GameObject> instantiatedMarkers = new Dictionary<string, GameObject>();
 
+    //Utility vars
     private double unitMove;
     private string unitName;
 
@@ -34,7 +35,6 @@ public class ImageRecognitionUnits : MonoBehaviour
     //Reference for the coroutines used in this script
     private Coroutine coroutineInstatiateMarker;
     private Coroutine coroutineGetUnitData;
-    private Coroutine coroutineUpdateUnitData;
 
     private void Awake()
     {
@@ -69,6 +69,13 @@ public class ImageRecognitionUnits : MonoBehaviour
                 DER SHIT FUNKT!!!!!!!!!!! HAHAHHA sooo geil!!!! man kann jetzt zwischen images wechseln und der dementsprechende marker wird wieder angezeigt hahahahahahahaha
 
                 TODO: Heraufinden warum coroutine nicht im update getriggert wird richtig
+
+                Ergebnis von einer neuen coroutine die im update abgefeuert wird. in dieser wird 5sek gewartet und dann die getunitData coroutine abgefeuert.:
+                    Es geht nicht, getUpdateData wird erst aufgerufen wenn das ding nicht mehr getracked wird. bis dahin ist der name nciht mehr sicht bar. FUCK IT.
+
+    
+    Akuteller Stand 21.07.2022: Unit und Maker gehn, man bekommt werte aus der db und die marker werden richtig instanziiert. Das einzige was nicht geht ist dsa wenn man von einem image mit db zu einem neuen image mit db, wieder zurück geht im da nochmal die werte zu holen -> es ist nicht möglich mit einer coroutine das zu lösen 
+        Idee: speicher die werte in ein array ab und rufe die auf quasi wie du es mit der dic machst aber eig kein bock mal sehen
     */
 
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
@@ -80,7 +87,7 @@ public class ImageRecognitionUnits : MonoBehaviour
             if (trackedImage.referenceImage.name == "Marker")
             {
 
-                // disableDataContainers();
+                disableDataContainers();
 
                 spawnedMarker = Instantiate(marker, trackedImage.transform);
 
@@ -105,8 +112,6 @@ public class ImageRecognitionUnits : MonoBehaviour
         foreach (ARTrackedImage trackedImage in eventArgs.updated) //-> ist ein array aus alle bis dahin geaddedten images 
         {
             instantiatedMarkers[trackedImage.referenceImage.name].SetActive(trackedImage.trackingState == TrackingState.Tracking);
-
-            coroutineUpdateUnitData = StartCoroutine(GetUpdatedUnitData(unitName));
         }
     }
 
@@ -178,13 +183,6 @@ public class ImageRecognitionUnits : MonoBehaviour
 
     }
 
-    IEnumerator GetUpdatedUnitData(string unitName)
-    {
-        yield return new WaitForEndOfFrame();
-
-        yield return StartCoroutine(GetUnitData(unitName));
-    }
-
     private void enableDataContainers()
     {
         foreach (GameObject dataContainer in dataContainers)
@@ -195,18 +193,11 @@ public class ImageRecognitionUnits : MonoBehaviour
 
     public void disableDataContainers()
     {
-        // foreach (GameObject dataContainer in dataContainers)
-        // {
-        //     dataContainer.SetActive(false);
-        // }
-        // resetDataText();
-
-        debugLog.text = "";
-
-        foreach (KeyValuePair<string, GameObject> kvp in instantiatedMarkers)
+        foreach (GameObject dataContainer in dataContainers)
         {
-            debugLog.text += "\n Key = " + kvp.Key + "Value = " + kvp.Value;
+            dataContainer.SetActive(false);
         }
+        resetDataText();
     }
 
     private void resetDataText()
