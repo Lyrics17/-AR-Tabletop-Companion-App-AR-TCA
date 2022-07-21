@@ -81,10 +81,10 @@ public class AddNewUnit : MonoBehaviour
                     //get index of unitID of php echo 
                     int indexOfID = www.downloadHandler.text.IndexOf("_");
                     //index of _ char +1 = unitID string
-                    string unitID = www.downloadHandler.text.Substring(indexOfID + 1);
+                    string unitName = www.downloadHandler.text.Substring(indexOfID + 1);
 
                     //get Component(script) of referenced gameObject and fire function
-                    generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode(unitID);
+                    generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode(unitName);
                     uploadQRCode();
                     popUp.SetActive(true);
                 }

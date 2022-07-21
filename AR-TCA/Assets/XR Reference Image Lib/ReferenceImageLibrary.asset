@@ -65,3 +65,93 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: Unit_Bladeguard Veteran Squad
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4997820436049688799
+      m_GuidHigh: 17985945994024414373
+    m_SerializedTextureGuid:
+      m_GuidLow: 17551931863484873996
+      m_GuidHigh: 16216638818513494362
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Barrikaden und Rohrleitungen
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4843170985076948883
+      m_GuidHigh: 7507997778845700748
+    m_SerializedTextureGuid:
+      m_GuidLow: 11449305645674934519
+      m_GuidHigh: 15547372053782746970
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Eingestuerzte Waende
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4640309381732037495
+      m_GuidHigh: 12964855983918374058
+    m_SerializedTextureGuid:
+      m_GuidLow: 14692063960205550329
+      m_GuidHigh: 14937245272554726746
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Gepanzerte Container
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5701568579226931201
+      m_GuidHigh: 858314097810588033
+    m_SerializedTextureGuid:
+      m_GuidLow: 10562260700321064442
+      m_GuidHigh: 15351644790433496650
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Imperiale Statuen
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5016098482319698612
+      m_GuidHigh: 9221389711621016484
+    m_SerializedTextureGuid:
+      m_GuidLow: 992020319383362705
+      m_GuidHigh: 8205375996777818298
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Industriebauwerke
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4618641424370108399
+      m_GuidHigh: 1094497949681703080
+    m_SerializedTextureGuid:
+      m_GuidLow: 6351269676444815116
+      m_GuidHigh: 1748861966032287707
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Krater
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5690856814924472392
+      m_GuidHigh: 13168942005718924187
+    m_SerializedTextureGuid:
+      m_GuidLow: 6707239842960765200
+      m_GuidHigh: 15418443344135023306
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Ruinen
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5023280332490182910
+      m_GuidHigh: 15188903862007908237
+    m_SerializedTextureGuid:
+      m_GuidLow: 13462416936822511085
+      m_GuidHigh: 17230888579512437803
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Schlachtfeldueberreste
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5715403102116802603
+      m_GuidHigh: 10638282094891384485
+    m_SerializedTextureGuid:
+      m_GuidLow: 7968024567572811399
+      m_GuidHigh: 4026677377623518376
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Waelder
+    m_Texture: {fileID: 0}

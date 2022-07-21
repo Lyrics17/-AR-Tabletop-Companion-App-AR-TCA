@@ -24,9 +24,15 @@ public class ImageRecognition : MonoBehaviour
     private double unitMove;
     private string unitName;
     private bool dataContainersVisible = false;
+    private bool terrainFieldsVisible = false;
 
-    //Array for Data Containers
+    //Frontend vars
     public GameObject[] dataContainers;
+
+    public GameObject terrainCategory;
+    public GameObject terrainAttributes;
+    public TextMeshProUGUI terrainCategoryField;
+    public TextMeshProUGUI terrainAttributesField;
 
     // TODO: Delete after completeing the test
     public TextMeshProUGUI[] dataText;
@@ -36,6 +42,7 @@ public class ImageRecognition : MonoBehaviour
     //Reference for the coroutines used in this script
     private Coroutine coroutineInstatiateMarker;
     private Coroutine coroutineGetUnitData;
+    private Coroutine coroutineGetTerrainData;
 
     private void Awake()
     {
@@ -76,7 +83,10 @@ public class ImageRecognition : MonoBehaviour
 
     
     Akuteller Stand 21.07.2022: Unit und Maker gehn, man bekommt werte aus der db und die marker werden richtig instanziiert. Das einzige was nicht geht ist dsa wenn man von einem image mit db zu einem neuen image mit db, wieder zurück geht im da nochmal die werte zu holen -> es ist nicht möglich mit einer coroutine das zu lösen 
-        Idee: speicher die werte in ein array ab und rufe die auf quasi wie du es mit der dic machst aber eig kein bock mal sehen
+        Idee: speicher die werte in ein array ab und rufe die auf quasi wie du es mit der dic machst aber eig kein bock mal sehen -> funkt nicht
+
+    Aktueller Stand: Es funktioniert alles. Marker, Unit, Terrain. Nur das wieder herholen von werten eines imgaes wenn ein anderes getracked wird.
+    geht nciht aber meh!!!
     */
 
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
@@ -84,12 +94,11 @@ public class ImageRecognition : MonoBehaviour
         //For each tracked image which is tracked for the first time for once for each image
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
-            //TODO: implement switch logic for marker, unit and terrain images 
             if (trackedImage.referenceImage.name == "Marker")
             {
 
                 disableDataContainers();
-                dataContainersVisible = false;
+                disableTerrainFields();
 
                 spawnedMarker = Instantiate(marker, trackedImage.transform);
 
@@ -107,6 +116,14 @@ public class ImageRecognition : MonoBehaviour
                 coroutineInstatiateMarker = StartCoroutine(instantiateMarker(unitName, trackedImage));
                 debugLog.text += "\n" + debugLogIndex.ToString() + ": " + unitName;
                 debugLogIndex++;
+            }
+            else if (trackedImage.referenceImage.name.Contains("Terrain_"))
+            {
+                string terrainPiece = trackedImage.referenceImage.name.Substring(8);
+
+                coroutineGetTerrainData = StartCoroutine(getTerrainData(terrainPiece));
+
+                debugLog.text += "\nTerrainPiece: " + terrainPiece;
             }
         }
 
@@ -134,7 +151,6 @@ public class ImageRecognition : MonoBehaviour
         instantiatedMarkers.Add(trackedImage.referenceImage.name, spawnedMarker);
 
         enableDataContainers();
-        dataContainersVisible = true;
     }
 
     IEnumerator GetUnitData(string unitName)
@@ -183,7 +199,41 @@ public class ImageRecognition : MonoBehaviour
                 }
             }
         }
+    }
 
+    IEnumerator getTerrainData(string terrainPiece)
+    {
+        //Webhost connection
+        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Terrain/getTerrain.php";
+        //Localhost connection
+        // string url = "http://localhost/AR-TCA/Terrain/getTerrain.php";
+        //Local connection with fixed ip
+        string url = "192.168.178.33/AR-TCA/Terrain/getTerrain.php";
+
+        WWWForm form = new WWWForm();
+
+        form.AddField("terrainPiece", terrainPiece);
+
+        using (UnityWebRequest www = UnityWebRequest.Post(url, form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                int indexOfString = www.downloadHandler.text.IndexOf("!"); //finds the first "!" in the string
+                string response = www.downloadHandler.text.Substring(indexOfString + 2); //cuts the string from the first "! + 2" to the end
+
+                string[] responseArray = response.Split('_'); //splits the string at the "_" character
+                terrainCategoryField.text = responseArray[1];
+                terrainAttributesField.text = responseArray[3];
+
+                enableTerrainFields();
+            }
+        }
     }
 
     private void enableDataContainers()
@@ -192,6 +242,7 @@ public class ImageRecognition : MonoBehaviour
         {
             dataContainer.SetActive(true);
         }
+        dataContainersVisible = true;
     }
 
     private void disableDataContainers()
@@ -200,6 +251,7 @@ public class ImageRecognition : MonoBehaviour
         {
             dataContainer.SetActive(false);
         }
+        dataContainersVisible = false;
     }
 
     public void toggleDataContainers()
@@ -216,4 +268,31 @@ public class ImageRecognition : MonoBehaviour
         }
     }
 
+    private void enableTerrainFields()
+    {
+        terrainCategory.gameObject.SetActive(true);
+        terrainAttributes.gameObject.SetActive(true);
+        terrainFieldsVisible = true;
+    }
+
+    private void disableTerrainFields()
+    {
+        terrainCategory.gameObject.SetActive(false);
+        terrainAttributes.gameObject.SetActive(false);
+        terrainFieldsVisible = false;
+    }
+
+    public void toggleTerrainFields()
+    {
+        if (terrainFieldsVisible)
+        {
+            disableTerrainFields();
+            terrainFieldsVisible = false;
+        }
+        else
+        {
+            enableTerrainFields();
+            terrainFieldsVisible = true;
+        }
+    }
 }

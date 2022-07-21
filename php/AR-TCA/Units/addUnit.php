@@ -64,7 +64,7 @@ if (!$stmt->execute())
 }
 
 //Get newest idUnit for QRCode creation
-$stmt = $conn->prepare("SELECT MAX(idUnit) FROM unit");
+$stmt = $conn->prepare("SELECT MAX(idUnit), unitName FROM unit");
 //execute query & check if successfull
 if ($stmt->execute())
 {
@@ -77,6 +77,7 @@ else
 }
 //safe result in new var
 $newestUnitID = $row['MAX(idUnit)'];
+$newestUnitName = $row['unitName'];
 
 //insert idUnit in faction and battlefieldRole
 
@@ -104,5 +105,5 @@ if (!$stmt->execute())
     exit();
 }
 
-echo "Success 0: Successfully inserted new Unit! ID_" . $newestUnitID;
+echo "Success 0: Successfully inserted new Unit! Name_" . $newestUnitName;
 $conn = null;

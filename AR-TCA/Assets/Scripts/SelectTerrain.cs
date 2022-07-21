@@ -20,6 +20,7 @@ public class SelectTerrain : MonoBehaviour
     public void callGetTerrain()
     {
         StartCoroutine(getTerrain());
+        displayMessage.text = "wurde erfolgreich erzeugt!";
     }
 
     IEnumerator getTerrain()
@@ -95,7 +96,7 @@ public class SelectTerrain : MonoBehaviour
 
         if (popUpHeader.text == "Gelaendestueck QR-Code")//popUpHeader is used to indicate which QRCode is being saved/displayed 
         {
-            filename = "Gelaendestueck_" + terrainPiece.captionText.text;
+            filename = "Terrain_" + terrainPiece.captionText.text;
         }
         else
         {
