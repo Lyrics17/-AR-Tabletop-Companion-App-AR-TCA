@@ -155,3 +155,73 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: Terrain_Waelder
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4868220141869558418
+      m_GuidHigh: 2216070808318524585
+    m_SerializedTextureGuid:
+      m_GuidLow: 18227447439230370198
+      m_GuidHigh: 5074936140104073272
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Unit_Primaris Chaplain
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5099943943903607715
+      m_GuidHigh: 11766406624285376950
+    m_SerializedTextureGuid:
+      m_GuidLow: 11688173784988100024
+      m_GuidHigh: 3207136421794336360
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Unit_Overlord
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4996471686776526031
+      m_GuidHigh: 12960384856752957620
+    m_SerializedTextureGuid:
+      m_GuidLow: 3379097407646519873
+      m_GuidHigh: 405221509444931816
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Unit_Skorpekh Destroyers
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4959595169131784130
+      m_GuidHigh: 2071423986541574298
+    m_SerializedTextureGuid:
+      m_GuidLow: 7945481145809407971
+      m_GuidHigh: 4203097246769635739
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Unit_Canoptek Plasmacyte
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5274199768757016490
+      m_GuidHigh: 13497112318902669965
+    m_SerializedTextureGuid:
+      m_GuidLow: 4077072598634877000
+      m_GuidHigh: 3971076270928350761
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Unit_Canoptek Scarab Swarms
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5363242065484104398
+      m_GuidHigh: 12094399771210465177
+    m_SerializedTextureGuid:
+      m_GuidLow: 13948909659104379625
+      m_GuidHigh: 13595362989194394328
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Unit_Necron Warriors
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5084618208353637115
+      m_GuidHigh: 15416333949001896110
+    m_SerializedTextureGuid:
+      m_GuidLow: 13426630270106802099
+      m_GuidHigh: 7098672778346400539
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Unit_Royal Warden
+    m_Texture: {fileID: 0}

@@ -14,7 +14,6 @@ Idea how to get armylist data:
 TODO: CreateArmylist Scene: When Dropdown for unit is changed to something else than "Bitte auswaehlen" make QRCode Button interactable, get the unitId of the chosen unit and generate the qr code //v2: put the QRCode Button between the points and power counter to make if more obvious what function the button has
 
 TODO: Doku: Gib die Masse für den idealen QR Code an! -> mach ne bedinungsanleitung + erklärung für die symbole
+      Doku Ausblick: die ar scene im mehrere phasen ausplitten-> move, shoot, charge
 
 TODO: Add info button to arscene -> warte auf die umfragewerte 
-
-TODO: Bevor du die QRCodes drucken gehts nochmal alle einheiten reinschreiben

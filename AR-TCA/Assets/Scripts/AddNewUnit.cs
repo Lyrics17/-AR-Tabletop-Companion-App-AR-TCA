@@ -126,4 +126,27 @@ public class AddNewUnit : MonoBehaviour
     {
         uploader.GetComponent<QRCodeUploader>().uploadQRCodetoServer(nameField.text, generator.GetComponent<QRCodeGenerator>().getTexture());
     }
+
+    public void resetDisplay()
+    {
+        displayMessagePopUp.text = "QR Code erfolgreich erzeugt!";
+    }
+
+    private void resetTextFields() { //TODO: check if this is needed
+        nameField.text = "";
+        powerField.text = "";
+        pointsField.text = "";
+        movementField.text = "";
+        weaponSkillField.text = "";
+        ballisticSkilltField.text = "";
+        strenghtField.text = "";
+        toughnessField.text = "";
+        woundsField.text = "";
+        attacksField.text = "";
+        leadershipField.text = "";
+        saveField.text = "";
+        codexField.text = "";
+        factionField.value = 0;
+        battlefieldRoleField.value = 0;
+    }
 }
