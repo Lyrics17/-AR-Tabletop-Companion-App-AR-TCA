@@ -86,7 +86,7 @@ public class SelectTerrain : MonoBehaviour
 
     public void generateMarkerQRCode()
     {
-        generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode("Marker");
+        generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode("MarkerABCDEFGHIJLMNOPQRSTUVWXYZabasdfaservasdf");
         popUpHeader.text = "Missionszielmarker QR-Code";
     }
 

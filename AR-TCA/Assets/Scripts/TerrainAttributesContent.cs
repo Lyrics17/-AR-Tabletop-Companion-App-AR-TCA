@@ -9,7 +9,6 @@ public class TerrainAttributesContent : MonoBehaviour
 {
     public TextMeshProUGUI contentField;
     public LayoutElement layoutElement;
-
     public int characterWrapLimit;
 
     private void Update()

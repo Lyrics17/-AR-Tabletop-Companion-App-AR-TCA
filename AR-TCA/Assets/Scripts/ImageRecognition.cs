@@ -17,25 +17,24 @@ public class ImageRecognition : MonoBehaviour
     public GameObject marker;
     private GameObject spawnedMarker;
 
-    //In this dictionary the instantiated markers and the image.name they are associated with are stored
+    //This dictionary stores the instantiated markers and the image.name to which they are assigned
     private readonly Dictionary<string, GameObject> instantiatedMarkers = new Dictionary<string, GameObject>();
 
     //Utility vars
     private double unitMove;
-    private string unitName;
+
     private bool dataContainersVisible = false;
     private bool terrainFieldsVisible = false;
 
     //Frontend vars
     public GameObject[] dataContainers;
-
+    public TextMeshProUGUI[] dataText;
     public GameObject terrainCategory;
     public GameObject terrainAttributes;
     public TextMeshProUGUI terrainCategoryField;
     public TextMeshProUGUI terrainAttributesField;
 
     // TODO: Delete after completeing the test
-    public TextMeshProUGUI[] dataText;
     public TextMeshProUGUI debugLog;
     private int debugLogIndex = 1;
 
@@ -62,36 +61,10 @@ public class ImageRecognition : MonoBehaviour
         trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
-    // TODO: Idee 2 (implementiert):
-    /*
-    kick update und destroy einfach den spawnd marker bevor ein neues instatiiert wird.
-    Ergebnis:
-        Wenn ein Image erkannt wird, wird der Marker angezeigt. Wenn das Image aus dem Bild geht und wieder auftaucht wird die Position des Markers wieder auf die Position des Images gesetzt. Wenn das Images eine Weile ca. halbe Min nicht getracket wird, wird der Marker wieder "neu" eingeblendet (schwebt nicht im raum sondern tauch neu auf dem Image auf). Geht man zu schnell auf das Image wieder, sieht man den falsch plazierten Marker welcher dann aber wieder richtig plaziert wird. Wird ein neues Image erkannt wird der alte Marker gelöscht und der neue erstellt und nimmt seinen platz ein (Es gelten die gleichen Regeln wie oben). Wird wieder zum davor getracketen image gewechselt wird dieses nicht angezeigt / aktiviert.
-
-        TODO: 1st: teste was passiert wenn jetzt nur der standard code von update hinzugefügt wird
-        Ergebnis: 
-            Wenn ein Image erkannt wird, wird der Marker angezeigt. Wenn das Image aus dem Bild geht und wieder auftaucht wird die Position des Markers wieder auf die Position des Images gesetzt. Wenn ein neues Image getracket wird, wird das inkonsistent gespanwed, hängt wahrscheinlich mit den frames zuammen. Und wenn es klappt wird der alte nicht mehr angezeigt. Kann sein das es besser klappt wenn jedes image sein eigenes prefab hätte.
-
-            TODO: Wenn die 2nd idee nicht funktioniert mach eine dictionary und speicher jede instanz des spawned markers mit dem dazugehörigen namen und lass die im updated durchgehen -> wie im video.
-            Ergebnis:
-                DER SHIT FUNKT!!!!!!!!!!! HAHAHHA sooo geil!!!! man kann jetzt zwischen images wechseln und der dementsprechende marker wird wieder angezeigt hahahahahahahaha
-
-                TODO: Heraufinden warum coroutine nicht im update getriggert wird richtig
-
-                Ergebnis von einer neuen coroutine die im update abgefeuert wird. in dieser wird 5sek gewartet und dann die getunitData coroutine abgefeuert.:
-                    Es geht nicht, getUpdateData wird erst aufgerufen wenn das ding nicht mehr getracked wird. bis dahin ist der name nciht mehr sicht bar. FUCK IT.
-
     
-    Akuteller Stand 21.07.2022: Unit und Maker gehn, man bekommt werte aus der db und die marker werden richtig instanziiert. Das einzige was nicht geht ist dsa wenn man von einem image mit db zu einem neuen image mit db, wieder zurück geht im da nochmal die werte zu holen -> es ist nicht möglich mit einer coroutine das zu lösen 
-        Idee: speicher die werte in ein array ab und rufe die auf quasi wie du es mit der dic machst aber eig kein bock mal sehen -> funkt nicht
-
-    Aktueller Stand: Es funktioniert alles. Marker, Unit, Terrain. Nur das wieder herholen von werten eines imgaes wenn ein anderes getracked wird.
-    geht nciht aber meh!!!
-    */
-
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
-        //For each tracked image which is tracked for the first time for once for each image
+        //For each referenced image which is tracked for the first time. Just happens once for each image
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
             if (trackedImage.referenceImage.name == "Marker")
@@ -102,7 +75,7 @@ public class ImageRecognition : MonoBehaviour
 
                 spawnedMarker = Instantiate(marker, trackedImage.transform);
 
-                spawnedMarker.transform.localScale = new Vector3(0.2f, 0.2f, 0.1f);
+                spawnedMarker.transform.localScale = new Vector3(0.2f, 0.2f, 0.1f); // == 3"
 
                 instantiatedMarkers.Add(trackedImage.referenceImage.name, spawnedMarker);
 
@@ -111,9 +84,10 @@ public class ImageRecognition : MonoBehaviour
             }
             else if (trackedImage.referenceImage.name.Contains("Unit_"))
             {
-                unitName = trackedImage.referenceImage.name.Substring(5);
+                string unitName = trackedImage.referenceImage.name.Substring(5);
 
                 coroutineInstatiateMarker = StartCoroutine(instantiateMarker(unitName, trackedImage));
+
                 debugLog.text += "\n" + debugLogIndex.ToString() + ": " + unitName;
                 debugLogIndex++;
             }
@@ -127,13 +101,14 @@ public class ImageRecognition : MonoBehaviour
             }
         }
 
-        //The right now tracked image. Is called / updated every frame! Also called when a image is for the first time added and then tracked / updated
-        foreach (ARTrackedImage trackedImage in eventArgs.updated) //-> ist ein array aus alle bis dahin geaddedten images 
+        //A Image is updated when it is added, when it is again tracked. This happens every frame.
+        foreach (ARTrackedImage trackedImage in eventArgs.updated) //A list of all added images which are again in the scene/tracked
         {
             instantiatedMarkers[trackedImage.referenceImage.name].SetActive(trackedImage.trackingState == TrackingState.Tracking);
         }
     }
 
+    //instantiates a marker for a unit with the movement value of the unit and gets the unit data in another coroutine
     IEnumerator instantiateMarker(string unitName, ARTrackedImage trackedImage)
     {
         yield return StartCoroutine(GetUnitData(unitName));
@@ -245,7 +220,7 @@ public class ImageRecognition : MonoBehaviour
         dataContainersVisible = true;
     }
 
-    private void disableDataContainers()
+    public void disableDataContainers()
     {
         foreach (GameObject dataContainer in dataContainers)
         {
@@ -275,7 +250,7 @@ public class ImageRecognition : MonoBehaviour
         terrainFieldsVisible = true;
     }
 
-    private void disableTerrainFields()
+    public void disableTerrainFields()
     {
         terrainCategory.gameObject.SetActive(false);
         terrainAttributes.gameObject.SetActive(false);
