@@ -69,10 +69,6 @@ public class ImageRecognition : MonoBehaviour
         {
             if (trackedImage.referenceImage.name == "Marker")
             {
-
-                disableDataContainers();
-                disableTerrainFields();
-
                 spawnedMarker = Instantiate(marker, trackedImage.transform);
 
                 spawnedMarker.transform.localScale = new Vector3(0.2f, 0.2f, 0.1f); // == 3"
