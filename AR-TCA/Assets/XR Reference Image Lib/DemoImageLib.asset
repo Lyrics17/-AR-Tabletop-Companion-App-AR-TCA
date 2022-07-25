@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: DemoImageLib
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5726817652924321430
+  m_GuidHigh: 506381711956367000
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5324796334381041731
+      m_GuidHigh: 8483626297099829419
+    m_SerializedTextureGuid:
+      m_GuidLow: 18393921621430765909
+      m_GuidHigh: 4285052340220630025
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Marker
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5408152077406952472
+      m_GuidHigh: 8808680168671545241
+    m_SerializedTextureGuid:
+      m_GuidLow: 6707239842960765200
+      m_GuidHigh: 15418443344135023306
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Ruinen
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4699435202060101802
+      m_GuidHigh: 9040946250741480885
+    m_SerializedTextureGuid:
+      m_GuidLow: 13948909659104379625
+      m_GuidHigh: 13595362989194394328
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Unit_Necron Warriors
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5221122479481489634
+      m_GuidHigh: 4542044196091990403
+    m_SerializedTextureGuid:
+      m_GuidLow: 18213927051071475421
+      m_GuidHigh: 8512947787153301528
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Unit_Primaris Captain
+    m_Texture: {fileID: 0}

@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Bitte auswaehlen
+    - m_Text: Bitte Schlachtfeldrolle auswaehlen
       m_Image: {fileID: 0}
     - m_Text: HQ
       m_Image: {fileID: 0}
@@ -2333,7 +2333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bitte auswaehlen
+  m_text: Bitte Schlachtfeldrolle auswaehlen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c5ae9ae3a9eb7147a2daa1f5f89de2b, type: 2}
   m_sharedMaterial: {fileID: 389233939449495776, guid: 7c5ae9ae3a9eb7147a2daa1f5f89de2b, type: 2}
@@ -4717,7 +4717,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bitte auswaehlen
+  m_text: Bitte Fraktion auswaehlen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c5ae9ae3a9eb7147a2daa1f5f89de2b, type: 2}
   m_sharedMaterial: {fileID: 389233939449495776, guid: 7c5ae9ae3a9eb7147a2daa1f5f89de2b, type: 2}
@@ -8008,7 +8008,7 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Bitte auswaehlen
+    - m_Text: Bitte Fraktion auswaehlen
       m_Image: {fileID: 0}
     - m_Text: Space Marines
       m_Image: {fileID: 0}

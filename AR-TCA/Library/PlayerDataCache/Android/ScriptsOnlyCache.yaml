@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AddNewUnit
+    - AddUnitToArmyList
     - ImageRecognition
     - Login
     - QRCodeGenerator
@@ -287,6 +288,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5352}
     - Class: 114
       Script: {instanceID: 6152}
+    - Class: 114
+      Script: {instanceID: 29386}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -365,7 +368,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6152}
     - Class: 114
-      Script: {instanceID: 19548}
+      Script: {instanceID: 93914}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -753,7 +756,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: 6d8160848fb878ecdb849747ac37ff9c
+      Hash: 0d63ae472980e6a6582ea73f3829a849
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ImageRecognition
@@ -1867,6 +1870,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TerrainAttributesContent
+  - hash:
+      serializedVersion: 2
+      Hash: 68f43b53103a15f9041dbe00d091bd83
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AddUnitToArmyList
   platform: 13
   scenePathNames:
   - Assets/Scenes/LoginScene.unity
@@ -1877,4 +1886,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/ARScene.unity
   - Assets/Scenes/AvailableArmiesScene.unity
   - Assets/Scenes/CreateArmylist.unity
-  playerPath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Builds/Build_22.07_BuildAfterTestWithJosh.apk
+  playerPath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Builds/Build_25.07_CreateArmyBegin.apk

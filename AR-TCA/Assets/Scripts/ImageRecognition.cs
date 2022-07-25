@@ -34,10 +34,6 @@ public class ImageRecognition : MonoBehaviour
     public TextMeshProUGUI terrainCategoryField;
     public TextMeshProUGUI terrainAttributesField;
 
-    // TODO: Delete after completeing the test
-    public TextMeshProUGUI debugLog;
-    private int debugLogIndex = 1;
-
     //Reference for the coroutines used in this script
     private Coroutine coroutineInstatiateMarker;
     private Coroutine coroutineGetUnitData;
@@ -74,26 +70,18 @@ public class ImageRecognition : MonoBehaviour
                 spawnedMarker.transform.localScale = new Vector3(0.2f, 0.2f, 0.1f); // == 3"
 
                 instantiatedMarkers.Add(trackedImage.referenceImage.name, spawnedMarker);
-
-                debugLog.text += "\n" + debugLogIndex.ToString() + ": " + trackedImage.referenceImage.name;
-                debugLogIndex++;
             }
             else if (trackedImage.referenceImage.name.Contains("Unit_"))
             {
                 string unitName = trackedImage.referenceImage.name.Substring(5);
 
                 coroutineInstatiateMarker = StartCoroutine(instantiateMarker(unitName, trackedImage));
-
-                debugLog.text += "\n" + debugLogIndex.ToString() + ": " + unitName;
-                debugLogIndex++;
             }
             else if (trackedImage.referenceImage.name.Contains("Terrain_"))
             {
                 string terrainPiece = trackedImage.referenceImage.name.Substring(8);
 
                 coroutineGetTerrainData = StartCoroutine(getTerrainData(terrainPiece));
-
-                debugLog.text += "\nTerrainPiece: " + terrainPiece;
             }
         }
 
