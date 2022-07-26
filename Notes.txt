@@ -1,3 +1,5 @@
 
 TODO: Doku: Gib die Masse für den idealen QR Code an! -> mach ne bedinungsanleitung + erklärung für die symbole
       Doku Ausblick: die ar scene im mehrere phasen ausplitten-> move, shoot, charge
+
+TODO: test ImageRecognition.cs

@@ -137,23 +137,18 @@ public class ImageRecognition : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
-                    int indexOfString = www.downloadHandler.text.IndexOf("!"); //finds the first "!" in the string
-                    string response = www.downloadHandler.text.Substring(indexOfString + 2); //cuts the string from the first "! + 2" to the end
+                    int indexOfString = www.downloadHandler.text.IndexOf("_"); //finds the first "_" in the string
+                    string response = www.downloadHandler.text.Substring(indexOfString + 1); //cuts the string from the first "_ + 1" to the end
 
                     string[] responseArray = response.Split('_');
 
-                    unitMove = System.Convert.ToDouble(responseArray[1]);
-
-                    //easisiest way to safe responseArray data into the dataContainers array at the right index 
-                    int index = 0;
+                    unitMove = System.Convert.ToDouble(responseArray[0]);
 
                     //Save Unit Data into Array for frontend display
-                    //Starts with index 3 because the first 3 values are Movement_, unitMove and _WeaponSkill_
-                    for (int i = 3; i < responseArray.Length; i += 2)
+                    for (int i = 1; i < responseArray.Length; i ++)
                     {
                         //dataText index needs to start at 0!
-                        dataText[index].text = responseArray[i];
-                        index++;
+                        dataText[i].text = responseArray[i];
                     }
                 }
             }
