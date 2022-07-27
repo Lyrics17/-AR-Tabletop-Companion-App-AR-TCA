@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,31 +8,56 @@ using TMPro;
 
 public class AddUnitToArmyList : MonoBehaviour
 {
+    /* 
+            TODO: überlegen was passiert falls man schon eine armee hat und die bearbeiten möchte 
 
-    /* TODO: wenn eine fraktion gewählt wird hole alle einheiten dieser fraktion und speichere es in einen array. dieser wird ins dropdown geladen.
-            wird eine schlachtfeldrolle ausgewählt, wird der array durchiteriert und alle einheiten dieser schlachtfeldrolle werden in einen neuen array gespeichert und angezeigt.
+            TODO: wenn faktion gewechselt wird resete alles außer die größe nochmal
 
-        TODO: änder die farbe von den macht/punkte anzeigern auf schwarz wenn es nicht 0 ist und wieder zurück auf grau wenn == 0
+            TODO: debug.logs entfernen & code kommentieren
 
-        TODO: überlegen wie die einheit entfernen logik funkten könnte
+            TODO: erro handling in battlefieldrole dropdown fehler wenn man einfach alle einheiten wieder sehen will 
+
+            TODO: save facton caption text on change. if it is changed trigger resetGUI
+
+            TODO: implement getQR of Unit 
     */
+    //References to Dropdowns
     public TMP_Dropdown battleSizeDropdown;
     public TMP_Dropdown factionDropdown;
+    public TMP_Dropdown battlefieldRoleDropdown;
     public TMP_Dropdown unitToInsertDropdown;
+
+    //References to Buttons
     public Button qrCodeButton;
     public Button addUnitButton;
-    public Button submitUnitButton;
-    public TextMeshProUGUI powerlimit;
-    public TextMeshProUGUI pointslimit;
-    public TextMeshProUGUI power;
-    public TextMeshProUGUI points;
+    public Button removeUnitButton;
+    public Button saveArmyButton;
+
+    //References to Textsfield in GUI
+    public TextMeshProUGUI powerlimitGUI;
+    public TextMeshProUGUI pointslimitGUI;
+    public TextMeshProUGUI currentPowerValueGUI;
+    public TextMeshProUGUI currentPointsValueGUI;
+    public TextMeshProUGUI displayMessageGUI;
+
+    //References to Data Containers
     public GameObject[] dataContainers;
     public TextMeshProUGUI[] dataText;
+
+    //Utility vars
+    private string unitID;
+    private ArrayList unitIDList = new ArrayList(); //ArrayList to store all unitIDs which are going to be added to the armylist
+    private int powerCostOfUnit; //cost of the selected unit
+    private int powerCostSumOfUnits = 0; //sum of cost of added units 
+    private int powerCostLimit; //max power of armylist 
+    private int pointsCostOfUnit;
+    private int pointsCostSumOfUnits = 0;
+    private int pointsCostLimit;
 
     private void Update()
     {
         toggleUnitToInsertDropdown();
-        toggleAddUnitButton();
+        toggleUnitButtons();
         toggleSubmitUnitButton();
     }
 
@@ -42,22 +68,41 @@ public class AddUnitToArmyList : MonoBehaviour
 
     private bool checkIfUnitDdIsDefault()
     {
-        return unitToInsertDropdown.captionText.text == "Bitte Einheit waehlen" || unitToInsertDropdown.captionText.text == "";
+        if (unitToInsertDropdown.captionText.text == "Bitte Einheit waehlen"
+        || unitToInsertDropdown.captionText.text == ""
+        || unitToInsertDropdown.captionText.text == "Keine Einheiten vorhanden")
+        {
+            disableDataContainers();
+            return true;
+        }
+        else
+        {
+            enableDataContainers();
+            return false;
+        }
     }
 
     private bool checkIfAUnitWasAdded()
     {
-        if (power.text != " Macht:" && points.text != " Punkte:")
+        if (powerCostSumOfUnits != 0 && pointsCostSumOfUnits != 0 || powerCostSumOfUnits < 0 && pointsCostSumOfUnits < 0)
         { return true; }
         else
         { return false; }
     }
 
-    public void displayPowerPointLimit()
+    private bool checkIfSumOfUnitCostSmallerThanLimit()
+    {
+        if (powerCostSumOfUnits <= powerCostLimit && pointsCostSumOfUnits <= pointsCostLimit)
+        { return true; }
+        else
+        { return false; }
+    }
+
+    public void displayPowerPointLimit() //called by battleSizeDropdown
     {
 
-        powerlimit.text = " Machtlimit:";
-        pointslimit.text = " Punktelimit";
+        powerlimitGUI.text = " Machtlimit:";
+        pointslimitGUI.text = " Punktelimit";
 
         string powerlimitValue = "";
         string pointlimitValue = "";
@@ -65,58 +110,78 @@ public class AddUnitToArmyList : MonoBehaviour
         {
             case "Kampfpatroullie":
                 powerlimitValue = " 0 - 50";
-                powerlimit.color = Color.black; //Changes the color of the text back again to black
+                powerCostLimit = 50;
+                powerlimitGUI.color = Color.black; //Changes the color of the text back again to black
                 pointlimitValue = " 0 - 500";
-                pointslimit.color = Color.black;
+                pointsCostLimit = 500;
+                pointslimitGUI.color = Color.black;
                 break;
 
             case "Aufmarsch":
                 powerlimitValue = " 51 - 100";
-                powerlimit.color = Color.black; //Changes the color of the text back again to black
+                powerCostLimit = 100;
+                powerlimitGUI.color = Color.black; //Changes the color of the text back again to black
                 pointlimitValue = " 501 - 1000";
-                pointslimit.color = Color.black;
+                pointsCostLimit = 1000;
+                pointslimitGUI.color = Color.black;
                 break;
 
             case "Einsatzverband":
                 powerlimitValue = " 101 - 200";
-                powerlimit.color = Color.black; //Changes the color of the text back again to black
+                powerCostLimit = 200;
+                powerlimitGUI.color = Color.black; //Changes the color of the text back again to black
                 pointlimitValue = " 1001 - 2000";
-                pointslimit.color = Color.black;
+                pointsCostLimit = 2000;
+                pointslimitGUI.color = Color.black;
                 break;
 
             case "Grossaufgebot":
                 powerlimitValue = " 201 - 300";
-                powerlimit.color = Color.black; //Changes the color of the text back again to black
+                powerCostLimit = 300;
+                powerlimitGUI.color = Color.black; //Changes the color of the text back again to black
                 pointlimitValue = " 2001 - 3000";
-                pointslimit.color = Color.black;
+                pointsCostLimit = 3000;
+                pointslimitGUI.color = Color.black;
                 break;
 
             case "Bitte Schlachtgroesse waehlen":
                 powerlimitValue = "";
-                powerlimit.color = Color.grey;
+                powerlimitGUI.color = Color.grey;
                 pointlimitValue = "";
-                pointslimit.color = Color.grey;
+                pointslimitGUI.color = Color.grey;
                 break;
         }
 
-        powerlimit.text += powerlimitValue;
-        pointslimit.text += pointlimitValue;
+        powerlimitGUI.text += powerlimitValue;
+        pointslimitGUI.text += pointlimitValue;
     }
 
-    public void toggleUnitToInsertDropdown()
+    private void toggleUnitToInsertDropdown()
     {
         unitToInsertDropdown.interactable = !checkIfFactionTextIsDefaultText();
     }
 
-    public void toggleAddUnitButton()
+    private void toggleUnitButtons()
     {
         addUnitButton.interactable = !checkIfUnitDdIsDefault();
+        removeUnitButton.interactable = checkIfAUnitWasAdded() && unitIDList.Contains(unitID); //unitID is changed when a new unit is selected
         qrCodeButton.interactable = !checkIfUnitDdIsDefault();
     }
 
-    public void toggleSubmitUnitButton()
+    private void toggleSubmitUnitButton()
     {
-        submitUnitButton.interactable = checkIfAUnitWasAdded();
+        if (checkIfAUnitWasAdded() && checkIfSumOfUnitCostSmallerThanLimit())
+        {
+            saveArmyButton.interactable = true;
+            addUnitButton.interactable = true;
+            displayMessageGUI.text = "";
+        }
+        else if (!checkIfSumOfUnitCostSmallerThanLimit())
+        {
+            saveArmyButton.interactable = false;
+            addUnitButton.interactable = false;
+            displayMessageGUI.text = "Das Wertelimit wurde ueberschritten!";
+        }
     }
 
     private void enableDataContainers()
@@ -127,17 +192,78 @@ public class AddUnitToArmyList : MonoBehaviour
         }
     }
 
-    public void callGetUnitFromFaction()
+    private void disableDataContainers()
     {
+        foreach (GameObject dataContainer in dataContainers)
+        {
+            dataContainer.SetActive(false);
+        }
+        resetDataText();
+    }
+
+    private void resetDataText()
+    {
+        foreach (TextMeshProUGUI dataText in dataText)
+        {
+            dataText.text = "";
+        }
+    }
+
+    public void resetGUI()
+    {
+        // TODO:change to != captionText pre change 
+        if (factionDropdown.captionText.text == "Bitte Fraktion auswaehlen")
+        {
+            battlefieldRoleDropdown.value = 0;
+            unitToInsertDropdown.ClearOptions();
+            unitToInsertDropdown.options.Add(new TMP_Dropdown.OptionData("Bitte Einheit waehlen"));
+            unitToInsertDropdown.value = 0;
+
+            disableDataContainers();
+
+            unitIDList.Clear(); //Removes all stored value
+
+            powerCostSumOfUnits = 0;
+            pointsCostSumOfUnits = 0;
+
+            currentPowerValueGUI.text = " Macht: ";
+            currentPointsValueGUI.text = " Punkte: ";
+        }
+    }
+
+    public void addUnitToArmyList() //called from addUnitButton
+    {
+        unitIDList.Add(unitID);
+        powerCostSumOfUnits += powerCostOfUnit;
+        pointsCostSumOfUnits += pointsCostOfUnit;
+        currentPowerValueGUI.color = Color.black;
+        currentPowerValueGUI.text = " Macht: " + powerCostSumOfUnits;
+        currentPointsValueGUI.color = Color.black;
+        currentPointsValueGUI.text = " Punkte: " + pointsCostSumOfUnits;
+    }
+
+    public void removeUnitFromArmyList() //called from removeUnitButton
+    {
+        unitIDList.Remove(unitID);
+        powerCostSumOfUnits -= powerCostOfUnit;
+        pointsCostSumOfUnits -= pointsCostOfUnit;
+        currentPowerValueGUI.text = " Macht: " + powerCostSumOfUnits;
+        currentPointsValueGUI.text = " Punkte: " + pointsCostSumOfUnits;
+    }
+
+
+    public void callGetUnitFromFaction() //called from factionDropdown
+    {
+        battlefieldRoleDropdown.value = 0; //resets the battlefieldrole dropdown to the first value
         StartCoroutine(getUnitFromFaction());
     }
 
     IEnumerator getUnitFromFaction()
     {
         //Webhost connection
-        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/addUnit.php";
+        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/getUnitsFromFaction.php";
         //Localhost connection
-        // string url = "http://localhost/AR-TCA/Units/addUnit.php";
+        // string url = "http://localhost/AR-TCA/Units/getUnitsFromFaction.php";
         //Local connection with fixed ip
         string url = "192.168.178.33/AR-TCA/Units/getUnitsFromFaction.php";
 
@@ -171,14 +297,81 @@ public class AddUnitToArmyList : MonoBehaviour
                     {
                         unitToInsertDropdown.options.Add(new TMP_Dropdown.OptionData(unit));
                     }
-
-                    unitToInsertDropdown.value = 0; //sets the value to the first element in the dropdown
+                    unitToInsertDropdown.value = 1;
+                }
+                else if (www.downloadHandler.text.Contains("1"))
+                {
+                    unitToInsertDropdown.ClearOptions();
+                    unitToInsertDropdown.options.Add(new TMP_Dropdown.OptionData("Keine Einheiten vorhanden"));
+                    unitToInsertDropdown.value = 1; //sets the dropdown to the first value 
                 }
             }
         }
     }
 
-    public void callGetUnitData()
+    public void callGetUnitFromBattlefieldRole() //called from battlefieldRoleDropdown
+    {
+        if (!checkIfFactionTextIsDefaultText())
+        {
+            StartCoroutine(getUnitFromBattlefieldRole());
+        }
+    }
+
+    IEnumerator getUnitFromBattlefieldRole()
+    {
+        //Webhost connection
+        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/getUnitsFromBattlefieldRole.php";
+        //Localhost connection
+        // string url = "http://localhost/AR-TCA/Units/getUnitsFromBattlefieldRole.php";
+        //Local connection with fixed ip
+        string url = "192.168.178.33/AR-TCA/Units/getUnitsFromBattlefieldRole.php";
+
+        WWWForm form = new WWWForm();
+        //Imported! fieldname = db fieldname
+        form.AddField("battlefieldRoleName", battlefieldRoleDropdown.captionText.text);
+        form.AddField("factionName", factionDropdown.captionText.text);
+
+        using (UnityWebRequest www = UnityWebRequest.Post(url, form))
+        {
+            //wait till www has a return value and than proceeds with the code
+            yield return www.SendWebRequest();
+
+            //only checks for "real" errors! exist(); in php dont count
+            if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("0"))
+                {
+                    int indexOfString = www.downloadHandler.text.IndexOf("_");
+
+                    string response = www.downloadHandler.text.Substring(indexOfString + 1);
+                    string[] responseArray = response.Split('_');
+
+                    unitToInsertDropdown.ClearOptions();
+                    unitToInsertDropdown.options.Add(new TMP_Dropdown.OptionData("Bitte Einheit waehlen"));
+
+                    foreach (string unit in responseArray)
+                    {
+                        unitToInsertDropdown.options.Add(new TMP_Dropdown.OptionData(unit));
+                    }
+                    unitToInsertDropdown.value = 1;
+                }
+                else if (www.downloadHandler.text.Contains("1"))
+                {
+                    unitToInsertDropdown.ClearOptions();
+                    unitToInsertDropdown.options.Add(new TMP_Dropdown.OptionData("Keine Einheiten vorhanden"));
+                    unitToInsertDropdown.value = 1; //sets the dropdown to the first value 
+                    disableDataContainers();
+                }
+            }
+        }
+    }
+
+    public void callGetUnitData() //called from unitToInsertDropdown
     {
         if (!checkIfUnitDdIsDefault()) //only start coroutine if a unit is selected
         {
@@ -189,11 +382,11 @@ public class AddUnitToArmyList : MonoBehaviour
     IEnumerator getUnitData()
     {
         //Webhost connection
-        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/addUnit.php";
+        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/getUnitAllData.php";
         //Localhost connection
-        // string url = "http://localhost/AR-TCA/Units/addUnit.php";
+        // string url = "http://localhost/AR-TCA/Units/getUnitAllData.php";
         //Local connection with fixed ip
-        string url = "192.168.178.33/AR-TCA/Units/getUnit.php";
+        string url = "192.168.178.33/AR-TCA/Units/getUnitAllData.php";
 
         WWWForm form = new WWWForm();
         form.AddField("unitName", unitToInsertDropdown.captionText.text);
@@ -216,14 +409,19 @@ public class AddUnitToArmyList : MonoBehaviour
 
                     string[] responseArray = response.Split('_');
 
+                    unitID = responseArray[responseArray.Length - 3];
+                    powerCostOfUnit = Int16.Parse(responseArray[responseArray.Length - 2]); //second to last element in the array is the power cost
+                    pointsCostOfUnit = Int16.Parse(responseArray[responseArray.Length - 1]); //last element in the array is the points cost
+
+                    Debug.Log("ID:" + unitID + "power:" + powerCostOfUnit + " points:" + pointsCostOfUnit);
+
                     //Save Unit Data into Array for frontend display
-                    for (int i = 0; i < responseArray.Length; i++)
+                    for (int i = 0; i < responseArray.Length - 3; i++)
                     {
                         //dataText index needs to start at 0!
                         dataText[i].text = responseArray[i];
                     }
-
-                    //Add Power and Point cost 
+                    enableDataContainers();
                 }
             }
         }

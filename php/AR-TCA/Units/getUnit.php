@@ -3,10 +3,6 @@
 //to reduce code duplication
 include "../db.php";
 
-//TODO: add power and point cost to query if a bool is true -> add this bool to imageRec and AddUnitTo... 
-
-//TODO: or write a new getUnit function to get costs and battlefield role
-
 //Needs to be = as in form in C#
 $unitName = $_POST['unitName'];
 
@@ -32,5 +28,5 @@ $unitAttacks = $row['unitAttacks'];
 $unitLeadership = $row['unitLeadership'];
 $unitSave = $row['unitSave'];
 
-echo "Success 0: Successfully fetched Unit data!_" . $unitMove . "_" . $unitWeaponSkill . "_" . $unitBallisticSkill . "_" . $unitStrength . "_" . $unitToughness . "_" . $unitWounds . "_" . $unitAttacks . "_" . $unitLeadership . "_" . $unitSave;
+echo "Success 0: Successfully fetched Unit data! Movement_" . $unitMove . " _WeaponSkill_" . $unitWeaponSkill . " _BallisticSkill_" . $unitBallisticSkill . " _Strength_" . $unitStrength . " _Toughness_" . $unitToughness . " _Wounds_" . $unitWounds . " _Attacks_" . $unitAttacks . " _Leadership_" . $unitLeadership . " _Save_" . $unitSave;
 $conn = null;

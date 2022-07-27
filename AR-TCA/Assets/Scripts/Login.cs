@@ -21,14 +21,14 @@ public class Login : MonoBehaviour
     {
 
         //Only way to use the mobile version with a local database
-        if (userUsername.text == "adminMobile")
-        {
-            DBManager.username = userUsername.text;
-            //clean up scene before leaving
-            displayMessage.text = "";
-            DBManager.setAllVariablesFalse();
-            SceneManager.LoadScene("MainMenuScene");
-        }
+        // if (userUsername.text == "adminMobile")
+        // {
+        //     DBManager.username = userUsername.text;
+        //     //clean up scene before leaving
+        //     displayMessage.text = "";
+        //     DBManager.setAllVariablesFalse();
+        //     SceneManager.LoadScene("MainMenuScene");
+        // }
 
         //Webhost connection
         // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Users/login.php";

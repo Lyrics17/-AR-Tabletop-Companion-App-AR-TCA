@@ -133,23 +133,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4150}
     - Class: 114
-      Script: {instanceID: 4328}
+      Script: {instanceID: 4330}
     - Class: 114
-      Script: {instanceID: 4824}
+      Script: {instanceID: 4826}
     - Class: 114
-      Script: {instanceID: 5226}
+      Script: {instanceID: 5228}
     - Class: 114
-      Script: {instanceID: 5352}
+      Script: {instanceID: 5354}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 5468}
     - Class: 114
-      Script: {instanceID: 5744}
+      Script: {instanceID: 5746}
     - Class: 114
-      Script: {instanceID: 6152}
+      Script: {instanceID: 6154}
     - Class: 114
-      Script: {instanceID: 6234}
+      Script: {instanceID: 6236}
     - Class: 114
-      Script: {instanceID: 6544}
+      Script: {instanceID: 6546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -212,15 +212,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4150}
     - Class: 114
-      Script: {instanceID: 4328}
+      Script: {instanceID: 4330}
     - Class: 114
-      Script: {instanceID: 5088}
+      Script: {instanceID: 5090}
     - Class: 114
-      Script: {instanceID: 5352}
+      Script: {instanceID: 5354}
     - Class: 114
-      Script: {instanceID: 6152}
+      Script: {instanceID: 6154}
     - Class: 114
-      Script: {instanceID: 6544}
+      Script: {instanceID: 6546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -283,13 +283,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3866}
     - Class: 114
-      Script: {instanceID: 5088}
+      Script: {instanceID: 4272}
     - Class: 114
-      Script: {instanceID: 5352}
+      Script: {instanceID: 5090}
     - Class: 114
-      Script: {instanceID: 6152}
+      Script: {instanceID: 5354}
     - Class: 114
-      Script: {instanceID: 29386}
+      Script: {instanceID: 6154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -354,21 +354,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3866}
     - Class: 114
-      Script: {instanceID: 4646}
+      Script: {instanceID: 4648}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4842}
+      Script: {instanceID: 4844}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 5468}
     - Class: 114
-      Script: {instanceID: 5494}
+      Script: {instanceID: 5496}
     - Class: 114
-      Script: {instanceID: 5918}
+      Script: {instanceID: 5920}
     - Class: 114
-      Script: {instanceID: 6152}
+      Script: {instanceID: 6154}
     - Class: 114
-      Script: {instanceID: 93914}
+      Script: {instanceID: 19564}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -429,13 +429,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3866}
     - Class: 114
-      Script: {instanceID: 4646}
+      Script: {instanceID: 4648}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 5468}
     - Class: 114
-      Script: {instanceID: 6152}
+      Script: {instanceID: 6154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -506,17 +506,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3866}
     - Class: 114
-      Script: {instanceID: 5088}
+      Script: {instanceID: 5090}
     - Class: 114
-      Script: {instanceID: 5324}
+      Script: {instanceID: 5326}
     - Class: 114
-      Script: {instanceID: 5352}
+      Script: {instanceID: 5354}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 5468}
     - Class: 114
-      Script: {instanceID: 5506}
+      Script: {instanceID: 5508}
     - Class: 114
-      Script: {instanceID: 6152}
+      Script: {instanceID: 6154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -577,9 +577,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3866}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 5468}
     - Class: 114
-      Script: {instanceID: 6152}
+      Script: {instanceID: 6154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -648,17 +648,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4150}
     - Class: 114
-      Script: {instanceID: 4328}
+      Script: {instanceID: 4330}
     - Class: 114
-      Script: {instanceID: 5088}
+      Script: {instanceID: 5090}
     - Class: 114
-      Script: {instanceID: 5324}
+      Script: {instanceID: 5326}
     - Class: 114
-      Script: {instanceID: 5352}
+      Script: {instanceID: 5354}
     - Class: 114
-      Script: {instanceID: 6152}
+      Script: {instanceID: 6154}
     - Class: 114
-      Script: {instanceID: 6544}
+      Script: {instanceID: 6546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1296,6 +1296,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 694153af07f11fa0a122d324c04bdaea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AddUnitToArmyList
+  - hash:
+      serializedVersion: 2
       Hash: 76aef43e801605d1829c8805eeee135c
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
@@ -1870,12 +1876,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TerrainAttributesContent
-  - hash:
-      serializedVersion: 2
-      Hash: 68f43b53103a15f9041dbe00d091bd83
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AddUnitToArmyList
   platform: 13
   scenePathNames:
   - Assets/Scenes/LoginScene.unity
@@ -1886,4 +1886,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/ARScene.unity
   - Assets/Scenes/AvailableArmiesScene.unity
   - Assets/Scenes/CreateArmylist.unity
-  playerPath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Builds/Build_25.07_CreateArmyBegin.apk
+  playerPath: D:/Lukas/Documents/GitHubD/AR-Tabletop-Companion-App-AR-TCA/AR-TCA/Builds/Build_27.07_CreateArmyNearlyDone.apk

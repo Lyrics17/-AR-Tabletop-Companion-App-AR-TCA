@@ -71,8 +71,8 @@ MonoBehaviour:
     y: 0
     width: 521
     height: 675
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -101,10 +101,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 675
-  m_MinSize: {x: 878, y: 221}
-  m_MaxSize: {x: 16003, y: 4021}
+  m_MinSize: {x: 881, y: 221}
+  m_MaxSize: {x: 16006, y: 4021}
   vertical: 0
-  controlID: 79
+  controlID: 38
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,8 +124,8 @@ MonoBehaviour:
     y: 0
     width: 307
     height: 675
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -282,9 +282,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f84d0000
-    m_LastClickedID: 19960
-    m_ExpandedIDs: 00000000504a0000524a0000544a0000564a0000584a00005a4a000000ca9a3b
+    m_SelectedIDs: 345e0000
+    m_LastClickedID: 24116
+    m_ExpandedIDs: 000000005a4a00005c4a00005e4a0000604a0000624a0000644a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -312,7 +312,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000504a0000524a0000544a0000564a0000584a00005a4a0000
+    m_ExpandedIDs: 000000005a4a00005c4a00005e4a0000604a0000624a0000644a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -337,8 +337,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 0e4e0000
-    m_LastClickedInstanceID: 19982
+    m_SelectedInstanceIDs: 4a5e0000
+    m_LastClickedInstanceID: 24138
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000054ce000000000000aa470000
     m_RenameOverlay:
@@ -393,21 +393,17 @@ MonoBehaviour:
     width: 306
     height: 654
   m_ViewDataDictionary: {fileID: 0}
-  m_ObjectsLockedBeforeSerialization:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_InstanceIDsLockedBeforeSerialization: e8500000
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
     m_CachedPref: -151
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 908
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
 --- !u!114 &12
 MonoBehaviour:
@@ -437,9 +433,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1052000074520000c650000078530000cc530000685200008651000096530000c0530000
-      m_LastClickedID: 21440
-      m_ExpandedIDs: b8f1ffff30f2ffff64fbffffb2460000c6500000e850000086510000685200007853000096530000c0530000cc530000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 56d6fdff78d6fdfff0d7fdff08d8fdff1cd8fdff38d8fdff86d8fdff9ed8fdffb6d8fdffded8fdff4e3ffeffcc3ffeffea08ffff4609ffff44f7ffff64f7fffffcf8ffff14f9ffff28f9ffff44f9ffff92f9ffffaaf9ffffc2f9ffffeaf9ffff6afbfffffe5a00002ac10000dec2000054380100ea390100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -499,9 +495,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 171.75507, y: 184.26846, z: -136.51753}
+    m_Target: {x: 181.35252, y: 326.46735, z: -304.38016}
     speed: 2
-    m_Value: {x: 171.75507, y: 184.26846, z: -136.51753}
+    m_Value: {x: 181.35252, y: 326.46735, z: -304.38016}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -552,9 +548,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 168.97371
+    m_Target: 265.71393
     speed: 2
-    m_Value: 168.97371
+    m_Value: 265.71393
   m_Ortho:
     m_Target: 1
     speed: 2

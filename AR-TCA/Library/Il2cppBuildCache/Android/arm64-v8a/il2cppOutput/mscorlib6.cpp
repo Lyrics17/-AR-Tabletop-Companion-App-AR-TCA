@@ -1880,16 +1880,16 @@ struct ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575_StaticFields
 {
 public:
 	// System.Object[] System.Collections.ArrayList::emptyArray
-	ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___emptyArray_4;
+	ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___emptyArray_5;
 
 public:
-	inline static int32_t get_offset_of_emptyArray_4() { return static_cast<int32_t>(offsetof(ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575_StaticFields, ___emptyArray_4)); }
-	inline ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* get_emptyArray_4() const { return ___emptyArray_4; }
-	inline ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE** get_address_of_emptyArray_4() { return &___emptyArray_4; }
-	inline void set_emptyArray_4(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* value)
+	inline static int32_t get_offset_of_emptyArray_5() { return static_cast<int32_t>(offsetof(ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575_StaticFields, ___emptyArray_5)); }
+	inline ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* get_emptyArray_5() const { return ___emptyArray_5; }
+	inline ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE** get_address_of_emptyArray_5() { return &___emptyArray_5; }
+	inline void set_emptyArray_5(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* value)
 	{
-		___emptyArray_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___emptyArray_4), (void*)value);
+		___emptyArray_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___emptyArray_5), (void*)value);
 	}
 };
 
@@ -24825,6 +24825,18 @@ IL2CPP_EXTERN_C  String_t* Int16_ToString_m03429542693316496C4189FB37EF4F2F23082
 	String_t* _returnValue;
 	_returnValue = Int16_ToString_m03429542693316496C4189FB37EF4F2F230823AF(_thisAdjusted, ___format0, ___info1, method);
 	return _returnValue;
+}
+// System.Int16 System.Int16::Parse(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Int16_Parse_m76FBF01FF2845760E35ACED2F9EF3040DE798FCF (String_t* ___s0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___s0;
+		NumberFormatInfo_t58780B43B6A840C38FD10C50CDFE2128884CAD1D * L_1;
+		L_1 = NumberFormatInfo_get_CurrentInfo_m604B9BFDE58530F94955E0EF1A523D37EA87DF02(/*hidden argument*/NULL);
+		int16_t L_2;
+		L_2 = Int16_Parse_m3D05051BD7AEBADEB5B60D7A646A690BC0BDF96C(L_0, 7, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
 }
 // System.Int16 System.Int16::Parse(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Int16_Parse_mAE47C17BE0A5C7A6B369E4DF51B07031A56FDCB8 (String_t* ___s0, RuntimeObject* ___provider1, const RuntimeMethod* method)

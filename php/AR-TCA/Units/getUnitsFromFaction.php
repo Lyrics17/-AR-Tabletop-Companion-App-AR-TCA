@@ -5,7 +5,6 @@ include "../db.php";
 
 //Needs to be = as in form in C#
 $factionName = $_POST['factionName'];
-//TODO: just get alle unitNames from faction -> then get all unit data from unitName again
 
 $stmt = $conn->prepare("SELECT `unitName`
 FROM unit u, faction f
