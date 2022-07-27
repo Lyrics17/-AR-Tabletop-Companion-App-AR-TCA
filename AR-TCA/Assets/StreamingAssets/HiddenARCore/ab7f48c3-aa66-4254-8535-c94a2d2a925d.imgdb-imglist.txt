@@ -1,0 +1,21 @@
+ddb142c283524343995f864e78b2ab67|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Assault Intercessor Squad.png|0.0677333
+625d2d8e85ba41b3b974380314a752d2|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Primaris Captain.png|0.0677333
+5bf989dc0fdf4225977f2604361bd608|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Outrider Squad.png|0.0677333
+bd1066c9afac448abd3e078b62eac842|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Marker.png|0.0677333
+d5a6e407c92e4b7fb1c5e0e24de89b9b|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Bladeguard Veteran Squad.png|0.0677333
+fdedf8dfd334455ba56c2f8396ea9af9|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Terrain_Barrikaden und Rohrleitungen.png|0.0677333
+c7fd7f93665943368c12856633c43168|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Terrain_Eingestuerzte Waende.png|0.0677333
+1a0cf377b0cc4065aa5c8d9dd36becb3|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Terrain_Gepanzerte Container.png|0.0677333
+235990010a6a4f2081c1b5d91f58e90b|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Terrain_Imperiale Statuen.png|0.0677333
+450aaab4c2fe459ca4cb9cf015f5f87f|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Terrain_Industriebauwerke.png|0.0677333
+a47c07efb5e74018a8d82b1a1670300f|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Terrain_Krater.png|0.0677333
+292f2048fc1f4ef99bbb986efb7ac1b6|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Terrain_Ruinen.png|0.0677333
+114890fe46d945b68d478a9696d3c9d2|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Terrain_Schlachtfeldueberreste.png|0.0677333
+01d6702b30d74f51a53e668633c5a293|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Terrain_Waelder.png|0.0677333
+14896a92646d438fa93cf0aea810c11e|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Primaris Chaplain.png|0.0677333
+0ec77ba3a3ff46c6b64155d37bac4aa3|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Overlord.png|0.0677333
+d49c94cf08864557b4a81c335c89dcb3|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Skorpekh Destroyers.png|0.0677333
+7dd7e7c2058744d49ab80811242dbf1c|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Canoptek Plasmacyte.png|0.0677333
+eb3597aab8be49318d12bead24604fbb|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Canoptek Scarab Swarms.png|0.0677333
+2d9cc2ce103e4a6e99bf905683f0d7a7|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Necron Warriors.png|0.0677333
+2f66d2fb31524690ae900d210cd2f1d5|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Royal Warden.png|0.0677333

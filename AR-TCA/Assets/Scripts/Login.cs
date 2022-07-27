@@ -58,6 +58,10 @@ public class Login : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
+                    int indexOfString = www.downloadHandler.text.IndexOf("!");
+
+                    string response = www.downloadHandler.text.Substring(indexOfString + 1);
+
                     DBManager.username = userUsername.text;
                     //clean up scene before leaving
                     displayMessage.text = "";

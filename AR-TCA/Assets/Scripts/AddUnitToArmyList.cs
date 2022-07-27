@@ -9,17 +9,12 @@ using TMPro;
 public class AddUnitToArmyList : MonoBehaviour
 {
     /* 
-            TODO: überlegen was passiert falls man schon eine armee hat und die bearbeiten möchte 
-
-            TODO: wenn faktion gewechselt wird resete alles außer die größe nochmal
 
             TODO: debug.logs entfernen & code kommentieren
 
-            TODO: erro handling in battlefieldrole dropdown fehler wenn man einfach alle einheiten wieder sehen will 
+            TODO: logic schreiben das maybe wenn eine armylist eintrag mit username + factionname existiert die werte hier reingeladen werden -> arraylist dropdown selected usw. 
 
-            TODO: save facton caption text on change. if it is changed trigger resetGUI
-
-            TODO: implement getQR of Unit 
+            TODO: available armylists in der scene davor selecten 
     */
     //References to Dropdowns
     public TMP_Dropdown battleSizeDropdown;
@@ -28,7 +23,8 @@ public class AddUnitToArmyList : MonoBehaviour
     public TMP_Dropdown unitToInsertDropdown;
 
     //References to Buttons
-    public Button qrCodeButton;
+    public Button generateQRCodeButton;
+    public Button saveQRCodeButton;
     public Button addUnitButton;
     public Button removeUnitButton;
     public Button saveArmyButton;
@@ -39,6 +35,7 @@ public class AddUnitToArmyList : MonoBehaviour
     public TextMeshProUGUI currentPowerValueGUI;
     public TextMeshProUGUI currentPointsValueGUI;
     public TextMeshProUGUI displayMessageGUI;
+    public TextMeshProUGUI popupHeaderMessageGUI;
 
     //References to Data Containers
     public GameObject[] dataContainers;
@@ -46,13 +43,16 @@ public class AddUnitToArmyList : MonoBehaviour
 
     //Utility vars
     private string unitID;
-    private ArrayList unitIDList = new ArrayList(); //ArrayList to store all unitIDs which are going to be added to the armylist
+    private ArrayList unitIDList = new ArrayList(); //ArrayList to store all unitIDs which are going to be added to the army list
     private int powerCostOfUnit; //cost of the selected unit
     private int powerCostSumOfUnits = 0; //sum of cost of added units 
-    private int powerCostLimit; //max power of armylist 
+    private int powerCostLimit; //max power of army list 
     private int pointsCostOfUnit;
     private int pointsCostSumOfUnits = 0;
     private int pointsCostLimit;
+    private string currentSelectedFaction;
+    public QRCodeGenerator generator; //reference of GameObject in the Scene with the QRCodeGenerator script as component
+    public SaveQRCode saver; //reference of GameObject in the Scene with the SaveQRCode script as component
 
     private void Update()
     {
@@ -165,7 +165,7 @@ public class AddUnitToArmyList : MonoBehaviour
     {
         addUnitButton.interactable = !checkIfUnitDdIsDefault();
         removeUnitButton.interactable = checkIfAUnitWasAdded() && unitIDList.Contains(unitID); //unitID is changed when a new unit is selected
-        qrCodeButton.interactable = !checkIfUnitDdIsDefault();
+        generateQRCodeButton.interactable = !checkIfUnitDdIsDefault();
     }
 
     private void toggleSubmitUnitButton()
@@ -209,26 +209,22 @@ public class AddUnitToArmyList : MonoBehaviour
         }
     }
 
-    public void resetGUI()
+    private void resetGUI()
     {
-        // TODO:change to != captionText pre change 
-        if (factionDropdown.captionText.text == "Bitte Fraktion auswaehlen")
-        {
-            battlefieldRoleDropdown.value = 0;
-            unitToInsertDropdown.ClearOptions();
-            unitToInsertDropdown.options.Add(new TMP_Dropdown.OptionData("Bitte Einheit waehlen"));
-            unitToInsertDropdown.value = 0;
+        battlefieldRoleDropdown.value = 0;
+        unitToInsertDropdown.ClearOptions();
+        unitToInsertDropdown.options.Add(new TMP_Dropdown.OptionData("Bitte Einheit waehlen"));
+        unitToInsertDropdown.value = 0;
 
-            disableDataContainers();
+        disableDataContainers();
 
-            unitIDList.Clear(); //Removes all stored value
+        unitIDList.Clear(); //Removes all stored value
 
-            powerCostSumOfUnits = 0;
-            pointsCostSumOfUnits = 0;
+        powerCostSumOfUnits = 0;
+        pointsCostSumOfUnits = 0;
 
-            currentPowerValueGUI.text = " Macht: ";
-            currentPointsValueGUI.text = " Punkte: ";
-        }
+        currentPowerValueGUI.text = " Macht: ";
+        currentPointsValueGUI.text = " Punkte: ";
     }
 
     public void addUnitToArmyList() //called from addUnitButton
@@ -254,7 +250,7 @@ public class AddUnitToArmyList : MonoBehaviour
 
     public void callGetUnitFromFaction() //called from factionDropdown
     {
-        battlefieldRoleDropdown.value = 0; //resets the battlefieldrole dropdown to the first value
+        resetGUI();
         StartCoroutine(getUnitFromFaction());
     }
 
@@ -362,10 +358,17 @@ public class AddUnitToArmyList : MonoBehaviour
                 }
                 else if (www.downloadHandler.text.Contains("1"))
                 {
-                    unitToInsertDropdown.ClearOptions();
-                    unitToInsertDropdown.options.Add(new TMP_Dropdown.OptionData("Keine Einheiten vorhanden"));
-                    unitToInsertDropdown.value = 1; //sets the dropdown to the first value 
-                    disableDataContainers();
+                    if (battlefieldRoleDropdown.captionText.text == "Bitte Schlachtfeldrolle auswaehlen")
+                    {
+                        StartCoroutine(getUnitFromFaction());
+                    }
+                    else
+                    {
+                        unitToInsertDropdown.ClearOptions();
+                        unitToInsertDropdown.options.Add(new TMP_Dropdown.OptionData("Keine Einheiten vorhanden"));
+                        unitToInsertDropdown.value = 1; //sets the dropdown to the first value 
+                        disableDataContainers();
+                    }
                 }
             }
         }
@@ -415,6 +418,8 @@ public class AddUnitToArmyList : MonoBehaviour
 
                     Debug.Log("ID:" + unitID + "power:" + powerCostOfUnit + " points:" + pointsCostOfUnit);
 
+                    generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode(unitToInsertDropdown.captionText.text);
+
                     //Save Unit Data into Array for frontend display
                     for (int i = 0; i < responseArray.Length - 3; i++)
                     {
@@ -425,5 +430,53 @@ public class AddUnitToArmyList : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void callInsertArmyList()
+    {
+        StartCoroutine(insertArmyList());
+    }
+
+    IEnumerator insertArmyList()
+    {
+        //Webhost connection
+        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/getUnitAllData.php";
+        //Localhost connection
+        // string url = "http://localhost/AR-TCA/Units/getUnitAllData.php";
+        //Local connection with fixed ip
+        string url = "192.168.178.33/AR-TCA/Units/addArmyList.php";
+
+        string unitIDs = "";
+
+        foreach (var id in unitIDList) //concate the added unitIDs to a string separated by "_" to be splited in the php script
+        {
+            unitIDs += "_" + id;
+        }
+
+        WWWForm form = new WWWForm();
+        // form.AddField("username", DBManager.username); //TODO: wieder einkommentieren wenn man builded. funktioniert nicht wenn man in der szenen testet
+        form.AddField("username", "admin");
+        form.AddField("factionName", factionDropdown.captionText.text);
+        form.AddField("unitIDs", unitIDs);
+
+        using (UnityWebRequest www = UnityWebRequest.Post(url, form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+            }
+        }
+    }
+
+    public void onClickSaveQRCode()
+    {
+        saver.GetComponent<SaveQRCode>().saveQRCodeOnDevice(generator.GetComponent<QRCodeGenerator>().getTexture(), "Unit_" + unitToInsertDropdown.captionText.text);
+        popupHeaderMessageGUI.text = "QR Code wurde gespeichert";
     }
 }

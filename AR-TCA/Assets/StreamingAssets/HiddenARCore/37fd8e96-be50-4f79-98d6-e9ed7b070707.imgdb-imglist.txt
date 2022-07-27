@@ -1,0 +1,4 @@
+dc1588437a0d49e5ab40cc452be5bb75|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Marker.png|0.0677333
+2921dc189da94b0d9907b269f1b73e7a|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Terrain_Ruinen.png|0.0677333
+e7c228aabf6a4137b57dd8ccb6e4777d|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Necron Warriors.png|0.0677333
+7e4d08e2273b4875831130ae2195083f|D:\Lukas\Documents\GitHubD\AR-Tabletop-Companion-App-AR-TCA\AR-TCA\Assets\QRCodes\Unit_Primaris Captain.png|0.0677333
