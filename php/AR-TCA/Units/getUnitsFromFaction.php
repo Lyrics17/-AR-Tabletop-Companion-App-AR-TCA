@@ -6,13 +6,11 @@ include "../db.php";
 //Needs to be = as in form in C#
 $factionName = $_POST['factionName'];
 
-$stmt = $conn->prepare("SELECT `unitName`
-FROM unit u, faction f
-WHERE u.idUnit = f.unit_idUnit AND f.factionName = ?;");
+$stmt = $conn->prepare("SELECT `unitName` FROM unit u, faction f WHERE u.idUnit = f.unit_idUnit AND f.factionName = ?;");
 $stmt->bindParam(1, $factionName);
 $stmt->execute();
 
-$row = $stmt->fetchAll(PDO::FETCH_COLUMN, 0); //fetches all the specified column
+$row = $stmt->fetchAll(PDO::FETCH_COLUMN, 0); //fetches all results in the specified column
 
 if (empty($row))
 {

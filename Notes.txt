@@ -1,3 +1,13 @@
 
 TODO: Doku: Gib die Masse für den idealen QR Code an! -> mach ne bedinungsanleitung + erklärung für die symbole
       Doku Ausblick: die ar scene im mehrere phasen ausplitten-> move, shoot, charge
+
+
+TODO: LiveDemo: Nochmal davor testen wenn datum steht 
+      -Ja
+            - Terrain ansehen
+            - Armeeliste erstellen
+            - Login/Registery
+      -Nein
+            - AR
+            - Neue Einheit hochladen -> kann man upload qr code liegen! das skript war noch auf lokal eingestellt

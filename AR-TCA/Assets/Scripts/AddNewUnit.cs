@@ -77,7 +77,6 @@ public class AddNewUnit : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
-                    displayMessage.text = "";
                     //get index of unitID of php echo 
                     int indexOfID = www.downloadHandler.text.IndexOf("_");
                     //index of _ char +1 = unitID string
@@ -87,6 +86,8 @@ public class AddNewUnit : MonoBehaviour
                     generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode(unitName);
                     uploadQRCode();
                     popUp.SetActive(true);
+
+                    displayMessage.text = "";
                 }
 
                 if (www.downloadHandler.text.Contains("Unit already exists"))
@@ -130,23 +131,5 @@ public class AddNewUnit : MonoBehaviour
     public void resetDisplay()
     {
         displayMessagePopUp.text = "QR Code erfolgreich erzeugt!";
-    }
-
-    private void resetTextFields() { //TODO: check if this is needed
-        nameField.text = "";
-        powerField.text = "";
-        pointsField.text = "";
-        movementField.text = "";
-        weaponSkillField.text = "";
-        ballisticSkilltField.text = "";
-        strenghtField.text = "";
-        toughnessField.text = "";
-        woundsField.text = "";
-        attacksField.text = "";
-        leadershipField.text = "";
-        saveField.text = "";
-        codexField.text = "";
-        factionField.value = 0;
-        battlefieldRoleField.value = 0;
     }
 }

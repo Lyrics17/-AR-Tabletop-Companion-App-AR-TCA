@@ -7404,21 +7404,21 @@ public:
 };
 
 
-// AddUnitToArmyList/<getUnitData>d__43
-struct U3CgetUnitDataU3Ed__43_t3EF589B005C29A25BB2D28C537BD7901CEB7E8D5  : public RuntimeObject
+// AddUnitToArmyList/<getUnitData>d__48
+struct U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F  : public RuntimeObject
 {
 public:
-	// System.Int32 AddUnitToArmyList/<getUnitData>d__43::<>1__state
+	// System.Int32 AddUnitToArmyList/<getUnitData>d__48::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AddUnitToArmyList/<getUnitData>d__43::<>2__current
+	// System.Object AddUnitToArmyList/<getUnitData>d__48::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// AddUnitToArmyList AddUnitToArmyList/<getUnitData>d__43::<>4__this
+	// AddUnitToArmyList AddUnitToArmyList/<getUnitData>d__48::<>4__this
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitData>d__43::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitData>d__48::<www>5__2
 	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__43_t3EF589B005C29A25BB2D28C537BD7901CEB7E8D5, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -7426,7 +7426,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__43_t3EF589B005C29A25BB2D28C537BD7901CEB7E8D5, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -7435,7 +7435,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__43_t3EF589B005C29A25BB2D28C537BD7901CEB7E8D5, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F, ___U3CU3E4__this_2)); }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * value)
@@ -7444,7 +7444,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__43_t3EF589B005C29A25BB2D28C537BD7901CEB7E8D5, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -7455,21 +7455,21 @@ public:
 };
 
 
-// AddUnitToArmyList/<getUnitFromBattlefieldRole>d__41
-struct U3CgetUnitFromBattlefieldRoleU3Ed__41_t433A0D25CC125677E587ED7DF71512DC5C37B705  : public RuntimeObject
+// AddUnitToArmyList/<getUnitFromBattlefieldRole>d__46
+struct U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF  : public RuntimeObject
 {
 public:
-	// System.Int32 AddUnitToArmyList/<getUnitFromBattlefieldRole>d__41::<>1__state
+	// System.Int32 AddUnitToArmyList/<getUnitFromBattlefieldRole>d__46::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AddUnitToArmyList/<getUnitFromBattlefieldRole>d__41::<>2__current
+	// System.Object AddUnitToArmyList/<getUnitFromBattlefieldRole>d__46::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// AddUnitToArmyList AddUnitToArmyList/<getUnitFromBattlefieldRole>d__41::<>4__this
+	// AddUnitToArmyList AddUnitToArmyList/<getUnitFromBattlefieldRole>d__46::<>4__this
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitFromBattlefieldRole>d__41::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitFromBattlefieldRole>d__46::<www>5__2
 	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__41_t433A0D25CC125677E587ED7DF71512DC5C37B705, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -7477,7 +7477,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__41_t433A0D25CC125677E587ED7DF71512DC5C37B705, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -7486,7 +7486,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__41_t433A0D25CC125677E587ED7DF71512DC5C37B705, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF, ___U3CU3E4__this_2)); }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * value)
@@ -7495,7 +7495,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__41_t433A0D25CC125677E587ED7DF71512DC5C37B705, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -7506,21 +7506,21 @@ public:
 };
 
 
-// AddUnitToArmyList/<getUnitFromFaction>d__39
-struct U3CgetUnitFromFactionU3Ed__39_t08DC3C07A5A54BF847E4789AFE0B852513929280  : public RuntimeObject
+// AddUnitToArmyList/<getUnitFromFaction>d__44
+struct U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955  : public RuntimeObject
 {
 public:
-	// System.Int32 AddUnitToArmyList/<getUnitFromFaction>d__39::<>1__state
+	// System.Int32 AddUnitToArmyList/<getUnitFromFaction>d__44::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AddUnitToArmyList/<getUnitFromFaction>d__39::<>2__current
+	// System.Object AddUnitToArmyList/<getUnitFromFaction>d__44::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// AddUnitToArmyList AddUnitToArmyList/<getUnitFromFaction>d__39::<>4__this
+	// AddUnitToArmyList AddUnitToArmyList/<getUnitFromFaction>d__44::<>4__this
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitFromFaction>d__39::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitFromFaction>d__44::<www>5__2
 	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__39_t08DC3C07A5A54BF847E4789AFE0B852513929280, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -7528,7 +7528,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__39_t08DC3C07A5A54BF847E4789AFE0B852513929280, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -7537,7 +7537,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__39_t08DC3C07A5A54BF847E4789AFE0B852513929280, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955, ___U3CU3E4__this_2)); }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * value)
@@ -7546,7 +7546,58 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__39_t08DC3C07A5A54BF847E4789AFE0B852513929280, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955, ___U3CwwwU3E5__2_3)); }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
+	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
+	{
+		___U3CwwwU3E5__2_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CwwwU3E5__2_3), (void*)value);
+	}
+};
+
+
+// AddUnitToArmyList/<insertArmyList>d__50
+struct U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC  : public RuntimeObject
+{
+public:
+	// System.Int32 AddUnitToArmyList/<insertArmyList>d__50::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object AddUnitToArmyList/<insertArmyList>d__50::<>2__current
+	RuntimeObject * ___U3CU3E2__current_1;
+	// AddUnitToArmyList AddUnitToArmyList/<insertArmyList>d__50::<>4__this
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * ___U3CU3E4__this_2;
+	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<insertArmyList>d__50::<www>5__2
+	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
+
+public:
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC, ___U3CU3E1__state_0)); }
+	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
+	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
+	inline void set_U3CU3E1__state_0(int32_t value)
+	{
+		___U3CU3E1__state_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC, ___U3CU3E2__current_1)); }
+	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
+	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
+	inline void set_U3CU3E2__current_1(RuntimeObject * value)
+	{
+		___U3CU3E2__current_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC, ___U3CU3E4__this_2)); }
+	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * value)
+	{
+		___U3CU3E4__this_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -42919,44 +42970,54 @@ public:
 	TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * ___battlefieldRoleDropdown_6;
 	// TMPro.TMP_Dropdown AddUnitToArmyList::unitToInsertDropdown
 	TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * ___unitToInsertDropdown_7;
-	// UnityEngine.UI.Button AddUnitToArmyList::qrCodeButton
-	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___qrCodeButton_8;
+	// UnityEngine.UI.Button AddUnitToArmyList::generateQRCodeButton
+	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___generateQRCodeButton_8;
+	// UnityEngine.UI.Button AddUnitToArmyList::saveQRCodeButton
+	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___saveQRCodeButton_9;
 	// UnityEngine.UI.Button AddUnitToArmyList::addUnitButton
-	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___addUnitButton_9;
+	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___addUnitButton_10;
 	// UnityEngine.UI.Button AddUnitToArmyList::removeUnitButton
-	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___removeUnitButton_10;
+	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___removeUnitButton_11;
 	// UnityEngine.UI.Button AddUnitToArmyList::saveArmyButton
-	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___saveArmyButton_11;
+	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___saveArmyButton_12;
 	// TMPro.TextMeshProUGUI AddUnitToArmyList::powerlimitGUI
-	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___powerlimitGUI_12;
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___powerlimitGUI_13;
 	// TMPro.TextMeshProUGUI AddUnitToArmyList::pointslimitGUI
-	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___pointslimitGUI_13;
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___pointslimitGUI_14;
 	// TMPro.TextMeshProUGUI AddUnitToArmyList::currentPowerValueGUI
-	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___currentPowerValueGUI_14;
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___currentPowerValueGUI_15;
 	// TMPro.TextMeshProUGUI AddUnitToArmyList::currentPointsValueGUI
-	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___currentPointsValueGUI_15;
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___currentPointsValueGUI_16;
 	// TMPro.TextMeshProUGUI AddUnitToArmyList::displayMessageGUI
-	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___displayMessageGUI_16;
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___displayMessageGUI_17;
+	// TMPro.TextMeshProUGUI AddUnitToArmyList::popupHeaderMessageGUI
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___popupHeaderMessageGUI_18;
 	// UnityEngine.GameObject[] AddUnitToArmyList::dataContainers
-	GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* ___dataContainers_17;
+	GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* ___dataContainers_19;
 	// TMPro.TextMeshProUGUI[] AddUnitToArmyList::dataText
-	TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC* ___dataText_18;
+	TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC* ___dataText_20;
 	// System.String AddUnitToArmyList::unitID
-	String_t* ___unitID_19;
+	String_t* ___unitID_21;
 	// System.Collections.ArrayList AddUnitToArmyList::unitIDList
-	ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * ___unitIDList_20;
+	ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * ___unitIDList_22;
 	// System.Int32 AddUnitToArmyList::powerCostOfUnit
-	int32_t ___powerCostOfUnit_21;
+	int32_t ___powerCostOfUnit_23;
 	// System.Int32 AddUnitToArmyList::powerCostSumOfUnits
-	int32_t ___powerCostSumOfUnits_22;
+	int32_t ___powerCostSumOfUnits_24;
 	// System.Int32 AddUnitToArmyList::powerCostLimit
-	int32_t ___powerCostLimit_23;
+	int32_t ___powerCostLimit_25;
 	// System.Int32 AddUnitToArmyList::pointsCostOfUnit
-	int32_t ___pointsCostOfUnit_24;
+	int32_t ___pointsCostOfUnit_26;
 	// System.Int32 AddUnitToArmyList::pointsCostSumOfUnits
-	int32_t ___pointsCostSumOfUnits_25;
+	int32_t ___pointsCostSumOfUnits_27;
 	// System.Int32 AddUnitToArmyList::pointsCostLimit
-	int32_t ___pointsCostLimit_26;
+	int32_t ___pointsCostLimit_28;
+	// System.String AddUnitToArmyList::currentSelectedFaction
+	String_t* ___currentSelectedFaction_29;
+	// QRCodeGenerator AddUnitToArmyList::generator
+	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * ___generator_30;
+	// SaveQRCode AddUnitToArmyList::saver
+	SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * ___saver_31;
 
 public:
 	inline static int32_t get_offset_of_battleSizeDropdown_4() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___battleSizeDropdown_4)); }
@@ -42995,169 +43056,214 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___unitToInsertDropdown_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_qrCodeButton_8() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___qrCodeButton_8)); }
-	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * get_qrCodeButton_8() const { return ___qrCodeButton_8; }
-	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D ** get_address_of_qrCodeButton_8() { return &___qrCodeButton_8; }
-	inline void set_qrCodeButton_8(Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * value)
+	inline static int32_t get_offset_of_generateQRCodeButton_8() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___generateQRCodeButton_8)); }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * get_generateQRCodeButton_8() const { return ___generateQRCodeButton_8; }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D ** get_address_of_generateQRCodeButton_8() { return &___generateQRCodeButton_8; }
+	inline void set_generateQRCodeButton_8(Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * value)
 	{
-		___qrCodeButton_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___qrCodeButton_8), (void*)value);
+		___generateQRCodeButton_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___generateQRCodeButton_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_addUnitButton_9() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___addUnitButton_9)); }
-	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * get_addUnitButton_9() const { return ___addUnitButton_9; }
-	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D ** get_address_of_addUnitButton_9() { return &___addUnitButton_9; }
-	inline void set_addUnitButton_9(Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * value)
+	inline static int32_t get_offset_of_saveQRCodeButton_9() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___saveQRCodeButton_9)); }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * get_saveQRCodeButton_9() const { return ___saveQRCodeButton_9; }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D ** get_address_of_saveQRCodeButton_9() { return &___saveQRCodeButton_9; }
+	inline void set_saveQRCodeButton_9(Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * value)
 	{
-		___addUnitButton_9 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___addUnitButton_9), (void*)value);
+		___saveQRCodeButton_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___saveQRCodeButton_9), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_removeUnitButton_10() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___removeUnitButton_10)); }
-	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * get_removeUnitButton_10() const { return ___removeUnitButton_10; }
-	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D ** get_address_of_removeUnitButton_10() { return &___removeUnitButton_10; }
-	inline void set_removeUnitButton_10(Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * value)
+	inline static int32_t get_offset_of_addUnitButton_10() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___addUnitButton_10)); }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * get_addUnitButton_10() const { return ___addUnitButton_10; }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D ** get_address_of_addUnitButton_10() { return &___addUnitButton_10; }
+	inline void set_addUnitButton_10(Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * value)
 	{
-		___removeUnitButton_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___removeUnitButton_10), (void*)value);
+		___addUnitButton_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___addUnitButton_10), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_saveArmyButton_11() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___saveArmyButton_11)); }
-	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * get_saveArmyButton_11() const { return ___saveArmyButton_11; }
-	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D ** get_address_of_saveArmyButton_11() { return &___saveArmyButton_11; }
-	inline void set_saveArmyButton_11(Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * value)
+	inline static int32_t get_offset_of_removeUnitButton_11() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___removeUnitButton_11)); }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * get_removeUnitButton_11() const { return ___removeUnitButton_11; }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D ** get_address_of_removeUnitButton_11() { return &___removeUnitButton_11; }
+	inline void set_removeUnitButton_11(Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * value)
 	{
-		___saveArmyButton_11 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___saveArmyButton_11), (void*)value);
+		___removeUnitButton_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___removeUnitButton_11), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_powerlimitGUI_12() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___powerlimitGUI_12)); }
-	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_powerlimitGUI_12() const { return ___powerlimitGUI_12; }
-	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_powerlimitGUI_12() { return &___powerlimitGUI_12; }
-	inline void set_powerlimitGUI_12(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	inline static int32_t get_offset_of_saveArmyButton_12() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___saveArmyButton_12)); }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * get_saveArmyButton_12() const { return ___saveArmyButton_12; }
+	inline Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D ** get_address_of_saveArmyButton_12() { return &___saveArmyButton_12; }
+	inline void set_saveArmyButton_12(Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * value)
 	{
-		___powerlimitGUI_12 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___powerlimitGUI_12), (void*)value);
+		___saveArmyButton_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___saveArmyButton_12), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_pointslimitGUI_13() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___pointslimitGUI_13)); }
-	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_pointslimitGUI_13() const { return ___pointslimitGUI_13; }
-	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_pointslimitGUI_13() { return &___pointslimitGUI_13; }
-	inline void set_pointslimitGUI_13(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	inline static int32_t get_offset_of_powerlimitGUI_13() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___powerlimitGUI_13)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_powerlimitGUI_13() const { return ___powerlimitGUI_13; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_powerlimitGUI_13() { return &___powerlimitGUI_13; }
+	inline void set_powerlimitGUI_13(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
 	{
-		___pointslimitGUI_13 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___pointslimitGUI_13), (void*)value);
+		___powerlimitGUI_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___powerlimitGUI_13), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_currentPowerValueGUI_14() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___currentPowerValueGUI_14)); }
-	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_currentPowerValueGUI_14() const { return ___currentPowerValueGUI_14; }
-	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_currentPowerValueGUI_14() { return &___currentPowerValueGUI_14; }
-	inline void set_currentPowerValueGUI_14(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	inline static int32_t get_offset_of_pointslimitGUI_14() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___pointslimitGUI_14)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_pointslimitGUI_14() const { return ___pointslimitGUI_14; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_pointslimitGUI_14() { return &___pointslimitGUI_14; }
+	inline void set_pointslimitGUI_14(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
 	{
-		___currentPowerValueGUI_14 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___currentPowerValueGUI_14), (void*)value);
+		___pointslimitGUI_14 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___pointslimitGUI_14), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_currentPointsValueGUI_15() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___currentPointsValueGUI_15)); }
-	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_currentPointsValueGUI_15() const { return ___currentPointsValueGUI_15; }
-	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_currentPointsValueGUI_15() { return &___currentPointsValueGUI_15; }
-	inline void set_currentPointsValueGUI_15(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	inline static int32_t get_offset_of_currentPowerValueGUI_15() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___currentPowerValueGUI_15)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_currentPowerValueGUI_15() const { return ___currentPowerValueGUI_15; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_currentPowerValueGUI_15() { return &___currentPowerValueGUI_15; }
+	inline void set_currentPowerValueGUI_15(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
 	{
-		___currentPointsValueGUI_15 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___currentPointsValueGUI_15), (void*)value);
+		___currentPowerValueGUI_15 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___currentPowerValueGUI_15), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_displayMessageGUI_16() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___displayMessageGUI_16)); }
-	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_displayMessageGUI_16() const { return ___displayMessageGUI_16; }
-	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_displayMessageGUI_16() { return &___displayMessageGUI_16; }
-	inline void set_displayMessageGUI_16(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	inline static int32_t get_offset_of_currentPointsValueGUI_16() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___currentPointsValueGUI_16)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_currentPointsValueGUI_16() const { return ___currentPointsValueGUI_16; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_currentPointsValueGUI_16() { return &___currentPointsValueGUI_16; }
+	inline void set_currentPointsValueGUI_16(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
 	{
-		___displayMessageGUI_16 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___displayMessageGUI_16), (void*)value);
+		___currentPointsValueGUI_16 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___currentPointsValueGUI_16), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_dataContainers_17() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___dataContainers_17)); }
-	inline GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* get_dataContainers_17() const { return ___dataContainers_17; }
-	inline GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642** get_address_of_dataContainers_17() { return &___dataContainers_17; }
-	inline void set_dataContainers_17(GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* value)
+	inline static int32_t get_offset_of_displayMessageGUI_17() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___displayMessageGUI_17)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_displayMessageGUI_17() const { return ___displayMessageGUI_17; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_displayMessageGUI_17() { return &___displayMessageGUI_17; }
+	inline void set_displayMessageGUI_17(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
 	{
-		___dataContainers_17 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___dataContainers_17), (void*)value);
+		___displayMessageGUI_17 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___displayMessageGUI_17), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_dataText_18() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___dataText_18)); }
-	inline TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC* get_dataText_18() const { return ___dataText_18; }
-	inline TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC** get_address_of_dataText_18() { return &___dataText_18; }
-	inline void set_dataText_18(TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC* value)
+	inline static int32_t get_offset_of_popupHeaderMessageGUI_18() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___popupHeaderMessageGUI_18)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_popupHeaderMessageGUI_18() const { return ___popupHeaderMessageGUI_18; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_popupHeaderMessageGUI_18() { return &___popupHeaderMessageGUI_18; }
+	inline void set_popupHeaderMessageGUI_18(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
 	{
-		___dataText_18 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___dataText_18), (void*)value);
+		___popupHeaderMessageGUI_18 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___popupHeaderMessageGUI_18), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_unitID_19() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___unitID_19)); }
-	inline String_t* get_unitID_19() const { return ___unitID_19; }
-	inline String_t** get_address_of_unitID_19() { return &___unitID_19; }
-	inline void set_unitID_19(String_t* value)
+	inline static int32_t get_offset_of_dataContainers_19() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___dataContainers_19)); }
+	inline GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* get_dataContainers_19() const { return ___dataContainers_19; }
+	inline GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642** get_address_of_dataContainers_19() { return &___dataContainers_19; }
+	inline void set_dataContainers_19(GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* value)
 	{
-		___unitID_19 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___unitID_19), (void*)value);
+		___dataContainers_19 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___dataContainers_19), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_unitIDList_20() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___unitIDList_20)); }
-	inline ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * get_unitIDList_20() const { return ___unitIDList_20; }
-	inline ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 ** get_address_of_unitIDList_20() { return &___unitIDList_20; }
-	inline void set_unitIDList_20(ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * value)
+	inline static int32_t get_offset_of_dataText_20() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___dataText_20)); }
+	inline TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC* get_dataText_20() const { return ___dataText_20; }
+	inline TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC** get_address_of_dataText_20() { return &___dataText_20; }
+	inline void set_dataText_20(TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC* value)
 	{
-		___unitIDList_20 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___unitIDList_20), (void*)value);
+		___dataText_20 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___dataText_20), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_powerCostOfUnit_21() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___powerCostOfUnit_21)); }
-	inline int32_t get_powerCostOfUnit_21() const { return ___powerCostOfUnit_21; }
-	inline int32_t* get_address_of_powerCostOfUnit_21() { return &___powerCostOfUnit_21; }
-	inline void set_powerCostOfUnit_21(int32_t value)
+	inline static int32_t get_offset_of_unitID_21() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___unitID_21)); }
+	inline String_t* get_unitID_21() const { return ___unitID_21; }
+	inline String_t** get_address_of_unitID_21() { return &___unitID_21; }
+	inline void set_unitID_21(String_t* value)
 	{
-		___powerCostOfUnit_21 = value;
+		___unitID_21 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___unitID_21), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_powerCostSumOfUnits_22() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___powerCostSumOfUnits_22)); }
-	inline int32_t get_powerCostSumOfUnits_22() const { return ___powerCostSumOfUnits_22; }
-	inline int32_t* get_address_of_powerCostSumOfUnits_22() { return &___powerCostSumOfUnits_22; }
-	inline void set_powerCostSumOfUnits_22(int32_t value)
+	inline static int32_t get_offset_of_unitIDList_22() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___unitIDList_22)); }
+	inline ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * get_unitIDList_22() const { return ___unitIDList_22; }
+	inline ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 ** get_address_of_unitIDList_22() { return &___unitIDList_22; }
+	inline void set_unitIDList_22(ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * value)
 	{
-		___powerCostSumOfUnits_22 = value;
+		___unitIDList_22 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___unitIDList_22), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_powerCostLimit_23() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___powerCostLimit_23)); }
-	inline int32_t get_powerCostLimit_23() const { return ___powerCostLimit_23; }
-	inline int32_t* get_address_of_powerCostLimit_23() { return &___powerCostLimit_23; }
-	inline void set_powerCostLimit_23(int32_t value)
+	inline static int32_t get_offset_of_powerCostOfUnit_23() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___powerCostOfUnit_23)); }
+	inline int32_t get_powerCostOfUnit_23() const { return ___powerCostOfUnit_23; }
+	inline int32_t* get_address_of_powerCostOfUnit_23() { return &___powerCostOfUnit_23; }
+	inline void set_powerCostOfUnit_23(int32_t value)
 	{
-		___powerCostLimit_23 = value;
+		___powerCostOfUnit_23 = value;
 	}
 
-	inline static int32_t get_offset_of_pointsCostOfUnit_24() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___pointsCostOfUnit_24)); }
-	inline int32_t get_pointsCostOfUnit_24() const { return ___pointsCostOfUnit_24; }
-	inline int32_t* get_address_of_pointsCostOfUnit_24() { return &___pointsCostOfUnit_24; }
-	inline void set_pointsCostOfUnit_24(int32_t value)
+	inline static int32_t get_offset_of_powerCostSumOfUnits_24() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___powerCostSumOfUnits_24)); }
+	inline int32_t get_powerCostSumOfUnits_24() const { return ___powerCostSumOfUnits_24; }
+	inline int32_t* get_address_of_powerCostSumOfUnits_24() { return &___powerCostSumOfUnits_24; }
+	inline void set_powerCostSumOfUnits_24(int32_t value)
 	{
-		___pointsCostOfUnit_24 = value;
+		___powerCostSumOfUnits_24 = value;
 	}
 
-	inline static int32_t get_offset_of_pointsCostSumOfUnits_25() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___pointsCostSumOfUnits_25)); }
-	inline int32_t get_pointsCostSumOfUnits_25() const { return ___pointsCostSumOfUnits_25; }
-	inline int32_t* get_address_of_pointsCostSumOfUnits_25() { return &___pointsCostSumOfUnits_25; }
-	inline void set_pointsCostSumOfUnits_25(int32_t value)
+	inline static int32_t get_offset_of_powerCostLimit_25() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___powerCostLimit_25)); }
+	inline int32_t get_powerCostLimit_25() const { return ___powerCostLimit_25; }
+	inline int32_t* get_address_of_powerCostLimit_25() { return &___powerCostLimit_25; }
+	inline void set_powerCostLimit_25(int32_t value)
 	{
-		___pointsCostSumOfUnits_25 = value;
+		___powerCostLimit_25 = value;
 	}
 
-	inline static int32_t get_offset_of_pointsCostLimit_26() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___pointsCostLimit_26)); }
-	inline int32_t get_pointsCostLimit_26() const { return ___pointsCostLimit_26; }
-	inline int32_t* get_address_of_pointsCostLimit_26() { return &___pointsCostLimit_26; }
-	inline void set_pointsCostLimit_26(int32_t value)
+	inline static int32_t get_offset_of_pointsCostOfUnit_26() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___pointsCostOfUnit_26)); }
+	inline int32_t get_pointsCostOfUnit_26() const { return ___pointsCostOfUnit_26; }
+	inline int32_t* get_address_of_pointsCostOfUnit_26() { return &___pointsCostOfUnit_26; }
+	inline void set_pointsCostOfUnit_26(int32_t value)
 	{
-		___pointsCostLimit_26 = value;
+		___pointsCostOfUnit_26 = value;
+	}
+
+	inline static int32_t get_offset_of_pointsCostSumOfUnits_27() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___pointsCostSumOfUnits_27)); }
+	inline int32_t get_pointsCostSumOfUnits_27() const { return ___pointsCostSumOfUnits_27; }
+	inline int32_t* get_address_of_pointsCostSumOfUnits_27() { return &___pointsCostSumOfUnits_27; }
+	inline void set_pointsCostSumOfUnits_27(int32_t value)
+	{
+		___pointsCostSumOfUnits_27 = value;
+	}
+
+	inline static int32_t get_offset_of_pointsCostLimit_28() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___pointsCostLimit_28)); }
+	inline int32_t get_pointsCostLimit_28() const { return ___pointsCostLimit_28; }
+	inline int32_t* get_address_of_pointsCostLimit_28() { return &___pointsCostLimit_28; }
+	inline void set_pointsCostLimit_28(int32_t value)
+	{
+		___pointsCostLimit_28 = value;
+	}
+
+	inline static int32_t get_offset_of_currentSelectedFaction_29() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___currentSelectedFaction_29)); }
+	inline String_t* get_currentSelectedFaction_29() const { return ___currentSelectedFaction_29; }
+	inline String_t** get_address_of_currentSelectedFaction_29() { return &___currentSelectedFaction_29; }
+	inline void set_currentSelectedFaction_29(String_t* value)
+	{
+		___currentSelectedFaction_29 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___currentSelectedFaction_29), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_generator_30() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___generator_30)); }
+	inline QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * get_generator_30() const { return ___generator_30; }
+	inline QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D ** get_address_of_generator_30() { return &___generator_30; }
+	inline void set_generator_30(QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * value)
+	{
+		___generator_30 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___generator_30), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_saver_31() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___saver_31)); }
+	inline SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * get_saver_31() const { return ___saver_31; }
+	inline SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 ** get_address_of_saver_31() { return &___saver_31; }
+	inline void set_saver_31(SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * value)
+	{
+		___saver_31 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___saver_31), (void*)value);
 	}
 };
 
@@ -65884,58 +65990,70 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4014[22] =
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4015[4] = 
 {
-	U3CgetUnitFromFactionU3Ed__39_t08DC3C07A5A54BF847E4789AFE0B852513929280::get_offset_of_U3CU3E1__state_0(),
-	U3CgetUnitFromFactionU3Ed__39_t08DC3C07A5A54BF847E4789AFE0B852513929280::get_offset_of_U3CU3E2__current_1(),
-	U3CgetUnitFromFactionU3Ed__39_t08DC3C07A5A54BF847E4789AFE0B852513929280::get_offset_of_U3CU3E4__this_2(),
-	U3CgetUnitFromFactionU3Ed__39_t08DC3C07A5A54BF847E4789AFE0B852513929280::get_offset_of_U3CwwwU3E5__2_3(),
+	U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955::get_offset_of_U3CU3E1__state_0(),
+	U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955::get_offset_of_U3CU3E2__current_1(),
+	U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955::get_offset_of_U3CU3E4__this_2(),
+	U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955::get_offset_of_U3CwwwU3E5__2_3(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4016[4] = 
 {
-	U3CgetUnitFromBattlefieldRoleU3Ed__41_t433A0D25CC125677E587ED7DF71512DC5C37B705::get_offset_of_U3CU3E1__state_0(),
-	U3CgetUnitFromBattlefieldRoleU3Ed__41_t433A0D25CC125677E587ED7DF71512DC5C37B705::get_offset_of_U3CU3E2__current_1(),
-	U3CgetUnitFromBattlefieldRoleU3Ed__41_t433A0D25CC125677E587ED7DF71512DC5C37B705::get_offset_of_U3CU3E4__this_2(),
-	U3CgetUnitFromBattlefieldRoleU3Ed__41_t433A0D25CC125677E587ED7DF71512DC5C37B705::get_offset_of_U3CwwwU3E5__2_3(),
+	U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF::get_offset_of_U3CU3E1__state_0(),
+	U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF::get_offset_of_U3CU3E2__current_1(),
+	U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF::get_offset_of_U3CU3E4__this_2(),
+	U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF::get_offset_of_U3CwwwU3E5__2_3(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4017[4] = 
 {
-	U3CgetUnitDataU3Ed__43_t3EF589B005C29A25BB2D28C537BD7901CEB7E8D5::get_offset_of_U3CU3E1__state_0(),
-	U3CgetUnitDataU3Ed__43_t3EF589B005C29A25BB2D28C537BD7901CEB7E8D5::get_offset_of_U3CU3E2__current_1(),
-	U3CgetUnitDataU3Ed__43_t3EF589B005C29A25BB2D28C537BD7901CEB7E8D5::get_offset_of_U3CU3E4__this_2(),
-	U3CgetUnitDataU3Ed__43_t3EF589B005C29A25BB2D28C537BD7901CEB7E8D5::get_offset_of_U3CwwwU3E5__2_3(),
+	U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F::get_offset_of_U3CU3E1__state_0(),
+	U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F::get_offset_of_U3CU3E2__current_1(),
+	U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F::get_offset_of_U3CU3E4__this_2(),
+	U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4018[23] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4018[4] = 
+{
+	U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC::get_offset_of_U3CU3E1__state_0(),
+	U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC::get_offset_of_U3CU3E2__current_1(),
+	U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC::get_offset_of_U3CU3E4__this_2(),
+	U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC::get_offset_of_U3CwwwU3E5__2_3(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4019[28] = 
 {
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_battleSizeDropdown_4(),
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_factionDropdown_5(),
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_battlefieldRoleDropdown_6(),
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_unitToInsertDropdown_7(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_qrCodeButton_8(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_addUnitButton_9(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_removeUnitButton_10(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_saveArmyButton_11(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_powerlimitGUI_12(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointslimitGUI_13(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_currentPowerValueGUI_14(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_currentPointsValueGUI_15(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_displayMessageGUI_16(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_dataContainers_17(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_dataText_18(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_unitID_19(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_unitIDList_20(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_powerCostOfUnit_21(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_powerCostSumOfUnits_22(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_powerCostLimit_23(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointsCostOfUnit_24(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointsCostSumOfUnits_25(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointsCostLimit_26(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_generateQRCodeButton_8(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_saveQRCodeButton_9(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_addUnitButton_10(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_removeUnitButton_11(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_saveArmyButton_12(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_powerlimitGUI_13(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointslimitGUI_14(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_currentPowerValueGUI_15(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_currentPointsValueGUI_16(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_displayMessageGUI_17(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_popupHeaderMessageGUI_18(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_dataContainers_19(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_dataText_20(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_unitID_21(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_unitIDList_22(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_powerCostOfUnit_23(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_powerCostSumOfUnits_24(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_powerCostLimit_25(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointsCostOfUnit_26(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointsCostSumOfUnits_27(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointsCostLimit_28(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_currentSelectedFaction_29(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_generator_30(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_saver_31(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4019[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4020[3] = 
 {
 	DBManager_tC4B516DBA275640F081BBCF340B49323E35DA5EB_StaticFields::get_offset_of_username_0(),
 	DBManager_tC4B516DBA275640F081BBCF340B49323E35DA5EB_StaticFields::get_offset_of_registered_1(),
 	DBManager_tC4B516DBA275640F081BBCF340B49323E35DA5EB_StaticFields::get_offset_of_passwordReset_2(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4020[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4021[5] = 
 {
 	U3CinstantiateMarkerU3Ed__20_t9FF233C3835AE3EF75513B6FC312B8031EE5E31F::get_offset_of_U3CU3E1__state_0(),
 	U3CinstantiateMarkerU3Ed__20_t9FF233C3835AE3EF75513B6FC312B8031EE5E31F::get_offset_of_U3CU3E2__current_1(),
@@ -65943,7 +66061,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4020[5] =
 	U3CinstantiateMarkerU3Ed__20_t9FF233C3835AE3EF75513B6FC312B8031EE5E31F::get_offset_of_unitName_3(),
 	U3CinstantiateMarkerU3Ed__20_t9FF233C3835AE3EF75513B6FC312B8031EE5E31F::get_offset_of_trackedImage_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4021[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4022[5] = 
 {
 	U3CGetUnitDataU3Ed__21_tC42F1B385E5C1319CF00391C3BC7729774FFBC78::get_offset_of_U3CU3E1__state_0(),
 	U3CGetUnitDataU3Ed__21_tC42F1B385E5C1319CF00391C3BC7729774FFBC78::get_offset_of_U3CU3E2__current_1(),
@@ -65951,7 +66069,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4021[5] =
 	U3CGetUnitDataU3Ed__21_tC42F1B385E5C1319CF00391C3BC7729774FFBC78::get_offset_of_U3CU3E4__this_3(),
 	U3CGetUnitDataU3Ed__21_tC42F1B385E5C1319CF00391C3BC7729774FFBC78::get_offset_of_U3CwwwU3E5__2_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4022[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4023[5] = 
 {
 	U3CgetTerrainDataU3Ed__22_t2E9987207A0F8CB72D34BAE6F422C3C2C83B727A::get_offset_of_U3CU3E1__state_0(),
 	U3CgetTerrainDataU3Ed__22_t2E9987207A0F8CB72D34BAE6F422C3C2C83B727A::get_offset_of_U3CU3E2__current_1(),
@@ -65959,7 +66077,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4022[5] =
 	U3CgetTerrainDataU3Ed__22_t2E9987207A0F8CB72D34BAE6F422C3C2C83B727A::get_offset_of_U3CU3E4__this_3(),
 	U3CgetTerrainDataU3Ed__22_t2E9987207A0F8CB72D34BAE6F422C3C2C83B727A::get_offset_of_U3CwwwU3E5__2_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4023[16] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4024[16] = 
 {
 	ImageRecognition_t3FA1D134672565B626D02FABA8BCB9732ACFAC23::get_offset_of_trackedImageManager_4(),
 	ImageRecognition_t3FA1D134672565B626D02FABA8BCB9732ACFAC23::get_offset_of_marker_5(),
@@ -65978,26 +66096,26 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4023[16] =
 	ImageRecognition_t3FA1D134672565B626D02FABA8BCB9732ACFAC23::get_offset_of_coroutineGetUnitData_18(),
 	ImageRecognition_t3FA1D134672565B626D02FABA8BCB9732ACFAC23::get_offset_of_coroutineGetTerrainData_19(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4024[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4025[4] = 
 {
 	U3CLoginUserU3Ed__5_t24C0F0BE253AEE9EF7D008F7B7B50FAC768DC8BD::get_offset_of_U3CU3E1__state_0(),
 	U3CLoginUserU3Ed__5_t24C0F0BE253AEE9EF7D008F7B7B50FAC768DC8BD::get_offset_of_U3CU3E2__current_1(),
 	U3CLoginUserU3Ed__5_t24C0F0BE253AEE9EF7D008F7B7B50FAC768DC8BD::get_offset_of_U3CU3E4__this_2(),
 	U3CLoginUserU3Ed__5_t24C0F0BE253AEE9EF7D008F7B7B50FAC768DC8BD::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4025[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4026[4] = 
 {
 	Login_t00E33DCE364DD57FA9AADBD65B60A2FB3539B9DF::get_offset_of_userUsername_4(),
 	Login_t00E33DCE364DD57FA9AADBD65B60A2FB3539B9DF::get_offset_of_userPassword_5(),
 	Login_t00E33DCE364DD57FA9AADBD65B60A2FB3539B9DF::get_offset_of_displayMessage_6(),
 	Login_t00E33DCE364DD57FA9AADBD65B60A2FB3539B9DF::get_offset_of_submitButton_7(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4026[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4027[2] = 
 {
 	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D::get_offset_of_qrCodeField_4(),
 	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D::get_offset_of_storeEncodedTexture_5(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4027[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4028[5] = 
 {
 	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_U3CU3E1__state_0(),
 	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_U3CU3E2__current_1(),
@@ -66005,28 +66123,28 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4027[5] =
 	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_unitName_3(),
 	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_U3CwwwU3E5__2_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4029[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4030[4] = 
 {
 	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CU3E1__state_0(),
 	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CU3E2__current_1(),
 	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CU3E4__this_2(),
 	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4030[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4031[4] = 
 {
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_nameField_4(),
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_passwordField_5(),
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_submitButton_6(),
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_infoText_7(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4031[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4032[4] = 
 {
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CU3E1__state_0(),
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CU3E2__current_1(),
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CU3E4__this_2(),
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4032[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4033[5] = 
 {
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_nameField_4(),
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_passwordField_5(),
@@ -66034,14 +66152,14 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4032[5] =
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_submitButton_7(),
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_popUp_8(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4035[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4036[4] = 
 {
 	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CU3E1__state_0(),
 	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CU3E2__current_1(),
 	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CU3E4__this_2(),
 	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4036[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4037[9] = 
 {
 	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_terrainPiece_4(),
 	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_terrainCategory_5(),
@@ -66053,15 +66171,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4036[9] =
 	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_generator_11(),
 	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_saver_12(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4037[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4038[1] = 
 {
 	ShowMessage_t8BB58514BD077B88A7E28C92E234A9E7CD9B7CD5::get_offset_of_messageDisplay_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4038[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4039[1] = 
 {
 	ShowUsername_tEDC2E862484D790E8DBB217A01856470CB0CB275::get_offset_of_usernameDisplay_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4039[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4040[3] = 
 {
 	TerrainAttributesContent_t75B54326D81FB764DC7C25F95C0B24BD0DD445EF::get_offset_of_contentField_4(),
 	TerrainAttributesContent_t75B54326D81FB764DC7C25F95C0B24BD0DD445EF::get_offset_of_layoutElement_5(),

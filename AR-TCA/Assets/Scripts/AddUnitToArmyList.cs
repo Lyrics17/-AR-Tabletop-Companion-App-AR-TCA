@@ -440,9 +440,9 @@ public class AddUnitToArmyList : MonoBehaviour
     IEnumerator insertArmyList()
     {
         //Webhost connection
-        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/getUnitAllData.php";
+        // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/addArmyList.php";
         //Localhost connection
-        // string url = "http://localhost/AR-TCA/Units/getUnitAllData.php";
+        // string url = "http://localhost/AR-TCA/Units/addArmyList.php";
         //Local connection with fixed ip
         string url = "192.168.178.33/AR-TCA/Units/addArmyList.php";
 
