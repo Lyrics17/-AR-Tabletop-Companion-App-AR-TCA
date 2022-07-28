@@ -20,6 +20,7 @@ if (empty($row['listOfUnitIds']))
     exit();
 }
 
+$listOfUnitIdsString = $row['listOfUnitIds'];
 $listOfUnitIdsArray = explode("_", $row['listOfUnitIds']);
 
 $unitNames = "";
@@ -46,5 +47,5 @@ for ($i = 0; $i < count($listOfUnitIdsArray); $i++)
 
 $unitNames = substr($unitNames, 0, -1);
 
-echo "Success 0: Successfully fetched User Army Units!" . $unitNames . "|" . $unitPowerCost . "%" . $unitPointCost;
+echo "Success 0: Successfully fetched User Army Units!" . $unitNames . "|" . $unitPowerCost . "%" . $unitPointCost . "&" . $listOfUnitIdsString;
 $conn = null;

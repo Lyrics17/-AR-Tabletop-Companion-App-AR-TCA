@@ -11,10 +11,6 @@ public class AddUnitToArmyList : MonoBehaviour
     /* 
 
             TODO: debug.logs entfernen & code kommentieren
-
-            TODO: logic schreiben das maybe wenn eine armylist eintrag mit username + factionname existiert die werte hier reingeladen werden -> arraylist dropdown selected usw. 
-
-            TODO: available armylists in der scene davor selecten 
     */
     //References to Dropdowns
     public TMP_Dropdown battleSizeDropdown;
@@ -50,10 +46,20 @@ public class AddUnitToArmyList : MonoBehaviour
     private int pointsCostOfUnit;
     private int pointsCostSumOfUnits = 0;
     private int pointsCostLimit;
-    private string currentSelectedFaction;
     public QRCodeGenerator generator; //reference of GameObject in the Scene with the QRCodeGenerator script as component
     public SaveQRCode saver; //reference of GameObject in the Scene with the SaveQRCode script as component
 
+    private void Awake()
+    {
+        if (ArmyManager.selectedFaction != null)
+        {
+            addCurrentBattleSizeToGUI();
+            factionDropdown.value = factionDropdown.options.FindIndex(option => option.text == ArmyManager.selectedFaction);
+            StartCoroutine(getUnitFromFaction());
+            unitIDList = ArmyManager.selectedUnits;
+            addCurrentUnitCostsToGUI();
+        }
+    }
     private void Update()
     {
         toggleUnitToInsertDropdown();
@@ -98,7 +104,7 @@ public class AddUnitToArmyList : MonoBehaviour
         { return false; }
     }
 
-    public void displayPowerPointLimit() //called by battleSizeDropdown
+    public void displayPowerPointLimit() //called by battleSizeDropdown if no faction was selected in the prior scene
     {
 
         powerlimitGUI.text = " Machtlimit:";
@@ -154,6 +160,36 @@ public class AddUnitToArmyList : MonoBehaviour
 
         powerlimitGUI.text += powerlimitValue;
         pointslimitGUI.text += pointlimitValue;
+    }
+
+    private void addCurrentBattleSizeToGUI() //called at the start of the scene if the user has already a army for the faction
+    {
+        powerlimitGUI.text = " Machtlimit:";
+        pointslimitGUI.text = " Punktelimit";
+
+        string powerlimitValue = "";
+        string pointlimitValue = "";
+
+        if (Int16.Parse(ArmyManager.pointsCost) <= 500)
+        {
+            battleSizeDropdown.value = 1;
+        }
+        else if (500 < Int16.Parse(ArmyManager.pointsCost) && Int16.Parse(ArmyManager.pointsCost) <= 1000)
+        {
+            battleSizeDropdown.value = 2;
+
+        }
+        else if (1000 < Int16.Parse(ArmyManager.pointsCost) && Int16.Parse(ArmyManager.pointsCost) <= 2000)
+        {
+            battleSizeDropdown.value = 3;
+        }
+        else
+        {
+            battleSizeDropdown.value = 4;
+        }
+        powerlimitGUI.text += powerlimitValue;
+        pointslimitGUI.text += pointlimitValue;
+        displayPowerPointLimit();
     }
 
     private void toggleUnitToInsertDropdown()
@@ -232,6 +268,16 @@ public class AddUnitToArmyList : MonoBehaviour
         unitIDList.Add(unitID);
         powerCostSumOfUnits += powerCostOfUnit;
         pointsCostSumOfUnits += pointsCostOfUnit;
+        currentPowerValueGUI.color = Color.black;
+        currentPowerValueGUI.text = " Macht: " + powerCostSumOfUnits;
+        currentPointsValueGUI.color = Color.black;
+        currentPointsValueGUI.text = " Punkte: " + pointsCostSumOfUnits;
+    }
+
+    private void addCurrentUnitCostsToGUI()
+    {
+        powerCostSumOfUnits = Int16.Parse(ArmyManager.powerCost);
+        pointsCostSumOfUnits = Int16.Parse(ArmyManager.pointsCost);
         currentPowerValueGUI.color = Color.black;
         currentPowerValueGUI.text = " Macht: " + powerCostSumOfUnits;
         currentPointsValueGUI.color = Color.black;

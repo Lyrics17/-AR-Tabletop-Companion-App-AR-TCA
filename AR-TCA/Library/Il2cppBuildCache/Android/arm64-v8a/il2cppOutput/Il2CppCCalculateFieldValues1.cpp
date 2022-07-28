@@ -576,6 +576,8 @@ struct List_1_t8F4B8FD04A1AA2BC3EDCB13F4EB43036E073DBE8;
 struct List_1_tBA68AA99B3AE6EFB57B37FF744D7E22CFE9F81BE;
 // System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.UI.XRUIInputModule/RegisteredTouch>
 struct List_1_tF908382B3F9A3360582C830544139A8160622A6C;
+// System.Predicate`1<TMPro.TMP_Dropdown/OptionData>
+struct Predicate_1_tA02D546D0EF36B3CB7EAD708DB1C451343084FCD;
 // UnityEngine.XR.ARSubsystems.Promise`1<UnityEngine.XR.ARSubsystems.SessionAvailability>
 struct Promise_1_tB8B428F557CD6742430DB416C0B99C79CA1AA167;
 // UnityEngine.XR.ARSubsystems.Promise`1<UnityEngine.XR.ARSubsystems.SessionInstallationStatus>
@@ -780,6 +782,8 @@ struct AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA;
 struct AudioClip_t16D2E573E7CC1C5118D8EE0F0692D46866A1C0EE;
 // UnityEngine.AudioSource
 struct AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B;
+// AvailableArmies
+struct AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF;
 // UnityEngine.InputSystem.Controls.AxisControl
 struct AxisControl_tF6BA6DA28DAB8BBBAD80A596F12BF340EE883B22;
 // UnityEngine.EventSystems.AxisEventData
@@ -2461,6 +2465,65 @@ struct ArPrestoApi_tAF2311DE0BD51DABAE9CBD531AE775DEE8E2424D  : public RuntimeOb
 public:
 
 public:
+};
+
+
+// ArmyManager
+struct ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields
+{
+public:
+	// System.String ArmyManager::selectedFaction
+	String_t* ___selectedFaction_0;
+	// System.Collections.ArrayList ArmyManager::selectedUnits
+	ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * ___selectedUnits_1;
+	// System.String ArmyManager::powerCost
+	String_t* ___powerCost_2;
+	// System.String ArmyManager::pointsCost
+	String_t* ___pointsCost_3;
+
+public:
+	inline static int32_t get_offset_of_selectedFaction_0() { return static_cast<int32_t>(offsetof(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields, ___selectedFaction_0)); }
+	inline String_t* get_selectedFaction_0() const { return ___selectedFaction_0; }
+	inline String_t** get_address_of_selectedFaction_0() { return &___selectedFaction_0; }
+	inline void set_selectedFaction_0(String_t* value)
+	{
+		___selectedFaction_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___selectedFaction_0), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_selectedUnits_1() { return static_cast<int32_t>(offsetof(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields, ___selectedUnits_1)); }
+	inline ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * get_selectedUnits_1() const { return ___selectedUnits_1; }
+	inline ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 ** get_address_of_selectedUnits_1() { return &___selectedUnits_1; }
+	inline void set_selectedUnits_1(ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * value)
+	{
+		___selectedUnits_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___selectedUnits_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_powerCost_2() { return static_cast<int32_t>(offsetof(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields, ___powerCost_2)); }
+	inline String_t* get_powerCost_2() const { return ___powerCost_2; }
+	inline String_t** get_address_of_powerCost_2() { return &___powerCost_2; }
+	inline void set_powerCost_2(String_t* value)
+	{
+		___powerCost_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___powerCost_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_pointsCost_3() { return static_cast<int32_t>(offsetof(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields, ___pointsCost_3)); }
+	inline String_t* get_pointsCost_3() const { return ___pointsCost_3; }
+	inline String_t** get_address_of_pointsCost_3() { return &___pointsCost_3; }
+	inline void set_pointsCost_3(String_t* value)
+	{
+		___pointsCost_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___pointsCost_3), (void*)value);
+	}
 };
 
 
@@ -7404,21 +7467,58 @@ public:
 };
 
 
-// AddUnitToArmyList/<getUnitData>d__48
-struct U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F  : public RuntimeObject
+// AddUnitToArmyList/<>c
+struct U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF  : public RuntimeObject
 {
 public:
-	// System.Int32 AddUnitToArmyList/<getUnitData>d__48::<>1__state
+
+public:
+};
+
+struct U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF_StaticFields
+{
+public:
+	// AddUnitToArmyList/<>c AddUnitToArmyList/<>c::<>9
+	U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF * ___U3CU3E9_0;
+	// System.Predicate`1<TMPro.TMP_Dropdown/OptionData> AddUnitToArmyList/<>c::<>9__27_0
+	Predicate_1_tA02D546D0EF36B3CB7EAD708DB1C451343084FCD * ___U3CU3E9__27_0_1;
+
+public:
+	inline static int32_t get_offset_of_U3CU3E9_0() { return static_cast<int32_t>(offsetof(U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF_StaticFields, ___U3CU3E9_0)); }
+	inline U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF * get_U3CU3E9_0() const { return ___U3CU3E9_0; }
+	inline U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF ** get_address_of_U3CU3E9_0() { return &___U3CU3E9_0; }
+	inline void set_U3CU3E9_0(U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF * value)
+	{
+		___U3CU3E9_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E9_0), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3E9__27_0_1() { return static_cast<int32_t>(offsetof(U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF_StaticFields, ___U3CU3E9__27_0_1)); }
+	inline Predicate_1_tA02D546D0EF36B3CB7EAD708DB1C451343084FCD * get_U3CU3E9__27_0_1() const { return ___U3CU3E9__27_0_1; }
+	inline Predicate_1_tA02D546D0EF36B3CB7EAD708DB1C451343084FCD ** get_address_of_U3CU3E9__27_0_1() { return &___U3CU3E9__27_0_1; }
+	inline void set_U3CU3E9__27_0_1(Predicate_1_tA02D546D0EF36B3CB7EAD708DB1C451343084FCD * value)
+	{
+		___U3CU3E9__27_0_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E9__27_0_1), (void*)value);
+	}
+};
+
+
+// AddUnitToArmyList/<getUnitData>d__50
+struct U3CgetUnitDataU3Ed__50_t40F152383A903D4B5249096157B5038B03CE0DE0  : public RuntimeObject
+{
+public:
+	// System.Int32 AddUnitToArmyList/<getUnitData>d__50::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AddUnitToArmyList/<getUnitData>d__48::<>2__current
+	// System.Object AddUnitToArmyList/<getUnitData>d__50::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// AddUnitToArmyList AddUnitToArmyList/<getUnitData>d__48::<>4__this
+	// AddUnitToArmyList AddUnitToArmyList/<getUnitData>d__50::<>4__this
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitData>d__48::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitData>d__50::<www>5__2
 	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__50_t40F152383A903D4B5249096157B5038B03CE0DE0, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -7426,7 +7526,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__50_t40F152383A903D4B5249096157B5038B03CE0DE0, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -7435,7 +7535,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__50_t40F152383A903D4B5249096157B5038B03CE0DE0, ___U3CU3E4__this_2)); }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * value)
@@ -7444,7 +7544,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__50_t40F152383A903D4B5249096157B5038B03CE0DE0, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -7455,21 +7555,21 @@ public:
 };
 
 
-// AddUnitToArmyList/<getUnitFromBattlefieldRole>d__46
-struct U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF  : public RuntimeObject
+// AddUnitToArmyList/<getUnitFromBattlefieldRole>d__48
+struct U3CgetUnitFromBattlefieldRoleU3Ed__48_tB351F97E72654F6EDC9B28A080B9D3FEF04CF965  : public RuntimeObject
 {
 public:
-	// System.Int32 AddUnitToArmyList/<getUnitFromBattlefieldRole>d__46::<>1__state
+	// System.Int32 AddUnitToArmyList/<getUnitFromBattlefieldRole>d__48::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AddUnitToArmyList/<getUnitFromBattlefieldRole>d__46::<>2__current
+	// System.Object AddUnitToArmyList/<getUnitFromBattlefieldRole>d__48::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// AddUnitToArmyList AddUnitToArmyList/<getUnitFromBattlefieldRole>d__46::<>4__this
+	// AddUnitToArmyList AddUnitToArmyList/<getUnitFromBattlefieldRole>d__48::<>4__this
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitFromBattlefieldRole>d__46::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitFromBattlefieldRole>d__48::<www>5__2
 	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__48_tB351F97E72654F6EDC9B28A080B9D3FEF04CF965, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -7477,7 +7577,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__48_tB351F97E72654F6EDC9B28A080B9D3FEF04CF965, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -7486,7 +7586,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__48_tB351F97E72654F6EDC9B28A080B9D3FEF04CF965, ___U3CU3E4__this_2)); }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * value)
@@ -7495,7 +7595,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitFromBattlefieldRoleU3Ed__48_tB351F97E72654F6EDC9B28A080B9D3FEF04CF965, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -7506,21 +7606,21 @@ public:
 };
 
 
-// AddUnitToArmyList/<getUnitFromFaction>d__44
-struct U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955  : public RuntimeObject
+// AddUnitToArmyList/<getUnitFromFaction>d__46
+struct U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E  : public RuntimeObject
 {
 public:
-	// System.Int32 AddUnitToArmyList/<getUnitFromFaction>d__44::<>1__state
+	// System.Int32 AddUnitToArmyList/<getUnitFromFaction>d__46::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AddUnitToArmyList/<getUnitFromFaction>d__44::<>2__current
+	// System.Object AddUnitToArmyList/<getUnitFromFaction>d__46::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// AddUnitToArmyList AddUnitToArmyList/<getUnitFromFaction>d__44::<>4__this
+	// AddUnitToArmyList AddUnitToArmyList/<getUnitFromFaction>d__46::<>4__this
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitFromFaction>d__44::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<getUnitFromFaction>d__46::<www>5__2
 	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -7528,7 +7628,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -7537,7 +7637,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E, ___U3CU3E4__this_2)); }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * value)
@@ -7546,7 +7646,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -7557,21 +7657,21 @@ public:
 };
 
 
-// AddUnitToArmyList/<insertArmyList>d__50
-struct U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC  : public RuntimeObject
+// AddUnitToArmyList/<insertArmyList>d__52
+struct U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88  : public RuntimeObject
 {
 public:
-	// System.Int32 AddUnitToArmyList/<insertArmyList>d__50::<>1__state
+	// System.Int32 AddUnitToArmyList/<insertArmyList>d__52::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AddUnitToArmyList/<insertArmyList>d__50::<>2__current
+	// System.Object AddUnitToArmyList/<insertArmyList>d__52::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// AddUnitToArmyList AddUnitToArmyList/<insertArmyList>d__50::<>4__this
+	// AddUnitToArmyList AddUnitToArmyList/<insertArmyList>d__52::<>4__this
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<insertArmyList>d__50::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest AddUnitToArmyList/<insertArmyList>d__52::<www>5__2
 	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -7579,7 +7679,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -7588,7 +7688,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88, ___U3CU3E4__this_2)); }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * value)
@@ -7597,7 +7697,222 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88, ___U3CwwwU3E5__2_3)); }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
+	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
+	{
+		___U3CwwwU3E5__2_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CwwwU3E5__2_3), (void*)value);
+	}
+};
+
+
+// AvailableArmies/<getAvailableArmies>d__12
+struct U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08  : public RuntimeObject
+{
+public:
+	// System.Int32 AvailableArmies/<getAvailableArmies>d__12::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object AvailableArmies/<getAvailableArmies>d__12::<>2__current
+	RuntimeObject * ___U3CU3E2__current_1;
+	// AvailableArmies AvailableArmies/<getAvailableArmies>d__12::<>4__this
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * ___U3CU3E4__this_2;
+	// UnityEngine.Networking.UnityWebRequest AvailableArmies/<getAvailableArmies>d__12::<www>5__2
+	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
+
+public:
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CU3E1__state_0)); }
+	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
+	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
+	inline void set_U3CU3E1__state_0(int32_t value)
+	{
+		___U3CU3E1__state_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CU3E2__current_1)); }
+	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
+	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
+	inline void set_U3CU3E2__current_1(RuntimeObject * value)
+	{
+		___U3CU3E2__current_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CU3E4__this_2)); }
+	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * value)
+	{
+		___U3CU3E4__this_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CwwwU3E5__2_3)); }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
+	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
+	{
+		___U3CwwwU3E5__2_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CwwwU3E5__2_3), (void*)value);
+	}
+};
+
+
+// AvailableArmies/<getGUIData>d__14
+struct U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50  : public RuntimeObject
+{
+public:
+	// System.Int32 AvailableArmies/<getGUIData>d__14::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object AvailableArmies/<getGUIData>d__14::<>2__current
+	RuntimeObject * ___U3CU3E2__current_1;
+	// AvailableArmies AvailableArmies/<getGUIData>d__14::<>4__this
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * ___U3CU3E4__this_2;
+	// UnityEngine.Networking.UnityWebRequest AvailableArmies/<getGUIData>d__14::<www>5__2
+	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
+
+public:
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50, ___U3CU3E1__state_0)); }
+	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
+	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
+	inline void set_U3CU3E1__state_0(int32_t value)
+	{
+		___U3CU3E1__state_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50, ___U3CU3E2__current_1)); }
+	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
+	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
+	inline void set_U3CU3E2__current_1(RuntimeObject * value)
+	{
+		___U3CU3E2__current_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50, ___U3CU3E4__this_2)); }
+	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * value)
+	{
+		___U3CU3E4__this_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50, ___U3CwwwU3E5__2_3)); }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
+	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
+	{
+		___U3CwwwU3E5__2_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CwwwU3E5__2_3), (void*)value);
+	}
+};
+
+
+// AvailableArmies/<getUnitBattlefieldRole>d__18
+struct U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D  : public RuntimeObject
+{
+public:
+	// System.Int32 AvailableArmies/<getUnitBattlefieldRole>d__18::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object AvailableArmies/<getUnitBattlefieldRole>d__18::<>2__current
+	RuntimeObject * ___U3CU3E2__current_1;
+	// System.String AvailableArmies/<getUnitBattlefieldRole>d__18::unitID
+	String_t* ___unitID_2;
+	// AvailableArmies AvailableArmies/<getUnitBattlefieldRole>d__18::<>4__this
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * ___U3CU3E4__this_3;
+	// UnityEngine.Networking.UnityWebRequest AvailableArmies/<getUnitBattlefieldRole>d__18::<www>5__2
+	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_4;
+
+public:
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D, ___U3CU3E1__state_0)); }
+	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
+	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
+	inline void set_U3CU3E1__state_0(int32_t value)
+	{
+		___U3CU3E1__state_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D, ___U3CU3E2__current_1)); }
+	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
+	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
+	inline void set_U3CU3E2__current_1(RuntimeObject * value)
+	{
+		___U3CU3E2__current_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_unitID_2() { return static_cast<int32_t>(offsetof(U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D, ___unitID_2)); }
+	inline String_t* get_unitID_2() const { return ___unitID_2; }
+	inline String_t** get_address_of_unitID_2() { return &___unitID_2; }
+	inline void set_unitID_2(String_t* value)
+	{
+		___unitID_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___unitID_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3E4__this_3() { return static_cast<int32_t>(offsetof(U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D, ___U3CU3E4__this_3)); }
+	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * get_U3CU3E4__this_3() const { return ___U3CU3E4__this_3; }
+	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF ** get_address_of_U3CU3E4__this_3() { return &___U3CU3E4__this_3; }
+	inline void set_U3CU3E4__this_3(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * value)
+	{
+		___U3CU3E4__this_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_3), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_4() { return static_cast<int32_t>(offsetof(U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D, ___U3CwwwU3E5__2_4)); }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_4() const { return ___U3CwwwU3E5__2_4; }
+	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_4() { return &___U3CwwwU3E5__2_4; }
+	inline void set_U3CwwwU3E5__2_4(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
+	{
+		___U3CwwwU3E5__2_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CwwwU3E5__2_4), (void*)value);
+	}
+};
+
+
+// AvailableArmies/<getUnitData>d__17
+struct U3CgetUnitDataU3Ed__17_t9C33648928EAD153350C797E69CAB982E5D0D18E  : public RuntimeObject
+{
+public:
+	// System.Int32 AvailableArmies/<getUnitData>d__17::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object AvailableArmies/<getUnitData>d__17::<>2__current
+	RuntimeObject * ___U3CU3E2__current_1;
+	// AvailableArmies AvailableArmies/<getUnitData>d__17::<>4__this
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * ___U3CU3E4__this_2;
+	// UnityEngine.Networking.UnityWebRequest AvailableArmies/<getUnitData>d__17::<www>5__2
+	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
+
+public:
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__17_t9C33648928EAD153350C797E69CAB982E5D0D18E, ___U3CU3E1__state_0)); }
+	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
+	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
+	inline void set_U3CU3E1__state_0(int32_t value)
+	{
+		___U3CU3E1__state_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__17_t9C33648928EAD153350C797E69CAB982E5D0D18E, ___U3CU3E2__current_1)); }
+	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
+	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
+	inline void set_U3CU3E2__current_1(RuntimeObject * value)
+	{
+		___U3CU3E2__current_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__17_t9C33648928EAD153350C797E69CAB982E5D0D18E, ___U3CU3E4__this_2)); }
+	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * value)
+	{
+		___U3CU3E4__this_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetUnitDataU3Ed__17_t9C33648928EAD153350C797E69CAB982E5D0D18E, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -43012,12 +43327,10 @@ public:
 	int32_t ___pointsCostSumOfUnits_27;
 	// System.Int32 AddUnitToArmyList::pointsCostLimit
 	int32_t ___pointsCostLimit_28;
-	// System.String AddUnitToArmyList::currentSelectedFaction
-	String_t* ___currentSelectedFaction_29;
 	// QRCodeGenerator AddUnitToArmyList::generator
-	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * ___generator_30;
+	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * ___generator_29;
 	// SaveQRCode AddUnitToArmyList::saver
-	SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * ___saver_31;
+	SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * ___saver_30;
 
 public:
 	inline static int32_t get_offset_of_battleSizeDropdown_4() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___battleSizeDropdown_4)); }
@@ -43239,31 +43552,140 @@ public:
 		___pointsCostLimit_28 = value;
 	}
 
-	inline static int32_t get_offset_of_currentSelectedFaction_29() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___currentSelectedFaction_29)); }
-	inline String_t* get_currentSelectedFaction_29() const { return ___currentSelectedFaction_29; }
-	inline String_t** get_address_of_currentSelectedFaction_29() { return &___currentSelectedFaction_29; }
-	inline void set_currentSelectedFaction_29(String_t* value)
+	inline static int32_t get_offset_of_generator_29() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___generator_29)); }
+	inline QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * get_generator_29() const { return ___generator_29; }
+	inline QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D ** get_address_of_generator_29() { return &___generator_29; }
+	inline void set_generator_29(QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * value)
 	{
-		___currentSelectedFaction_29 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___currentSelectedFaction_29), (void*)value);
+		___generator_29 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___generator_29), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_generator_30() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___generator_30)); }
-	inline QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * get_generator_30() const { return ___generator_30; }
-	inline QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D ** get_address_of_generator_30() { return &___generator_30; }
-	inline void set_generator_30(QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D * value)
+	inline static int32_t get_offset_of_saver_30() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___saver_30)); }
+	inline SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * get_saver_30() const { return ___saver_30; }
+	inline SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 ** get_address_of_saver_30() { return &___saver_30; }
+	inline void set_saver_30(SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * value)
 	{
-		___generator_30 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___generator_30), (void*)value);
+		___saver_30 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___saver_30), (void*)value);
+	}
+};
+
+
+// AvailableArmies
+struct AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+	// TMPro.TMP_Dropdown AvailableArmies::factionDropdown
+	TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * ___factionDropdown_4;
+	// TMPro.TMP_Dropdown AvailableArmies::unitsDropdown
+	TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * ___unitsDropdown_5;
+	// TMPro.TextMeshProUGUI AvailableArmies::displayMessageGUI
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___displayMessageGUI_6;
+	// TMPro.TextMeshProUGUI AvailableArmies::powerTextGUI
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___powerTextGUI_7;
+	// TMPro.TextMeshProUGUI AvailableArmies::pointsTextGUI
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___pointsTextGUI_8;
+	// TMPro.TextMeshProUGUI AvailableArmies::cpTextGUI
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___cpTextGUI_9;
+	// TMPro.TextMeshProUGUI AvailableArmies::battlefieldRoleTextGUI
+	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___battlefieldRoleTextGUI_10;
+	// System.String AvailableArmies::unitIDs
+	String_t* ___unitIDs_11;
+	// UnityEngine.GameObject[] AvailableArmies::dataContainers
+	GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* ___dataContainers_12;
+	// TMPro.TextMeshProUGUI[] AvailableArmies::dataText
+	TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC* ___dataText_13;
+
+public:
+	inline static int32_t get_offset_of_factionDropdown_4() { return static_cast<int32_t>(offsetof(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF, ___factionDropdown_4)); }
+	inline TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * get_factionDropdown_4() const { return ___factionDropdown_4; }
+	inline TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 ** get_address_of_factionDropdown_4() { return &___factionDropdown_4; }
+	inline void set_factionDropdown_4(TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * value)
+	{
+		___factionDropdown_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___factionDropdown_4), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_saver_31() { return static_cast<int32_t>(offsetof(AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E, ___saver_31)); }
-	inline SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * get_saver_31() const { return ___saver_31; }
-	inline SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 ** get_address_of_saver_31() { return &___saver_31; }
-	inline void set_saver_31(SaveQRCode_t968787B2129384070CCDD878FC90258ED491E8C6 * value)
+	inline static int32_t get_offset_of_unitsDropdown_5() { return static_cast<int32_t>(offsetof(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF, ___unitsDropdown_5)); }
+	inline TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * get_unitsDropdown_5() const { return ___unitsDropdown_5; }
+	inline TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 ** get_address_of_unitsDropdown_5() { return &___unitsDropdown_5; }
+	inline void set_unitsDropdown_5(TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * value)
 	{
-		___saver_31 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___saver_31), (void*)value);
+		___unitsDropdown_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___unitsDropdown_5), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_displayMessageGUI_6() { return static_cast<int32_t>(offsetof(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF, ___displayMessageGUI_6)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_displayMessageGUI_6() const { return ___displayMessageGUI_6; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_displayMessageGUI_6() { return &___displayMessageGUI_6; }
+	inline void set_displayMessageGUI_6(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	{
+		___displayMessageGUI_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___displayMessageGUI_6), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_powerTextGUI_7() { return static_cast<int32_t>(offsetof(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF, ___powerTextGUI_7)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_powerTextGUI_7() const { return ___powerTextGUI_7; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_powerTextGUI_7() { return &___powerTextGUI_7; }
+	inline void set_powerTextGUI_7(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	{
+		___powerTextGUI_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___powerTextGUI_7), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_pointsTextGUI_8() { return static_cast<int32_t>(offsetof(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF, ___pointsTextGUI_8)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_pointsTextGUI_8() const { return ___pointsTextGUI_8; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_pointsTextGUI_8() { return &___pointsTextGUI_8; }
+	inline void set_pointsTextGUI_8(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	{
+		___pointsTextGUI_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___pointsTextGUI_8), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_cpTextGUI_9() { return static_cast<int32_t>(offsetof(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF, ___cpTextGUI_9)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_cpTextGUI_9() const { return ___cpTextGUI_9; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_cpTextGUI_9() { return &___cpTextGUI_9; }
+	inline void set_cpTextGUI_9(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	{
+		___cpTextGUI_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___cpTextGUI_9), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_battlefieldRoleTextGUI_10() { return static_cast<int32_t>(offsetof(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF, ___battlefieldRoleTextGUI_10)); }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * get_battlefieldRoleTextGUI_10() const { return ___battlefieldRoleTextGUI_10; }
+	inline TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 ** get_address_of_battlefieldRoleTextGUI_10() { return &___battlefieldRoleTextGUI_10; }
+	inline void set_battlefieldRoleTextGUI_10(TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * value)
+	{
+		___battlefieldRoleTextGUI_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___battlefieldRoleTextGUI_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_unitIDs_11() { return static_cast<int32_t>(offsetof(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF, ___unitIDs_11)); }
+	inline String_t* get_unitIDs_11() const { return ___unitIDs_11; }
+	inline String_t** get_address_of_unitIDs_11() { return &___unitIDs_11; }
+	inline void set_unitIDs_11(String_t* value)
+	{
+		___unitIDs_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___unitIDs_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_dataContainers_12() { return static_cast<int32_t>(offsetof(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF, ___dataContainers_12)); }
+	inline GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* get_dataContainers_12() const { return ___dataContainers_12; }
+	inline GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642** get_address_of_dataContainers_12() { return &___dataContainers_12; }
+	inline void set_dataContainers_12(GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* value)
+	{
+		___dataContainers_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___dataContainers_12), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_dataText_13() { return static_cast<int32_t>(offsetof(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF, ___dataText_13)); }
+	inline TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC* get_dataText_13() const { return ___dataText_13; }
+	inline TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC** get_address_of_dataText_13() { return &___dataText_13; }
+	inline void set_dataText_13(TextMeshProUGUIU5BU5D_t7AA8E45FFAE748E415BA0EFD82A5A44749B578EC* value)
+	{
+		___dataText_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___dataText_13), (void*)value);
 	}
 };
 
@@ -65988,35 +66410,40 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4014[22] =
 	AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC::get_offset_of_saver_24(),
 	AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC::get_offset_of_uploader_25(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4015[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4015[2] = 
 {
-	U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955::get_offset_of_U3CU3E1__state_0(),
-	U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955::get_offset_of_U3CU3E2__current_1(),
-	U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955::get_offset_of_U3CU3E4__this_2(),
-	U3CgetUnitFromFactionU3Ed__44_t0C8E132382BFF69E3129C5ABED52C2ABBCBA4955::get_offset_of_U3CwwwU3E5__2_3(),
+	U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF_StaticFields::get_offset_of_U3CU3E9_0(),
+	U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF_StaticFields::get_offset_of_U3CU3E9__27_0_1(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4016[4] = 
 {
-	U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF::get_offset_of_U3CU3E1__state_0(),
-	U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF::get_offset_of_U3CU3E2__current_1(),
-	U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF::get_offset_of_U3CU3E4__this_2(),
-	U3CgetUnitFromBattlefieldRoleU3Ed__46_t1DA46AD97B643CB88105939E322D3FACE1F810DF::get_offset_of_U3CwwwU3E5__2_3(),
+	U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E::get_offset_of_U3CU3E1__state_0(),
+	U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E::get_offset_of_U3CU3E2__current_1(),
+	U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E::get_offset_of_U3CU3E4__this_2(),
+	U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E::get_offset_of_U3CwwwU3E5__2_3(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4017[4] = 
 {
-	U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F::get_offset_of_U3CU3E1__state_0(),
-	U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F::get_offset_of_U3CU3E2__current_1(),
-	U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F::get_offset_of_U3CU3E4__this_2(),
-	U3CgetUnitDataU3Ed__48_t71056FB034F8D67675A4F663270D5F78348E151F::get_offset_of_U3CwwwU3E5__2_3(),
+	U3CgetUnitFromBattlefieldRoleU3Ed__48_tB351F97E72654F6EDC9B28A080B9D3FEF04CF965::get_offset_of_U3CU3E1__state_0(),
+	U3CgetUnitFromBattlefieldRoleU3Ed__48_tB351F97E72654F6EDC9B28A080B9D3FEF04CF965::get_offset_of_U3CU3E2__current_1(),
+	U3CgetUnitFromBattlefieldRoleU3Ed__48_tB351F97E72654F6EDC9B28A080B9D3FEF04CF965::get_offset_of_U3CU3E4__this_2(),
+	U3CgetUnitFromBattlefieldRoleU3Ed__48_tB351F97E72654F6EDC9B28A080B9D3FEF04CF965::get_offset_of_U3CwwwU3E5__2_3(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4018[4] = 
 {
-	U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC::get_offset_of_U3CU3E1__state_0(),
-	U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC::get_offset_of_U3CU3E2__current_1(),
-	U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC::get_offset_of_U3CU3E4__this_2(),
-	U3CinsertArmyListU3Ed__50_tA54FB4CB4896271BB231498F7A5C495236CBEDCC::get_offset_of_U3CwwwU3E5__2_3(),
+	U3CgetUnitDataU3Ed__50_t40F152383A903D4B5249096157B5038B03CE0DE0::get_offset_of_U3CU3E1__state_0(),
+	U3CgetUnitDataU3Ed__50_t40F152383A903D4B5249096157B5038B03CE0DE0::get_offset_of_U3CU3E2__current_1(),
+	U3CgetUnitDataU3Ed__50_t40F152383A903D4B5249096157B5038B03CE0DE0::get_offset_of_U3CU3E4__this_2(),
+	U3CgetUnitDataU3Ed__50_t40F152383A903D4B5249096157B5038B03CE0DE0::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4019[28] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4019[4] = 
+{
+	U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88::get_offset_of_U3CU3E1__state_0(),
+	U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88::get_offset_of_U3CU3E2__current_1(),
+	U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88::get_offset_of_U3CU3E4__this_2(),
+	U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88::get_offset_of_U3CwwwU3E5__2_3(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4020[27] = 
 {
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_battleSizeDropdown_4(),
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_factionDropdown_5(),
@@ -66043,17 +66470,65 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4019[28] =
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointsCostOfUnit_26(),
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointsCostSumOfUnits_27(),
 	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_pointsCostLimit_28(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_currentSelectedFaction_29(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_generator_30(),
-	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_saver_31(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_generator_29(),
+	AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E::get_offset_of_saver_30(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4020[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4021[4] = 
+{
+	ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields::get_offset_of_selectedFaction_0(),
+	ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields::get_offset_of_selectedUnits_1(),
+	ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields::get_offset_of_powerCost_2(),
+	ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields::get_offset_of_pointsCost_3(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4022[4] = 
+{
+	U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08::get_offset_of_U3CU3E1__state_0(),
+	U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08::get_offset_of_U3CU3E2__current_1(),
+	U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08::get_offset_of_U3CU3E4__this_2(),
+	U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08::get_offset_of_U3CwwwU3E5__2_3(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4023[4] = 
+{
+	U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50::get_offset_of_U3CU3E1__state_0(),
+	U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50::get_offset_of_U3CU3E2__current_1(),
+	U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50::get_offset_of_U3CU3E4__this_2(),
+	U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50::get_offset_of_U3CwwwU3E5__2_3(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4024[4] = 
+{
+	U3CgetUnitDataU3Ed__17_t9C33648928EAD153350C797E69CAB982E5D0D18E::get_offset_of_U3CU3E1__state_0(),
+	U3CgetUnitDataU3Ed__17_t9C33648928EAD153350C797E69CAB982E5D0D18E::get_offset_of_U3CU3E2__current_1(),
+	U3CgetUnitDataU3Ed__17_t9C33648928EAD153350C797E69CAB982E5D0D18E::get_offset_of_U3CU3E4__this_2(),
+	U3CgetUnitDataU3Ed__17_t9C33648928EAD153350C797E69CAB982E5D0D18E::get_offset_of_U3CwwwU3E5__2_3(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4025[5] = 
+{
+	U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D::get_offset_of_U3CU3E1__state_0(),
+	U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D::get_offset_of_U3CU3E2__current_1(),
+	U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D::get_offset_of_unitID_2(),
+	U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D::get_offset_of_U3CU3E4__this_3(),
+	U3CgetUnitBattlefieldRoleU3Ed__18_t2A4A207377E97D541CC0353F0EDA01511E8DCF7D::get_offset_of_U3CwwwU3E5__2_4(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4026[10] = 
+{
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF::get_offset_of_factionDropdown_4(),
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF::get_offset_of_unitsDropdown_5(),
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF::get_offset_of_displayMessageGUI_6(),
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF::get_offset_of_powerTextGUI_7(),
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF::get_offset_of_pointsTextGUI_8(),
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF::get_offset_of_cpTextGUI_9(),
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF::get_offset_of_battlefieldRoleTextGUI_10(),
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF::get_offset_of_unitIDs_11(),
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF::get_offset_of_dataContainers_12(),
+	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF::get_offset_of_dataText_13(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4027[3] = 
 {
 	DBManager_tC4B516DBA275640F081BBCF340B49323E35DA5EB_StaticFields::get_offset_of_username_0(),
 	DBManager_tC4B516DBA275640F081BBCF340B49323E35DA5EB_StaticFields::get_offset_of_registered_1(),
 	DBManager_tC4B516DBA275640F081BBCF340B49323E35DA5EB_StaticFields::get_offset_of_passwordReset_2(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4021[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4028[5] = 
 {
 	U3CinstantiateMarkerU3Ed__20_t9FF233C3835AE3EF75513B6FC312B8031EE5E31F::get_offset_of_U3CU3E1__state_0(),
 	U3CinstantiateMarkerU3Ed__20_t9FF233C3835AE3EF75513B6FC312B8031EE5E31F::get_offset_of_U3CU3E2__current_1(),
@@ -66061,7 +66536,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4021[5] =
 	U3CinstantiateMarkerU3Ed__20_t9FF233C3835AE3EF75513B6FC312B8031EE5E31F::get_offset_of_unitName_3(),
 	U3CinstantiateMarkerU3Ed__20_t9FF233C3835AE3EF75513B6FC312B8031EE5E31F::get_offset_of_trackedImage_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4022[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4029[5] = 
 {
 	U3CGetUnitDataU3Ed__21_tC42F1B385E5C1319CF00391C3BC7729774FFBC78::get_offset_of_U3CU3E1__state_0(),
 	U3CGetUnitDataU3Ed__21_tC42F1B385E5C1319CF00391C3BC7729774FFBC78::get_offset_of_U3CU3E2__current_1(),
@@ -66069,7 +66544,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4022[5] =
 	U3CGetUnitDataU3Ed__21_tC42F1B385E5C1319CF00391C3BC7729774FFBC78::get_offset_of_U3CU3E4__this_3(),
 	U3CGetUnitDataU3Ed__21_tC42F1B385E5C1319CF00391C3BC7729774FFBC78::get_offset_of_U3CwwwU3E5__2_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4023[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4030[5] = 
 {
 	U3CgetTerrainDataU3Ed__22_t2E9987207A0F8CB72D34BAE6F422C3C2C83B727A::get_offset_of_U3CU3E1__state_0(),
 	U3CgetTerrainDataU3Ed__22_t2E9987207A0F8CB72D34BAE6F422C3C2C83B727A::get_offset_of_U3CU3E2__current_1(),
@@ -66077,7 +66552,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4023[5] =
 	U3CgetTerrainDataU3Ed__22_t2E9987207A0F8CB72D34BAE6F422C3C2C83B727A::get_offset_of_U3CU3E4__this_3(),
 	U3CgetTerrainDataU3Ed__22_t2E9987207A0F8CB72D34BAE6F422C3C2C83B727A::get_offset_of_U3CwwwU3E5__2_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4024[16] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4031[16] = 
 {
 	ImageRecognition_t3FA1D134672565B626D02FABA8BCB9732ACFAC23::get_offset_of_trackedImageManager_4(),
 	ImageRecognition_t3FA1D134672565B626D02FABA8BCB9732ACFAC23::get_offset_of_marker_5(),
@@ -66096,26 +66571,26 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4024[16] =
 	ImageRecognition_t3FA1D134672565B626D02FABA8BCB9732ACFAC23::get_offset_of_coroutineGetUnitData_18(),
 	ImageRecognition_t3FA1D134672565B626D02FABA8BCB9732ACFAC23::get_offset_of_coroutineGetTerrainData_19(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4025[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4032[4] = 
 {
 	U3CLoginUserU3Ed__5_t24C0F0BE253AEE9EF7D008F7B7B50FAC768DC8BD::get_offset_of_U3CU3E1__state_0(),
 	U3CLoginUserU3Ed__5_t24C0F0BE253AEE9EF7D008F7B7B50FAC768DC8BD::get_offset_of_U3CU3E2__current_1(),
 	U3CLoginUserU3Ed__5_t24C0F0BE253AEE9EF7D008F7B7B50FAC768DC8BD::get_offset_of_U3CU3E4__this_2(),
 	U3CLoginUserU3Ed__5_t24C0F0BE253AEE9EF7D008F7B7B50FAC768DC8BD::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4026[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4033[4] = 
 {
 	Login_t00E33DCE364DD57FA9AADBD65B60A2FB3539B9DF::get_offset_of_userUsername_4(),
 	Login_t00E33DCE364DD57FA9AADBD65B60A2FB3539B9DF::get_offset_of_userPassword_5(),
 	Login_t00E33DCE364DD57FA9AADBD65B60A2FB3539B9DF::get_offset_of_displayMessage_6(),
 	Login_t00E33DCE364DD57FA9AADBD65B60A2FB3539B9DF::get_offset_of_submitButton_7(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4027[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4034[2] = 
 {
 	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D::get_offset_of_qrCodeField_4(),
 	QRCodeGenerator_t1B2490A9067F53E4AC5080B0CA45CFE483B8D68D::get_offset_of_storeEncodedTexture_5(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4028[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4035[5] = 
 {
 	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_U3CU3E1__state_0(),
 	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_U3CU3E2__current_1(),
@@ -66123,28 +66598,28 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4028[5] =
 	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_unitName_3(),
 	U3CuploadQRCodeU3Ed__1_t2EE17BE7F2C78B2C65309E1CF385276AB6DD0BCF::get_offset_of_U3CwwwU3E5__2_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4030[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4037[4] = 
 {
 	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CU3E1__state_0(),
 	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CU3E2__current_1(),
 	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CU3E4__this_2(),
 	U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4031[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4038[4] = 
 {
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_nameField_4(),
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_passwordField_5(),
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_submitButton_6(),
 	Registration_t1972431694381EE76601CD2A5D527FBE91CEB99C::get_offset_of_infoText_7(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4032[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4039[4] = 
 {
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CU3E1__state_0(),
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CU3E2__current_1(),
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CU3E4__this_2(),
 	U3CresetPasswordU3Ed__7_t67DAB46CA3658A98EC917B011A7762005240B713::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4033[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4040[5] = 
 {
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_nameField_4(),
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_passwordField_5(),
@@ -66152,14 +66627,14 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4033[5] =
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_submitButton_7(),
 	ResetPassword_t90DA1825B8121E84352573B32B7151B338B49134::get_offset_of_popUp_8(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4036[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4043[4] = 
 {
 	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CU3E1__state_0(),
 	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CU3E2__current_1(),
 	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CU3E4__this_2(),
 	U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65::get_offset_of_U3CwwwU3E5__2_3(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4037[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4044[9] = 
 {
 	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_terrainPiece_4(),
 	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_terrainCategory_5(),
@@ -66171,15 +66646,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4037[9] =
 	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_generator_11(),
 	SelectTerrain_tEDED9B01FA9F081C0A5CEFFA988E8508329D48B7::get_offset_of_saver_12(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4038[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4045[1] = 
 {
 	ShowMessage_t8BB58514BD077B88A7E28C92E234A9E7CD9B7CD5::get_offset_of_messageDisplay_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4039[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4046[1] = 
 {
 	ShowUsername_tEDC2E862484D790E8DBB217A01856470CB0CB275::get_offset_of_usernameDisplay_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4040[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4047[3] = 
 {
 	TerrainAttributesContent_t75B54326D81FB764DC7C25F95C0B24BD0DD445EF::get_offset_of_contentField_4(),
 	TerrainAttributesContent_t75B54326D81FB764DC7C25F95C0B24BD0DD445EF::get_offset_of_layoutElement_5(),

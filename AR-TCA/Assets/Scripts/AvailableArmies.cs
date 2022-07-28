@@ -106,6 +106,8 @@ public class AvailableArmies : MonoBehaviour
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname
         form.AddField("factionName", factionDropdown.captionText.text);
+        ArmyManager.selectedFaction = factionDropdown.captionText.text; //is used to pass the selected faction to the army builder scene
+
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {
             //wait till www has a return value and than proceeds with the code
@@ -124,10 +126,25 @@ public class AvailableArmies : MonoBehaviour
                     int indexOfStringUnitNames = www.downloadHandler.text.IndexOf("!");
                     int indexOfStringPowerCost = www.downloadHandler.text.IndexOf("|");
                     int indexOfStringPointCost = www.downloadHandler.text.IndexOf("%");
+                    int indexOfStringUnitIDs = www.downloadHandler.text.IndexOf("&");
 
                     string unitNames = www.downloadHandler.text.Substring(indexOfStringUnitNames + 1, indexOfStringPowerCost - indexOfStringUnitNames - 1);
                     string powerCost = www.downloadHandler.text.Substring(indexOfStringPowerCost + 1, indexOfStringPointCost - indexOfStringPowerCost - 1);
-                    string pointCost = www.downloadHandler.text.Substring(indexOfStringPointCost + 1);
+                    string pointCost = www.downloadHandler.text.Substring(indexOfStringPointCost + 1, indexOfStringUnitIDs - indexOfStringPointCost - 1);
+                    unitIDs = www.downloadHandler.text.Substring(indexOfStringUnitIDs + 1);
+
+                    string[] temp = (unitIDs.Split('_'));
+
+                    foreach (string unitID in temp)
+                    {
+                        if (unitID != "")
+                        {
+                            ArmyManager.selectedUnits.Add(unitID);
+                        }
+                    }
+
+                    ArmyManager.powerCost = powerCost;
+                    ArmyManager.pointsCost = pointCost;
 
                     powerTextGUI.text = powerCost;
                     pointsTextGUI.text = pointCost;
@@ -207,7 +224,7 @@ public class AvailableArmies : MonoBehaviour
 
                     string[] responseArray = response.Split('_');
 
-                    string unitID = responseArray[responseArray.Length - 3]; //TODO: to coroutine for battlefieldrole with this id 
+                    string unitID = responseArray[responseArray.Length - 3];
 
                     //Save Unit Data into Array for frontend display
                     for (int i = 0; i < responseArray.Length - 3; i++)

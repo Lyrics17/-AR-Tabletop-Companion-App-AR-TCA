@@ -11,3 +11,7 @@ TODO: LiveDemo: Nochmal davor testen wenn datum steht
       -Nein
             - AR
             - Neue Einheit hochladen -> kann man upload qr code liegen! das skript war noch auf lokal eingestellt
+
+TODO: TESTEN!!
+
+TODO: Debug.Logs rausschmeißen während die doku geschrieben wird.
