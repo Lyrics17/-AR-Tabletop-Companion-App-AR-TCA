@@ -400,8 +400,8 @@ struct U3CgetUnitFromBattlefieldRoleU3Ed__48_tB351F97E72654F6EDC9B28A080B9D3FEF0
 struct U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E;
 // AddUnitToArmyList/<insertArmyList>d__52
 struct U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88;
-// AvailableArmies/<getAvailableArmies>d__12
-struct U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08;
+// AvailableArmies/<getAvailableArmies>d__11
+struct U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68;
 // AvailableArmies/<getGUIData>d__14
 struct U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50;
 // AvailableArmies/<getUnitBattlefieldRole>d__18
@@ -471,7 +471,7 @@ IL2CPP_EXTERN_C RuntimeClass* U3CLoginUserU3Ed__5_t24C0F0BE253AEE9EF7D008F7B7B50
 IL2CPP_EXTERN_C RuntimeClass* U3CRegisterU3Ed__5_t5ADA5213D38F3F3B8D84C1A1A38FEFB2E5A3E5B3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t7F00B2A5F69BA19578D0CFDCEAAA3F70101438AF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CaddNewUnitU3Ed__23_tB1025048AFE8623435466379026A33D0EBE8D76E_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CgetTerrainDataU3Ed__22_t2E9987207A0F8CB72D34BAE6F422C3C2C83B727A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CgetTerrainU3Ed__10_t1FEA6C2D4AA962E3975738AF2C9F48AB76924D65_il2cpp_TypeInfo_var;
@@ -587,6 +587,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralE3A56BE62F0FB42D8062A17A4957C2142D815735
 IL2CPP_EXTERN_C String_t* _stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3;
 IL2CPP_EXTERN_C String_t* _stringLiteralEB16F5ECFC58E54DB2994897733DD0FD8327DCA9;
 IL2CPP_EXTERN_C String_t* _stringLiteralEDB797EF8B965AF34512EA32AA330D480F264BAD;
+IL2CPP_EXTERN_C String_t* _stringLiteralF4733D9BEE5CF339CA2B33254D589C88B04174C8;
 IL2CPP_EXTERN_C String_t* _stringLiteralF7E903919B23EB824F4A7C34AA61FBFB17AB4EFD;
 IL2CPP_EXTERN_C String_t* _stringLiteralF814EF55735EE8E87415F33A4286D5BD1F8D0D63;
 IL2CPP_EXTERN_C String_t* _stringLiteralF859CAA74FC4BD45E85F9AFF276F614AE47D3DA2;
@@ -617,7 +618,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CLoginUserU3Ed__5_System_Collections_IEnu
 IL2CPP_EXTERN_C const RuntimeMethod* U3CRegisterU3Ed__5_System_Collections_IEnumerator_Reset_m281A17146926306FF134F1839898DD92A41F6B0E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CAwakeU3Eb__27_0_m684F02CA50324F44FF96B2CBA2B7102AFB3F02FC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CaddNewUnitU3Ed__23_System_Collections_IEnumerator_Reset_mD2CFB7F571521E07369CFCCCFB35E53EABEB5CDF_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CgetAvailableArmiesU3Ed__12_System_Collections_IEnumerator_Reset_m01C5279106ED522C9B46C26A1985363A3B1E0D54_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CgetAvailableArmiesU3Ed__11_System_Collections_IEnumerator_Reset_mE9D2627597C4F5AC8FBCA7F3514AEEE59243E5E3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CgetGUIDataU3Ed__14_System_Collections_IEnumerator_Reset_mA28F5B0CD0225F3A32D29A272A3628455D2CC780_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CgetTerrainDataU3Ed__22_System_Collections_IEnumerator_Reset_m391FA2C3A4DD014D7FC7E5CB74D18C2AC11880B4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CgetTerrainU3Ed__10_System_Collections_IEnumerator_Reset_m0CC38C4C6B7A714D347FEF265FC3206B0DFDA36A_RuntimeMethod_var;
@@ -1555,21 +1556,21 @@ public:
 };
 
 
-// AvailableArmies/<getAvailableArmies>d__12
-struct U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08  : public RuntimeObject
+// AvailableArmies/<getAvailableArmies>d__11
+struct U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68  : public RuntimeObject
 {
 public:
-	// System.Int32 AvailableArmies/<getAvailableArmies>d__12::<>1__state
+	// System.Int32 AvailableArmies/<getAvailableArmies>d__11::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AvailableArmies/<getAvailableArmies>d__12::<>2__current
+	// System.Object AvailableArmies/<getAvailableArmies>d__11::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// AvailableArmies AvailableArmies/<getAvailableArmies>d__12::<>4__this
+	// AvailableArmies AvailableArmies/<getAvailableArmies>d__11::<>4__this
 	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest AvailableArmies/<getAvailableArmies>d__12::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest AvailableArmies/<getAvailableArmies>d__11::<www>5__2
 	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -1577,7 +1578,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -1586,7 +1587,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68, ___U3CU3E4__this_2)); }
 	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * value)
@@ -1595,7 +1596,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -14916,6 +14917,8 @@ inline void List_1_Add_m34CDCD14CF076EB586C8F917CA625C52BA6F90F7 (List_1_t59FFDE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411 (int32_t* __this, const RuntimeMethod* method);
 // System.Void AddUnitToArmyList::resetGUI()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddUnitToArmyList_resetGUI_mE891DD42ED84B18AF20A9BA8EAB714012036925B (AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Debug::Log(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8 (RuntimeObject * ___message0, const RuntimeMethod* method);
 // System.Void AddUnitToArmyList/<getUnitFromFaction>d__46::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetUnitFromFactionU3Ed__46__ctor_m2FC0C127740DD8BB6C65CF6E06B72FBA4D2CCB1C (U3CgetUnitFromFactionU3Ed__46_tAD5F97ABA0A5DEC440B0287DD89BE947E9D87A0E * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method);
 // System.Collections.IEnumerator AddUnitToArmyList::getUnitFromBattlefieldRole()
@@ -14932,10 +14935,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AddUnitToArmyList_insertArmyLi
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CinsertArmyListU3Ed__52__ctor_mFC425F5EE3026C61982978156D6EB98E91E498AD (U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88 * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method);
 // System.Void System.Collections.ArrayList::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArrayList__ctor_m6847CFECD6BDC2AD10A4AC9852A572B88B8D6B1B (ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * __this, const RuntimeMethod* method);
+// System.Void AvailableArmies::resetArmyManager()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AvailableArmies_resetArmyManager_m647316B1C5C17A86658F2C3FB025F45ABA4ACBDF (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method);
 // System.Collections.IEnumerator AvailableArmies::getAvailableArmies()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AvailableArmies_getAvailableArmies_mCD7295A104AB2FE58B4BAA1949B86F73D4E462DC (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method);
-// System.Void AvailableArmies/<getAvailableArmies>d__12::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__12__ctor_mC987C65E8BCD2252EC0A770FDDECB0D0CFFA3E91 (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method);
+// System.Void AvailableArmies/<getAvailableArmies>d__11::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__11__ctor_m257C6C75BFB8DBD0F60205508EB8C69F4E2CC0C2 (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method);
 // System.Collections.IEnumerator AvailableArmies::getGUIData()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AvailableArmies_getGUIData_mF0BAA86F0CDCCD70B5B06B2DC7C56666C94BBCA1 (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method);
 // System.Void AvailableArmies/<getGUIData>d__14::.ctor(System.Int32)
@@ -15140,8 +15145,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityWebRequestAsyncOperation_tDCAC6B6C7D5156
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityWebRequest_get_result_m4E9272AB25BD5CE7B927F4B1873763510476BDC6 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, const RuntimeMethod* method);
 // System.String UnityEngine.Networking.UnityWebRequest::get_error()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UnityWebRequest_get_error_m32B69D2365C1FE2310B5936C7C295B71A92CC2B4 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Debug::Log(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8 (RuntimeObject * ___message0, const RuntimeMethod* method);
 // UnityEngine.Networking.DownloadHandler UnityEngine.Networking.UnityWebRequest::get_downloadHandler()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DownloadHandler_tEEAE0DD53DB497C8A491C4F7B7A14C3CA027B1DB * UnityWebRequest_get_downloadHandler_mCE0A0C53A63419FE5AE25915AFB36EABE294C732 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, const RuntimeMethod* method);
 // System.String UnityEngine.Networking.DownloadHandler::get_text()
@@ -15180,10 +15183,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CinsertArmyListU3Ed__52_U3CU3Em__Final
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m89EAB4C6A96B0E5C3F87300D6BE78D386B9EFC44 (String_t* ___str00, String_t* ___str11, String_t* ___str22, const RuntimeMethod* method);
 // System.Void AddUnitToArmyList/<insertArmyList>d__52::System.IDisposable.Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CinsertArmyListU3Ed__52_System_IDisposable_Dispose_m9BE1CE460072A0CF3E65958CBB4EFA758EA18898 (U3CinsertArmyListU3Ed__52_tD39B013A659AC5B0DA30EB7D4EA1071871A6FE88 * __this, const RuntimeMethod* method);
-// System.Void AvailableArmies/<getAvailableArmies>d__12::<>m__Finally1()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__12_U3CU3Em__Finally1_m83F934CD58431199A22291774FCA9EC00073B99F (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * __this, const RuntimeMethod* method);
-// System.Void AvailableArmies/<getAvailableArmies>d__12::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__12_System_IDisposable_Dispose_mEA75CFFF102BCFDAAAACBDBB162AA758CCE6F66D (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * __this, const RuntimeMethod* method);
+// System.Void AvailableArmies/<getAvailableArmies>d__11::<>m__Finally1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__11_U3CU3Em__Finally1_mC1065C1220126303E45DB990D9C7FA7BAA7484DF (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * __this, const RuntimeMethod* method);
+// System.Void AvailableArmies/<getAvailableArmies>d__11::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__11_System_IDisposable_Dispose_mF4637859E1F7502DD55A4008D32ED87C42A40B11 (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * __this, const RuntimeMethod* method);
 // System.Void AvailableArmies/<getGUIData>d__14::<>m__Finally1()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetGUIDataU3Ed__14_U3CU3Em__Finally1_m47A528A90E573DFF1257E18421FB5A1DB84D41CD (U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50 * __this, const RuntimeMethod* method);
 // System.String System.String::Substring(System.Int32,System.Int32)
@@ -15192,6 +15195,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Substring_m7A39A2AC0893AE940
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int32_Parse_mE5D220FEA7F0BFB1B220B2A30797D7DD83ACF22C (String_t* ___s0, const RuntimeMethod* method);
 // System.Void AvailableArmies::determineCP(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AvailableArmies_determineCP_m4B353B1C7ABA95007DCEF9005B0E120D01B6B413 (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, int32_t ___pointCost0, const RuntimeMethod* method);
+// System.Void AvailableArmies::disableDataContainers()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AvailableArmies_disableDataContainers_m9AA253C0CA4573773134FDE61A322E16249704CF (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method);
 // System.Void AvailableArmies/<getGUIData>d__14::System.IDisposable.Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetGUIDataU3Ed__14_System_IDisposable_Dispose_mB7ECFD01DD02D403C03CA488124B25E18E4FB27A (U3CgetGUIDataU3Ed__14_t8EB1924B4400F38FE4DB2F56DFBDE2EC6A9B1C50 * __this, const RuntimeMethod* method);
 // System.Void AvailableArmies/<getUnitBattlefieldRole>d__18::<>m__Finally1()
@@ -15565,7 +15570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddUnitToArmyList_Awake_m023A7F70D79E7FE
 		String_t* L_0 = ((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->get_selectedFaction_0();
 		if (!L_0)
 		{
-			goto IL_0065;
+			goto IL_0071;
 		}
 	}
 	{
@@ -15610,20 +15615,24 @@ IL_003d:
 		L_9 = List_1_FindIndex_mE3949B46179207C0669DD5EBBC54673C7BC95F8A(G_B3_1, G_B3_0, /*hidden argument*/List_1_FindIndex_mE3949B46179207C0669DD5EBBC54673C7BC95F8A_RuntimeMethod_var);
 		NullCheck(G_B3_2);
 		TMP_Dropdown_set_value_m856C9EC8143135E98F5BC57520B1294F87F982E1(G_B3_2, L_9, /*hidden argument*/NULL);
+		// factionDropdown.interactable = false; //disable dropdown to prevent changing the faction
+		TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_10 = __this->get_factionDropdown_5();
+		NullCheck(L_10);
+		Selectable_set_interactable_mE6F57D33A9E0484377174D0F490C4372BF7F0D40(L_10, (bool)0, /*hidden argument*/NULL);
 		// StartCoroutine(getUnitFromFaction());
-		RuntimeObject* L_10;
-		L_10 = AddUnitToArmyList_getUnitFromFaction_m88A40A8CFCA0A3DDA747AE9FB040E4FBC34372F8(__this, /*hidden argument*/NULL);
-		Coroutine_t899D5232EF542CB8BA70AF9ECEECA494FAA9CCB7 * L_11;
-		L_11 = MonoBehaviour_StartCoroutine_m3E33706D38B23CDD179E99BAD61E32303E9CC719(__this, L_10, /*hidden argument*/NULL);
+		RuntimeObject* L_11;
+		L_11 = AddUnitToArmyList_getUnitFromFaction_m88A40A8CFCA0A3DDA747AE9FB040E4FBC34372F8(__this, /*hidden argument*/NULL);
+		Coroutine_t899D5232EF542CB8BA70AF9ECEECA494FAA9CCB7 * L_12;
+		L_12 = MonoBehaviour_StartCoroutine_m3E33706D38B23CDD179E99BAD61E32303E9CC719(__this, L_11, /*hidden argument*/NULL);
 		// unitIDList = ArmyManager.selectedUnits;
 		IL2CPP_RUNTIME_CLASS_INIT(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var);
-		ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * L_12 = ((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->get_selectedUnits_1();
-		__this->set_unitIDList_22(L_12);
+		ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * L_13 = ((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->get_selectedUnits_1();
+		__this->set_unitIDList_22(L_13);
 		// addCurrentUnitCostsToGUI();
 		AddUnitToArmyList_addCurrentUnitCostsToGUI_mC8F5BF61B21608AF33B7EA3CBE950D89B2783FE2(__this, /*hidden argument*/NULL);
 	}
 
-IL_0065:
+IL_0071:
 	{
 		// }
 		return;
@@ -16729,9 +16738,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddUnitToArmyList_removeUnitFromArmyList
 // System.Void AddUnitToArmyList::callGetUnitFromFaction()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddUnitToArmyList_callGetUnitFromFaction_mDC305A0C5D83E089A6D6ABCB4D8192F1EC85C4C3 (AddUnitToArmyList_t22031DCE570A27ECA4BB1AA19F24A1591A11EF0E * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF4733D9BEE5CF339CA2B33254D589C88B04174C8);
+		s_Il2CppMethodInitialized = true;
+	}
 	{
 		// resetGUI();
 		AddUnitToArmyList_resetGUI_mE891DD42ED84B18AF20A9BA8EAB714012036925B(__this, /*hidden argument*/NULL);
+		// Debug.Log("CALLED RESET GUI");
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteralF4733D9BEE5CF339CA2B33254D589C88B04174C8, /*hidden argument*/NULL);
 		// StartCoroutine(getUnitFromFaction());
 		RuntimeObject* L_0;
 		L_0 = AddUnitToArmyList_getUnitFromFaction_m88A40A8CFCA0A3DDA747AE9FB040E4FBC34372F8(__this, /*hidden argument*/NULL);
@@ -16974,6 +16993,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArmyManager__cctor_mDC9005EF2C972BFC5BB0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void AvailableArmies::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AvailableArmies_Awake_m4B470C8E50FF7A768A8D035DE842FA803273D4DC (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method)
+{
+	{
+		// resetArmyManager();
+		AvailableArmies_resetArmyManager_m647316B1C5C17A86658F2C3FB025F45ABA4ACBDF(__this, /*hidden argument*/NULL);
+		// StartCoroutine(getAvailableArmies());
+		RuntimeObject* L_0;
+		L_0 = AvailableArmies_getAvailableArmies_mCD7295A104AB2FE58B4BAA1949B86F73D4E462DC(__this, /*hidden argument*/NULL);
+		Coroutine_t899D5232EF542CB8BA70AF9ECEECA494FAA9CCB7 * L_1;
+		L_1 = MonoBehaviour_StartCoroutine_m3E33706D38B23CDD179E99BAD61E32303E9CC719(__this, L_0, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Collections.IEnumerator AvailableArmies::getAvailableArmies()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AvailableArmies_getAvailableArmies_mCD7295A104AB2FE58B4BAA1949B86F73D4E462DC (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * L_0 = (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 *)il2cpp_codegen_object_new(U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68_il2cpp_TypeInfo_var);
+		U3CgetAvailableArmiesU3Ed__11__ctor_m257C6C75BFB8DBD0F60205508EB8C69F4E2CC0C2(L_0, 0, /*hidden argument*/NULL);
+		U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * L_1 = L_0;
+		NullCheck(L_1);
+		L_1->set_U3CU3E4__this_2(__this);
+		return L_1;
+	}
+}
 // System.Void AvailableArmies::enableDataContainers()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AvailableArmies_enableDataContainers_mF69F2C35574F5981B832858ED96F12A868E10881 (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method)
 {
@@ -17016,37 +17068,6 @@ IL_0018:
 	{
 		// }
 		return;
-	}
-}
-// System.Void AvailableArmies::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AvailableArmies_Awake_m4B470C8E50FF7A768A8D035DE842FA803273D4DC (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method)
-{
-	{
-		// StartCoroutine(getAvailableArmies());
-		RuntimeObject* L_0;
-		L_0 = AvailableArmies_getAvailableArmies_mCD7295A104AB2FE58B4BAA1949B86F73D4E462DC(__this, /*hidden argument*/NULL);
-		Coroutine_t899D5232EF542CB8BA70AF9ECEECA494FAA9CCB7 * L_1;
-		L_1 = MonoBehaviour_StartCoroutine_m3E33706D38B23CDD179E99BAD61E32303E9CC719(__this, L_0, /*hidden argument*/NULL);
-		// }
-		return;
-	}
-}
-// System.Collections.IEnumerator AvailableArmies::getAvailableArmies()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AvailableArmies_getAvailableArmies_mCD7295A104AB2FE58B4BAA1949B86F73D4E462DC (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * L_0 = (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 *)il2cpp_codegen_object_new(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08_il2cpp_TypeInfo_var);
-		U3CgetAvailableArmiesU3Ed__12__ctor_mC987C65E8BCD2252EC0A770FDDECB0D0CFFA3E91(L_0, 0, /*hidden argument*/NULL);
-		U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * L_1 = L_0;
-		NullCheck(L_1);
-		L_1->set_U3CU3E4__this_2(__this);
-		return L_1;
 	}
 }
 // System.Void AvailableArmies::callGetGUIData()
@@ -17220,6 +17241,75 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AvailableArmies_getUnitBattlef
 		NullCheck(L_2);
 		L_2->set_unitID_2(L_3);
 		return L_2;
+	}
+}
+// System.Void AvailableArmies::resetArmyManager()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AvailableArmies_resetArmyManager_m647316B1C5C17A86658F2C3FB025F45ABA4ACBDF (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// ArmyManager.powerCost = null;
+		IL2CPP_RUNTIME_CLASS_INIT(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var);
+		((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->set_powerCost_2((String_t*)NULL);
+		// ArmyManager.pointsCost = null;
+		((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->set_pointsCost_3((String_t*)NULL);
+		// ArmyManager.selectedFaction = null;
+		((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->set_selectedFaction_0((String_t*)NULL);
+		// ArmyManager.selectedUnits.Clear();
+		ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * L_0 = ((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->get_selectedUnits_1();
+		NullCheck(L_0);
+		VirtActionInvoker0::Invoke(26 /* System.Void System.Collections.ArrayList::Clear() */, L_0);
+		// }
+		return;
+	}
+}
+// System.Void AvailableArmies::disableDataContainers()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AvailableArmies_disableDataContainers_m9AA253C0CA4573773134FDE61A322E16249704CF (AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * __this, const RuntimeMethod* method)
+{
+	GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		// foreach (GameObject container in dataContainers)
+		GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* L_0 = __this->get_dataContainers_12();
+		V_0 = L_0;
+		V_1 = 0;
+		goto IL_0018;
+	}
+
+IL_000b:
+	{
+		// foreach (GameObject container in dataContainers)
+		GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* L_1 = V_0;
+		int32_t L_2 = V_1;
+		NullCheck(L_1);
+		int32_t L_3 = L_2;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
+		// container.SetActive(false);
+		NullCheck(L_4);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_4, (bool)0, /*hidden argument*/NULL);
+		int32_t L_5 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_5, (int32_t)1));
+	}
+
+IL_0018:
+	{
+		// foreach (GameObject container in dataContainers)
+		int32_t L_6 = V_1;
+		GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* L_7 = V_0;
+		NullCheck(L_7);
+		if ((((int32_t)L_6) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_7)->max_length))))))
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		// }
+		return;
 	}
 }
 // System.Void AvailableArmies::.ctor()
@@ -19396,11 +19486,11 @@ IL_001f:
 			L_52 = TMP_InputField_get_text_m14531DC868984D1436064D2FCF6ADFED61BEE81D_inline(L_51, /*hidden argument*/NULL);
 			NullCheck(L_49);
 			WWWForm_AddField_m8ACDB7B2124FA6EAD7FC120BB469C6352C7B7696(L_49, _stringLiteralBCE32F702F70A2D0E7E3820B01629934D9FEC551, L_52, /*hidden argument*/NULL);
-			// form.AddField("codexField", pointsField.text);
+			// form.AddField("codexField", codexField.text);
 			WWWForm_t078274293DA1BDA9AB5689AF8BCBF0EE17A2BABB * L_53 = V_4;
 			AddNewUnit_t035D31DEE1345176B739BC41C30FC79CB09C50EC * L_54 = V_2;
 			NullCheck(L_54);
-			TMP_InputField_tD50B4F3E6822EAC2720FAED56B86E98183F61D59 * L_55 = L_54->get_pointsField_6();
+			TMP_InputField_tD50B4F3E6822EAC2720FAED56B86E98183F61D59 * L_55 = L_54->get_codexField_16();
 			NullCheck(L_55);
 			String_t* L_56;
 			L_56 = TMP_InputField_get_text_m14531DC868984D1436064D2FCF6ADFED61BEE81D_inline(L_55, /*hidden argument*/NULL);
@@ -20112,7 +20202,7 @@ IL_00ee:
 			L_79 = VirtFuncInvoker0< String_t* >::Invoke(65 /* System.String TMPro.TMP_Text::get_text() */, L_78);
 			NullCheck(L_75);
 			QRCodeGenerator_encodeTextToQRCode_mFDA2D6BC611AD4CB33A634679AF265B140820CF3(L_75, L_79, /*hidden argument*/NULL);
-			// for (int i = 0; i < responseArray.Length - 3; i++)
+			// for (int i = 0; i < responseArray.Length - 4; i++) //-4 because the last 4 elements are the page, then unitId and then power and points cost
 			V_7 = 0;
 			goto IL_01f7;
 		}
@@ -20134,18 +20224,18 @@ IL_01de:
 			String_t* L_88 = (L_85)->GetAt(static_cast<il2cpp_array_size_t>(L_87));
 			NullCheck(L_84);
 			VirtActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_84, L_88);
-			// for (int i = 0; i < responseArray.Length - 3; i++)
+			// for (int i = 0; i < responseArray.Length - 4; i++) //-4 because the last 4 elements are the page, then unitId and then power and points cost
 			int32_t L_89 = V_7;
 			V_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_89, (int32_t)1));
 		}
 
 IL_01f7:
 		{
-			// for (int i = 0; i < responseArray.Length - 3; i++)
+			// for (int i = 0; i < responseArray.Length - 4; i++) //-4 because the last 4 elements are the page, then unitId and then power and points cost
 			int32_t L_90 = V_7;
 			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_91 = V_6;
 			NullCheck(L_91);
-			if ((((int32_t)L_90) < ((int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_91)->max_length))), (int32_t)3)))))
+			if ((((int32_t)L_90) < ((int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_91)->max_length))), (int32_t)4)))))
 			{
 				goto IL_01de;
 			}
@@ -21713,8 +21803,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * U3CinsertArmyListU3Ed__52_Sys
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void AvailableArmies/<getAvailableArmies>d__12::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__12__ctor_mC987C65E8BCD2252EC0A770FDDECB0D0CFFA3E91 (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method)
+// System.Void AvailableArmies/<getAvailableArmies>d__11::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__11__ctor_m257C6C75BFB8DBD0F60205508EB8C69F4E2CC0C2 (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method)
 {
 	{
 		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
@@ -21723,8 +21813,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__12__ctor_mC98
 		return;
 	}
 }
-// System.Void AvailableArmies/<getAvailableArmies>d__12::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__12_System_IDisposable_Dispose_mEA75CFFF102BCFDAAAACBDBB162AA758CCE6F66D (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * __this, const RuntimeMethod* method)
+// System.Void AvailableArmies/<getAvailableArmies>d__11::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__11_System_IDisposable_Dispose_mF4637859E1F7502DD55A4008D32ED87C42A40B11 (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * __this, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
 	Exception_t * __last_unhandled_exception = 0;
@@ -21763,7 +21853,7 @@ IL_0011:
 
 FINALLY_0013:
 	{ // begin finally (depth: 1)
-		U3CgetAvailableArmiesU3Ed__12_U3CU3Em__Finally1_m83F934CD58431199A22291774FCA9EC00073B99F(__this, /*hidden argument*/NULL);
+		U3CgetAvailableArmiesU3Ed__11_U3CU3Em__Finally1_mC1065C1220126303E45DB990D9C7FA7BAA7484DF(__this, /*hidden argument*/NULL);
 		IL2CPP_END_FINALLY(19)
 	} // end finally (depth: 1)
 	IL2CPP_CLEANUP(19)
@@ -21777,8 +21867,8 @@ IL_001a:
 		return;
 	}
 }
-// System.Boolean AvailableArmies/<getAvailableArmies>d__12::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CgetAvailableArmiesU3Ed__12_MoveNext_m2AA26BE78063792A8260055A43C34921F3103395 (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * __this, const RuntimeMethod* method)
+// System.Boolean AvailableArmies/<getAvailableArmies>d__11::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CgetAvailableArmiesU3Ed__11_MoveNext_mA28F8C1BC78B586B20D1119E8EA7D6D584DB3CB7 (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22053,7 +22143,7 @@ IL_0176:
 IL_0186:
 		{
 			// }
-			U3CgetAvailableArmiesU3Ed__12_U3CU3Em__Finally1_m83F934CD58431199A22291774FCA9EC00073B99F(__this, /*hidden argument*/NULL);
+			U3CgetAvailableArmiesU3Ed__11_U3CU3Em__Finally1_mC1065C1220126303E45DB990D9C7FA7BAA7484DF(__this, /*hidden argument*/NULL);
 			__this->set_U3CwwwU3E5__2_3((UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E *)NULL);
 			// }
 			V_0 = (bool)0;
@@ -22068,7 +22158,7 @@ IL_0186:
 
 FAULT_0197:
 	{ // begin fault (depth: 1)
-		U3CgetAvailableArmiesU3Ed__12_System_IDisposable_Dispose_mEA75CFFF102BCFDAAAACBDBB162AA758CCE6F66D(__this, /*hidden argument*/NULL);
+		U3CgetAvailableArmiesU3Ed__11_System_IDisposable_Dispose_mF4637859E1F7502DD55A4008D32ED87C42A40B11(__this, /*hidden argument*/NULL);
 		IL2CPP_END_FINALLY(407)
 	} // end fault
 	IL2CPP_CLEANUP(407)
@@ -22082,8 +22172,8 @@ IL_019e:
 		return L_54;
 	}
 }
-// System.Void AvailableArmies/<getAvailableArmies>d__12::<>m__Finally1()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__12_U3CU3Em__Finally1_m83F934CD58431199A22291774FCA9EC00073B99F (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * __this, const RuntimeMethod* method)
+// System.Void AvailableArmies/<getAvailableArmies>d__11::<>m__Finally1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__11_U3CU3Em__Finally1_mC1065C1220126303E45DB990D9C7FA7BAA7484DF (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22110,25 +22200,25 @@ IL_001a:
 		return;
 	}
 }
-// System.Object AvailableArmies/<getAvailableArmies>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * U3CgetAvailableArmiesU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA08F0A1C55C6CE80DE6DF25367618E35CAF52F28 (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * __this, const RuntimeMethod* method)
+// System.Object AvailableArmies/<getAvailableArmies>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * U3CgetAvailableArmiesU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3C24F35F89971131B797D600D5546DF43E07D139 (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * __this, const RuntimeMethod* method)
 {
 	{
 		RuntimeObject * L_0 = __this->get_U3CU3E2__current_1();
 		return L_0;
 	}
 }
-// System.Void AvailableArmies/<getAvailableArmies>d__12::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__12_System_Collections_IEnumerator_Reset_m01C5279106ED522C9B46C26A1985363A3B1E0D54 (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * __this, const RuntimeMethod* method)
+// System.Void AvailableArmies/<getAvailableArmies>d__11::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CgetAvailableArmiesU3Ed__11_System_Collections_IEnumerator_Reset_mE9D2627597C4F5AC8FBCA7F3514AEEE59243E5E3 (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * __this, const RuntimeMethod* method)
 {
 	{
 		NotSupportedException_tB9D89F0E9470A2C423D239D7C68EE0CFD77F9339 * L_0 = (NotSupportedException_tB9D89F0E9470A2C423D239D7C68EE0CFD77F9339 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_tB9D89F0E9470A2C423D239D7C68EE0CFD77F9339_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m3EA81A5B209A87C3ADA47443F2AFFF735E5256EE(L_0, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CgetAvailableArmiesU3Ed__12_System_Collections_IEnumerator_Reset_m01C5279106ED522C9B46C26A1985363A3B1E0D54_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CgetAvailableArmiesU3Ed__11_System_Collections_IEnumerator_Reset_mE9D2627597C4F5AC8FBCA7F3514AEEE59243E5E3_RuntimeMethod_var)));
 	}
 }
-// System.Object AvailableArmies/<getAvailableArmies>d__12::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * U3CgetAvailableArmiesU3Ed__12_System_Collections_IEnumerator_get_Current_mFADB745EB1BACE9FFD9DCCA14B97D3AADE2B84F6 (U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08 * __this, const RuntimeMethod* method)
+// System.Object AvailableArmies/<getAvailableArmies>d__11::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * U3CgetAvailableArmiesU3Ed__11_System_Collections_IEnumerator_get_Current_mBAE53503BA8F67CF75AD53A3891A98F2AD7E2AFF (U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68 * __this, const RuntimeMethod* method)
 {
 	{
 		RuntimeObject * L_0 = __this->get_U3CU3E2__current_1();
@@ -22227,6 +22317,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CgetGUIDataU3Ed__14_MoveNext_m31F4E23A
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB46B9217FEEEA1B9EE6C8C431FA4DE67199A2282);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC96548CDAF34A62D5E320D2C579A0E33A714467D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -22276,7 +22367,7 @@ IL_0011:
 IL_0018:
 		{
 			V_0 = (bool)0;
-			goto IL_030b;
+			goto IL_038b;
 		}
 
 IL_001f:
@@ -22328,7 +22419,7 @@ IL_001f:
 			__this->set_U3CU3E2__current_1(L_18);
 			__this->set_U3CU3E1__state_0(1);
 			V_0 = (bool)1;
-			goto IL_030b;
+			goto IL_038b;
 		}
 
 IL_0099:
@@ -22367,7 +22458,7 @@ IL_00bd:
 			IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 			Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_24, /*hidden argument*/NULL);
 			// }
-			goto IL_02f3;
+			goto IL_0373;
 		}
 
 IL_00d2:
@@ -22395,7 +22486,7 @@ IL_00d2:
 			L_31 = String_Contains_mA26BDCCE8F191E8965EB8EEFC18BB4D0F85A075A(L_30, _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024, /*hidden argument*/NULL);
 			if (!L_31)
 			{
-				goto IL_02f3;
+				goto IL_02ff;
 			}
 		}
 
@@ -22520,199 +22611,267 @@ IL_0106:
 			NullCheck(L_76);
 			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_79;
 			L_79 = String_Split_m2C74DC2B85B322998094BEDE787C378822E1F28B(L_76, L_78, /*hidden argument*/NULL);
+			// ArmyManager.selectedUnits.Clear();
+			IL2CPP_RUNTIME_CLASS_INIT(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var);
+			ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * L_80 = ((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->get_selectedUnits_1();
+			NullCheck(L_80);
+			VirtActionInvoker0::Invoke(26 /* System.Void System.Collections.ArrayList::Clear() */, L_80);
 			// foreach (string unitID in temp)
 			V_12 = L_79;
 			V_13 = 0;
-			goto IL_0240;
+			goto IL_024a;
 		}
 
-IL_0218:
+IL_0222:
 		{
 			// foreach (string unitID in temp)
-			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_80 = V_12;
-			int32_t L_81 = V_13;
-			NullCheck(L_80);
-			int32_t L_82 = L_81;
-			String_t* L_83 = (L_80)->GetAt(static_cast<il2cpp_array_size_t>(L_82));
-			V_14 = L_83;
+			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_81 = V_12;
+			int32_t L_82 = V_13;
+			NullCheck(L_81);
+			int32_t L_83 = L_82;
+			String_t* L_84 = (L_81)->GetAt(static_cast<il2cpp_array_size_t>(L_83));
+			V_14 = L_84;
 			// if (unitID != "")
-			String_t* L_84 = V_14;
-			bool L_85;
-			L_85 = String_op_Inequality_mDDA2DDED3E7EF042987EB7180EE3E88105F0AAE2(L_84, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, /*hidden argument*/NULL);
-			if (!L_85)
+			String_t* L_85 = V_14;
+			bool L_86;
+			L_86 = String_op_Inequality_mDDA2DDED3E7EF042987EB7180EE3E88105F0AAE2(L_85, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, /*hidden argument*/NULL);
+			if (!L_86)
 			{
-				goto IL_023a;
+				goto IL_0244;
 			}
 		}
 
-IL_022d:
+IL_0237:
 		{
 			// ArmyManager.selectedUnits.Add(unitID);
 			IL2CPP_RUNTIME_CLASS_INIT(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var);
-			ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * L_86 = ((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->get_selectedUnits_1();
-			String_t* L_87 = V_14;
-			NullCheck(L_86);
-			int32_t L_88;
-			L_88 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(24 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_86, L_87);
+			ArrayList_t6C1A49839DC1F0D568E8E11FA1626FCF0EC06575 * L_87 = ((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->get_selectedUnits_1();
+			String_t* L_88 = V_14;
+			NullCheck(L_87);
+			int32_t L_89;
+			L_89 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(24 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_87, L_88);
 		}
 
-IL_023a:
+IL_0244:
 		{
-			int32_t L_89 = V_13;
-			V_13 = ((int32_t)il2cpp_codegen_add((int32_t)L_89, (int32_t)1));
+			int32_t L_90 = V_13;
+			V_13 = ((int32_t)il2cpp_codegen_add((int32_t)L_90, (int32_t)1));
 		}
 
-IL_0240:
+IL_024a:
 		{
 			// foreach (string unitID in temp)
-			int32_t L_90 = V_13;
-			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_91 = V_12;
-			NullCheck(L_91);
-			if ((((int32_t)L_90) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_91)->max_length))))))
+			int32_t L_91 = V_13;
+			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_92 = V_12;
+			NullCheck(L_92);
+			if ((((int32_t)L_91) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_92)->max_length))))))
 			{
-				goto IL_0218;
+				goto IL_0222;
 			}
 		}
 
-IL_0248:
+IL_0252:
 		{
 			// ArmyManager.powerCost = powerCost;
-			String_t* L_92 = V_10;
+			String_t* L_93 = V_10;
 			IL2CPP_RUNTIME_CLASS_INIT(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var);
-			((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->set_powerCost_2(L_92);
+			((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->set_powerCost_2(L_93);
 			// ArmyManager.pointsCost = pointCost;
-			String_t* L_93 = V_11;
-			((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->set_pointsCost_3(L_93);
+			String_t* L_94 = V_11;
+			((ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_StaticFields*)il2cpp_codegen_static_fields_for(ArmyManager_t9BC4CDFC8A3809E5BAEB90D4ADFECB7A121CDB8E_il2cpp_TypeInfo_var))->set_pointsCost_3(L_94);
 			// powerTextGUI.text = powerCost;
-			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_94 = V_2;
-			NullCheck(L_94);
-			TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * L_95 = L_94->get_powerTextGUI_7();
-			String_t* L_96 = V_10;
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_95 = V_2;
 			NullCheck(L_95);
-			VirtActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_95, L_96);
+			TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * L_96 = L_95->get_powerTextGUI_7();
+			String_t* L_97 = V_10;
+			NullCheck(L_96);
+			VirtActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_96, L_97);
 			// pointsTextGUI.text = pointCost;
-			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_97 = V_2;
-			NullCheck(L_97);
-			TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * L_98 = L_97->get_pointsTextGUI_8();
-			String_t* L_99 = V_11;
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_98 = V_2;
 			NullCheck(L_98);
-			VirtActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_98, L_99);
+			TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * L_99 = L_98->get_pointsTextGUI_8();
+			String_t* L_100 = V_11;
+			NullCheck(L_99);
+			VirtActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_99, L_100);
 			// determineCP(Int32.Parse(powerCost));
-			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_100 = V_2;
-			String_t* L_101 = V_10;
-			int32_t L_102;
-			L_102 = Int32_Parse_mE5D220FEA7F0BFB1B220B2A30797D7DD83ACF22C(L_101, /*hidden argument*/NULL);
-			NullCheck(L_100);
-			AvailableArmies_determineCP_m4B353B1C7ABA95007DCEF9005B0E120D01B6B413(L_100, L_102, /*hidden argument*/NULL);
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_101 = V_2;
+			String_t* L_102 = V_10;
+			int32_t L_103;
+			L_103 = Int32_Parse_mE5D220FEA7F0BFB1B220B2A30797D7DD83ACF22C(L_102, /*hidden argument*/NULL);
+			NullCheck(L_101);
+			AvailableArmies_determineCP_m4B353B1C7ABA95007DCEF9005B0E120D01B6B413(L_101, L_103, /*hidden argument*/NULL);
 			// string[] units = unitNames.Split('_');
-			String_t* L_103 = V_9;
-			CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34* L_104 = (CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34*)(CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34*)SZArrayNew(CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34_il2cpp_TypeInfo_var, (uint32_t)1);
-			CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34* L_105 = L_104;
-			NullCheck(L_105);
-			(L_105)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppChar)((int32_t)95));
-			NullCheck(L_103);
-			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_106;
-			L_106 = String_Split_m2C74DC2B85B322998094BEDE787C378822E1F28B(L_103, L_105, /*hidden argument*/NULL);
+			String_t* L_104 = V_9;
+			CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34* L_105 = (CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34*)(CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34*)SZArrayNew(CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34_il2cpp_TypeInfo_var, (uint32_t)1);
+			CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34* L_106 = L_105;
+			NullCheck(L_106);
+			(L_106)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppChar)((int32_t)95));
+			NullCheck(L_104);
+			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_107;
+			L_107 = String_Split_m2C74DC2B85B322998094BEDE787C378822E1F28B(L_104, L_106, /*hidden argument*/NULL);
 			// unitsDropdown.ClearOptions();
-			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_107 = V_2;
-			NullCheck(L_107);
-			TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_108 = L_107->get_unitsDropdown_5();
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_108 = V_2;
 			NullCheck(L_108);
-			TMP_Dropdown_ClearOptions_m97A53856FFBF04C907A9F99D89BC586C6CC6E134(L_108, /*hidden argument*/NULL);
-			// unitsDropdown.options.Add(new TMP_Dropdown.OptionData("Einheiten"));
-			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_109 = V_2;
+			TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_109 = L_108->get_unitsDropdown_5();
 			NullCheck(L_109);
-			TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_110 = L_109->get_unitsDropdown_5();
+			TMP_Dropdown_ClearOptions_m97A53856FFBF04C907A9F99D89BC586C6CC6E134(L_109, /*hidden argument*/NULL);
+			// unitsDropdown.options.Add(new TMP_Dropdown.OptionData("Einheiten"));
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_110 = V_2;
 			NullCheck(L_110);
-			List_1_t59FFDE61FE16A4D894E0497E479A9D5067D39949 * L_111;
-			L_111 = TMP_Dropdown_get_options_mAEB18B3DF68145436F434517AFC836E44BC287F2(L_110, /*hidden argument*/NULL);
-			OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023 * L_112 = (OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023 *)il2cpp_codegen_object_new(OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023_il2cpp_TypeInfo_var);
-			OptionData__ctor_m593B487129CAC9A5722E45E2650533A175120C7E(L_112, _stringLiteralC96548CDAF34A62D5E320D2C579A0E33A714467D, /*hidden argument*/NULL);
+			TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_111 = L_110->get_unitsDropdown_5();
 			NullCheck(L_111);
-			List_1_Add_m34CDCD14CF076EB586C8F917CA625C52BA6F90F7(L_111, L_112, /*hidden argument*/List_1_Add_m34CDCD14CF076EB586C8F917CA625C52BA6F90F7_RuntimeMethod_var);
+			List_1_t59FFDE61FE16A4D894E0497E479A9D5067D39949 * L_112;
+			L_112 = TMP_Dropdown_get_options_mAEB18B3DF68145436F434517AFC836E44BC287F2(L_111, /*hidden argument*/NULL);
+			OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023 * L_113 = (OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023 *)il2cpp_codegen_object_new(OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023_il2cpp_TypeInfo_var);
+			OptionData__ctor_m593B487129CAC9A5722E45E2650533A175120C7E(L_113, _stringLiteralC96548CDAF34A62D5E320D2C579A0E33A714467D, /*hidden argument*/NULL);
+			NullCheck(L_112);
+			List_1_Add_m34CDCD14CF076EB586C8F917CA625C52BA6F90F7(L_112, L_113, /*hidden argument*/List_1_Add_m34CDCD14CF076EB586C8F917CA625C52BA6F90F7_RuntimeMethod_var);
 			// foreach (string unit in units)
-			V_12 = L_106;
+			V_12 = L_107;
 			V_13 = 0;
-			goto IL_02df;
+			goto IL_02e9;
 		}
 
-IL_02bb:
+IL_02c5:
 		{
 			// foreach (string unit in units)
-			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_113 = V_12;
-			int32_t L_114 = V_13;
-			NullCheck(L_113);
-			int32_t L_115 = L_114;
-			String_t* L_116 = (L_113)->GetAt(static_cast<il2cpp_array_size_t>(L_115));
-			V_15 = L_116;
+			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_114 = V_12;
+			int32_t L_115 = V_13;
+			NullCheck(L_114);
+			int32_t L_116 = L_115;
+			String_t* L_117 = (L_114)->GetAt(static_cast<il2cpp_array_size_t>(L_116));
+			V_15 = L_117;
 			// unitsDropdown.options.Add(new TMP_Dropdown.OptionData(unit));
-			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_117 = V_2;
-			NullCheck(L_117);
-			TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_118 = L_117->get_unitsDropdown_5();
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_118 = V_2;
 			NullCheck(L_118);
-			List_1_t59FFDE61FE16A4D894E0497E479A9D5067D39949 * L_119;
-			L_119 = TMP_Dropdown_get_options_mAEB18B3DF68145436F434517AFC836E44BC287F2(L_118, /*hidden argument*/NULL);
-			String_t* L_120 = V_15;
-			OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023 * L_121 = (OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023 *)il2cpp_codegen_object_new(OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023_il2cpp_TypeInfo_var);
-			OptionData__ctor_m593B487129CAC9A5722E45E2650533A175120C7E(L_121, L_120, /*hidden argument*/NULL);
+			TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_119 = L_118->get_unitsDropdown_5();
 			NullCheck(L_119);
-			List_1_Add_m34CDCD14CF076EB586C8F917CA625C52BA6F90F7(L_119, L_121, /*hidden argument*/List_1_Add_m34CDCD14CF076EB586C8F917CA625C52BA6F90F7_RuntimeMethod_var);
-			int32_t L_122 = V_13;
-			V_13 = ((int32_t)il2cpp_codegen_add((int32_t)L_122, (int32_t)1));
+			List_1_t59FFDE61FE16A4D894E0497E479A9D5067D39949 * L_120;
+			L_120 = TMP_Dropdown_get_options_mAEB18B3DF68145436F434517AFC836E44BC287F2(L_119, /*hidden argument*/NULL);
+			String_t* L_121 = V_15;
+			OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023 * L_122 = (OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023 *)il2cpp_codegen_object_new(OptionData_tB4568C660E74AB98EEE1E4F9B283FE4D09EEC023_il2cpp_TypeInfo_var);
+			OptionData__ctor_m593B487129CAC9A5722E45E2650533A175120C7E(L_122, L_121, /*hidden argument*/NULL);
+			NullCheck(L_120);
+			List_1_Add_m34CDCD14CF076EB586C8F917CA625C52BA6F90F7(L_120, L_122, /*hidden argument*/List_1_Add_m34CDCD14CF076EB586C8F917CA625C52BA6F90F7_RuntimeMethod_var);
+			int32_t L_123 = V_13;
+			V_13 = ((int32_t)il2cpp_codegen_add((int32_t)L_123, (int32_t)1));
 		}
 
-IL_02df:
+IL_02e9:
 		{
 			// foreach (string unit in units)
-			int32_t L_123 = V_13;
-			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_124 = V_12;
-			NullCheck(L_124);
-			if ((((int32_t)L_123) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_124)->max_length))))))
+			int32_t L_124 = V_13;
+			StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_125 = V_12;
+			NullCheck(L_125);
+			if ((((int32_t)L_124) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_125)->max_length))))))
 			{
-				goto IL_02bb;
+				goto IL_02c5;
 			}
 		}
 
-IL_02e7:
+IL_02f1:
 		{
 			// unitsDropdown.value = 1;
-			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_125 = V_2;
-			NullCheck(L_125);
-			TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_126 = L_125->get_unitsDropdown_5();
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_126 = V_2;
 			NullCheck(L_126);
-			TMP_Dropdown_set_value_m856C9EC8143135E98F5BC57520B1294F87F982E1(L_126, 1, /*hidden argument*/NULL);
+			TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_127 = L_126->get_unitsDropdown_5();
+			NullCheck(L_127);
+			TMP_Dropdown_set_value_m856C9EC8143135E98F5BC57520B1294F87F982E1(L_127, 1, /*hidden argument*/NULL);
+			// }
+			goto IL_0373;
 		}
 
-IL_02f3:
+IL_02ff:
+		{
+			// else if (www.downloadHandler.text.Contains("1"))
+			UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * L_128 = __this->get_U3CwwwU3E5__2_3();
+			NullCheck(L_128);
+			DownloadHandler_tEEAE0DD53DB497C8A491C4F7B7A14C3CA027B1DB * L_129;
+			L_129 = UnityWebRequest_get_downloadHandler_mCE0A0C53A63419FE5AE25915AFB36EABE294C732(L_128, /*hidden argument*/NULL);
+			NullCheck(L_129);
+			String_t* L_130;
+			L_130 = DownloadHandler_get_text_mD89D7125640800A8F5C4B9401C080C405953828A(L_129, /*hidden argument*/NULL);
+			NullCheck(L_130);
+			bool L_131;
+			L_131 = String_Contains_mA26BDCCE8F191E8965EB8EEFC18BB4D0F85A075A(L_130, _stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3, /*hidden argument*/NULL);
+			if (!L_131)
+			{
+				goto IL_0373;
+			}
+		}
+
+IL_031b:
+		{
+			// powerTextGUI.text = "0";
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_132 = V_2;
+			NullCheck(L_132);
+			TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * L_133 = L_132->get_powerTextGUI_7();
+			NullCheck(L_133);
+			VirtActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_133, _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024);
+			// pointsTextGUI.text = "0";
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_134 = V_2;
+			NullCheck(L_134);
+			TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * L_135 = L_134->get_pointsTextGUI_8();
+			NullCheck(L_135);
+			VirtActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_135, _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024);
+			// cpTextGUI.text = "0";
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_136 = V_2;
+			NullCheck(L_136);
+			TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * L_137 = L_136->get_cpTextGUI_9();
+			NullCheck(L_137);
+			VirtActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_137, _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024);
+			// unitsDropdown.value = 0;
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_138 = V_2;
+			NullCheck(L_138);
+			TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_139 = L_138->get_unitsDropdown_5();
+			NullCheck(L_139);
+			TMP_Dropdown_set_value_m856C9EC8143135E98F5BC57520B1294F87F982E1(L_139, 0, /*hidden argument*/NULL);
+			// battlefieldRoleTextGUI.text = "";
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_140 = V_2;
+			NullCheck(L_140);
+			TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * L_141 = L_140->get_battlefieldRoleTextGUI_10();
+			NullCheck(L_141);
+			VirtActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_141, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+			// disableDataContainers();
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_142 = V_2;
+			NullCheck(L_142);
+			AvailableArmies_disableDataContainers_m9AA253C0CA4573773134FDE61A322E16249704CF(L_142, /*hidden argument*/NULL);
+			// resetArmyManager();
+			AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * L_143 = V_2;
+			NullCheck(L_143);
+			AvailableArmies_resetArmyManager_m647316B1C5C17A86658F2C3FB025F45ABA4ACBDF(L_143, /*hidden argument*/NULL);
+		}
+
+IL_0373:
 		{
 			// }
 			U3CgetGUIDataU3Ed__14_U3CU3Em__Finally1_m47A528A90E573DFF1257E18421FB5A1DB84D41CD(__this, /*hidden argument*/NULL);
 			__this->set_U3CwwwU3E5__2_3((UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E *)NULL);
 			// }
 			V_0 = (bool)0;
-			goto IL_030b;
+			goto IL_038b;
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FAULT_0304;
+		goto FAULT_0384;
 	}
 
-FAULT_0304:
+FAULT_0384:
 	{ // begin fault (depth: 1)
 		U3CgetGUIDataU3Ed__14_System_IDisposable_Dispose_mB7ECFD01DD02D403C03CA488124B25E18E4FB27A(__this, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(772)
+		IL2CPP_END_FINALLY(900)
 	} // end fault
-	IL2CPP_CLEANUP(772)
+	IL2CPP_CLEANUP(900)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
 	}
 
-IL_030b:
+IL_038b:
 	{
-		bool L_127 = V_0;
-		return L_127;
+		bool L_144 = V_0;
+		return L_144;
 	}
 }
 // System.Void AvailableArmies/<getGUIData>d__14::<>m__Finally1()

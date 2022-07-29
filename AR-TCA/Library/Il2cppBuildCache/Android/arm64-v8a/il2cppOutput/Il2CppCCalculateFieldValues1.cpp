@@ -7708,21 +7708,21 @@ public:
 };
 
 
-// AvailableArmies/<getAvailableArmies>d__12
-struct U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08  : public RuntimeObject
+// AvailableArmies/<getAvailableArmies>d__11
+struct U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68  : public RuntimeObject
 {
 public:
-	// System.Int32 AvailableArmies/<getAvailableArmies>d__12::<>1__state
+	// System.Int32 AvailableArmies/<getAvailableArmies>d__11::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AvailableArmies/<getAvailableArmies>d__12::<>2__current
+	// System.Object AvailableArmies/<getAvailableArmies>d__11::<>2__current
 	RuntimeObject * ___U3CU3E2__current_1;
-	// AvailableArmies AvailableArmies/<getAvailableArmies>d__12::<>4__this
+	// AvailableArmies AvailableArmies/<getAvailableArmies>d__11::<>4__this
 	AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest AvailableArmies/<getAvailableArmies>d__12::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest AvailableArmies/<getAvailableArmies>d__11::<www>5__2
 	UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * ___U3CwwwU3E5__2_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -7730,7 +7730,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CU3E2__current_1)); }
+	inline static int32_t get_offset_of_U3CU3E2__current_1() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68, ___U3CU3E2__current_1)); }
 	inline RuntimeObject * get_U3CU3E2__current_1() const { return ___U3CU3E2__current_1; }
 	inline RuntimeObject ** get_address_of_U3CU3E2__current_1() { return &___U3CU3E2__current_1; }
 	inline void set_U3CU3E2__current_1(RuntimeObject * value)
@@ -7739,7 +7739,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E2__current_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68, ___U3CU3E4__this_2)); }
 	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(AvailableArmies_t835DCD51DA6A82BA1CA24C0E5A087054E7EE85EF * value)
@@ -7748,7 +7748,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08, ___U3CwwwU3E5__2_3)); }
+	inline static int32_t get_offset_of_U3CwwwU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68, ___U3CwwwU3E5__2_3)); }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * get_U3CwwwU3E5__2_3() const { return ___U3CwwwU3E5__2_3; }
 	inline UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E ** get_address_of_U3CwwwU3E5__2_3() { return &___U3CwwwU3E5__2_3; }
 	inline void set_U3CwwwU3E5__2_3(UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * value)
@@ -66482,10 +66482,10 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4021[4] =
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4022[4] = 
 {
-	U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08::get_offset_of_U3CU3E1__state_0(),
-	U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08::get_offset_of_U3CU3E2__current_1(),
-	U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08::get_offset_of_U3CU3E4__this_2(),
-	U3CgetAvailableArmiesU3Ed__12_tC92D49DA3ADDF5C480B7D271D59C0D9D43AFBD08::get_offset_of_U3CwwwU3E5__2_3(),
+	U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68::get_offset_of_U3CU3E1__state_0(),
+	U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68::get_offset_of_U3CU3E2__current_1(),
+	U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68::get_offset_of_U3CU3E4__this_2(),
+	U3CgetAvailableArmiesU3Ed__11_tA6931D45A3383829BC25715427172AD71272FC68::get_offset_of_U3CwwwU3E5__2_3(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4023[4] = 
 {
