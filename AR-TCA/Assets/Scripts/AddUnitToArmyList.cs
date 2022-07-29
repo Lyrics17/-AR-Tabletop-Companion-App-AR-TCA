@@ -55,6 +55,7 @@ public class AddUnitToArmyList : MonoBehaviour
         {
             addCurrentBattleSizeToGUI();
             factionDropdown.value = factionDropdown.options.FindIndex(option => option.text == ArmyManager.selectedFaction);
+            factionDropdown.interactable = false; //disable dropdown to prevent changing the faction
             StartCoroutine(getUnitFromFaction());
             unitIDList = ArmyManager.selectedUnits;
             addCurrentUnitCostsToGUI();
@@ -297,6 +298,7 @@ public class AddUnitToArmyList : MonoBehaviour
     public void callGetUnitFromFaction() //called from factionDropdown
     {
         resetGUI();
+        Debug.Log("CALLED RESET GUI");
         StartCoroutine(getUnitFromFaction());
     }
 

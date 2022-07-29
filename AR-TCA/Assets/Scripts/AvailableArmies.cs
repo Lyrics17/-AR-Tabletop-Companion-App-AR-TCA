@@ -135,6 +135,8 @@ public class AvailableArmies : MonoBehaviour
 
                     string[] temp = (unitIDs.Split('_'));
 
+                    ArmyManager.selectedUnits.Clear();
+
                     foreach (string unitID in temp)
                     {
                         if (unitID != "")
