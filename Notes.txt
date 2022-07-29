@@ -8,10 +8,14 @@ TODO: LiveDemo: Nochmal davor testen wenn datum steht
             - Terrain ansehen
             - Armeeliste erstellen
             - Login/Registery
+            - Neue Einheit hochladen
       -Nein
             - AR
-            - Neue Einheit hochladen -> kann man upload qr code liegen! das skript war noch auf lokal eingestellt
 
 TODO: Debug.Logs rausschmeißen während die doku geschrieben wird.
 
 Alles funktioniert jetzt 29.07
+
+TODO: Testen ob man mit 2 accouts unterschiedliche army erstellen kann
+
+TODO: maybe die möglichen armeen im builder auf die einzuschränken wo der user noch keine amee hat

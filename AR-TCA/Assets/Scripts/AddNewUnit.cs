@@ -57,7 +57,7 @@ public class AddNewUnit : MonoBehaviour
         form.AddField("unitAttacks", attacksField.text);
         form.AddField("unitLeadership", leadershipField.text);
         form.AddField("unitSave", saveField.text);
-        form.AddField("codexField", pointsField.text);
+        form.AddField("codexField", codexField.text);
 
         form.AddField("factionName", factionField.captionText.text);
         form.AddField("battlefieldRoleName", battlefieldRoleField.captionText.text);

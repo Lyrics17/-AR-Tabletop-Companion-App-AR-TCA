@@ -26,17 +26,9 @@ public class AvailableArmies : MonoBehaviour
     public GameObject[] dataContainers;
     public TextMeshProUGUI[] dataText;
 
-
-    private void enableDataContainers()
-    {
-        foreach (GameObject dataContainer in dataContainers)
-        {
-            dataContainer.SetActive(true);
-        }
-    }
-
     private void Awake()
     {
+        resetArmyManager();
         StartCoroutine(getAvailableArmies());
     }
 
@@ -86,6 +78,14 @@ public class AvailableArmies : MonoBehaviour
                     displayMessageGUI.text = "Dieses Konto hat derzeit keine Armeeliste!";
                 }
             }
+        }
+    }
+
+    private void enableDataContainers()
+    {
+        foreach (GameObject dataContainer in dataContainers)
+        {
+            dataContainer.SetActive(true);
         }
     }
 
@@ -166,6 +166,16 @@ public class AvailableArmies : MonoBehaviour
                     }
 
                     unitsDropdown.value = 1;
+                }
+                else if (www.downloadHandler.text.Contains("1"))
+                {
+                    powerTextGUI.text = "0";
+                    pointsTextGUI.text = "0";
+                    cpTextGUI.text = "0";
+                    unitsDropdown.value = 0;
+                    battlefieldRoleTextGUI.text = "";
+                    disableDataContainers();
+                    resetArmyManager();
                 }
             }
         }
@@ -274,6 +284,23 @@ public class AvailableArmies : MonoBehaviour
                     battlefieldRoleTextGUI.text = response;
                 }
             }
+        }
+    }
+
+    private void resetArmyManager()
+    {
+        //Refresh ArmyManager if the user returns form the army builder
+        ArmyManager.powerCost = null;
+        ArmyManager.pointsCost = null;
+        ArmyManager.selectedFaction = null;
+        ArmyManager.selectedUnits.Clear();
+    }
+
+    private void disableDataContainers()
+    {
+        foreach (GameObject container in dataContainers)
+        {
+            container.SetActive(false);
         }
     }
 }

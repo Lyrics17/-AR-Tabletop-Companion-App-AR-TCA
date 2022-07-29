@@ -469,9 +469,8 @@ public class AddUnitToArmyList : MonoBehaviour
                     generator.GetComponent<QRCodeGenerator>().encodeTextToQRCode(unitToInsertDropdown.captionText.text);
 
                     //Save Unit Data into Array for frontend display
-                    for (int i = 0; i < responseArray.Length - 3; i++)
+                    for (int i = 0; i < responseArray.Length - 4; i++) //-4 because the last 4 elements are the page, then unitId and then power and points cost
                     {
-                        //dataText index needs to start at 0!
                         dataText[i].text = responseArray[i];
                     }
                     enableDataContainers();

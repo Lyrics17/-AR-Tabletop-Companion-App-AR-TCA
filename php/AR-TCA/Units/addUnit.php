@@ -93,7 +93,7 @@ if (!$stmt->execute())
 }
 
 //battlefieldRole
-$stmt = $conn->prepare("INSERT INTO `battlefieldRole` (`battlefieldRoleName`, `unit_idUnit`) VALUES (?,?)");
+$stmt = $conn->prepare("INSERT INTO `battlefieldrole` (`battlefieldRoleName`, `unit_idUnit`) VALUES (?,?)");
 $stmt->bindValue(1, $battlefieldRoleName);
 $stmt->bindValue(2, $newestUnitID);
 
