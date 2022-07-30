@@ -148,8 +148,8 @@ public class AvailableArmies : MonoBehaviour
                     ArmyManager.powerCost = powerCost;
                     ArmyManager.pointsCost = pointCost;
 
-                    powerTextGUI.text = powerCost;
-                    pointsTextGUI.text = pointCost;
+                    powerTextGUI.text = " " + powerCost;
+                    pointsTextGUI.text = " " + pointCost;
 
                     determineCP(Int32.Parse(powerCost));
                     //Split unitNames into array
@@ -169,10 +169,12 @@ public class AvailableArmies : MonoBehaviour
                 }
                 else if (www.downloadHandler.text.Contains("1"))
                 {
-                    powerTextGUI.text = "0";
-                    pointsTextGUI.text = "0";
-                    cpTextGUI.text = "0";
-                    unitsDropdown.value = 0;
+                    powerTextGUI.text = " 0";
+                    pointsTextGUI.text = " 0";
+                    cpTextGUI.text = " 0";
+                    unitsDropdown.ClearOptions();
+                    unitsDropdown.options.Add(new TMP_Dropdown.OptionData("Einheiten"));
+                    unitsDropdown.value = 1;
                     battlefieldRoleTextGUI.text = "";
                     disableDataContainers();
                     resetArmyManager();
@@ -185,19 +187,19 @@ public class AvailableArmies : MonoBehaviour
     {
         if (pointCost <= 500)
         {
-            cpTextGUI.text = "3";
+            cpTextGUI.text = " 3";
         }
         else if (500 < pointCost && pointCost <= 1000)
         {
-            cpTextGUI.text = "6";
+            cpTextGUI.text = " 6";
         }
         else if (1000 < pointCost && pointCost <= 2000)
         {
-            cpTextGUI.text = "12";
+            cpTextGUI.text = " 12";
         }
         else
         {
-            cpTextGUI.text = "18";
+            cpTextGUI.text = " 18";
         }
     }
     public void callGetUnitData()
@@ -281,7 +283,7 @@ public class AvailableArmies : MonoBehaviour
                     int indexOfString = www.downloadHandler.text.IndexOf("_"); //finds the first "_" in the string
                     string response = www.downloadHandler.text.Substring(indexOfString + 1); //cuts the string from the first "_ + 1" to the end
 
-                    battlefieldRoleTextGUI.text = response;
+                    battlefieldRoleTextGUI.text = " " + response;
                 }
             }
         }
