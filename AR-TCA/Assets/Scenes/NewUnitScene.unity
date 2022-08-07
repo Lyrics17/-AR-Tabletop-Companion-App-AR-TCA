@@ -10055,6 +10055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37c80cd32893ae9498e20c997adbb45e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageLibrary: {fileID: 11400000, guid: 197327c74cbdaf84fa6557e7308c8c90, type: 2}
+  trackedImageManager: {fileID: 0}
 --- !u!1 &1751652703
 GameObject:
   m_ObjectHideFlags: 0

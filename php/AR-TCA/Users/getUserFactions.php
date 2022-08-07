@@ -6,7 +6,7 @@ include "../db.php";
 $username = $_POST['username'];
 
 //Get terrain data 
-$stmt = $conn->prepare("SELECT factionName FROM armylists, user WHERE user_idUser = user.idUser AND user.userUsername = ?");
+$stmt = $conn->prepare("SELECT factionName FROM armylist, user WHERE user_idUser = user.idUser AND user.userUsername = ?");
 //bind $terrainName to ? placeholder
 $stmt->bindParam(1, $username);
 //execute query

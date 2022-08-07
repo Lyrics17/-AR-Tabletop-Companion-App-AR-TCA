@@ -26,24 +26,14 @@ MonoBehaviour:
     m_Name: Marker
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
-      m_GuidLow: 5408152077406952472
-      m_GuidHigh: 8808680168671545241
-    m_SerializedTextureGuid:
-      m_GuidLow: 6707239842960765200
-      m_GuidHigh: 15418443344135023306
-    m_Size: {x: 0.06773333, y: 0.06773333}
-    m_SpecifySize: 1
-    m_Name: Terrain_Ruinen
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
       m_GuidLow: 4699435202060101802
       m_GuidHigh: 9040946250741480885
     m_SerializedTextureGuid:
-      m_GuidLow: 13948909659104379625
-      m_GuidHigh: 13595362989194394328
+      m_GuidLow: 3379097407646519873
+      m_GuidHigh: 405221509444931816
     m_Size: {x: 0.06773333, y: 0.06773333}
     m_SpecifySize: 1
-    m_Name: Unit_Necron Warriors
+    m_Name: Unit_Skorpekh Destroyers
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5221122479481489634
@@ -54,4 +44,14 @@ MonoBehaviour:
     m_Size: {x: 0.06773333, y: 0.06773333}
     m_SpecifySize: 1
     m_Name: Unit_Primaris Captain
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5246913738444018461
+      m_GuidHigh: 13714155143056412320
+    m_SerializedTextureGuid:
+      m_GuidLow: 13462416936822511085
+      m_GuidHigh: 17230888579512437803
+    m_Size: {x: 0.06773333, y: 0.06773333}
+    m_SpecifySize: 1
+    m_Name: Terrain_Schlachtfeldueberreste
     m_Texture: {fileID: 0}

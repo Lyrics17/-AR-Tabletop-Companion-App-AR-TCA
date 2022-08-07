@@ -1349,7 +1349,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 175045127}
         m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
-        m_MethodName: goToArmylists
+        m_MethodName: goToMain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -3,12 +3,26 @@
 //to reduce code duplication
 include "../db.php";
 
+$username = $_POST['username'];
+
+//Get listofUnits data 
+$stmt = $conn->prepare("SELECT `idUser` FROM `user` WHERE `userUsername` = ?;");
+//bind $factionname to ? placeholder
+$stmt->bindParam(1, $username);
+//execute query
+$stmt->execute();
+
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+$idUser = $row['idUser'];
+
 $factionName = $_POST['factionName'];
 
-//Get terrain data 
-$stmt = $conn->prepare("SELECT listOfUnitIds FROM armylists WHERE factionName = ?");
-//bind $terrainName to ? placeholder
+//Get listofUnits data 
+$stmt = $conn->prepare("SELECT listOfUnitIds FROM armylist WHERE factionName = ? AND `user_idUser` = ?;");
+//bind $factionname & $idUser to ? placeholder
 $stmt->bindParam(1, $factionName);
+$stmt->bindParam(2, $idUser);
 //execute query
 $stmt->execute();
 

@@ -2,20 +2,8 @@
 TODO: Doku: Gib die Masse für den idealen QR Code an! -> mach ne bedinungsanleitung + erklärung für die symbole
       Doku Ausblick: die ar scene im mehrere phasen ausplitten-> move, shoot, charge
 
-
-TODO: LiveDemo: Nochmal davor testen wenn datum steht 
-      -Ja
-            - Terrain ansehen
-            - Armeeliste erstellen
-            - Login/Registery
-            - Neue Einheit hochladen
-      -Nein
-            - AR
-
 TODO: Debug.Logs rausschmeißen während die doku geschrieben wird.
 
 Alles funktioniert jetzt 29.07
 
-TODO: Testen ob man mit 2 accouts unterschiedliche army erstellen kann
-
-TODO: maybe die möglichen armeen im builder auf die einzuschränken wo der user noch keine amee hat
+TODO: Nochmal mit dem Handy Sim über die app schauen

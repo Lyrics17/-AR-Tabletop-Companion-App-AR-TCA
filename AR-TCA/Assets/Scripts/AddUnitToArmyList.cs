@@ -298,7 +298,6 @@ public class AddUnitToArmyList : MonoBehaviour
     public void callGetUnitFromFaction() //called from factionDropdown
     {
         resetGUI();
-        Debug.Log("CALLED RESET GUI");
         StartCoroutine(getUnitFromFaction());
     }
 
@@ -501,8 +500,8 @@ public class AddUnitToArmyList : MonoBehaviour
         }
 
         WWWForm form = new WWWForm();
-        // form.AddField("username", DBManager.username); //TODO: wieder einkommentieren wenn man builded. funktioniert nicht wenn man in der szenen testet
-        form.AddField("username", "admin");
+        form.AddField("username", DBManager.username); //TODO: wieder einkommentieren wenn man builded. funktioniert nicht wenn man in der szenen testet
+        // form.AddField("username", "admin");
         form.AddField("factionName", factionDropdown.captionText.text);
         form.AddField("unitIDs", unitIDs);
 

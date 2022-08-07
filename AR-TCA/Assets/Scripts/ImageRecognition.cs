@@ -36,7 +36,6 @@ public class ImageRecognition : MonoBehaviour
 
     //Reference for the coroutines used in this script
     private Coroutine coroutineInstatiateMarker;
-    private Coroutine coroutineGetUnitData;
     private Coroutine coroutineGetTerrainData;
 
     private void Awake()
@@ -57,7 +56,7 @@ public class ImageRecognition : MonoBehaviour
         trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
-    
+
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
         //For each referenced image which is tracked for the first time. Just happens once for each image
@@ -73,15 +72,68 @@ public class ImageRecognition : MonoBehaviour
             }
             else if (trackedImage.referenceImage.name.Contains("Unit_"))
             {
+
                 string unitName = trackedImage.referenceImage.name.Substring(5);
 
                 coroutineInstatiateMarker = StartCoroutine(instantiateMarker(unitName, trackedImage));
+
+                // if (unitName == "Skorpekh Destroyers")
+                // {
+                //     dataText[0].text = "3+";
+                //     dataText[1].text = "3+";
+                //     dataText[2].text = "5";
+                //     dataText[3].text = "5";
+                //     dataText[4].text = "3";
+                //     dataText[5].text = "3";
+                //     dataText[6].text = "10";
+                //     dataText[7].text = "3+";
+
+                //     spawnedMarker = Instantiate(marker, trackedImage.transform);
+
+                //     float unitMove = 8f;
+
+                //     float newScale = (0.4f * (float)unitMove / 6);
+
+                //     spawnedMarker.transform.localScale = new Vector3(newScale, newScale, 0.1f);
+
+                //     instantiatedMarkers.Add("Unit_Skorpekh Destroyers", spawnedMarker);
+
+                //     enableDataContainers();
+                // }
+                // else if (unitName == "Primaris Captain")
+                // {
+                //     dataText[0].text = "2+";
+                //     dataText[1].text = "2+";
+                //     dataText[2].text = "4";
+                //     dataText[3].text = "4";
+                //     dataText[4].text = "6";
+                //     dataText[5].text = "5";
+                //     dataText[6].text = "9";
+                //     dataText[7].text = "3+";
+
+                //     spawnedMarker = Instantiate(marker, trackedImage.transform);
+
+                //     float unitMove = 6f;
+
+                //     float newScale = (0.4f * (float)unitMove / 6);
+
+                //     spawnedMarker.transform.localScale = new Vector3(newScale, newScale, 0.1f);
+
+                //     instantiatedMarkers.Add("Unit_Primaris Captain", spawnedMarker);
+
+                //     enableDataContainers();
+                // }
             }
             else if (trackedImage.referenceImage.name.Contains("Terrain_"))
             {
                 string terrainPiece = trackedImage.referenceImage.name.Substring(8);
 
                 coroutineGetTerrainData = StartCoroutine(getTerrainData(terrainPiece));
+
+                // terrainCategoryField.text = "Hindernisse";
+                // terrainAttributesField.text = "ungeschuetze Position";
+
+                // enableTerrainFields();
             }
         }
 
@@ -95,7 +147,7 @@ public class ImageRecognition : MonoBehaviour
     //instantiates a marker for a unit with the movement value of the unit and gets the unit data in another coroutine
     IEnumerator instantiateMarker(string unitName, ARTrackedImage trackedImage)
     {
-        yield return StartCoroutine(GetUnitData(unitName));
+        yield return StartCoroutine(getUnitData(unitName));
 
         spawnedMarker = Instantiate(marker, trackedImage.transform);
 
@@ -112,7 +164,7 @@ public class ImageRecognition : MonoBehaviour
         enableDataContainers();
     }
 
-    IEnumerator GetUnitData(string unitName)
+    IEnumerator getUnitData(string unitName)
     {
         //Webhost connection
         // string url = "https://ar-tca.000webhostapp.com/AR-TCA/Units/addUnit.php";

@@ -22,7 +22,7 @@ if (empty($row['idUser']))
 
 $idUser = $row['idUser'];
 
-$stmt = $conn->prepare("SELECT `user_idUser`, `listOfUnitIds`, `factionName` FROM `armylists` WHERE user_idUser = ? AND factionName = ?");
+$stmt = $conn->prepare("SELECT `user_idUser`, `listOfUnitIds`, `factionName` FROM `armylist` WHERE user_idUser = ? AND factionName = ?");
 $stmt->bindParam(1, $idUser);
 $stmt->bindParam(2, $factionName);
 $stmt->execute();
@@ -31,7 +31,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (empty($row['user_idUser']))
 {
-    $stmt = $conn->prepare("INSERT INTO `armylists`(`user_idUser`, `listOfUnitIds`, `factionName`) VALUES (?, ?, ?);");
+    $stmt = $conn->prepare("INSERT INTO `armylist`(`user_idUser`, `listOfUnitIds`, `factionName`) VALUES (?, ?, ?);");
     $stmt->bindValue(1, $idUser);
     $stmt->bindValue(2, $unitIDs);
     $stmt->bindValue(3, $factionName);
@@ -45,7 +45,7 @@ if (empty($row['user_idUser']))
 }
 else //if the user has already created an army list, update it
 {
-    $stmt = $conn->prepare("UPDATE `armylists` SET `listOfUnitIds` = ? WHERE user_idUser = ? AND factionName = ?");
+    $stmt = $conn->prepare("UPDATE `armylist` SET `listOfUnitIds` = ? WHERE user_idUser = ? AND factionName = ?");
     $stmt->bindValue(1, $unitIDs);
     $stmt->bindValue(2, $idUser);
     $stmt->bindValue(3, $factionName);
