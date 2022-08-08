@@ -74,7 +74,6 @@ public class AddNewUnit : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     //get index of unitID of php echo 

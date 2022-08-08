@@ -7,8 +7,6 @@ public class SceneSwitcher : MonoBehaviour
 {
     public void runApp()
     {
-        //Wird die Funktion durch einen Buttonklick aufgerufen wird zunächst der aktuelle buildIndex der Seite geholt und dann um 1 inkrementiert.
-        //Dadurch wird die nächste Scene aufgerufen
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void back()
@@ -30,7 +28,7 @@ public class SceneSwitcher : MonoBehaviour
     public void goToChoseTerrain()
     {
         SceneManager.LoadScene("TerrainScene");
-    }    
+    }
     public void goToStartMatch()
     {
         SceneManager.LoadScene("ARScene");
@@ -38,7 +36,7 @@ public class SceneSwitcher : MonoBehaviour
     public void goToArmylists()
     {
         SceneManager.LoadScene("AvailableArmiesScene");
-    }    
+    }
     public void goToCreateArmylist()
     {
         SceneManager.LoadScene("CreateArmylist");

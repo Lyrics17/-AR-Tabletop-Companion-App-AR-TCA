@@ -43,8 +43,8 @@ public class AvailableArmies : MonoBehaviour
 
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname
-        // form.AddField("username", DBManager.username); //TODO: wieder einkommentieren wenn build
-        form.AddField("username", "admin");
+        form.AddField("username", DBManager.username);
+        // form.AddField("username", "admin");
 
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {
@@ -58,7 +58,6 @@ public class AvailableArmies : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0")) //User has armies in db
                 {
                     int indexOfString = www.downloadHandler.text.IndexOf("!");
@@ -106,8 +105,8 @@ public class AvailableArmies : MonoBehaviour
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname
         form.AddField("factionName", factionDropdown.captionText.text);
-        // form.AddField("username", DBManager.username); //TODO: wieder einkommentieren wenn build
-        form.AddField("username", "admin");
+        form.AddField("username", DBManager.username);
+        // form.AddField("username", "admin");
         ArmyManager.selectedFaction = factionDropdown.captionText.text; //is used to pass the selected faction to the army builder scene
 
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
@@ -122,7 +121,6 @@ public class AvailableArmies : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     int indexOfStringUnitNames = www.downloadHandler.text.IndexOf("!");
@@ -232,7 +230,6 @@ public class AvailableArmies : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     int indexOfString = www.downloadHandler.text.IndexOf("_"); //finds the first "_" in the string
@@ -279,7 +276,6 @@ public class AvailableArmies : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     int indexOfString = www.downloadHandler.text.IndexOf("_"); //finds the first "_" in the string

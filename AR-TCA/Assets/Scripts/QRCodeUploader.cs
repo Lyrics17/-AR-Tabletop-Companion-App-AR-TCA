@@ -34,10 +34,6 @@ public class QRCodeUploader : MonoBehaviour
             {
                 Debug.Log(www.error);
             }
-            else
-            {
-                // Debug.Log(www.downloadHandler.text);
-            }
         }
     }
 }

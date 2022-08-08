@@ -8,10 +8,6 @@ using TMPro;
 
 public class AddUnitToArmyList : MonoBehaviour
 {
-    /* 
-
-            TODO: debug.logs entfernen & code kommentieren
-    */
     //References to Dropdowns
     public TMP_Dropdown battleSizeDropdown;
     public TMP_Dropdown factionDropdown;
@@ -313,6 +309,7 @@ public class AddUnitToArmyList : MonoBehaviour
         WWWForm form = new WWWForm();
         //Imported! fieldname = db fieldname
         form.AddField("factionName", factionDropdown.captionText.text);
+
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {
             //wait till www has a return value and than proceeds with the code
@@ -325,7 +322,6 @@ public class AddUnitToArmyList : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     int indexOfString = www.downloadHandler.text.IndexOf("_");
@@ -386,7 +382,6 @@ public class AddUnitToArmyList : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     int indexOfString = www.downloadHandler.text.IndexOf("_");
@@ -451,7 +446,6 @@ public class AddUnitToArmyList : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     int indexOfString = www.downloadHandler.text.IndexOf("_"); //finds the first "_" in the string
@@ -500,7 +494,7 @@ public class AddUnitToArmyList : MonoBehaviour
         }
 
         WWWForm form = new WWWForm();
-        form.AddField("username", DBManager.username); //TODO: wieder einkommentieren wenn man builded. funktioniert nicht wenn man in der szenen testet
+        form.AddField("username", DBManager.username);
         // form.AddField("username", "admin");
         form.AddField("factionName", factionDropdown.captionText.text);
         form.AddField("unitIDs", unitIDs);
@@ -512,10 +506,6 @@ public class AddUnitToArmyList : MonoBehaviour
             if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
             {
                 Debug.Log(www.error);
-            }
-            else
-            {
-                Debug.Log(www.downloadHandler.text);
             }
         }
     }

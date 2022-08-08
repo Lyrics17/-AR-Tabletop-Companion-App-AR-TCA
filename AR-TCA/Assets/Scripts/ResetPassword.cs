@@ -50,7 +50,6 @@ public class ResetPassword : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0"))
                 {
                     DBManager.passwordResetWasSuccessful();

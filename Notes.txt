@@ -1,9 +1,0 @@
-
-TODO: Doku: Gib die Masse für den idealen QR Code an! -> mach ne bedinungsanleitung + erklärung für die symbole
-      Doku Ausblick: die ar scene im mehrere phasen ausplitten-> move, shoot, charge
-
-TODO: Debug.Logs rausschmeißen während die doku geschrieben wird.
-
-Alles funktioniert jetzt 29.07
-
-TODO: Nochmal mit dem Handy Sim über die app schauen
