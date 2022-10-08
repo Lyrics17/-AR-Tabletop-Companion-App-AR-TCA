@@ -76,3 +76,100 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+*.tgz 
+AR-TCA/Library/ArtifactDB 
+AR-TCA/Library/PackageCache/com.ptc.vuforia.engine@b4ae8a0ac015-1648627255000/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine 
+AR-TCA/Library/PackageCache/com.ptc.vuforia.engine@d9a554df1f20-1651043472169/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine 
+AR-TCA/Library/PackageCache/com.ptc.vuforia.engine@d9a554df1f20-1651829129982/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine 
+AR-TCA/Library/PackageCache/com.ptc.vuforia.engine@d9a554df1f20-1652929103113/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine filter=lfs diff=lfs merge=lfs 
+AR-TCA/Library/PackageCache/com.ptc.vuforia.engine@d9a554df1f20-1653991220866/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine 
+
+*.so 
+
+## Unity ##
+
+*.cs 
+*.cginc 
+*.shader 
+
+*.mat 
+*.anim 
+*.unity 
+*.prefab 
+*.physicsMaterial2D 
+*.physicMaterial 
+*.asset 
+*.meta 
+*.controller 
+
+
+## git-lfs ##
+
+#Image
+*.jpg 
+*.jpeg 
+*.png 
+*.gif 
+*.psd 
+*.ai 
+*.tif 
+
+#Audio
+*.mp3 
+*.wav 
+*.ogg 
+
+#Video
+*.mp4 
+*.mov 
+
+#3D Object
+*.FBX 
+*.fbx 
+*.blend 
+*.obj 
+
+#ETC
+*.a 
+*.exr 
+*.tga 
+*.pdf 
+*.zip 
+*.dll 
+*.unitypackage 
+*.aif 
+*.ttf 
+*.rns 
+*.reason 
+*.lxo 
+
+# 3D models
+*.3dm 
+*.3ds 
+*.c4d 
+*.collada 
+*.dae 
+*.dxf 
+*.jas 
+*.lws 
+*.ma 
+*.max 
+*.mb 
+*.ply 
+*.skp 
+*.stl 
+*.ztl 
+# Audio
+*.aiff 
+*.it 
+*.mod 
+*.s3m 
+*.xm 
+# Fonts
+*.otf 
+# Images
+*.bmp 
+*.hdr 
+*.iff 
+*.pict 
+*.tiff 
